@@ -1,0 +1,20 @@
+[
+  {
+    "RequestType": "0x80",
+    "Request": 6,
+    "Value": 512,
+    "Index": 0,
+    "Length": 9,
+    "Result": 9,
+    "Reply": "09022400010102c032"
+  },
+  {
+    "RequestType": "0x80",
+    "Request": 6,
+    "Value": 512,
+    "Index": 0,
+    "Length": 36,
+    "Result": 36,
+    "Reply": "09022400010102c0320904000000fe0102060904000100fe01020709210bff0000101a01"
+  }
+]

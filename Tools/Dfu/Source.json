@@ -1,0 +1,34 @@
+{
+  "Version": "0.11",
+  "Source": "https://dfu-util.sourceforge.net/releases/dfu-util-0.11-binaries.tar.xz",
+  "ArchiveSha256": "6450de30a7dcd8d8c1273f43f0b153f054fd24d85f7f38296b1ad8edbd2ddb25",
+  "Architecture": "WindowsX64",
+  "License": "GPL-2.0-or-later",
+  "OriginalFilenamesPreserved": true,
+  "Files": [
+    {
+      "Name": "AUTHORS",
+      "Sha256": "885cb185427a33ac4794f830f0f56b9196880419d7f5c5a82997a15fbdefab31"
+    },
+    {
+      "Name": "COPYING",
+      "Sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+    },
+    {
+      "Name": "README-bin.txt",
+      "Sha256": "6bb4f2c12603fd4a808d4f33db78759d24d8a5f799ec6a84662d7d4c641870d7"
+    },
+    {
+      "Name": "dfu-util.exe",
+      "Sha256": "4c3242657d492bff4220ce412dbf55de1564bc3cb1508f0bb2ffd4decb47ffb7"
+    },
+    {
+      "Name": "libusb-1.0.dll",
+      "Sha256": "3c3c1f47c8040d841a940218874bcf88a47e24f58a115a6baff0869d2532fb8e"
+    },
+    {
+      "Name": "lsusb.exe",
+      "Sha256": "27fed1711166a3d667c7fc322888bd879577d3a3cd4490fe53ea169aece5a7c0"
+    }
+  ]
+}

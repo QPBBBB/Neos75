@@ -1,0 +1,99 @@
+NEOS75 设备端可编程屏幕 UI
+
+当前状态（2026-11-02）
+自定义 C 代码已编译为 ARM Thumb 指令并刷入屏幕 MCU 应用区。
+不是图片上传，也不依赖 Windows 预览进程绘制。
+三个修改页和整个 480 KiB 应用区回读结果均与离线构建一致。
+屏幕已退出 DFU，5542:0001 HID 接口返回并连续观察 20 秒正常。
+用户目前远程操作，尚未现场确认物理屏幕文字和计时效果。
+安装记录：Research/Screen/Flash20261102T071349Z/Report.json。
+当前安装状态：Research/Screen/InstalledUi.json。
+
+界面与自定义
+Code/Module/Screen/ScreenUi.c 是电脑预览与 MCU 共用的页面代码。
+CreateScreenUi 创建一个 screen 和标题、正文、状态三个 LVGL label。
+SetScreenUiTitle、SetScreenUiMessage、SetScreenUiStatus 在 UI 线程更新文字。
+设备固件继续使用原厂显示驱动、字体、RTX、USB 和 LVGL 内存管理。
+
+Code/Module/Screen/Device/ScreenUiConfiguration.json 控制初始内容：
+  Title        默认 NEOS75 UI
+  Message      默认 hellow world
+  Status       默认空字符串
+  ShowUptime   默认 true，由屏幕自己的定时器每秒更新 Running HH:MM:SS
+ShowUptime 为 false 时显示配置中的 Status。保护定时器仍持续运行。
+当前修改配置后需要重新构建并刷写；尚未实现从电脑直接更新文字的专用 HID 命令。
+更复杂的页面和控件可继续扩展 ScreenUi.c 与原生接口桥接。
+电脑温度、歌曲等外部数据仍需要电脑发送；本机计时完全在屏幕 MCU 上执行。
+
+设备端实现
+Device/NativeProfile.json 精确绑定当前实机应用区与 Bootloader SHA256。
+实机 build 为 Sep 6 2026 23:18:16，区别于官网下载文件的 20:47:09。
+构建对不匹配的固件拒绝猜测地址，不适用于任意 NEOS75/其他屏幕型号。
+Device/NativeLvgl.h、NativeLvgl.c 仅声明并桥接已经定位的原生函数。
+没有取得完整厂商 SDK；没有确认原固件的完整 LVGL 版本。
+预览使用 LVGL 8.3.11，设备桥接使用已核对的接口、16 位坐标与 RGB565 颜色。
+除原生定时器 user_data 的偏移外，不依赖原厂 LVGL 对象内部字段。
+
+接入位置和恢复保护
+task_lvgl 的 0x3C608 原来调用 0x11798，现调用 EnterDeviceScreenUi。
+入口先执行原厂页面初始化，再创建并加载自定义页面，保留原对象供原任务引用。
+附加代码位于实机备份中已确认全 FF 的 0x50000 页。
+0x8000 向量页接入处理器故障恢复入口和 SysTick 保护入口。
+0x3C000 页仅有 0x3C608 这一条 BL 指令变化。
+实际写入顺序为 Payload -> Vector -> Hook；恢复顺序为 Hook -> Vector -> Payload。
+不写 0x0000..0x7FFF Bootloader，也不写其他应用页、UI 资源包和键盘主控固件。
+
+HardFault/MemManage/BusFault/UsageFault 入口写入原厂 DFU 标志后请求系统复位。
+SysTick 入口保留 EXC_RETURN 和寄存器，再进入原有 RTX 中断处理程序。
+UI 定时器定期补充计数，连续 10,000 个系统节拍没有补充时转入 DFU。
+标志与第二个保留 RAM 字位于 0x20000000/0x20000004，来自实机 Bootloader/复位代码。
+保护入口、寄存器保留、标签更新和定时器回调已经过临时指令级模拟验证。
+尚未在实机故意触发处理器故障；保护不能代替所有硬件故障的恢复途径。
+Bootloader 检查 0x40041800 对应 GPIO 的第 6 位进入升级模式，实体引脚/按键对应仍未确认。
+
+环境与构建（在 D:/Git/Neos75 运行）
+便携 Python 3.9.11：Tools/Python39/python.exe，始终使用 -B。
+设备编译器：Arm LLVM 19.1.5，Tools/ArmCompiler/Runtime，不纳入 Git。
+新检出仓库时安装固定版本（约 450 MiB 下载，按固定 SHA256 校验，仅解出必要文件）：
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallArmCompiler.py
+
+修改配置或 ScreenUi.c 后离线构建：
+  .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiFirmware.py
+输出 Code/Module/Screen/Runtime/Device/，包含 ELF、反汇编、补丁计划和六个 4 KiB 页文件。
+Restore 前缀的文件是实机原页，其余三个是修改后的页。
+构建工具不访问硬件。
+
+安装或更新（真实写 Flash）：
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --EnterDfu
+工具先回读当前完整应用区，再检查全部非修改页和已知安装指纹。
+每页写入后立即回读；结束再核对完整应用区并退出 DFU。
+写入失败或检测到保护返回 DFU 时，自动尝试恢复原页。
+每次操作将计划及页文件冻结到 Research/Screen/Flash<UTC>/Package，保存操作日志和回读。
+InstalledUi.json 记录已知安装版本，使下一次修改配置后可以直接更新。
+恢复使用任一保存的安装计划，例：
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\CustomUiV01\ScreenUiPatchPlan.json --EnterDfu --Restore
+设备已经显示为 5542:1000 DFU 时省略 --EnterDfu。
+
+只读备份
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\BackupScreenFirmware.py --EnterDfu
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\BackupScreenFirmware.py --EnterDfu --Region Bootloader
+双份读取并比对，随后请求返回现有应用；不擦除或写入固件数据。
+原始应用备份：Research/Screen/Backup20261102T065739Z/ScreenApplication.bin。
+原始 Bootloader：Research/Screen/Backup20261102T070811Z/ScreenBootloader.bin。
+
+Windows 预览
+  .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiPreview.py
+  .\Code\Module\Screen\Runtime\ScreenUiPreview.exe
+预览使用本机 Visual Studio 与 Tools/Lvgl 源码，右侧输入框更新同一份 UI 页面。
+预览主题/字体与原厂字体可有区别，不能据此声称物理显示已验证。
+
+尺寸证据
+原厂 HID GET_DEVICE_INFO 始终回报 320×320。
+实机应用在 0x2AEA8..0x2AEB0 注册 LVGL 显示为 480×360；Bootloader 也绘制 480×360。
+资源包头为 NEOS 480*360。物理面板尺寸和 HID 回报差异仍等待现场核对。
+
+来源
+https://hub.aulacn.com/home
+https://dfu-util.sourceforge.net/dfu-util.1.html
+https://github.com/ARM-software/LLVM-embedded-toolchain-for-Arm/releases/tag/release-19.1.5
+https://github.com/lvgl/lvgl/tree/v8.3.11

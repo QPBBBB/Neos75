@@ -13,11 +13,42 @@
       "Version": "0.15.0",
       "Wheel": "hidapi-0.15.0-cp39-cp39-win_amd64.whl",
       "Directory": "Tools/Python39/Lib/site-packages"
+    },
+    {
+      "Name": "capstone",
+      "Version": "5.0.6",
+      "Wheel": "capstone-5.0.6-py3-none-win_amd64.whl",
+      "Directory": "Tools/Python39/Lib/site-packages"
     }
   ],
+  "Lvgl": {
+    "Version": "8.3.11",
+    "Directory": "Tools/Lvgl",
+    "Source": "https://github.com/lvgl/lvgl/tree/v8.3.11",
+    "Purpose": "NativePreviewAndUiSource",
+    "FirmwareVersionConfirmed": false
+  },
+  "NativeCompiler": {
+    "Runtime": "VisualStudioMsvc",
+    "Bundled": false,
+    "Discovery": "vswhere.exe"
+  },
   "JavaScript": {
     "Runtime": "Node.js",
     "Bundled": false,
     "Dependencies": "BuiltInModulesOnly"
+  },
+  "ArmCompiler": {
+    "Version": "19.1.5",
+    "Directory": "Tools/ArmCompiler/Runtime",
+    "Installer": "Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "Purpose": "FreestandingThumbUiPatch",
+    "RuntimeIgnoredByGit": true
+  },
+  "Dfu": {
+    "Version": "0.11",
+    "Directory": "Tools/Dfu",
+    "Source": "https://dfu-util.sourceforge.net/releases/dfu-util-0.11-binaries.tar.xz",
+    "License": "GPL-2.0-or-later"
   }
 }

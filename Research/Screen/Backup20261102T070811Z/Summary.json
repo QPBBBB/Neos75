@@ -1,0 +1,11 @@
+{
+  "EraseSent": false,
+  "FirmwareDataWritten": false,
+  "BackupVerified": true,
+  "Region": "Bootloader",
+  "Address": "0x0",
+  "Length": 32768,
+  "Sha256": "3392e7e17bbb1ec414c586d1d0e82c892deaf4fd2ae227686bd207bb5d58fc40",
+  "ExitRequested": true,
+  "ApplicationHidReturned": true
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "Action": "EnterScreenDfu",
+    "HidPacket": "0013020000000078b70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "SerialNumber": "507556D1326C"
+  },
+  {
+    "Action": "ReadBootloader",
+    "Arguments": [
+      "--device",
+      ",5542:1000",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x0:32768",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Screen\\Backup20261102T070811Z\\ScreenBootloader.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 5542:1000\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 4096\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[===                      ]  12%         4096 bytes\rUpload\t[======                   ]  25%         8192 bytes\rUpload\t[=========                ]  37%        12288 bytes\rUpload\t[============             ]  50%        16384 bytes\rUpload\t[===============          ]  62%        20480 bytes\rUpload\t[==================       ]  75%        24576 bytes\rUpload\t[=====================    ]  87%        28672 bytes\rUpload\t[=========================] 100%        32768 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "ReadBootloader",
+    "Arguments": [
+      "--device",
+      ",5542:1000",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x0:32768",
+      "--upload",
+      "C:\\Users\\cosyd\\AppData\\Local\\Temp\\Neos75Backup7rtyh8ow\\SecondRead.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 5542:1000\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 4096\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[===                      ]  12%         4096 bytes\rUpload\t[======                   ]  25%         8192 bytes\rUpload\t[=========                ]  37%        12288 bytes\rUpload\t[============             ]  50%        16384 bytes\rUpload\t[===============          ]  62%        20480 bytes\rUpload\t[==================       ]  75%        24576 bytes\rUpload\t[=====================    ]  87%        28672 bytes\rUpload\t[=========================] 100%        32768 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "ReadAndLeave",
+    "Arguments": [
+      "--device",
+      ",5542:1000",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8000:8:leave",
+      "--upload",
+      "C:\\Users\\cosyd\\AppData\\Local\\Temp\\Neos75Exitqw8x2ih4\\Entry.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 5542:1000\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 4096\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=========================] 100%            8 bytes\r\nUpload done.\r\nSubmitting leave request...\r\nTransitioning to dfuMANIFEST state\r\n"
+  }
+]

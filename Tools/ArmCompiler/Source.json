@@ -1,0 +1,10 @@
+{
+  "Version": "19.1.5",
+  "Source": "https://github.com/ARM-software/LLVM-embedded-toolchain-for-Arm/releases/tag/release-19.1.5",
+  "Archive": "LLVM-ET-Arm-19.1.5-Windows-x86_64.zip",
+  "DownloadUrl": "https://github.com/ARM-software/LLVM-embedded-toolchain-for-Arm/releases/download/release-19.1.5/LLVM-ET-Arm-19.1.5-Windows-x86_64.zip",
+  "Sha256": "f4b26357071a5bae0c1dfe5e0d5061595a8cc1f5d921b6595cc3b269021384eb",
+  "RuntimeDirectory": "Tools/ArmCompiler/Runtime",
+  "Purpose": "FreestandingScreenUiPatch",
+  "NativeMcuSdk": false
+}

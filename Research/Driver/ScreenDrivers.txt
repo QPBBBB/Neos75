@@ -1,0 +1,1 @@
+winusb,UB32 Bootloader,5542,1000,9d7debbc-c85d-11d1-9eb4-006008c3a19a

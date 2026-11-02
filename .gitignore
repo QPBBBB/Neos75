@@ -1,3 +1,5 @@
 **/__pycache__/
 *.pyc
 *.pyo
+Code/Module/Screen/Runtime/
+Tools/ArmCompiler/Runtime/

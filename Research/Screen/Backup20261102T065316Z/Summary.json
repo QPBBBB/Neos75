@@ -1,0 +1,6 @@
+{
+  "EraseSent": false,
+  "FirmwareDataWritten": false,
+  "BackupVerified": false,
+  "Error": "Screen DFU 5542:1000 is unavailable; inspect Windows driver/device status"
+}

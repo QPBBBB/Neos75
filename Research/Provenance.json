@@ -382,5 +382,376 @@
     "RelativePath": "Research/Vendor/SharedRuntime.js",
     "OriginalName": "TglCKVxb.js",
     "Sha256": "a8026b3d410a9ad8e11c59e0c9817df50b51fbe4d34424372865aa95e9c4346a"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/Package/driver_installer.exe",
+    "RelativePath": "Research/Driver/Package/driver_installer.exe",
+    "OriginalName": "driver_installer.exe",
+    "Sha256": "ccd78a40e3db74a189f42e3eab93463ef6c214c4f928b586992d70863b094431",
+    "Source": "Extracted without modification from the official signed UB32 driver package"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/Package/drivers.txt",
+    "RelativePath": "Research/Driver/Package/drivers.txt",
+    "OriginalName": "drivers.txt",
+    "Sha256": "843c3dd4550ac27d9ae972c7223361ee48c7e57fa64d54e7a48f75fa59e3bde9",
+    "Source": "Extracted without modification from the official signed UB32 driver package"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/Package/install.bat",
+    "RelativePath": "Research/Driver/Package/install.bat",
+    "OriginalName": "install.bat",
+    "Sha256": "d6aef5ee5c624791ed33a112d0ded697c1c3b0ca280d9bf6400ef3f1295d5287",
+    "Source": "Extracted without modification from the official signed UB32 driver package"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/ScreenDriverInstall.json",
+    "RelativePath": "Research/Driver/ScreenDriverInstall.json",
+    "OriginalName": "ScreenDriverInstall.json",
+    "Sha256": "0e1c347507c54f54865266dd53156c2892e0bd4fbab2893cf2aa70df6858cb0e",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/ScreenDriverInstall.log",
+    "RelativePath": "Research/Driver/ScreenDriverInstall.log",
+    "OriginalName": "ScreenDriverInstall.log",
+    "Sha256": "2ee79ee077acb97415316be1e5daeb4562c819dfd1b044450331238741013e2b",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/ScreenDrivers.txt",
+    "RelativePath": "Research/Driver/ScreenDrivers.txt",
+    "OriginalName": "ScreenDrivers.txt",
+    "Sha256": "efd126d451dd90ceb43419107d0ec7d29dc50f161f30206fd7bf20cf60921f93",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/Ub32DriverSetup.exe",
+    "RelativePath": "Research/Driver/Ub32DriverSetup.exe",
+    "OriginalName": "UB32-Driver-Setup.exe",
+    "Sha256": "8a138938afc5e60a16cba99c12c4bb9161e3bb3cf48c382dee1f5374c91bf4da",
+    "Source": "https://app.aulacn.com/hero/UB32-Driver-Setup.exe"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065316Z/Summary.json",
+    "RelativePath": "Research/Screen/Backup20261102T065316Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "ae70b46f6d98d13dbb8a15a58260c787f6305fab50c73a2d8f5b7b2c0627fad2",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065316Z/Transcript.json",
+    "RelativePath": "Research/Screen/Backup20261102T065316Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "fbe6d1d59895a7a6ddb4170fb6549b5af8d4de7d42c9a3f471e9930aad26c0f9",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065608Z/ConfigurationDescriptor.bin",
+    "RelativePath": "Research/Screen/Backup20261102T065608Z/ConfigurationDescriptor.bin",
+    "OriginalName": "ConfigurationDescriptor.bin",
+    "Sha256": "5615acb41b363c0a63f6a54a7ca9b2076a25e92b7d7fcc80d6336b23679ccf41",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065608Z/Summary.json",
+    "RelativePath": "Research/Screen/Backup20261102T065608Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "47acc40ef9bc2ba2979e648749b7770d822252ddc8cd543812a09b734c6a05bd",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065608Z/Transcript.json",
+    "RelativePath": "Research/Screen/Backup20261102T065608Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "460d7e17a2f73ed30a81d904c0f854b1c23f3cae368b83a7f0c21aea76d0d507",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065632Z/ConfigurationDescriptor.bin",
+    "RelativePath": "Research/Screen/Backup20261102T065632Z/ConfigurationDescriptor.bin",
+    "OriginalName": "ConfigurationDescriptor.bin",
+    "Sha256": "5615acb41b363c0a63f6a54a7ca9b2076a25e92b7d7fcc80d6336b23679ccf41",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065632Z/ScreenHeader.bin",
+    "RelativePath": "Research/Screen/Backup20261102T065632Z/ScreenHeader.bin",
+    "OriginalName": "ScreenHeader.bin",
+    "Sha256": "6544666cde6f1c8c130ad86b224a0ae04f500b080c64e29d46a0896cc2cfc7ee",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065632Z/Summary.json",
+    "RelativePath": "Research/Screen/Backup20261102T065632Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "8e6dae0393c67cb44215d9be0098e8b501213d6e3254a65926d255d7ed22029c",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065632Z/Transcript.json",
+    "RelativePath": "Research/Screen/Backup20261102T065632Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "7769a3e7dc1be5bb71ea7ab558e43f4f936af4e998c5ff6e670b2ef0bfd111a5",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065739Z/ScreenApplication.bin",
+    "RelativePath": "Research/Screen/Backup20261102T065739Z/ScreenApplication.bin",
+    "OriginalName": "ScreenApplication.bin",
+    "Sha256": "5da95e4ac051fa2f64558fc48bf3d3501685b9c27b2e974d62dd3aa3a1db4895",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065739Z/Summary.json",
+    "RelativePath": "Research/Screen/Backup20261102T065739Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "2be223aa3a7b1379b9dbe887135d5d24424384a579d5177d302e11d0d304babb",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T065739Z/Transcript.json",
+    "RelativePath": "Research/Screen/Backup20261102T065739Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "02259bb03a67c95aa314d10af07a5baa509307420e92b5cc368322dd8acffa4b",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T070811Z/ScreenBootloader.bin",
+    "RelativePath": "Research/Screen/Backup20261102T070811Z/ScreenBootloader.bin",
+    "OriginalName": "ScreenBootloader.bin",
+    "Sha256": "3392e7e17bbb1ec414c586d1d0e82c892deaf4fd2ae227686bd207bb5d58fc40",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T070811Z/Summary.json",
+    "RelativePath": "Research/Screen/Backup20261102T070811Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "144fd42c1bdcdd58b24dfd7f8c59bcfcea881888e16ec73140c9a7726bcf36c9",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T070811Z/Transcript.json",
+    "RelativePath": "Research/Screen/Backup20261102T070811Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "ea01a819e17cffbbe0e99b2c54b350b9a72b66b6b347ee12355f88a734c339a3",
+    "Source": "Local NEOS75 USB/DFU observation or readback; see sibling transcript and summary"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/HookPage.bin",
+    "RelativePath": "Research/Screen/CustomUiV01/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "f39648b8a80625120997abe97c39aa959db2e4952c335881c0ccec7d1b4353a0",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/PayloadPage.bin",
+    "RelativePath": "Research/Screen/CustomUiV01/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "8896a29f65b4a5bcbcb833018df7f0037f583c4c5c624546b495e9694661fde2",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/CustomUiV01/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "599017a03b361cf8fac66ff25e04cea592a28557e48940fb92bd5337a2d6580b",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/CustomUiV01/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/CustomUiV01/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "43a57e9e561cce00f3f68fd814dada0fd599d84cc29e496e316c9c1fdee52d2f",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/ScreenUi.elf",
+    "RelativePath": "Research/Screen/CustomUiV01/ScreenUi.elf",
+    "OriginalName": "ScreenUi.elf",
+    "Sha256": "e97fe737b5e6273e21bd0f7007bc3c841bbdc1301f1022d624684dd3aa39ea0b",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/ScreenUiDisassembly.txt",
+    "RelativePath": "Research/Screen/CustomUiV01/ScreenUiDisassembly.txt",
+    "OriginalName": "ScreenUiDisassembly.txt",
+    "Sha256": "71a9b79ba6a03514669a965ba1623c5d31213e97a8d8003be64c684d3c1afb2d",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/CustomUiV01/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "de47332b3fa2399eb30269e9b24db4d4609abdca28ad4dad0bdaa906daf784b4",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/CustomUiV01/VectorPage.bin",
+    "RelativePath": "Research/Screen/CustomUiV01/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "61532fd9be95641449785c69e5af9dfed5a27c0032f499d99cb7d9c77d2b7348",
+    "Source": "Production native UI build; matches installed application report Flash20261102T071349Z"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/AfterApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "0c8575c03d7eae24792dd016e8817f3e64015bdc7b73d3c35cb842f241c08810",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/BeforeApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "5da95e4ac051fa2f64558fc48bf3d3501685b9c27b2e974d62dd3aa3a1db4895",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/ExitEntry.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/ExitEntry.bin",
+    "OriginalName": "ExitEntry.bin",
+    "Sha256": "a9e3c9d1d1deb3c37e15b124ac2e19aa7142f6680b63a56eab2367e50066a352",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/InstallHookReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/InstallHookReadback.bin",
+    "OriginalName": "InstallHookReadback.bin",
+    "Sha256": "f39648b8a80625120997abe97c39aa959db2e4952c335881c0ccec7d1b4353a0",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "8896a29f65b4a5bcbcb833018df7f0037f583c4c5c624546b495e9694661fde2",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/InstallVectorReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/InstallVectorReadback.bin",
+    "OriginalName": "InstallVectorReadback.bin",
+    "Sha256": "61532fd9be95641449785c69e5af9dfed5a27c0032f499d99cb7d9c77d2b7348",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/HookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "f39648b8a80625120997abe97c39aa959db2e4952c335881c0ccec7d1b4353a0",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "8896a29f65b4a5bcbcb833018df7f0037f583c4c5c624546b495e9694661fde2",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "599017a03b361cf8fac66ff25e04cea592a28557e48940fb92bd5337a2d6580b",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "43a57e9e561cce00f3f68fd814dada0fd599d84cc29e496e316c9c1fdee52d2f",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "de47332b3fa2399eb30269e9b24db4d4609abdca28ad4dad0bdaa906daf784b4",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Package/VectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Package/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "61532fd9be95641449785c69e5af9dfed5a27c0032f499d99cb7d9c77d2b7348",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Report.json",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "393092a8d13c3d87ad45d258817affdd7d331c1648ed5e19760e199d70662b10",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T071349Z/Transcript.json",
+    "RelativePath": "Research/Screen/Flash20261102T071349Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "e7e5a22350d16d108e4cdf662713642d6d3162aefade2e3eba1f84bf39420907",
+    "Source": "Local screen MCU application installation and readback evidence"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/InstalledUi.json",
+    "RelativePath": "Research/Screen/InstalledUi.json",
+    "OriginalName": "InstalledUi.json",
+    "Sha256": "cb3fecb10ef1babb2341bd32288754ab31e08fe1ceab9e301684080e355a9f44",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Run20261102T065026Z/Interfaces.json",
+    "RelativePath": "Research/Screen/Run20261102T065026Z/Interfaces.json",
+    "OriginalName": "Interfaces.json",
+    "Sha256": "7f69f91a6cb502154bbdf5d7cdae2272a6cfec3270ace15f0d30c3a31bf13a9e",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Run20261102T065026Z/Summary.json",
+    "RelativePath": "Research/Screen/Run20261102T065026Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "f85d88c57ede7d2931aa2afef9abd3c40110f57f1c4536ab7ac9065cfbc1dbec",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Run20261102T065026Z/Transcript.json",
+    "RelativePath": "Research/Screen/Run20261102T065026Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "e7f0696a21b3813958ca061522f199f080b4642d36f1d0e34923a58fcea55852",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Run20261102T065746Z/Interfaces.json",
+    "RelativePath": "Research/Screen/Run20261102T065746Z/Interfaces.json",
+    "OriginalName": "Interfaces.json",
+    "Sha256": "7f69f91a6cb502154bbdf5d7cdae2272a6cfec3270ace15f0d30c3a31bf13a9e",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Run20261102T065746Z/Summary.json",
+    "RelativePath": "Research/Screen/Run20261102T065746Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "f85d88c57ede7d2931aa2afef9abd3c40110f57f1c4536ab7ac9065cfbc1dbec",
+    "Source": "Project capture or derived metadata"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Run20261102T065746Z/Transcript.json",
+    "RelativePath": "Research/Screen/Run20261102T065746Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "e7f0696a21b3813958ca061522f199f080b4642d36f1d0e34923a58fcea55852",
+    "Source": "Project capture or derived metadata"
   }
 ]

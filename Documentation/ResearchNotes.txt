@@ -55,7 +55,7 @@ NEOS75 固件定制调查
   大小 2441516 字节。
   SHA256 5da483d3b31f48e9dc6c64ca66487aa6b7d7c84492d05726ac99feff337d94dc
   包头 "LVGL ALL BIN VER NEOS 480*360 V1.0.1 2026-06-15 22:05:24"。
-  已解析并拆出字体、普通图像、JPEG 和 signature.bin 四段，见 research/ui-resources/。
+  已解析并拆出字体、普通图像、JPEG 和 signature.bin 四段，见 Research/UiResources/。
   signature.bin 是文件尾 16 字节标准 DFU 后缀，包含 CRC，不等于已发现密码学签名。
   修改图形资源不能自动增加页面行为或新控件；这些还需要屏幕 MCU 逻辑。
 
@@ -79,7 +79,7 @@ NEOS75 固件定制调查
    优先定位 encoder/Vial FE03、FE04 处理函数、屏幕切页动作与 SerialLcd 发送函数；
    屏幕侧定位 LVGL 初始化、页面事件、资源加载和 A5 41 命令处理。
 4. 在恢复方式和 PCB 版本确认后，再制作单一可验证改动的测试镜像。
-   当前没有自定义镜像，也没有修改设备功能或进入升级模式。
+   本节记录初次只读调查时的状态；后续设备端接入与刷写见第六节。
 
 五、工具与复现
 Python（随仓库携带）：
@@ -123,3 +123,42 @@ https://gist.github.com/borrougagnou/a21613093f323a05167a92212ab1ff7b
 
 结构整理：便携 Python 3.9.11 复用自 D:/Git/Veil/Tools/Python39；模块工具位于 Code/Module/<ModuleName>/Utilities。
 原始网页归档中的 import 路径与参考源码标识符按原文保留，实际归档路径见来源映射；请勿将它们作为应用入口执行。
+
+六、设备端 UI 实际接入（2026-11-02 后续推进）
+1. 取得并验签官网 https://app.aulacn.com/hero/UB32-Driver-Setup.exe。
+   安装包签名有效，用户明确允许仅为屏幕 DFU 5542:1000 安装 WinUSB。
+   原厂清单有多个型号，实际使用 ScreenDrivers.txt 单条清单，安装日志与结果在 Research/Driver。
+2. 进入屏幕 DFU 后，确认设备名 UBEST DFU Screen Firmware Update，DfuSe 1.1a，传输块 4096 字节。
+   内存描述符：@Internal Flash /0x00000000/8*4Ka,120*4Kg,3583*512Ka,4096*4Kg。
+   驱动缺失/解析诊断记录也保留在 Research/Screen/Backup<UTC>，不将失败读写当作备份成功。
+3. 实机应用区 0x8000 起 491520 字节，连续两次读取完全一致：
+   Research/Screen/Backup20261102T065739Z/ScreenApplication.bin
+   SHA256 5da95e4ac051fa2f64558fc48bf3d3501685b9c27b2e974d62dd3aa3a1db4895。
+   实机包内 build Sep 6 2026 23:18:16，与云端 20:47:09 版本不同，不按云端地址直接修改。
+   0x4AACC..0x7F000 全 FF；0x7F000 起已有其他数据，不能当作任意空闲区擦写。
+4. 实机 Bootloader 0x0 起 32768 字节，连续两次读取完全一致：
+   Research/Screen/Backup20261102T070811Z/ScreenBootloader.bin
+   SHA256 3392e7e17bbb1ec414c586d1d0e82c892deaf4fd2ae227686bd207bb5d58fc40。
+   未写 Bootloader。0x369A 检查 RAM 0x20000000 的 A5A5A5A5 标志进入 DFU。
+   0x36B6 读取第二个保留 RAM 字；原应用 0x39558 也向 0x20000004 写入复位标志。
+   Bootloader 0x367E 读取 GPIO 0x40041800 的 bit 6；实体按键/引脚对应还未确认。
+5. 实机 task_lvgl 入口 0x3C5F8，0x3C608 调用原始 UI 初始化 0x11798。
+   实机显示注册 0x2AEA8..0x2AEB0 将 480×360 写入 LVGL 显示配置。
+   HID 320×320 仍是协议回报值，不能直接等同物理面板尺寸。
+   原生对象、label、文字更新、style 设置、页面加载和 timer 函数已定位，见 NativeProfile.json。
+   采用窄接口桥接；完整 LVGL 版本、SDK 和整个原厂源码仍未知。
+6. 同一份 ScreenUi.c 编译为设备端 C 代码，约 1294 字节附加代码，放在 0x50000 页。
+   标题 NEOS75 UI，正文 hellow world，设备定时器每秒更新 Running HH:MM:SS。
+   另接入处理器故障返回 DFU 和 UI 线程超时保护，保留 RTX SysTick 的原中断上下文。
+   指令级模拟通过，模拟代码和依赖不留在仓库；未在实机故意制造处理器异常。
+7. 实际写入应用区 Payload 0x50000、Vector 0x8000、Hook 0x3C000 三个页，各 4096 字节。
+   写后逐页回读一致，最终整个应用区与生成内容一致：
+   SHA256 0c8575c03d7eae24792dd016e8817f3e64015bdc7b73d3c35cb842f241c08810。
+   操作记录 Research/Screen/Flash20261102T071349Z/Report.json 与 Transcript.json。
+   已退出 DFU，5542:0001 HID 返回，观察超过 20 秒正常，没有检测到自动回退。
+   用户远程操作，物理屏幕显示/计时仍待现场确认，不能仅凭 USB 在线宣称显示成功。
+8. 生产构建及六个修改/恢复页在 Research/Screen/CustomUiV01。
+   当前安装指纹记录在 Research/Screen/InstalledUi.json。后续修改配置即可重新构建并更新。
+   当前没有专用 HID 在线文字更新协议；UI 为设备原生控件，扩展入口是 C API 与设备 timer。
+   初期图片文字示例已从项目移走，原生 UI 不依赖图片生成或上传工具。
+   运行、刷写和恢复方法见 Documentation/ScreenUi.txt。

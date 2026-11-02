@@ -1,0 +1,18 @@
+# The format is
+# driver,desc,vid,pid,guid
+# Use a comma as a separator without spaces
+# Driver can be one of winusb,libusb,libusbk
+# After install, the device shows in Device Manager as "UB32 Bootloader"
+winusb,UB32 Bootloader,2E3C,DF11,88bae032-5a81-49f0-bc3d-a4ff138216d6
+winusb,UB32 Bootloader,5542,0341,9d7debbc-c85d-11d0-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,1000,9d7debbc-c85d-11d1-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,1001,9d7debbc-c85d-11d2-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,8000,9d7debbc-c85d-11da-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0101,9d7debbc-c85d-11d3-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0102,9d7debbc-c85d-11d4-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0103,9d7debbc-c85d-11d5-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0104,9d7debbc-c85d-11d6-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0105,9d7debbc-c85d-11d7-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0106,9d7debbc-c85d-11d8-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0107,9d7debbc-c85d-11db-9eb4-006008c3a19a
+winusb,UB32 Bootloader,5542,0108,9d7debbc-c85d-11dc-9eb4-006008c3a19a

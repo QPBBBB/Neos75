@@ -1,4 +1,4 @@
-"""Read only NEOS75 screen identification and capacity (official GET_DEVICE_INFO)."""
+"""Read only NEOS75 screen identification, firmware version and capacity."""
 import argparse as ArgumentParsing
 import json as Json
 import struct as Struct
@@ -28,6 +28,18 @@ def Main():
     Transcript, Summary = ([], {})
     try:
         Device.open_path(Devices[0]['path'])
+        # Official updater readFirmwareVersion; this does not prepare an upgrade.
+        VersionPacket = bytes([0, 0x11, 2, 0, 0, 0, 0, 0xBC, 0x60]) + bytes(56)
+        VersionEntry = {'command': 'ReadFirmwareVersion', 'tx': VersionPacket.hex()}
+        Transcript.append(VersionEntry)
+        if Device.write(VersionPacket) != len(VersionPacket):
+            raise RuntimeError('Incomplete version query transmission')
+        VersionReply = bytes(Device.read(64, timeout_ms=1500))
+        VersionEntry['rx'] = VersionReply.hex()
+        if len(VersionReply) >= 8 and VersionReply[:2] == bytes([0x11, 2]):
+            Summary['firmware_version'] = VersionReply[8:].decode('ascii', errors='replace').replace('\0', '').strip()
+        else:
+            VersionEntry['error'] = 'No matching version reply'
         for Selector in (20, 16, 17):
             Packet = BuildInformationPacket(Selector)
             if len(Packet) != 65 or Packet[:6] != bytes([0, 165, 65, 0, 1, Selector]):

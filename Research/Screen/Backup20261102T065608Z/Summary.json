@@ -1,0 +1,7 @@
+{
+  "EraseSent": false,
+  "FirmwareDataWritten": false,
+  "BackupVerified": false,
+  "Error": "A readable DfuSe 1.1a interface was not advertised",
+  "ApplicationHidReturned": true
+}

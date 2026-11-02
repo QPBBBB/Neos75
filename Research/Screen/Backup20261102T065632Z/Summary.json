@@ -1,0 +1,10 @@
+{
+  "EraseSent": false,
+  "FirmwareDataWritten": false,
+  "BackupVerified": false,
+  "DfuAttributes": 11,
+  "DfuVersion": "0x11a",
+  "TransferSize": 4096,
+  "Error": "LIBUSB_ERROR_PIPE",
+  "ExitError": "LIBUSB_ERROR_PIPE"
+}

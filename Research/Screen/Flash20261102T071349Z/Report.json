@@ -1,0 +1,11 @@
+{
+  "Mode": "Install",
+  "Plan": "D:\\Git\\Neos75\\Code\\Module\\Screen\\Runtime\\Device\\ScreenUiPatchPlan.json",
+  "ApplicationVerified": true,
+  "ApplicationHidReturned": true,
+  "BootloaderWritten": false,
+  "ApplicationSha256": "0c8575c03d7eae24792dd016e8817f3e64015bdc7b73d3c35cb842f241c08810",
+  "FirmwareWritten": true,
+  "ExitRequested": true,
+  "ApplicationHidStable": true
+}

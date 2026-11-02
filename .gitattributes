@@ -1,0 +1,5 @@
+# Preserve captured bytes and unmodified portable dependencies for SHA256 checks.
+Research/** -text -whitespace
+Tools/Python39/** -text -whitespace
+Tools/Lvgl/** -text -whitespace
+Tools/Dfu/** -text -whitespace
