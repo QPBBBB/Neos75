@@ -1,0 +1,125 @@
+NEOS75 固件定制调查
+调查日期：2026-11-02（Asia/Shanghai）
+
+结论
+已完成实机只读协议验证、键位/旋钮配置导出、原厂固件获取和离线格式分析。
+目前没有获得可编译的 NEOS75 原厂工程或 UB32 SDK，因此还没有可刷写的自定义固件。
+现有证据足以把后续工作分为键盘逻辑固件、屏幕逻辑固件、屏幕图形资源三部分。
+
+一、已由实机验证
+1. 有线键盘：AULA-Neos75，VID:PID = 1EA7:4884。
+   标准 Raw HID：usage page FF60，usage 0061，interface 1。
+   serial_number = vial:f64c2b3c。
+2. 设备回应 VIA 协议 12、Vial 协议 6，UID = 19331032a15430b0。
+   内置定义名称为 "Venus 84 "，矩阵 7×15，3 个层，定义压缩后 1583 字节。
+   已导出完整三层 keymap.bin；这不是整片 Flash 或用户宏的完整备份。
+3. 标准 Vial GET_ENCODER（FE 03 layer index）可读取两个旋钮映射。
+   index 0：
+     layer 0：逆时针 00AA（音量减），顺时针 00A9（音量加）。
+     layer 1/2：逆时针 7828（灯光亮度减），顺时针 7827（灯光亮度加）。
+   index 1：全部三层逆时针 7E10（LCD mode-），顺时针 7E0F（LCD mode+）。
+   本次没有发送 SET_ENCODER。读取成功证明接口存在，尚未实测写入、断电保存或无线继承。
+   旋钮按压走普通矩阵键位；布局中的 e0/e1 是厂商标签，不能当作标准 Vial 编码器布局直接解析。
+4. 屏幕独立 USB HID 设备：VID:PID = 5542:0001。
+   官方屏幕代码独立连接这台设备；实机可回应 GET_DEVICE_INFO。
+   当前返回 width=320、height=320、screen_type=0、JPEG 支持=true、WinUSB 支持=false。
+   注意：这是协议回报值，未证明物理面板为 320×320。
+   原厂云端资源包头标记 NEOS 480*360，存在不一致，不能直接拿它刷入后验证。
+
+二、获取的原厂升级文件（只保存、校验和分析，没有执行或刷写）
+来源是官方网页驱动引用的公开下载接口：
+  https://hubapi.aulacn.com/user/BIN/binList
+  https://hubapi.aulacn.com/user/BIN/getFile/{id}
+请求仅包含产品型号和公开 VID/PID，未上传设备序列号、键位快照或用户文件。
+
+键盘 id=452：
+  SI-2915_ZB48A1UBG2_V20_5125_KB84_RGB_LCD_SV_20261027.bin
+  大小 118336 字节；云端版本 V2.0；包内 build "SV3.0.3 Oct 27 2026 19:55:42"。
+  SHA256 8ccf3952213844d006f864693eb57ba6d48dbaf7c138280259f3ad63361c0fa5
+  ARM Thumb 向量表，初始 SP 200071A8，Reset 080002E9。
+  包内字符串 UB32F401B、RTX_Conf_CM.c、SerialLcd、AT+NAME=AULA-Neos75 BT1/2/3。
+  Vial UID 位于文件 0x4400（另见 0x18654）。
+  实机读出的完整 definition.xz 在文件 0x1B88E 精确匹配。
+  这些证明型号/设备定义匹配，不证明实机当前运行的版本与云端文件逐字节一致。
+
+屏幕 MCU id=420：
+  ZG06_2_31_V20_AULA_NEOS75_SCREEN_MCU_20260906.bin
+  大小 272336 字节。
+  SHA256 0deb0afce2e5846e2b90336d331361eb70c089a4ea95ca783be70b17c82f8cc0
+  ARM Thumb 向量表，初始 SP 2000C520，Reset 000081BD（代码镜像装载地址 0x8000 是候选）。
+  字符串 UB32F341S_BOOT_LOADER、RTX V5.5.4、task_lvgl、ILI9342_lcdrst。
+  这些是固件字符串线索，芯片真实型号/面板驱动还需 PCB 丝印或原厂资料核对。
+
+屏幕 UI id=419：
+  2915-ZG06_2_31_V20_NEOS_SCREEN_UI_20260615.bin
+  大小 2441516 字节。
+  SHA256 5da483d3b31f48e9dc6c64ca66487aa6b7d7c84492d05726ac99feff337d94dc
+  包头 "LVGL ALL BIN VER NEOS 480*360 V1.0.1 2026-06-15 22:05:24"。
+  已解析并拆出字体、普通图像、JPEG 和 signature.bin 四段，见 research/ui-resources/。
+  signature.bin 是文件尾 16 字节标准 DFU 后缀，包含 CRC，不等于已发现密码学签名。
+  修改图形资源不能自动增加页面行为或新控件；这些还需要屏幕 MCU 逻辑。
+
+三个文件的标准 DFU 后缀 CRC32 均通过验证。
+官方升级器含 DFU/DfuSe、机型比对和 CRC 逻辑；未实际进入 Bootloader、读 Flash 或检查设备端签名限制。
+不能因为文件可离线改动、CRC 可计算，就认为修改后的固件一定会被设备接受。
+
+三、架构判断及可行性
+旋钮：已有设备侧映射接口，可先做配置验证；自定义按压/长按/加速/菜单逻辑需要修改主控程序。
+键盘与屏幕：是独立 USB 身份和独立升级文件。键盘程序中的 SerialLcd 字符串提示存在串行控制链路，
+但线路、电平、串口配置和键盘到屏幕的报文尚未通过硬件采集验证。
+屏幕：已确认 LVGL 资源和屏幕 MCU 分开；全新页面/控件逻辑应在 MCU 工程或二进制中实现。
+实时电脑数据：固件可自行渲染页面，但 CPU 温度、正在播放的歌曲等仍需电脑发送数据。
+协议兼容 VIA/Vial 不等于存在可直接重编译的标准 QMK 工程；包内 RTX 线索说明需核对厂商实现。
+
+四、后续最有价值的工作
+1. 向 AULA 获取 NEOS75 键盘 UB32F401B 与屏幕 UB32F341S 的工程/SDK、对应 PCB 版本和资源打包工具。
+   可询问是否提供满足相关开源组件许可证要求的源码；本次未判定具体许可证义务。
+2. 明确屏幕 320×320 回报与 480×360 资源包头不一致的原因，并确认实机运行版本。
+3. 没有源码时，对已取得的 ARM Thumb 固件离线反汇编：
+   优先定位 encoder/Vial FE03、FE04 处理函数、屏幕切页动作与 SerialLcd 发送函数；
+   屏幕侧定位 LVGL 初始化、页面事件、资源加载和 A5 41 命令处理。
+4. 在恢复方式和 PCB 版本确认后，再制作单一可验证改动的测试镜像。
+   当前没有自定义镜像，也没有修改设备功能或进入升级模式。
+
+五、工具与复现
+Python（随仓库携带）：
+  D:\Git\Neos75\Tools\Python39\python.exe
+工作目录：D:\Git\Neos75
+便携 Python 3.9 位于 Tools/Python39，hidapi=0.15.0 位于其中的 Lib/site-packages；无需系统 Python。
+
+Code/Module/Keyboard/Utilities/ReadKeyboard.py --Enumerate    只枚举 HID，不发送报文。
+Code/Module/Keyboard/Utilities/ReadKeyboard.py --ReadEncoders
+  仅发送 VIA/Vial 已知读取查询，保存带时间戳的 tx/rx 日志、布局与三层配置。
+  不提供写配置、解锁、重启、擦除或进入 Bootloader 的命令。
+Code/Module/Screen/Utilities/ReadScreen.py
+  只发送官方 GET_DEVICE_INFO 的 10/11/14 三个已知选择项。
+Code/Module/Firmware/Utilities/InspectFirmware.py             离线检查包头、字符串、哈希与 DFU CRC。
+Code/Module/Firmware/Utilities/ExtractUiResources.py         离线拆分 UI 资源，检查资源区间与边界。
+Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs / Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs
+  仅在没有网络、浏览器和设备 API 的独立 VM 中运行提取出的字符串解码函数；不运行网页应用。
+  输出文件只恢复字符串，仍保留厂商控制流混淆，不能当作已恢复的原始源码。
+
+关键证据：
+  Research/Device/Run20261102T060803Z/Summary.json
+  Research/Device/Run20261102T060803Z/ReadTranscript.json
+  Research/Device/Run20261102T060803Z/Definition.json
+  Research/Device/Run20261102T060803Z/Keymap.bin
+  Research/Screen/Run20261102T060716Z/Summary.json
+  Research/Screen/Run20261102T060716Z/Transcript.json
+  Research/Firmware/Inspection.json
+  Research/UiResources/Manifest.json
+
+参考来源
+官方网页驱动 https://hub.aulacn.com/home
+官方型号定义与模块引用 Research/Vendor/Neos75ProductDecoded.txt
+官方屏幕实现 Research/Vendor/ScreenSettingsDecoded.js
+官方升级实现 Research/Vendor/KeyboardUpgradeDecoded.js 与 Research/Vendor/DfuUpgradeDecoded.js
+Vial 协议实现 https://github.com/vial-kb/vial-gui/blob/master/src/main/python/protocol/keyboard_comm.py
+Vial 固件命令 https://github.com/vial-kb/vial-qmk/blob/vial/quantum/vial.c
+同系列芯片的独立逆向记录（仅作线索，不直接套用其报文）
+https://gist.github.com/borrougagnou/a21613093f323a05167a92212ab1ff7b
+
+目录与文件已按 PascalCase 整理，原厂文件名与 SHA256 的对应关系见 Research/Provenance.json。
+
+结构整理：便携 Python 3.9.11 复用自 D:/Git/Veil/Tools/Python39；模块工具位于 Code/Module/<ModuleName>/Utilities。
+原始网页归档中的 import 路径与参考源码标识符按原文保留，实际归档路径见来源映射；请勿将它们作为应用入口执行。

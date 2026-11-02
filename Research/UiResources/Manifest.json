@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "name": "/mergeFontHeaderBinFile.bin",
+    "file_offset": "0x174",
+    "relative_offset": "0x0",
+    "base": "0x174",
+    "bytes": 410952
+  },
+  {
+    "index": 1,
+    "name": "/mergeImgHeaderBinFile.bin",
+    "file_offset": "0x646bc",
+    "relative_offset": "0x64548",
+    "base": "0x174",
+    "bytes": 1244836
+  },
+  {
+    "index": 2,
+    "name": "/mergeJpgHeaderBinFile.bin",
+    "file_offset": "0x194560",
+    "relative_offset": "0x1943ec",
+    "base": "0x174",
+    "bytes": 785340
+  },
+  {
+    "index": 3,
+    "name": "/signature.bin",
+    "file_offset": "0x25411c",
+    "relative_offset": "0x253fa8",
+    "base": "0x174",
+    "bytes": 16
+  }
+]

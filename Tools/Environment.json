@@ -1,0 +1,23 @@
+{
+  "Python": {
+    "Version": "3.9.11",
+    "Architecture": "WindowsX64",
+    "Directory": "Tools/Python39",
+    "Source": "D:/Git/Veil/Tools/Python39",
+    "Distribution": "PortableEmbedded",
+    "ThirdPartyNamesPreserved": true
+  },
+  "Packages": [
+    {
+      "Name": "hidapi",
+      "Version": "0.15.0",
+      "Wheel": "hidapi-0.15.0-cp39-cp39-win_amd64.whl",
+      "Directory": "Tools/Python39/Lib/site-packages"
+    }
+  ],
+  "JavaScript": {
+    "Runtime": "Node.js",
+    "Bundled": false,
+    "Dependencies": "BuiltInModulesOnly"
+  }
+}

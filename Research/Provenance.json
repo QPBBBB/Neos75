@@ -1,0 +1,386 @@
+[
+  {
+    "OriginalRelativePath": "research/device/20261102T060319Z/definition.json",
+    "RelativePath": "Research/Device/Run20261102T060319Z/Definition.json",
+    "OriginalName": "definition.json",
+    "Sha256": "dc37e519d330e1a9c2290bbd2135148bedcc46fb4b92fb68cabf49662b37413b"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060319Z/definition.xz",
+    "RelativePath": "Research/Device/Run20261102T060319Z/Definition.xz",
+    "OriginalName": "definition.xz",
+    "Sha256": "dc6cbae89cda83cfb8f648eb2d10b96158546f77eaa1936add41dace0f348581"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060319Z/hid-interfaces.json",
+    "RelativePath": "Research/Device/Run20261102T060319Z/HidInterfaces.json",
+    "OriginalName": "hid-interfaces.json",
+    "Sha256": "679ec749293fa4b6dd2d3fed55dec6ce9f0089b691faf8f75474cb3c86afab58"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060319Z/keymap.bin",
+    "RelativePath": "Research/Device/Run20261102T060319Z/Keymap.bin",
+    "OriginalName": "keymap.bin",
+    "Sha256": "ac5929c8e27c9ff9abed84bdb5f5ed9a6a76e2fbcba68194997bc77f2db54247"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060319Z/read-transcript.json",
+    "RelativePath": "Research/Device/Run20261102T060319Z/ReadTranscript.json",
+    "OriginalName": "read-transcript.json",
+    "Sha256": "6aacc3fb1c59fad33f8f9ce6a7d504f62b8da7938229ba39a5990d94bb75dc9b"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060319Z/summary.json",
+    "RelativePath": "Research/Device/Run20261102T060319Z/Summary.json",
+    "OriginalName": "summary.json",
+    "Sha256": "3d380c453309c4c9698efbdcdfc5966e5d54dd3c38d27c79828fec4660f6a156"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060803Z/definition.json",
+    "RelativePath": "Research/Device/Run20261102T060803Z/Definition.json",
+    "OriginalName": "definition.json",
+    "Sha256": "dc37e519d330e1a9c2290bbd2135148bedcc46fb4b92fb68cabf49662b37413b"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060803Z/definition.xz",
+    "RelativePath": "Research/Device/Run20261102T060803Z/Definition.xz",
+    "OriginalName": "definition.xz",
+    "Sha256": "dc6cbae89cda83cfb8f648eb2d10b96158546f77eaa1936add41dace0f348581"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060803Z/hid-interfaces.json",
+    "RelativePath": "Research/Device/Run20261102T060803Z/HidInterfaces.json",
+    "OriginalName": "hid-interfaces.json",
+    "Sha256": "679ec749293fa4b6dd2d3fed55dec6ce9f0089b691faf8f75474cb3c86afab58"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060803Z/keymap.bin",
+    "RelativePath": "Research/Device/Run20261102T060803Z/Keymap.bin",
+    "OriginalName": "keymap.bin",
+    "Sha256": "ac5929c8e27c9ff9abed84bdb5f5ed9a6a76e2fbcba68194997bc77f2db54247"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060803Z/read-transcript.json",
+    "RelativePath": "Research/Device/Run20261102T060803Z/ReadTranscript.json",
+    "OriginalName": "read-transcript.json",
+    "Sha256": "1593de35c365a3364af85b10765be9fe0843190f129cd4be652d2f031937a4ed"
+  },
+  {
+    "OriginalRelativePath": "research/device/20261102T060803Z/summary.json",
+    "RelativePath": "Research/Device/Run20261102T060803Z/Summary.json",
+    "OriginalName": "summary.json",
+    "Sha256": "6964147758150b04510253850d573e0d75c8f2803bf25f98cc9e6042d7447c4b"
+  },
+  {
+    "OriginalRelativePath": "research/device/hid-interfaces.json",
+    "RelativePath": "Research/Device/InitialRead/HidInterfaces.json",
+    "OriginalName": "hid-interfaces.json",
+    "Sha256": "679ec749293fa4b6dd2d3fed55dec6ce9f0089b691faf8f75474cb3c86afab58"
+  },
+  {
+    "OriginalRelativePath": "research/device/read-transcript.json",
+    "RelativePath": "Research/Device/InitialRead/ReadTranscript.json",
+    "OriginalName": "read-transcript.json",
+    "Sha256": "cb87af80eec359e76409a5dc2f9adb9037d47cf9201e8a6948cfe0f8ce87a172"
+  },
+  {
+    "OriginalRelativePath": "research/device/summary.json",
+    "RelativePath": "Research/Device/InitialRead/Summary.json",
+    "OriginalName": "summary.json",
+    "Sha256": "67c08b29a6fd6dddb60f03aeaae3e4f1038403429a47752a6b4161ee62f320bc"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/2915-ZG06_2_31_V20_NEOS_SCREEN_UI_20260615.bin",
+    "RelativePath": "Research/Firmware/Neos75ScreenUiV20Build20260615.bin",
+    "OriginalName": "2915-ZG06_2_31_V20_NEOS_SCREEN_UI_20260615.bin",
+    "Sha256": "5da483d3b31f48e9dc6c64ca66487aa6b7d7c84492d05726ac99feff337d94dc"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/2915-ZG06_2_31_V20_NEOS_SCREEN_UI_20260615.strings.json",
+    "RelativePath": "Research/Firmware/Neos75ScreenUiV20Build20260615Strings.json",
+    "OriginalName": "2915-ZG06_2_31_V20_NEOS_SCREEN_UI_20260615.strings.json",
+    "Sha256": "f3c71ad750ad759ee90942667730fc32fd1b73246d153d80e8a644e7c3841e54"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/inspection-log.txt",
+    "RelativePath": "Research/Firmware/InspectionLog.txt",
+    "OriginalName": "inspection-log.txt",
+    "Sha256": "3bd218cb035015cc62bc5dc5a02dbdad748dbb7410d90867c14f863d7d9ffd04"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/inspection.json",
+    "RelativePath": "Research/Firmware/Inspection.json",
+    "OriginalName": "inspection.json",
+    "Sha256": "ff5aca9cbcc26ff5ed20215c3cdb6bab96354109d4a046fcd2bb49ce978238de"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/SI-2915_ZB48A1UBG2_V20_5125_KB84_RGB_LCD_SV_20261027.bin",
+    "RelativePath": "Research/Firmware/Neos75KeyboardV20Build20261027.bin",
+    "OriginalName": "SI-2915_ZB48A1UBG2_V20_5125_KB84_RGB_LCD_SV_20261027.bin",
+    "Sha256": "8ccf3952213844d006f864693eb57ba6d48dbaf7c138280259f3ad63361c0fa5"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/SI-2915_ZB48A1UBG2_V20_5125_KB84_RGB_LCD_SV_20261027.strings.json",
+    "RelativePath": "Research/Firmware/Neos75KeyboardV20Build20261027Strings.json",
+    "OriginalName": "SI-2915_ZB48A1UBG2_V20_5125_KB84_RGB_LCD_SV_20261027.strings.json",
+    "Sha256": "24407677838b4a46be159f788946b449921642692c36eefd393391fa16332e63"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/ZG06_2_31_V20_AULA_NEOS75_SCREEN_MCU_20260906.bin",
+    "RelativePath": "Research/Firmware/Neos75ScreenMcuV20Build20260906.bin",
+    "OriginalName": "ZG06_2_31_V20_AULA_NEOS75_SCREEN_MCU_20260906.bin",
+    "Sha256": "0deb0afce2e5846e2b90336d331361eb70c089a4ea95ca783be70b17c82f8cc0"
+  },
+  {
+    "OriginalRelativePath": "research/firmware/ZG06_2_31_V20_AULA_NEOS75_SCREEN_MCU_20260906.strings.json",
+    "RelativePath": "Research/Firmware/Neos75ScreenMcuV20Build20260906Strings.json",
+    "OriginalName": "ZG06_2_31_V20_AULA_NEOS75_SCREEN_MCU_20260906.strings.json",
+    "Sha256": "26d83b0c1f5b104dad4cf61520a11e9a81fe927107010c69b531991ad0174057"
+  },
+  {
+    "OriginalRelativePath": "research/pnp-inventory.json",
+    "RelativePath": "Research/PnpInventory.json",
+    "OriginalName": "pnp-inventory.json",
+    "Sha256": "7fe26eaa6067a956fc4559b614a5aab4bd146e62e44baf4ef102490f5991eb9d"
+  },
+  {
+    "OriginalRelativePath": "research/reference/constants.py",
+    "RelativePath": "Research/Reference/VialConstants.txt",
+    "OriginalName": "constants.py",
+    "Sha256": "e944a87d6bf508aaefbe0bc29f9d95dfd8ada5fc4bce28d45bf0cd794f9e86f4"
+  },
+  {
+    "OriginalRelativePath": "research/reference/keyboard_comm.py",
+    "RelativePath": "Research/Reference/VialKeyboardCommunication.txt",
+    "OriginalName": "keyboard_comm.py",
+    "Sha256": "d71b73a6217c5d12a05ff0cd3c85ea06b8f9df798cfb5f1a783207af4623ecdb"
+  },
+  {
+    "OriginalRelativePath": "research/reference/util.py",
+    "RelativePath": "Research/Reference/VialUtilities.txt",
+    "OriginalName": "util.py",
+    "Sha256": "729fddb4792774cfebc149d303a640f353d585c4cf133c0cec76d1fb5de52336"
+  },
+  {
+    "OriginalRelativePath": "research/reference/vial.c",
+    "RelativePath": "Research/Reference/VialCommands.txt",
+    "OriginalName": "vial.c",
+    "Sha256": "713c5a9ba680a3bd39f25fea00cbff66d9506ef8951be33b36aed50b0cc4b52b"
+  },
+  {
+    "OriginalRelativePath": "research/screen/20261102T060716Z/interfaces.json",
+    "RelativePath": "Research/Screen/Run20261102T060716Z/Interfaces.json",
+    "OriginalName": "interfaces.json",
+    "Sha256": "7f69f91a6cb502154bbdf5d7cdae2272a6cfec3270ace15f0d30c3a31bf13a9e"
+  },
+  {
+    "OriginalRelativePath": "research/screen/20261102T060716Z/summary.json",
+    "RelativePath": "Research/Screen/Run20261102T060716Z/Summary.json",
+    "OriginalName": "summary.json",
+    "Sha256": "f85d88c57ede7d2931aa2afef9abd3c40110f57f1c4536ab7ac9065cfbc1dbec"
+  },
+  {
+    "OriginalRelativePath": "research/screen/20261102T060716Z/transcript.json",
+    "RelativePath": "Research/Screen/Run20261102T060716Z/Transcript.json",
+    "OriginalName": "transcript.json",
+    "Sha256": "0c39a494dbf44c2e97e665f6f781339eba9cbc82a9778e0b213639c0a0d544f2"
+  },
+  {
+    "OriginalRelativePath": "research/ui-resources/manifest.json",
+    "RelativePath": "Research/UiResources/Manifest.json",
+    "OriginalName": "manifest.json",
+    "Sha256": "f4243f86b8495d851bba867c0cac46b79b9719cbe59fab9429b79ae874f36cd1"
+  },
+  {
+    "OriginalRelativePath": "research/ui-resources/mergeFontHeaderBinFile.bin",
+    "RelativePath": "Research/UiResources/MergedFontHeaders.bin",
+    "OriginalName": "mergeFontHeaderBinFile.bin",
+    "Sha256": "ba82ec1e79f7d2642b77bf93742fe43e0e90533771cffd70f1996ff0683c1675"
+  },
+  {
+    "OriginalRelativePath": "research/ui-resources/mergeImgHeaderBinFile.bin",
+    "RelativePath": "Research/UiResources/MergedImageHeaders.bin",
+    "OriginalName": "mergeImgHeaderBinFile.bin",
+    "Sha256": "7a8931e625ced47b2605457a906930c59625306e4ee2107340d5f0d6eccc7998"
+  },
+  {
+    "OriginalRelativePath": "research/ui-resources/mergeJpgHeaderBinFile.bin",
+    "RelativePath": "Research/UiResources/MergedJpegHeaders.bin",
+    "OriginalName": "mergeJpgHeaderBinFile.bin",
+    "Sha256": "5fa42eb3d6ba149aff22b039411868fe454f55d1dfeb8847a0194c5a528d5b36"
+  },
+  {
+    "OriginalRelativePath": "research/ui-resources/signature.bin",
+    "RelativePath": "Research/UiResources/Signature.bin",
+    "OriginalName": "signature.bin",
+    "Sha256": "b25089d73d63ea88088d511096154163a26ee972b97efc8b4036698efd0a09e3"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/9ef2jTqP.js",
+    "RelativePath": "Research/Vendor/ImageMetadata.js",
+    "OriginalName": "9ef2jTqP.js",
+    "Sha256": "241769afe02c875d50e0d413c48fc47a94a30bd967b56475ad7e0771a4c4f517"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/B3pNWZgf.js",
+    "RelativePath": "Research/Vendor/ImageConversion.js",
+    "OriginalName": "B3pNWZgf.js",
+    "Sha256": "bee26f3409b313c29f3d6f55c4619ad9c396448efb54d984c6c7bfef20b77397"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/Ba2fKG8d.js",
+    "RelativePath": "Research/Vendor/VendorBa2fKG8d.js",
+    "OriginalName": "Ba2fKG8d.js",
+    "Sha256": "ddf6df7f8974233afd9fec68b23e3d3748f81ccb191320070746bd71e853a9c6"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/BbmHAXJ0.decoded.js",
+    "RelativePath": "Research/Vendor/KeyboardUpgradeDecoded.js",
+    "OriginalName": "BbmHAXJ0.decoded.js",
+    "Sha256": "da8a37a1b123b33f54895141b4c6ebccae4bde91e3318c0139900d465babed93"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/BbmHAXJ0.js",
+    "RelativePath": "Research/Vendor/KeyboardUpgrade.js",
+    "OriginalName": "BbmHAXJ0.js",
+    "Sha256": "ff75875fe1ea390fca35b1ee11ec9b27cd6b0ab521de638d8b981bdf693d7cc0"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/BJXkBFdS.decoded.js",
+    "RelativePath": "Research/Vendor/KeycodeDefinitionsDecoded.js",
+    "OriginalName": "BJXkBFdS.decoded.js",
+    "Sha256": "af9d18732c96879b839c93a105717ba20763eefa97ea45a8048f7dd8ea7a0bd2"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/BJXkBFdS.js",
+    "RelativePath": "Research/Vendor/KeycodeDefinitions.js",
+    "OriginalName": "BJXkBFdS.js",
+    "Sha256": "bd4b77ff2a49456a08bbf0c2f089187b58986de59414208062daf948e12ecd05"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/BokZEQMZ.decoded.js",
+    "RelativePath": "Research/Vendor/ScreenSettingsDecoded.js",
+    "OriginalName": "BokZEQMZ.decoded.js",
+    "Sha256": "04cb175a02053ce599ce590ab10b94baedaf7befe2721da896efaa5da3067302"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/BokZEQMZ.js",
+    "RelativePath": "Research/Vendor/ScreenSettings.js",
+    "OriginalName": "BokZEQMZ.js",
+    "Sha256": "c29ed29fc06d8467bb3843a6ed423e4f8bc7b2663edd40e467882f612f22c82a"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/cloud-api-excerpt.txt",
+    "RelativePath": "Research/Vendor/CloudApiExcerpt.txt",
+    "OriginalName": "cloud-api-excerpt.txt",
+    "Sha256": "5c2aa22cb1c594cefe6214823ca04e1d2bb50313336300eeaa5d63902a4e7476"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/cloud-base-decoded.txt",
+    "RelativePath": "Research/Vendor/CloudBaseDecoded.txt",
+    "OriginalName": "cloud-base-decoded.txt",
+    "Sha256": "e4c8ee935659716f37e45beba1b4b88218ad01f944ec5210e49841b00d918302"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/D--0XcVk.decoded.js",
+    "RelativePath": "Research/Vendor/KeyboardSettingsDecoded.js",
+    "OriginalName": "D--0XcVk.decoded.js",
+    "Sha256": "9da7e63520695c838a04489164ee7040dc187593eb9923faff550f3af5f02334"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/D--0XcVk.js",
+    "RelativePath": "Research/Vendor/KeyboardSettings.js",
+    "OriginalName": "D--0XcVk.js",
+    "Sha256": "61f376f1648647de9eab57f81200ec9898fba03270d89e06c5eb061318855e20"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/dependency-map.json",
+    "RelativePath": "Research/Vendor/DependencyMap.json",
+    "OriginalName": "dependency-map.json",
+    "Sha256": "2d309479e9780853f93752abb68774d00e55f4d591be9c198d10a6a0f1db065b"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/DjHZQ_th.decoded.js",
+    "RelativePath": "Research/Vendor/DfuUpgradeDecoded.js",
+    "OriginalName": "DjHZQ_th.decoded.js",
+    "Sha256": "9502b06c30c2cb328105b988d2aab99c0a6bb761d1dcb031afc64a7f1f6bae07"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/DjHZQ_th.js",
+    "RelativePath": "Research/Vendor/DfuUpgrade.js",
+    "OriginalName": "DjHZQ_th.js",
+    "Sha256": "4b7c0c844b64c56ed739f1c627db379fd4a6e9938663b4ddd0e6f4f518c90e2f"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/dsW7I39g.js",
+    "RelativePath": "Research/Vendor/VendorDsW7I39g.js",
+    "OriginalName": "dsW7I39g.js",
+    "Sha256": "f955b23437982d28aa5744ccdf393d6fabe98ede23d5e2d13a7226dcc31b827c"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/DziNxeDg.js",
+    "RelativePath": "Research/Vendor/VendorDziNxeDg.js",
+    "OriginalName": "DziNxeDg.js",
+    "Sha256": "0740d0222d16b5eec7e4f5a41205b9c5d36f3de91af9c15ff99670c62d2ca655"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/eoiLKK-N.decoded.js",
+    "RelativePath": "Research/Vendor/FirmwareApiDecoded.js",
+    "OriginalName": "eoiLKK-N.decoded.js",
+    "Sha256": "da4ade87890a380b2ed67fa1ebc0bac10d249f2b03ce10b355bdf50fcae6c334"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/eoiLKK-N.js",
+    "RelativePath": "Research/Vendor/FirmwareApi.js",
+    "OriginalName": "eoiLKK-N.js",
+    "Sha256": "f22b9d1efc02f13a47bc79ba7c1cd7396df8b28a39b32a744be729e86ddc5530"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/firmware-list-keyboard.json",
+    "RelativePath": "Research/Vendor/KeyboardFirmwareList.json",
+    "OriginalName": "firmware-list-keyboard.json",
+    "Sha256": "08f775f6936dba3cfdca38d9758221712fe183965dcd5ca3fc3ee74767cd6429"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/firmware-list-screen.json",
+    "RelativePath": "Research/Vendor/ScreenFirmwareList.json",
+    "OriginalName": "firmware-list-screen.json",
+    "Sha256": "752c6bfe593d581f82695dd035070170fa49618825b5d74b779bb980f44b41f2"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/index-CeAyNk8A.js",
+    "RelativePath": "Research/Vendor/MainIndex.js",
+    "OriginalName": "index-CeAyNk8A.js",
+    "Sha256": "e1563b986170d499631b32deef94a317171805a55ceb5deec51d3e748354fd92"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/lZZNyNkx.decoded.js",
+    "RelativePath": "Research/Vendor/KeyboardServiceDecoded.js",
+    "OriginalName": "lZZNyNkx.decoded.js",
+    "Sha256": "d231260375ed83632e93b85e96bd38aedc3371323cbb5add062bc4a028dd86f2"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/lZZNyNkx.js",
+    "RelativePath": "Research/Vendor/KeyboardService.js",
+    "OriginalName": "lZZNyNkx.js",
+    "Sha256": "1e1c5c0bd418ddbe7197f0c6dbe8cf39659ee9ffa5c4032a2b41796a6de1ec9e"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/neos75-product-decoded.txt",
+    "RelativePath": "Research/Vendor/Neos75ProductDecoded.txt",
+    "OriginalName": "neos75-product-decoded.txt",
+    "Sha256": "912f809c6ecc9a086196dc50cd67d590810863280f3982c512b90808728b610b"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/neos75-product-entry.txt",
+    "RelativePath": "Research/Vendor/Neos75ProductEntry.txt",
+    "OriginalName": "neos75-product-entry.txt",
+    "Sha256": "be63c597e653a275607914421ecd08547071268ad01b3fc94ee5193dd1b81467"
+  },
+  {
+    "OriginalRelativePath": "research/vendor/TglCKVxb.js",
+    "RelativePath": "Research/Vendor/SharedRuntime.js",
+    "OriginalName": "TglCKVxb.js",
+    "Sha256": "a8026b3d410a9ad8e11c59e0c9817df50b51fbe4d34424372865aa95e9c4346a"
+  }
+]

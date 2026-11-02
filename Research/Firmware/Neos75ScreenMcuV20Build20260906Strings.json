@@ -1,0 +1,3118 @@
+[
+  {
+    "offset": "0x38e",
+    "text": "(FAFGF\"F"
+  },
+  {
+    "offset": "0x3ce",
+    "text": "HF1F*FCF"
+  },
+  {
+    "offset": "0x1008",
+    "text": "ZG06_2.31_V2.0"
+  },
+  {
+    "offset": "0x1028",
+    "text": "UB32F341S_BOOT_LOADER  MAJOR V1.0.3 MINOR V1.0.4 Sep  6 2026 20:47:09"
+  },
+  {
+    "offset": "0x1535",
+    "text": "~~~~~~~~~~~~~"
+  },
+  {
+    "offset": "0x239e",
+    "text": "'F(DIF:F"
+  },
+  {
+    "offset": "0x307d",
+    "text": "ppppppppppp(ppppppppppppppppp3FD"
+  },
+  {
+    "offset": "0x3a34",
+    "text": "[%05d] WDT Interrupt happened"
+  },
+  {
+    "offset": "0x3cec",
+    "text": "*** assertion failed: %s, %s, %d"
+  },
+  {
+    "offset": "0x3dc4",
+    "text": "[%05d] eeprom init"
+  },
+  {
+    "offset": "0x3ddc",
+    "text": "[%05d] FLASH_Read: 0x%08X, 0x%08X, %d"
+  },
+  {
+    "offset": "0x49d8",
+    "text": "8F)F2FCF"
+  },
+  {
+    "offset": "0x49e4",
+    "text": "HF)F2FCF"
+  },
+  {
+    "offset": "0x49f0",
+    "text": "PF)F2FCF"
+  },
+  {
+    "offset": "0x5227",
+    "text": "F0F9F\"F!"
+  },
+  {
+    "offset": "0x52ef",
+    "text": "F F1F*F!"
+  },
+  {
+    "offset": "0x5d80",
+    "text": "0F)F\"F;F"
+  },
+  {
+    "offset": "0x5e6e",
+    "text": "MB  YF:FKF|"
+  },
+  {
+    "offset": "0x62ec",
+    "text": "0FAF:F[F"
+  },
+  {
+    "offset": "0x63cc",
+    "text": "  AF*F[Fo"
+  },
+  {
+    "offset": "0x6408",
+    "text": "  AF*F[Fo"
+  },
+  {
+    "offset": "0x6423",
+    "text": " AF[F_E("
+  },
+  {
+    "offset": "0x6c0c",
+    "text": "[%05d] %s mount: %d"
+  },
+  {
+    "offset": "0x6c24",
+    "text": "[%05d] serial_wake_up_timer to power off"
+  },
+  {
+    "offset": "0x6eb0",
+    "text": "[%05d] software_reset_flag: 0x%08X"
+  },
+  {
+    "offset": "0x6ed8",
+    "text": "[%05d] serial_wake_up_timer: 0x%08X"
+  },
+  {
+    "offset": "0x6fd4",
+    "text": "[%05d] OSCPUUsage:%d, %s,%d->name:%s timeout"
+  },
+  {
+    "offset": "0x7004",
+    "text": "appdog_cehck"
+  },
+  {
+    "offset": "0x7783",
+    "text": "CA`pGAh!"
+  },
+  {
+    "offset": "0x78c4",
+    "text": "Run Boot Loader"
+  },
+  {
+    "offset": "0x79a4",
+    "text": "bus fault("
+  },
+  {
+    "offset": "0x79c4",
+    "text": "SCB_CFSR_BFSR:0x%08X"
+  },
+  {
+    "offset": "0x79dc",
+    "text": "IBUSERR "
+  },
+  {
+    "offset": "0x79f8",
+    "text": "PRECISERR "
+  },
+  {
+    "offset": "0x7a1c",
+    "text": "SCB->BFAR:%08X"
+  },
+  {
+    "offset": "0x7efc",
+    "text": "channel desc"
+  },
+  {
+    "offset": "0x7f0c",
+    "text": "%d%d%d%d%d%d%d%d"
+  },
+  {
+    "offset": "0x7f20",
+    "text": "%-*.*s %-*.*s %3d %s 0x%08x 0x%08x 0x%08x 0x%08x %3d"
+  },
+  {
+    "offset": "0x88cc",
+    "text": "bad parameter! e.g: mode UART1 RXDTXDDEBUG"
+  },
+  {
+    "offset": "0x8918",
+    "text": "bad parameter! e.g: mount UART1"
+  },
+  {
+    "offset": "0x8b24",
+    "text": "[%05d] Color cycle mode entered"
+  },
+  {
+    "offset": "0x8b94",
+    "text": "[%05d] Color cycle mode exited"
+  },
+  {
+    "offset": "0x8f66",
+    "text": "use time:%dms"
+  },
+  {
+    "offset": "0x97d0",
+    "text": "M:/page5_bg.bin"
+  },
+  {
+    "offset": "0x988c",
+    "text": "M:/page2_bg.bin"
+  },
+  {
+    "offset": "0x98c8",
+    "text": "M:/page3_bg.bin"
+  },
+  {
+    "offset": "0x990c",
+    "text": "M:/page4_bg.bin"
+  },
+  {
+    "offset": "0x9b88",
+    "text": "M:/sg_bg.bin"
+  },
+  {
+    "offset": "0x9d34",
+    "text": "please input: date [year month day hour min sec] or date"
+  },
+  {
+    "offset": "0x9d70",
+    "text": "e.g: date 2023 08 08 00 00 00 or date"
+  },
+  {
+    "offset": "0x9d98",
+    "text": "set date failed. %d"
+  },
+  {
+    "offset": "0x9db0",
+    "text": "now: %.*s"
+  },
+  {
+    "offset": "0x9e40",
+    "text": "debug fault("
+  },
+  {
+    "offset": "0x9e60",
+    "text": "SCB_CFSR_DFSR:0x%08X"
+  },
+  {
+    "offset": "0x9e78",
+    "text": "HALTED NVIC"
+  },
+  {
+    "offset": "0x9ea4",
+    "text": "DWTTRAP "
+  },
+  {
+    "offset": "0xbb23",
+    "text": " `agi(hAiy"
+  },
+  {
+    "offset": "0xc598",
+    "text": "#jPF9F*F"
+  },
+  {
+    "offset": "0xc5d4",
+    "text": "#jPF)FBF"
+  },
+  {
+    "offset": "0xd99e",
+    "text": "#i8F)FRF"
+  },
+  {
+    "offset": "0xee70",
+    "text": "0F+F%FLF"
+  },
+  {
+    "offset": "0xf9b0",
+    "text": "[%05d] eeprom erase"
+  },
+  {
+    "offset": "0xf9c8",
+    "text": "[%05d] FLASH_Write: 0x%08X, 0x%08X, %d"
+  },
+  {
+    "offset": "0xfeb0",
+    "text": "`h@h`` F"
+  },
+  {
+    "offset": "0xff7c",
+    "text": "@FYF:F+F"
+  },
+  {
+    "offset": "0xff98",
+    "text": "[%05d] do components board initialization."
+  },
+  {
+    "offset": "0x10024",
+    "text": "@FYF:F+F"
+  },
+  {
+    "offset": "0x10040",
+    "text": "[%05d] do components initialization."
+  },
+  {
+    "offset": "0x100f0",
+    "text": "[%05d] os_task:%d, no_use:%d, usage:%d%%"
+  },
+  {
+    "offset": "0x10fd4",
+    "text": "[%05d] max_addr_sector_addr: 0x%08X"
+  },
+  {
+    "offset": "0x11390",
+    "text": "%08lXh: "
+  },
+  {
+    "offset": "0x1144c",
+    "text": "R/W buffer now len:%d "
+  },
+  {
+    "offset": "0x114d0",
+    "text": "R/W buffer "
+  },
+  {
+    "offset": "0x114f0",
+    "text": "R/W buffer reset len:%d "
+  },
+  {
+    "offset": "0x11568",
+    "text": " Size:%d"
+  },
+  {
+    "offset": "0x115cc",
+    "text": "cmd reset"
+  },
+  {
+    "offset": "0x116a4",
+    "text": "memory addr:0x%08X (%d) "
+  },
+  {
+    "offset": "0x117a8",
+    "text": "Sorry, try again"
+  },
+  {
+    "offset": "0x11800",
+    "text": "%s sta=%u unknown gdb sta"
+  },
+  {
+    "offset": "0x1181c",
+    "text": "%s sta=%u GDB_STA_%s"
+  },
+  {
+    "offset": "0x1195e",
+    "text": "pG[%05d] %s"
+  },
+  {
+    "offset": "0x127e0",
+    "text": "Hard fault("
+  },
+  {
+    "offset": "0x127f8",
+    "text": "SCB_HFSR:0x%08X"
+  },
+  {
+    "offset": "0x1280c",
+    "text": "failed vector fetch "
+  },
+  {
+    "offset": "0x12834",
+    "text": "debug event "
+  },
+  {
+    "offset": "0x12b58",
+    "text": "reset cpu..."
+  },
+  {
+    "offset": "0x12c50",
+    "text": "PSP: 0x%08X"
+  },
+  {
+    "offset": "0x12c60",
+    "text": " SP: 0x%08X"
+  },
+  {
+    "offset": "0x12c70",
+    "text": "R00: 0x%08X"
+  },
+  {
+    "offset": "0x12c80",
+    "text": "R01: 0x%08X"
+  },
+  {
+    "offset": "0x12c90",
+    "text": "R02: 0x%08X"
+  },
+  {
+    "offset": "0x12ca0",
+    "text": "R03: 0x%08X"
+  },
+  {
+    "offset": "0x12cb0",
+    "text": "R12: 0x%08X"
+  },
+  {
+    "offset": "0x12cc0",
+    "text": " LR: 0x%08X"
+  },
+  {
+    "offset": "0x12cd0",
+    "text": " PC: 0x%08X"
+  },
+  {
+    "offset": "0x12ce0",
+    "text": "PSR: 0x%08X"
+  },
+  {
+    "offset": "0x12eb3",
+    "text": "{>z8r}m`h"
+  },
+  {
+    "offset": "0x12fc7",
+    "text": "nnnnnnnnjfnnnnnnr"
+  },
+  {
+    "offset": "0x13f8c",
+    "text": "[%05d] %s err"
+  },
+  {
+    "offset": "0x13f9c",
+    "text": "isr_jpeg"
+  },
+  {
+    "offset": "0x14082",
+    "text": "(FYF:F3F"
+  },
+  {
+    "offset": "0x141a4",
+    "text": "#o FYF2F"
+  },
+  {
+    "offset": "0x14234",
+    "text": "#o FYF2F"
+  },
+  {
+    "offset": "0x14256",
+    "text": "#o FYF2F"
+  },
+  {
+    "offset": "0x1427e",
+    "text": "#o FYF2F"
+  },
+  {
+    "offset": "0x142ac",
+    "text": "#o FYF2F"
+  },
+  {
+    "offset": "0x14acc",
+    "text": "[%05d] jpeg decode err!"
+  },
+  {
+    "offset": "0x14c10",
+    "text": "img_size[%d] > mem_size[%d] is error!"
+  },
+  {
+    "offset": "0x14c38",
+    "text": "[jpeg_outset] and [ram_malloc] is invalid!"
+  },
+  {
+    "offset": "0x14f78",
+    "text": "FLASH:%08X PIXEL:%s"
+  },
+  {
+    "offset": "0x14f94",
+    "text": "FLASH:%dMB CHIP:%s"
+  },
+  {
+    "offset": "0x15058",
+    "text": "ELS(((((((((()00)((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((Z"
+  },
+  {
+    "offset": "0x15230",
+    "text": "[%05d] keypad[%d] %d -> %d"
+  },
+  {
+    "offset": "0x161c0",
+    "text": "os ver:%s, tick_freq:%d, robin_timeout:%d"
+  },
+  {
+    "offset": "0x161ec",
+    "text": "thread num:%d, os_task:%d, no_use:%d, usage:%d%%"
+  },
+  {
+    "offset": "0x16220",
+    "text": "thread name"
+  },
+  {
+    "offset": "0x16238",
+    "text": "realtime"
+  },
+  {
+    "offset": "0x162c4",
+    "text": "unknown "
+  },
+  {
+    "offset": "0x167dc",
+    "text": "A`pGA`pGA`pGK"
+  },
+  {
+    "offset": "0x167f0",
+    "text": "A`pGA`pGO"
+  },
+  {
+    "offset": "0x16800",
+    "text": "A`pGA`pGA`pGJ"
+  },
+  {
+    "offset": "0x16851",
+    "text": "cpGAcpGAcpGC"
+  },
+  {
+    "offset": "0x178e0",
+    "text": "MMMMMMMMMM"
+  },
+  {
+    "offset": "0x18d78",
+    "text": "(F9FBF3F"
+  },
+  {
+    "offset": "0x18d86",
+    "text": "(F9FBF3F"
+  },
+  {
+    "offset": "0x195fe",
+    "text": "@FYF\"FKF"
+  },
+  {
+    "offset": "0x1964c",
+    "text": "<7@FYF\"FKF"
+  },
+  {
+    "offset": "0x1978c",
+    "text": "<7@FYF\"F"
+  },
+  {
+    "offset": "0x198c8",
+    "text": "7hXFQFJFCF"
+  },
+  {
+    "offset": "0x1a07e",
+    "text": "3i0F)F\"F"
+  },
+  {
+    "offset": "0x1abce",
+    "text": "@F1F:F+F"
+  },
+  {
+    "offset": "0x1abe4",
+    "text": "@F1F:F+F"
+  },
+  {
+    "offset": "0x1abf2",
+    "text": "@F1F:F+F"
+  },
+  {
+    "offset": "0x1ae55",
+    "text": "6\\FVEIFo"
+  },
+  {
+    "offset": "0x1b148",
+    "text": ".h(F!FRF;F"
+  },
+  {
+    "offset": "0x1b16d",
+    "text": "`HF!FRF;F"
+  },
+  {
+    "offset": "0x1b938",
+    "text": "[%05d] read header :0x%08X  size:%d  num:%d %s"
+  },
+  {
+    "offset": "0x1d415",
+    "text": ")&)))))))))))))))))))"
+  },
+  {
+    "offset": "0x1dada",
+    "text": "8FIF*F3F"
+  },
+  {
+    "offset": "0x1ec12",
+    "text": "nF F9F2F"
+  },
+  {
+    "offset": "0x20997",
+    "text": "F(F1FJFCF"
+  },
+  {
+    "offset": "0x20e52",
+    "text": "8FAF2F+F"
+  },
+  {
+    "offset": "0x20e5e",
+    "text": "8FIF2F+F"
+  },
+  {
+    "offset": "0x20e6a",
+    "text": "8FQF2F+F"
+  },
+  {
+    "offset": "0x22505",
+    "text": "F0F)FBF#F"
+  },
+  {
+    "offset": "0x2375a",
+    "text": "<??<?????????????????????????A?8??6???6??????86?E??86????????????8668?????86???86?86G????????66???????????@"
+  },
+  {
+    "offset": "0x24137",
+    "text": "(333333,330(F"
+  },
+  {
+    "offset": "0x2415d",
+    "text": "!AAAA'A7AAAAAA+F/3"
+  },
+  {
+    "offset": "0x252ec",
+    "text": "[%05d] SystemCoreClock: %d"
+  },
+  {
+    "offset": "0x2530c",
+    "text": "[%05d] ID: 0x#08X"
+  },
+  {
+    "offset": "0x25f28",
+    "text": "mcu_reset"
+  },
+  {
+    "offset": "0x25fe0",
+    "text": "mem manage fault("
+  },
+  {
+    "offset": "0x26010",
+    "text": "SCB_CFSR_MFSR:0x%08X"
+  },
+  {
+    "offset": "0x26028",
+    "text": "IACCVIOL "
+  },
+  {
+    "offset": "0x26050",
+    "text": "SCB->MMAR:%08X"
+  },
+  {
+    "offset": "0x260d8",
+    "text": "memory_calloc"
+  },
+  {
+    "offset": "0x26148",
+    "text": "[%05d] %s, %s"
+  },
+  {
+    "offset": "0x26158",
+    "text": "memory_init"
+  },
+  {
+    "offset": "0x261b4",
+    "text": "memory_malloc"
+  },
+  {
+    "offset": "0x2632c",
+    "text": "channel :%s %s "
+  },
+  {
+    "offset": "0x2633c",
+    "text": "TXD->EN "
+  },
+  {
+    "offset": "0x26348",
+    "text": "RXD->EN "
+  },
+  {
+    "offset": "0x26358",
+    "text": "DEBUF->EN "
+  },
+  {
+    "offset": "0x264b8",
+    "text": "channel %s link:%d"
+  },
+  {
+    "offset": "0x264d0",
+    "text": "%-*.*s %-*.*s     id      type  timeout timeset "
+  },
+  {
+    "offset": "0x26504",
+    "text": "task name"
+  },
+  {
+    "offset": "0x26510",
+    "text": "%-*.*s %-*.*s 0x%08x 0x%04x   %3d    %3d"
+  },
+  {
+    "offset": "0x26b44",
+    "text": "Too many args ! We only Use:"
+  },
+  {
+    "offset": "0x26b68",
+    "text": "%s: command not found."
+  },
+  {
+    "offset": "0x26cd9",
+    "text": "p01AppG-"
+  },
+  {
+    "offset": "0x277b0",
+    "text": "File:%s->Fun:%s->Line:%d,error_code:0x%08X,task_id:0x%08X"
+  },
+  {
+    "offset": "0x277f0",
+    "text": "../components/rtx/RTX_Config.c"
+  },
+  {
+    "offset": "0x27810",
+    "text": "osRtxErrorNotify"
+  },
+  {
+    "offset": "0x292fc",
+    "text": "os_task:%d, no_use:%d, usage:%d%%"
+  },
+  {
+    "offset": "0x29622",
+    "text": "1pe!>\" `"
+  },
+  {
+    "offset": "0x29bc8",
+    "text": "[%05d] Length error: effective_len=%d, block_remain=%d"
+  },
+  {
+    "offset": "0x29c04",
+    "text": "[%05d] CRC error in block %d, calc=0x%08X, recv=0x%08X"
+  },
+  {
+    "offset": "0x29e14",
+    "text": "[%05d] Invalid header: 0x%02X"
+  },
+  {
+    "offset": "0x29e34",
+    "text": "[%05d] Invalid first packet length: %d"
+  },
+  {
+    "offset": "0x29e60",
+    "text": "[%05d] Invalid data packet length: %d"
+  },
+  {
+    "offset": "0x2a14c",
+    "text": "/mergeImgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x2a3d4",
+    "text": "/mergeJpgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x2a400",
+    "text": "[%05d] %s jpeg decode use time: %d %s success:%d fail:%d"
+  },
+  {
+    "offset": "0x2a4d0",
+    "text": "/mergeJpgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x2ad6e",
+    "text": "(F!F:FSF"
+  },
+  {
+    "offset": "0x2b124",
+    "text": "in put err"
+  },
+  {
+    "offset": "0x2b134",
+    "text": "shell reset"
+  },
+  {
+    "offset": "0x2b16b",
+    "text": "h#o F1FO"
+  },
+  {
+    "offset": "0x2b2b4",
+    "text": "size > 0"
+  },
+  {
+    "offset": "0x2b375",
+    "text": "1(1010110"
+  },
+  {
+    "offset": "0x2b868",
+    "text": "[%05d] copy image to big! buf small: %d"
+  },
+  {
+    "offset": "0x2bd88",
+    "text": "[%05d] key ui disable switch"
+  },
+  {
+    "offset": "0x2c054",
+    "text": "%02d:%02d"
+  },
+  {
+    "offset": "0x2c060",
+    "text": "20%02d-%02d-%02d"
+  },
+  {
+    "offset": "0x2c24c",
+    "text": "[%05d] page4 anim chain broken, resume"
+  },
+  {
+    "offset": "0x2c278",
+    "text": "[%05d] page4 anim move stuck, resume"
+  },
+  {
+    "offset": "0x2cfd6",
+    "text": "mF F)F \""
+  },
+  {
+    "offset": "0x2cfe1",
+    "text": "F`x!y*F3F"
+  },
+  {
+    "offset": "0x2d544",
+    "text": "[%05d] set time: 20%02d-%02d-%02d %02d:%02d:%02d.%03d"
+  },
+  {
+    "offset": "0x2d57c",
+    "text": "reset cmd"
+  },
+  {
+    "offset": "0x2d6bc",
+    "text": "rtc settime failed!"
+  },
+  {
+    "offset": "0x2de38",
+    "text": "S:/page1_bg.jpg"
+  },
+  {
+    "offset": "0x2e610",
+    "text": "S:/page2_bg.jpg"
+  },
+  {
+    "offset": "0x2ef8c",
+    "text": "S:/page3_bg.jpg"
+  },
+  {
+    "offset": "0x2ef9c",
+    "text": "00:00:00"
+  },
+  {
+    "offset": "0x2f4ec",
+    "text": "S:/page4_bg.jpg"
+  },
+  {
+    "offset": "0x2f4fc",
+    "text": "F:/page4_1.bin"
+  },
+  {
+    "offset": "0x2f7a8",
+    "text": "S:/page5_bg.jpg"
+  },
+  {
+    "offset": "0x2f7b8",
+    "text": "S:/static.jpg"
+  },
+  {
+    "offset": "0x2f7c8",
+    "text": "Warning file is too large!!!"
+  },
+  {
+    "offset": "0x2fd20",
+    "text": "S:/page6_bg.jpg"
+  },
+  {
+    "offset": "0x2fe34",
+    "text": "S:/sg_bg.jpg"
+  },
+  {
+    "offset": "0x30cb4",
+    "text": "no user for shell"
+  },
+  {
+    "offset": "0x30eec",
+    "text": "0F9F*F#F"
+  },
+  {
+    "offset": "0x31450",
+    "text": "[%05d] start_gif_ready_callback"
+  },
+  {
+    "offset": "0x3149c",
+    "text": "[%05d] start_gif_start_callback"
+  },
+  {
+    "offset": "0x31580",
+    "text": "20%02d-%02d-%02d %02d:%02d:%02d.%03d"
+  },
+  {
+    "offset": "0x31680",
+    "text": "@F)F2FP#"
+  },
+  {
+    "offset": "0x31696",
+    "text": "XF)F2FP#"
+  },
+  {
+    "offset": "0x330ae",
+    "text": "ha(v(F!F"
+  },
+  {
+    "offset": "0x33760",
+    "text": "8F1F*F#F"
+  },
+  {
+    "offset": "0x33ffc",
+    "text": "[%05d] switch_screen err: %d"
+  },
+  {
+    "offset": "0x3404c",
+    "text": "system_power_off"
+  },
+  {
+    "offset": "0x34098",
+    "text": "system_power_on"
+  },
+  {
+    "offset": "0x340d8",
+    "text": "system_screen_close"
+  },
+  {
+    "offset": "0x3440c",
+    "text": "[%05d] %s"
+  },
+  {
+    "offset": "0x34418",
+    "text": "task_lvgl: err!"
+  },
+  {
+    "offset": "0x34b80",
+    "text": "os ver:%s, tick_freq:%d, robin_timeout:%d"
+  },
+  {
+    "offset": "0x34bac",
+    "text": "thread num:%d, os_task:%d, no_use:%d, usage:%d%%"
+  },
+  {
+    "offset": "0x34be0",
+    "text": "thread name"
+  },
+  {
+    "offset": "0x34bec",
+    "text": "unknown "
+  },
+  {
+    "offset": "0x34e7c",
+    "text": "%-*.*s  periodic    timeout     type      status"
+  },
+  {
+    "offset": "0x34eb0",
+    "text": "timer name"
+  },
+  {
+    "offset": "0x34ebc",
+    "text": "periodic"
+  },
+  {
+    "offset": "0x34ec8",
+    "text": "once    "
+  },
+  {
+    "offset": "0x34eec",
+    "text": "%-*.*s %9d  %9d   %s    %s"
+  },
+  {
+    "offset": "0x34fe0",
+    "text": "[%05d] Timer initialized to 00:00:00.00"
+  },
+  {
+    "offset": "0x3504c",
+    "text": "[%05d] Timer paused, accumulated: %lu ms"
+  },
+  {
+    "offset": "0x35118",
+    "text": "[%05d] Timer reset to 00:00:00.00"
+  },
+  {
+    "offset": "0x3518c",
+    "text": "[%05d] Timer started/continued at %lu ms"
+  },
+  {
+    "offset": "0x352ba",
+    "text": "%:%:::::::::::::%::++:%:::::::::::::%::%:::::::::::::%:+::::::::::?::::++"
+  },
+  {
+    "offset": "0x35f3c",
+    "text": "%04X-%04X: "
+  },
+  {
+    "offset": "0x361e0",
+    "text": "%02d:%02d:%02d"
+  },
+  {
+    "offset": "0x36590",
+    "text": "usage fault("
+  },
+  {
+    "offset": "0x365b4",
+    "text": "SCB_CFSR_UFSR:0x%08X"
+  },
+  {
+    "offset": "0x365cc",
+    "text": "UNDEFINSTR "
+  },
+  {
+    "offset": "0x365ec",
+    "text": "INVSTATE "
+  },
+  {
+    "offset": "0x36ea0",
+    "text": "[%05d] OSCPUUsage:%d, %s,%d->name:%s, %s"
+  },
+  {
+    "offset": "0x36ecc",
+    "text": "vtast_appreset"
+  },
+  {
+    "offset": "0x36f30",
+    "text": "[%05d] WDT Reset Happened !!!"
+  },
+  {
+    "offset": "0x374f8",
+    "text": "2F;F@FIF"
+  },
+  {
+    "offset": "0x379f8",
+    "text": "0123456789abcdef"
+  },
+  {
+    "offset": "0x37a0c",
+    "text": "0123456789ABCDEF"
+  },
+  {
+    "offset": "0x38fef",
+    "text": "Task dog"
+  },
+  {
+    "offset": "0x39041",
+    "text": "@@@@@@@@@AAAAA@@@@@@@@@@@@@@@@@@"
+  },
+  {
+    "offset": "0x39071",
+    "text": "          "
+  },
+  {
+    "offset": "0x390c8",
+    "text": "ds1302z_init"
+  },
+  {
+    "offset": "0x390d5",
+    "text": "ds1302z init"
+  },
+  {
+    "offset": "0x390e2",
+    "text": "ds1302z_init_pins"
+  },
+  {
+    "offset": "0x390f4",
+    "text": "\"DS1302Z GPIO Initialization\""
+  },
+  {
+    "offset": "0x39112",
+    "text": "encoder_init"
+  },
+  {
+    "offset": "0x3911f",
+    "text": "encoder init"
+  },
+  {
+    "offset": "0x3912c",
+    "text": "key_init"
+  },
+  {
+    "offset": "0x39135",
+    "text": "key init"
+  },
+  {
+    "offset": "0x3913e",
+    "text": "wdg_init"
+  },
+  {
+    "offset": "0x39147",
+    "text": "wdg init and start"
+  },
+  {
+    "offset": "0x3915a",
+    "text": "channel_init"
+  },
+  {
+    "offset": "0x39167",
+    "text": "channel init"
+  },
+  {
+    "offset": "0x39174",
+    "text": "memory_init"
+  },
+  {
+    "offset": "0x39180",
+    "text": "memory init"
+  },
+  {
+    "offset": "0x3918c",
+    "text": "platform_init"
+  },
+  {
+    "offset": "0x3919a",
+    "text": "platform init"
+  },
+  {
+    "offset": "0x391b7",
+    "text": "export_start"
+  },
+  {
+    "offset": "0x391cc",
+    "text": "export_board_start"
+  },
+  {
+    "offset": "0x391e5",
+    "text": "export_board_end"
+  },
+  {
+    "offset": "0x391fc",
+    "text": "export_app_end"
+  },
+  {
+    "offset": "0x39211",
+    "text": "export_end"
+  },
+  {
+    "offset": "0x39222",
+    "text": "key_protocol_init"
+  },
+  {
+    "offset": "0x39234",
+    "text": "key protocol init"
+  },
+  {
+    "offset": "0x39246",
+    "text": "mcu_run_success"
+  },
+  {
+    "offset": "0x39256",
+    "text": "mcu run success"
+  },
+  {
+    "offset": "0x39266",
+    "text": "bod_init"
+  },
+  {
+    "offset": "0x3926f",
+    "text": "bod init 2.7v reset"
+  },
+  {
+    "offset": "0x39283",
+    "text": "task_lvgl_init"
+  },
+  {
+    "offset": "0x39292",
+    "text": "task lvlg init"
+  },
+  {
+    "offset": "0x392a1",
+    "text": "task_appdog_init"
+  },
+  {
+    "offset": "0x392b2",
+    "text": "task appdog init"
+  },
+  {
+    "offset": "0x392c3",
+    "text": "Task_Uart_Init"
+  },
+  {
+    "offset": "0x392d2",
+    "text": "task uart init"
+  },
+  {
+    "offset": "0x392e1",
+    "text": "task_console_Init"
+  },
+  {
+    "offset": "0x392f3",
+    "text": "task console init"
+  },
+  {
+    "offset": "0x39305",
+    "text": "task_gdb_init"
+  },
+  {
+    "offset": "0x39313",
+    "text": "gdb thread"
+  },
+  {
+    "offset": "0x3931e",
+    "text": "task_hid_Init"
+  },
+  {
+    "offset": "0x3932c",
+    "text": "task hid init"
+  },
+  {
+    "offset": "0x3933a",
+    "text": "app_control_Init"
+  },
+  {
+    "offset": "0x3934b",
+    "text": "task console init"
+  },
+  {
+    "offset": "0x3935d",
+    "text": "var_test"
+  },
+  {
+    "offset": "0x39413",
+    "text": " INACTIVE"
+  },
+  {
+    "offset": "0x3941d",
+    "text": "READY   "
+  },
+  {
+    "offset": "0x39426",
+    "text": "RUNNING "
+  },
+  {
+    "offset": "0x3942f",
+    "text": "BLOCKED "
+  },
+  {
+    "offset": "0x39438",
+    "text": "TERMINATED"
+  },
+  {
+    "offset": "0x39443",
+    "text": "WAIT_DLY"
+  },
+  {
+    "offset": "0x3944c",
+    "text": "WAIT_JIN"
+  },
+  {
+    "offset": "0x39455",
+    "text": "WAIT_TFG"
+  },
+  {
+    "offset": "0x3945e",
+    "text": "WAIT_EFG"
+  },
+  {
+    "offset": "0x39467",
+    "text": "WAIT_MUT"
+  },
+  {
+    "offset": "0x39470",
+    "text": "WAIT_SEM"
+  },
+  {
+    "offset": "0x39479",
+    "text": "WAIT_MPL"
+  },
+  {
+    "offset": "0x39482",
+    "text": "WAIT_MEG"
+  },
+  {
+    "offset": "0x3948b",
+    "text": "WAIT_MEP"
+  },
+  {
+    "offset": "0x394a7",
+    "text": "R_AUTH_ERR "
+  },
+  {
+    "offset": "0x394bb",
+    "text": "W_AUTH_ERR "
+  },
+  {
+    "offset": "0x394e9",
+    "text": "NO_D_ERR "
+  },
+  {
+    "offset": "0x39511",
+    "text": "W_R_ERR "
+  },
+  {
+    "offset": "0x39524",
+    "text": "IN_MIN_ERR "
+  },
+  {
+    "offset": "0x3953e",
+    "text": "IN_PUT_ERR "
+  },
+  {
+    "offset": "0x39552",
+    "text": "BUF_SMALL_ERR "
+  },
+  {
+    "offset": "0x3956b",
+    "text": "IN_ONE_ERR "
+  },
+  {
+    "offset": "0x39580",
+    "text": "IN_TWO_ERR "
+  },
+  {
+    "offset": "0x39595",
+    "text": "IN_THREE_ERR "
+  },
+  {
+    "offset": "0x395ac",
+    "text": "IN_FOUR_ERR "
+  },
+  {
+    "offset": "0x395c2",
+    "text": "IN_FIVE_ERR "
+  },
+  {
+    "offset": "0x395d8",
+    "text": "IN_SIX_ERR "
+  },
+  {
+    "offset": "0x395ed",
+    "text": "IN_SEVEN_ERR "
+  },
+  {
+    "offset": "0x39605",
+    "text": "INACTIVE"
+  },
+  {
+    "offset": "0x3960e",
+    "text": "READY   "
+  },
+  {
+    "offset": "0x39617",
+    "text": "RUNNING "
+  },
+  {
+    "offset": "0x39620",
+    "text": "BLOCKED "
+  },
+  {
+    "offset": "0x39629",
+    "text": "TERMINATED"
+  },
+  {
+    "offset": "0x39634",
+    "text": "WAIT_DLY"
+  },
+  {
+    "offset": "0x3963d",
+    "text": "WAIT_JIN"
+  },
+  {
+    "offset": "0x39646",
+    "text": "WAIT_TFG"
+  },
+  {
+    "offset": "0x3964f",
+    "text": "WAIT_EFG"
+  },
+  {
+    "offset": "0x39658",
+    "text": "WAIT_MUT"
+  },
+  {
+    "offset": "0x39661",
+    "text": "WAIT_SEM"
+  },
+  {
+    "offset": "0x3966a",
+    "text": "WAIT_MPL"
+  },
+  {
+    "offset": "0x39673",
+    "text": "WAIT_MEG"
+  },
+  {
+    "offset": "0x3967c",
+    "text": "WAIT_MEP"
+  },
+  {
+    "offset": "0x396c3",
+    "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+  },
+  {
+    "offset": "0x3aca2",
+    "text": "#*1892+$"
+  },
+  {
+    "offset": "0x3acaf",
+    "text": "%,3:;4-&"
+  },
+  {
+    "offset": "0x3acb8",
+    "text": "'.5<=6/7>?"
+  },
+  {
+    "offset": "0x3ad12",
+    "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+  },
+  {
+    "offset": "0x3b2d3",
+    "text": " ver <>- show version information                         "
+  },
+  {
+    "offset": "0x3b317",
+    "text": "hr <password> - hardware reset                           "
+  },
+  {
+    "offset": "0x3b35a",
+    "text": "gt <val> - get time                                      "
+  },
+  {
+    "offset": "0x3b39d",
+    "text": "gu <>- get os cpu usage                                  "
+  },
+  {
+    "offset": "0x3b3de",
+    "text": "bl <>- R/W buffer now len                                "
+  },
+  {
+    "offset": "0x3b421",
+    "text": "br <>- R/W buffer reset len                              "
+  },
+  {
+    "offset": "0x3b464",
+    "text": "bp <addr> [<n>] - printf R/W buffer                      "
+  },
+  {
+    "offset": "0x3b4a7",
+    "text": "be <addr> [<data>] ... - Edit R/W buffer                 "
+  },
+  {
+    "offset": "0x3b4ea",
+    "text": "bf <val> - Fill working buffer                           "
+  },
+  {
+    "offset": "0x3b52d",
+    "text": "nfi <>- NandFlash Initialize disk                        "
+  },
+  {
+    "offset": "0x3b572",
+    "text": "nfs <>- Show NandFlash status                            "
+  },
+  {
+    "offset": "0x3b5b5",
+    "text": "nfn <block> <n>- NandFlash block info                    "
+  },
+  {
+    "offset": "0x3b5fa",
+    "text": "nfp <sector> [<n>]- ptrintf secrtor into R/W buffer      "
+  },
+  {
+    "offset": "0x3b63d",
+    "text": "nfr <sector> [<n>] - Read NandFlash into R/W buffer      "
+  },
+  {
+    "offset": "0x3b680",
+    "text": "nfw <password><sector><n>-Write R/W buffer into NandFlash"
+  },
+  {
+    "offset": "0x3b6c3",
+    "text": "nfm <password><block> - erase NandFlash block            "
+  },
+  {
+    "offset": "0x3b708",
+    "text": "ep <addr> [<n>] - ptrintf eeprom into R/W buffer         "
+  },
+  {
+    "offset": "0x3b749",
+    "text": "er <addr> [<n>] - Read eeprom into R/W buffer            "
+  },
+  {
+    "offset": "0x3b78a",
+    "text": "ew <password><addr>[<n>]-Write R/W buffer into eeprom    "
+  },
+  {
+    "offset": "0x3b7cb",
+    "text": "dfp <addr> [<n>] - ptrintf data flash into R/W buffer    "
+  },
+  {
+    "offset": "0x3b80c",
+    "text": "dfr <addr> [<n>] - Read data flash into R/W buffer       "
+  },
+  {
+    "offset": "0x3b84d",
+    "text": "dfw <password><addr>[<n>]-Write R/W buffer into data flash"
+  },
+  {
+    "offset": "0x3b88f",
+    "text": "dfm <password><addr><4/32/64>K-erase data flash sector/block"
+  },
+  {
+    "offset": "0x3b8d5",
+    "text": "mp <addr> [<n>] - ptrintf memory into R/W buffer         "
+  },
+  {
+    "offset": "0x3b91a",
+    "text": "mr <addr> [<n>] - Read memory into R/W buffer            "
+  },
+  {
+    "offset": "0x3b95f",
+    "text": "mw <password><addr><n>-Write R/W buffer into memory      "
+  },
+  {
+    "offset": "0x3b9a4",
+    "text": "gp <name> - printf global variable into R/W buffer       "
+  },
+  {
+    "offset": "0x3b9e7",
+    "text": "gr <name> - Read global variable into R/W buffer         "
+  },
+  {
+    "offset": "0x3ba28",
+    "text": "gw <name> <password>-Write R/W buffer into global variable"
+  },
+  {
+    "offset": "0x3ba6a",
+    "text": "dr <path><addr><n><m>-Read data channel into R/W buffer  "
+  },
+  {
+    "offset": "0x3baad",
+    "text": "dw <password><path><addr><n><m>-Write R/W buffer to d ch "
+  },
+  {
+    "offset": "0x3baf0",
+    "text": "dm <password><path><addr><n><m>-ioctl data chaennl       "
+  },
+  {
+    "offset": "0x3bb33",
+    "text": "user <>-user log in message                              "
+  },
+  {
+    "offset": "0x3bb76",
+    "text": "sh <password> - gdb into shell mode                      "
+  },
+  {
+    "offset": "0x3d1db",
+    "text": "%%&'()*+"
+  },
+  {
+    "offset": "0x3d1e6",
+    "text": "-./0123-4450--..67893::;:<)"
+  },
+  {
+    "offset": "0x3d28a",
+    "text": "'&()&&**'*'*+,-../.0"
+  },
+  {
+    "offset": "0x3d4dc",
+    "text": "ILI9342_lcdrst"
+  },
+  {
+    "offset": "0x3d4eb",
+    "text": "lcd reset"
+  },
+  {
+    "offset": "0x3d4f5",
+    "text": "__cmd_ILI9342_lcdrst"
+  },
+  {
+    "offset": "0x3d50a",
+    "text": "lcd reset"
+  },
+  {
+    "offset": "0x3d51c",
+    "text": "show channel information"
+  },
+  {
+    "offset": "0x3d535",
+    "text": "__cmd_channel"
+  },
+  {
+    "offset": "0x3d543",
+    "text": "show channel information"
+  },
+  {
+    "offset": "0x3d561",
+    "text": "set channel mode"
+  },
+  {
+    "offset": "0x3d572",
+    "text": "__cmd_mode"
+  },
+  {
+    "offset": "0x3d57d",
+    "text": "set channel mode"
+  },
+  {
+    "offset": "0x3d594",
+    "text": "show channel mount"
+  },
+  {
+    "offset": "0x3d5a7",
+    "text": "__cmd_mount"
+  },
+  {
+    "offset": "0x3d5b3",
+    "text": "show channel mount"
+  },
+  {
+    "offset": "0x3d5c6",
+    "text": "__cmd_date"
+  },
+  {
+    "offset": "0x3d5d1",
+    "text": "get date andtime or set(local timezone)[year month day hour min sec]"
+  },
+  {
+    "offset": "0x3d61b",
+    "text": "run boot loader"
+  },
+  {
+    "offset": "0x3d62b",
+    "text": "__cmd_boot"
+  },
+  {
+    "offset": "0x3d636",
+    "text": "run boot loader"
+  },
+  {
+    "offset": "0x3d64d",
+    "text": "jpeg decode"
+  },
+  {
+    "offset": "0x3d659",
+    "text": "__cmd_decode"
+  },
+  {
+    "offset": "0x3d666",
+    "text": "jpeg decode"
+  },
+  {
+    "offset": "0x3d678",
+    "text": "shell reset system"
+  },
+  {
+    "offset": "0x3d68b",
+    "text": "__cmd_reset"
+  },
+  {
+    "offset": "0x3d697",
+    "text": "shell reset system"
+  },
+  {
+    "offset": "0x3d6aa",
+    "text": "uart_test"
+  },
+  {
+    "offset": "0x3d6b4",
+    "text": "uart test"
+  },
+  {
+    "offset": "0x3d6be",
+    "text": "__cmd_uart_test"
+  },
+  {
+    "offset": "0x3d6ce",
+    "text": "uart test"
+  },
+  {
+    "offset": "0x3d6d8",
+    "text": "__cmd_clear"
+  },
+  {
+    "offset": "0x3d6e4",
+    "text": "clear the terminal screen"
+  },
+  {
+    "offset": "0x3d6fe",
+    "text": "__cmd_help"
+  },
+  {
+    "offset": "0x3d709",
+    "text": "ox_xxshell help."
+  },
+  {
+    "offset": "0x3d71a",
+    "text": "__cmd_time"
+  },
+  {
+    "offset": "0x3d725",
+    "text": "Execute command with time."
+  },
+  {
+    "offset": "0x3d747",
+    "text": "show run time"
+  },
+  {
+    "offset": "0x3d755",
+    "text": "__cmd_uptime"
+  },
+  {
+    "offset": "0x3d762",
+    "text": "show run time"
+  },
+  {
+    "offset": "0x3d777",
+    "text": "show thread information"
+  },
+  {
+    "offset": "0x3d78f",
+    "text": "__cmd_thread"
+  },
+  {
+    "offset": "0x3d79c",
+    "text": "show thread information"
+  },
+  {
+    "offset": "0x3d7b7",
+    "text": "show thread information"
+  },
+  {
+    "offset": "0x3d7cf",
+    "text": "__cmd_ps"
+  },
+  {
+    "offset": "0x3d7d8",
+    "text": "show thread information"
+  },
+  {
+    "offset": "0x3d7f6",
+    "text": "show timer information"
+  },
+  {
+    "offset": "0x3d80d",
+    "text": "__cmd_timer"
+  },
+  {
+    "offset": "0x3d819",
+    "text": "show timer information"
+  },
+  {
+    "offset": "0x3d835",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d843",
+    "text": "__cmd_next"
+  },
+  {
+    "offset": "0x3d84e",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d862",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d870",
+    "text": "__cmd_start"
+  },
+  {
+    "offset": "0x3d87c",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d890",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d89e",
+    "text": "__cmd_pause"
+  },
+  {
+    "offset": "0x3d8aa",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d8bd",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3d8cb",
+    "text": "__cmd_stop"
+  },
+  {
+    "offset": "0x3d8d6",
+    "text": "lcd next page"
+  },
+  {
+    "offset": "0x3def6",
+    "text": "[jpeg_outset->RGBAddr] = 0x[%x], img_size[%d] > mem_size[%d], result is error!"
+  },
+  {
+    "offset": "0x3df47",
+    "text": "jfif_parse result = [%d]"
+  },
+  {
+    "offset": "0x3df62",
+    "text": "JpegSemaphore"
+  },
+  {
+    "offset": "0x3df77",
+    "text": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  },
+  {
+    "offset": "0x3df9c",
+    "text": "0123456789abcdefghijklmnopqrstuvwxyz"
+  },
+  {
+    "offset": "0x3dfc1",
+    "text": "P023B029"
+  },
+  {
+    "offset": "0x3dfca",
+    "text": "USART2_TX_Semaphore"
+  },
+  {
+    "offset": "0x3dfde",
+    "text": "[%05d] now time: %s"
+  },
+  {
+    "offset": "0x3dff4",
+    "text": "DS1302MutexId"
+  },
+  {
+    "offset": "0x3e006",
+    "text": "channel_param_sendmail->MailPut->Err=%x"
+  },
+  {
+    "offset": "0x3e030",
+    "text": "%-*.*s %-*.*s num xxxxxdtr   task id   mail id     status    netsta    link  "
+  },
+  {
+    "offset": "0x3e080",
+    "text": "--------------- --------------- --- -------- ---------- ---------- ---------- ---------- ----"
+  },
+  {
+    "offset": "0x3e0e0",
+    "text": "-------------------- -------------------- ---------- ------ ------- -------"
+  },
+  {
+    "offset": "0x3e12e",
+    "text": "in put err"
+  },
+  {
+    "offset": "0x3e13e",
+    "text": "channel name"
+  },
+  {
+    "offset": "0x3e153",
+    "text": "vComChannel10ms"
+  },
+  {
+    "offset": "0x3e163",
+    "text": "[%05d] %s,size:%d err!"
+  },
+  {
+    "offset": "0x3e17c",
+    "text": "MemoryMutexId"
+  },
+  {
+    "offset": "0x3e190",
+    "text": " Success"
+  },
+  {
+    "offset": "0x3e199",
+    "text": "Platform1ms"
+  },
+  {
+    "offset": "0x3e1a5",
+    "text": "hard fault on thread: %s"
+  },
+  {
+    "offset": "0x3e1c2",
+    "text": "MSP: 0x%08X"
+  },
+  {
+    "offset": "0x3e1d0",
+    "text": "%-*.*s   pri     status      sp      stack size   used    delay   sta"
+  },
+  {
+    "offset": "0x3e218",
+    "text": " 0x%08x %5d/%-5d %2d%%/%2d%% %6d  %s"
+  },
+  {
+    "offset": "0x3e23f",
+    "text": "OSCPUUsage=%d%%,1min=%d%%,15min=%d%%;RunTime:%02d-%02d:%02d:%02d.%03dms"
+  },
+  {
+    "offset": "0x3e289",
+    "text": "hard fault on handler"
+  },
+  {
+    "offset": "0x3e2a2",
+    "text": "-------------------- -------- --------- ---------- ---------- -------- ------- ------"
+  },
+  {
+    "offset": "0x3e2f9",
+    "text": "hard fault register:"
+  },
+  {
+    "offset": "0x3e30f",
+    "text": "DIVBYZERO "
+  },
+  {
+    "offset": "0x3e349",
+    "text": "SCB->CCR.DIV_0_TRP"
+  },
+  {
+    "offset": "0x3e35d",
+    "text": "UNALIGNED "
+  },
+  {
+    "offset": "0x3e384",
+    "text": "SCB->CCR.UNALIGN_TRP"
+  },
+  {
+    "offset": "0x3e3b7",
+    "text": "UNSTKERR "
+  },
+  {
+    "offset": "0x3e3d6",
+    "text": "IMPRECISERR "
+  },
+  {
+    "offset": "0x3e3fe",
+    "text": "MMARVALID =1"
+  },
+  {
+    "offset": "0x3e418",
+    "text": "BFARVALID =1"
+  },
+  {
+    "offset": "0x3e451",
+    "text": "DACCVIOL "
+  },
+  {
+    "offset": "0x3e497",
+    "text": "MSTKERR "
+  },
+  {
+    "offset": "0x3e4bd",
+    "text": "MUNSTKERR "
+  },
+  {
+    "offset": "0x3e4e5",
+    "text": "UNALIGNED "
+  },
+  {
+    "offset": "0x3e541",
+    "text": "%-*.*s %-*.*s %s"
+  },
+  {
+    "offset": "0x3e552",
+    "text": "[%05d] %s"
+  },
+  {
+    "offset": "0x3e55e",
+    "text": "[%05d] %s, tick:%d, %d, sta:%d,0x%x"
+  },
+  {
+    "offset": "0x3e584",
+    "text": "year is out of range [1900-]"
+  },
+  {
+    "offset": "0x3e5a3",
+    "text": "second is out of range [0-60]"
+  },
+  {
+    "offset": "0x3e5c3",
+    "text": "day is out of range [1-31]"
+  },
+  {
+    "offset": "0x3e5e0",
+    "text": "month is out of range [1-12]"
+  },
+  {
+    "offset": "0x3e5ff",
+    "text": "hour is out of range [0-23]"
+  },
+  {
+    "offset": "0x3e61d",
+    "text": "minute is out of range [0-59]"
+  },
+  {
+    "offset": "0x3e63d",
+    "text": "timezone: UTC%c%d"
+  },
+  {
+    "offset": "0x3e651",
+    "text": "timestamps: %ld"
+  },
+  {
+    "offset": "0x3e663",
+    "text": "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec "
+  },
+  {
+    "offset": "0x3e694",
+    "text": "Sun Mon Tue Wed Thu Fri Sat "
+  },
+  {
+    "offset": "0x3e6b1",
+    "text": "asctime_r: the input parameters exceeded the limit, please check it."
+  },
+  {
+    "offset": "0x3e6f6",
+    "text": "old: %.*s"
+  },
+  {
+    "offset": "0x3e700",
+    "text": "local time: %.*s"
+  },
+  {
+    "offset": "0x3e711",
+    "text": "rb != NULL"
+  },
+  {
+    "offset": "0x3e71c",
+    "text": "../platform/ringbuffer.c"
+  },
+  {
+    "offset": "0x3e73c",
+    "text": "V1.0.3 Sep  6 2026 20:47:09"
+  },
+  {
+    "offset": "0x3e758",
+    "text": "bootloader_jump"
+  },
+  {
+    "offset": "0x3e768",
+    "text": "task_lvgl"
+  },
+  {
+    "offset": "0x3e777",
+    "text": "vtast_appdog"
+  },
+  {
+    "offset": "0x3e784",
+    "text": "TaskUart0"
+  },
+  {
+    "offset": "0x3e78e",
+    "text": "TaskUart1"
+  },
+  {
+    "offset": "0x3e798",
+    "text": "uartx_timer"
+  },
+  {
+    "offset": "0x3e7a4",
+    "text": "vTask_Uart"
+  },
+  {
+    "offset": "0x3e7b3",
+    "text": "TaskConsole"
+  },
+  {
+    "offset": "0x3e7bf",
+    "text": "vtask_console"
+  },
+  {
+    "offset": "0x3e825",
+    "text": "vtask_gdb"
+  },
+  {
+    "offset": "0x3e856",
+    "text": "gdb_timer1s"
+  },
+  {
+    "offset": "0x3e86a",
+    "text": "read memory addr:0x%08X (%d) size:%u"
+  },
+  {
+    "offset": "0x3e88f",
+    "text": "write memory addr:0x%08X (%d) size:%u"
+  },
+  {
+    "offset": "0x3e8c3",
+    "text": "vtask_hid"
+  },
+  {
+    "offset": "0x3e8cd",
+    "text": "Terminal"
+  },
+  {
+    "offset": "0x3e8d6",
+    "text": "osRtxldleThread"
+  },
+  {
+    "offset": "0x3e8e6",
+    "text": "osRtxTimerThread"
+  },
+  {
+    "offset": "0x3e8f7",
+    "text": "main_thread"
+  },
+  {
+    "offset": "0x3e903",
+    "text": "shell commands:"
+  },
+  {
+    "offset": "0x3e915",
+    "text": "%-16s - %s"
+  },
+  {
+    "offset": "0x3e929",
+    "text": "no memory for shell"
+  },
+  {
+    "offset": "0x3e945",
+    "text": "no user shell"
+  },
+  {
+    "offset": "0x3e958",
+    "text": "-------------------- -------- --------- ---------- ---------- -------- ------- ------"
+  },
+  {
+    "offset": "0x3e9b0",
+    "text": "-------------------- ---------- ---------- ---------- ----------"
+  },
+  {
+    "offset": "0x3e9f3",
+    "text": "%-*.*s   pri     status      sp      stack size   used    delay   sta"
+  },
+  {
+    "offset": "0x3ea3b",
+    "text": " 0x%08x %5d/%-5d %2d%%/%2d%% %6d  %s"
+  },
+  {
+    "offset": "0x3ea62",
+    "text": "now time: %s"
+  },
+  {
+    "offset": "0x3ea71",
+    "text": "OSCPUUsage=%d%%,1min=%d%%,15min=%d%%;RunTime:%02d-%02d:%02d:%02d.%03dms"
+  },
+  {
+    "offset": "0x3eabb",
+    "text": "realtime"
+  },
+  {
+    "offset": "0x3eb04",
+    "text": "[%05d] %s"
+  },
+  {
+    "offset": "0x3eb23",
+    "text": "AppControl"
+  },
+  {
+    "offset": "0x3eb2e",
+    "text": "app_control"
+  },
+  {
+    "offset": "0x3eb3a",
+    "text": "[%05d] base:0x%X 0x%X 0x%X %d %s -> 0x%X %d"
+  },
+  {
+    "offset": "0x3eb68",
+    "text": "[%05d] Buffer overflow: write_index=%d, copy_len=%d"
+  },
+  {
+    "offset": "0x3eb9f",
+    "text": "[%05d] Invalid address or insufficient space"
+  },
+  {
+    "offset": "0x3ebcf",
+    "text": "[%05d] First packet received. Image size: %u bytes, %1u KB, %lu.%02lu MB"
+  },
+  {
+    "offset": "0x3ec1a",
+    "text": "[%05d] Error: Received excess data"
+  },
+  {
+    "offset": "0x3ec3f",
+    "text": "[%05d] Image %dx%d count:%d base: 0x%08X  max: %d"
+  },
+  {
+    "offset": "0x3ec73",
+    "text": "[%05d] Length error: %d > %d"
+  },
+  {
+    "offset": "0x3ec92",
+    "text": "[%05d] Image parsed: %dx%d  frame count:%d"
+  },
+  {
+    "offset": "0x3ecbf",
+    "text": "[%05d] Transfer complete! Progress: 100%%, use time: %d.%03d"
+  },
+  {
+    "offset": "0x3ed00",
+    "text": "[%05d] Unknown HID Code: 0x%03X"
+  },
+  {
+    "offset": "0x3ed23",
+    "text": "[%05d] Output: %s"
+  },
+  {
+    "offset": "0x3ed38",
+    "text": "[%05d] Non-convertible key"
+  },
+  {
+    "offset": "0x3ed6e",
+    "text": "Saturday "
+  },
+  {
+    "offset": "0x3ed78",
+    "text": "Wednesday "
+  },
+  {
+    "offset": "0x3ed83",
+    "text": "Tuesday "
+  },
+  {
+    "offset": "0x3eda9",
+    "text": "Bright +"
+  },
+  {
+    "offset": "0x3edba",
+    "text": "Bright -"
+  },
+  {
+    "offset": "0x3eebb",
+    "text": "Launchpad"
+  },
+  {
+    "offset": "0x3eed5",
+    "text": "FastForward"
+  },
+  {
+    "offset": "0x3eefb",
+    "text": "PlayPause"
+  },
+  {
+    "offset": "0x3ef18",
+    "text": "Minimize"
+  },
+  {
+    "offset": "0x3ef21",
+    "text": "Maximize"
+  },
+  {
+    "offset": "0x3ef2a",
+    "text": "CCConfig"
+  },
+  {
+    "offset": "0x3ef4f",
+    "text": "RightGui"
+  },
+  {
+    "offset": "0x3ef5f",
+    "text": "NextTrack"
+  },
+  {
+    "offset": "0x3ef69",
+    "text": "PrevTrack"
+  },
+  {
+    "offset": "0x3ef73",
+    "text": "ScrollLock"
+  },
+  {
+    "offset": "0x3ef82",
+    "text": "ControlPanel"
+  },
+  {
+    "offset": "0x3ef95",
+    "text": "SelectAll"
+  },
+  {
+    "offset": "0x3efa6",
+    "text": "MissionCtrl"
+  },
+  {
+    "offset": "0x3efb2",
+    "text": "LeftCtrl"
+  },
+  {
+    "offset": "0x3efbb",
+    "text": "RightCtrl"
+  },
+  {
+    "offset": "0x3efe6",
+    "text": "M:/page1_dg00.bin"
+  },
+  {
+    "offset": "0x3eff8",
+    "text": "M:/page6_dg00.bin"
+  },
+  {
+    "offset": "0x3f00a",
+    "text": "M:/sg00.bin"
+  },
+  {
+    "offset": "0x3f016",
+    "text": "M:/page1_dg10.bin"
+  },
+  {
+    "offset": "0x3f028",
+    "text": "M:/page6_dg10.bin"
+  },
+  {
+    "offset": "0x3f03a",
+    "text": "M:/sg10.bin"
+  },
+  {
+    "offset": "0x3f046",
+    "text": "/font_MiSansVF_20.bin"
+  },
+  {
+    "offset": "0x3f05c",
+    "text": "M:/page6_dg20.bin"
+  },
+  {
+    "offset": "0x3f06e",
+    "text": "M:/sg20.bin"
+  },
+  {
+    "offset": "0x3f07a",
+    "text": "M:/sg30.bin"
+  },
+  {
+    "offset": "0x3f086",
+    "text": "/font_MiSansVF_40.bin"
+  },
+  {
+    "offset": "0x3f09c",
+    "text": "M:/sg40.bin"
+  },
+  {
+    "offset": "0x3f0a8",
+    "text": "/font_MiSansVF_50.bin"
+  },
+  {
+    "offset": "0x3f0be",
+    "text": "/font_MiSansVF_60.bin"
+  },
+  {
+    "offset": "0x3f0d4",
+    "text": "M:/page1_dg01.bin"
+  },
+  {
+    "offset": "0x3f0e6",
+    "text": "M:/page6_dg01.bin"
+  },
+  {
+    "offset": "0x3f0f8",
+    "text": "M:/sg01.bin"
+  },
+  {
+    "offset": "0x3f104",
+    "text": "M:/page1_dg11.bin"
+  },
+  {
+    "offset": "0x3f116",
+    "text": "M:/page6_dg11.bin"
+  },
+  {
+    "offset": "0x3f128",
+    "text": "M:/sg11.bin"
+  },
+  {
+    "offset": "0x3f134",
+    "text": "M:/page6_dg21.bin"
+  },
+  {
+    "offset": "0x3f146",
+    "text": "M:/sg21.bin"
+  },
+  {
+    "offset": "0x3f152",
+    "text": "M:/sg31.bin"
+  },
+  {
+    "offset": "0x3f15e",
+    "text": "M:/sg41.bin"
+  },
+  {
+    "offset": "0x3f16a",
+    "text": "F:/page4_1.bin"
+  },
+  {
+    "offset": "0x3f179",
+    "text": "M:/page1_dg02.bin"
+  },
+  {
+    "offset": "0x3f18b",
+    "text": "M:/page6_dg02.bin"
+  },
+  {
+    "offset": "0x3f19d",
+    "text": "M:/sg02.bin"
+  },
+  {
+    "offset": "0x3f1a9",
+    "text": "M:/page1_dg12.bin"
+  },
+  {
+    "offset": "0x3f1bb",
+    "text": "M:/page6_dg12.bin"
+  },
+  {
+    "offset": "0x3f1cd",
+    "text": "M:/sg12.bin"
+  },
+  {
+    "offset": "0x3f1d9",
+    "text": "M:/sg22.bin"
+  },
+  {
+    "offset": "0x3f1e5",
+    "text": "M:/sg32.bin"
+  },
+  {
+    "offset": "0x3f1f1",
+    "text": "M:/sg42.bin"
+  },
+  {
+    "offset": "0x3f1fd",
+    "text": "F:/page4_2.bin"
+  },
+  {
+    "offset": "0x3f20c",
+    "text": "M:/page1_dg03.bin"
+  },
+  {
+    "offset": "0x3f21e",
+    "text": "M:/page6_dg03.bin"
+  },
+  {
+    "offset": "0x3f230",
+    "text": "M:/sg03.bin"
+  },
+  {
+    "offset": "0x3f23c",
+    "text": "M:/page1_dg13.bin"
+  },
+  {
+    "offset": "0x3f24e",
+    "text": "M:/page6_dg13.bin"
+  },
+  {
+    "offset": "0x3f260",
+    "text": "M:/sg13.bin"
+  },
+  {
+    "offset": "0x3f26c",
+    "text": "M:/sg23.bin"
+  },
+  {
+    "offset": "0x3f278",
+    "text": "M:/sg33.bin"
+  },
+  {
+    "offset": "0x3f284",
+    "text": "M:/sg43.bin"
+  },
+  {
+    "offset": "0x3f290",
+    "text": "F:/page4_3.bin"
+  },
+  {
+    "offset": "0x3f29f",
+    "text": "M:/page1_dg04.bin"
+  },
+  {
+    "offset": "0x3f2b1",
+    "text": "M:/page6_dg04.bin"
+  },
+  {
+    "offset": "0x3f2c3",
+    "text": "M:/sg04.bin"
+  },
+  {
+    "offset": "0x3f2cf",
+    "text": "M:/page1_dg14.bin"
+  },
+  {
+    "offset": "0x3f2e1",
+    "text": "M:/page6_dg14.bin"
+  },
+  {
+    "offset": "0x3f2f3",
+    "text": "M:/sg14.bin"
+  },
+  {
+    "offset": "0x3f2ff",
+    "text": "M:/sg24.bin"
+  },
+  {
+    "offset": "0x3f30b",
+    "text": "M:/sg34.bin"
+  },
+  {
+    "offset": "0x3f317",
+    "text": "M:/sg44.bin"
+  },
+  {
+    "offset": "0x3f323",
+    "text": "F:/page4_4.bin"
+  },
+  {
+    "offset": "0x3f332",
+    "text": "M:/page1_dg05.bin"
+  },
+  {
+    "offset": "0x3f344",
+    "text": "M:/page6_dg05.bin"
+  },
+  {
+    "offset": "0x3f356",
+    "text": "M:/sg05.bin"
+  },
+  {
+    "offset": "0x3f362",
+    "text": "M:/page1_dg15.bin"
+  },
+  {
+    "offset": "0x3f374",
+    "text": "M:/page6_dg15.bin"
+  },
+  {
+    "offset": "0x3f386",
+    "text": "M:/sg15.bin"
+  },
+  {
+    "offset": "0x3f392",
+    "text": "M:/sg25.bin"
+  },
+  {
+    "offset": "0x3f39e",
+    "text": "M:/sg35.bin"
+  },
+  {
+    "offset": "0x3f3aa",
+    "text": "M:/sg45.bin"
+  },
+  {
+    "offset": "0x3f3b6",
+    "text": "M:/page1_dg06.bin"
+  },
+  {
+    "offset": "0x3f3c8",
+    "text": "M:/page6_dg06.bin"
+  },
+  {
+    "offset": "0x3f3da",
+    "text": "M:/sg06.bin"
+  },
+  {
+    "offset": "0x3f3e6",
+    "text": "M:/page6_dg16.bin"
+  },
+  {
+    "offset": "0x3f3f8",
+    "text": "M:/sg16.bin"
+  },
+  {
+    "offset": "0x3f404",
+    "text": "M:/sg26.bin"
+  },
+  {
+    "offset": "0x3f410",
+    "text": "M:/sg36.bin"
+  },
+  {
+    "offset": "0x3f41c",
+    "text": "M:/sg46.bin"
+  },
+  {
+    "offset": "0x3f428",
+    "text": "M:/page1_dg07.bin"
+  },
+  {
+    "offset": "0x3f43a",
+    "text": "M:/page6_dg07.bin"
+  },
+  {
+    "offset": "0x3f44c",
+    "text": "M:/sg07.bin"
+  },
+  {
+    "offset": "0x3f458",
+    "text": "M:/page6_dg17.bin"
+  },
+  {
+    "offset": "0x3f46a",
+    "text": "M:/sg17.bin"
+  },
+  {
+    "offset": "0x3f476",
+    "text": "M:/sg27.bin"
+  },
+  {
+    "offset": "0x3f482",
+    "text": "M:/sg37.bin"
+  },
+  {
+    "offset": "0x3f48e",
+    "text": "M:/sg47.bin"
+  },
+  {
+    "offset": "0x3f49a",
+    "text": "M:/page1_dg08.bin"
+  },
+  {
+    "offset": "0x3f4ac",
+    "text": "M:/page6_dg08.bin"
+  },
+  {
+    "offset": "0x3f4be",
+    "text": "M:/sg08.bin"
+  },
+  {
+    "offset": "0x3f4ca",
+    "text": "M:/page6_dg18.bin"
+  },
+  {
+    "offset": "0x3f4dc",
+    "text": "M:/sg18.bin"
+  },
+  {
+    "offset": "0x3f4e8",
+    "text": "M:/sg28.bin"
+  },
+  {
+    "offset": "0x3f4f4",
+    "text": "M:/sg38.bin"
+  },
+  {
+    "offset": "0x3f500",
+    "text": "M:/sg48.bin"
+  },
+  {
+    "offset": "0x3f50c",
+    "text": "M:/page1_dg09.bin"
+  },
+  {
+    "offset": "0x3f51e",
+    "text": "M:/page6_dg09.bin"
+  },
+  {
+    "offset": "0x3f530",
+    "text": "M:/sg09.bin"
+  },
+  {
+    "offset": "0x3f53c",
+    "text": "M:/page6_dg19.bin"
+  },
+  {
+    "offset": "0x3f54e",
+    "text": "M:/sg19.bin"
+  },
+  {
+    "offset": "0x3f55a",
+    "text": "M:/sg29.bin"
+  },
+  {
+    "offset": "0x3f566",
+    "text": "M:/sg39.bin"
+  },
+  {
+    "offset": "0x3f572",
+    "text": "M:/sg49.bin"
+  },
+  {
+    "offset": "0x3f57e",
+    "text": "M:/static.bin"
+  },
+  {
+    "offset": "0x3f58c",
+    "text": "/mergeImgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x3f5a7",
+    "text": "/mergeJpgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x3f5c2",
+    "text": "/mergeFontHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x3f5de",
+    "text": "/signature.bin"
+  },
+  {
+    "offset": "0x3f5ed",
+    "text": "M:/page1_bg.bin"
+  },
+  {
+    "offset": "0x3f5fd",
+    "text": "M:/page6_bg.bin"
+  },
+  {
+    "offset": "0x3f615",
+    "text": "PrintScrn"
+  },
+  {
+    "offset": "0x3f627",
+    "text": "BrightDown"
+  },
+  {
+    "offset": "0x3f649",
+    "text": "BrightUp"
+  },
+  {
+    "offset": "0x3f66e",
+    "text": "Calculator"
+  },
+  {
+    "offset": "0x3f679",
+    "text": "Properties"
+  },
+  {
+    "offset": "0x3f684",
+    "text": "Bookmarks"
+  },
+  {
+    "offset": "0x3f699",
+    "text": "StopEject"
+  },
+  {
+    "offset": "0x3f6af",
+    "text": "LeftShift"
+  },
+  {
+    "offset": "0x3f6b9",
+    "text": "RightShift"
+  },
+  {
+    "offset": "0x3f6d7",
+    "text": "RightAlt"
+  },
+  {
+    "offset": "0x3f6e0",
+    "text": "Assistant"
+  },
+  {
+    "offset": "0x3f6f0",
+    "text": "Snapshot"
+  },
+  {
+    "offset": "0x3f70c",
+    "text": "KeyboardLayout"
+  },
+  {
+    "offset": "0x3f732",
+    "text": "Thursday"
+  },
+  {
+    "offset": "0x3f73b",
+    "text": "RandomPlay"
+  },
+  {
+    "offset": "0x3f768",
+    "text": "2025-12-25"
+  },
+  {
+    "offset": "0x3f773",
+    "text": "S:/page1_dg00.jpg"
+  },
+  {
+    "offset": "0x3f785",
+    "text": "S:/page6_dg00.jpg"
+  },
+  {
+    "offset": "0x3f797",
+    "text": "S:/sg00.jpg"
+  },
+  {
+    "offset": "0x3f7a3",
+    "text": "S:/page1_dg10.jpg"
+  },
+  {
+    "offset": "0x3f7b5",
+    "text": "S:/page6_dg10.jpg"
+  },
+  {
+    "offset": "0x3f7c7",
+    "text": "S:/sg10.jpg"
+  },
+  {
+    "offset": "0x3f7d3",
+    "text": "S:/page6_dg20.jpg"
+  },
+  {
+    "offset": "0x3f7e5",
+    "text": "S:/sg20.jpg"
+  },
+  {
+    "offset": "0x3f7f1",
+    "text": "S:/sg30.jpg"
+  },
+  {
+    "offset": "0x3f7fd",
+    "text": "S:/sg40.jpg"
+  },
+  {
+    "offset": "0x3f809",
+    "text": "S:/page1_dg01.jpg"
+  },
+  {
+    "offset": "0x3f81b",
+    "text": "S:/page6_dg01.jpg"
+  },
+  {
+    "offset": "0x3f82d",
+    "text": "S:/sg01.jpg"
+  },
+  {
+    "offset": "0x3f839",
+    "text": "S:/page1_dg11.jpg"
+  },
+  {
+    "offset": "0x3f84b",
+    "text": "S:/page6_dg11.jpg"
+  },
+  {
+    "offset": "0x3f85d",
+    "text": "S:/sg11.jpg"
+  },
+  {
+    "offset": "0x3f869",
+    "text": "S:/page6_dg21.jpg"
+  },
+  {
+    "offset": "0x3f87b",
+    "text": "S:/sg21.jpg"
+  },
+  {
+    "offset": "0x3f887",
+    "text": "S:/sg31.jpg"
+  },
+  {
+    "offset": "0x3f893",
+    "text": "S:/sg41.jpg"
+  },
+  {
+    "offset": "0x3f89f",
+    "text": "S:/page1_dg02.jpg"
+  },
+  {
+    "offset": "0x3f8b1",
+    "text": "S:/page6_dg02.jpg"
+  },
+  {
+    "offset": "0x3f8c3",
+    "text": "S:/sg02.jpg"
+  },
+  {
+    "offset": "0x3f8cf",
+    "text": "S:/page1_dg12.jpg"
+  },
+  {
+    "offset": "0x3f8e1",
+    "text": "S:/page6_dg12.jpg"
+  },
+  {
+    "offset": "0x3f8f3",
+    "text": "S:/sg12.jpg"
+  },
+  {
+    "offset": "0x3f8ff",
+    "text": "S:/sg22.jpg"
+  },
+  {
+    "offset": "0x3f90b",
+    "text": "S:/sg32.jpg"
+  },
+  {
+    "offset": "0x3f917",
+    "text": "S:/sg42.jpg"
+  },
+  {
+    "offset": "0x3f923",
+    "text": "S:/page1_dg03.jpg"
+  },
+  {
+    "offset": "0x3f935",
+    "text": "S:/page6_dg03.jpg"
+  },
+  {
+    "offset": "0x3f947",
+    "text": "S:/sg03.jpg"
+  },
+  {
+    "offset": "0x3f953",
+    "text": "S:/page1_dg13.jpg"
+  },
+  {
+    "offset": "0x3f965",
+    "text": "S:/page6_dg13.jpg"
+  },
+  {
+    "offset": "0x3f977",
+    "text": "S:/sg13.jpg"
+  },
+  {
+    "offset": "0x3f983",
+    "text": "S:/sg23.jpg"
+  },
+  {
+    "offset": "0x3f98f",
+    "text": "S:/sg33.jpg"
+  },
+  {
+    "offset": "0x3f99b",
+    "text": "S:/sg43.jpg"
+  },
+  {
+    "offset": "0x3f9a7",
+    "text": "S:/page1_dg04.jpg"
+  },
+  {
+    "offset": "0x3f9b9",
+    "text": "S:/page6_dg04.jpg"
+  },
+  {
+    "offset": "0x3f9cb",
+    "text": "S:/sg04.jpg"
+  },
+  {
+    "offset": "0x3f9d7",
+    "text": "S:/page1_dg14.jpg"
+  },
+  {
+    "offset": "0x3f9e9",
+    "text": "S:/page6_dg14.jpg"
+  },
+  {
+    "offset": "0x3f9fb",
+    "text": "S:/sg14.jpg"
+  },
+  {
+    "offset": "0x3fa07",
+    "text": "S:/sg24.jpg"
+  },
+  {
+    "offset": "0x3fa13",
+    "text": "S:/sg34.jpg"
+  },
+  {
+    "offset": "0x3fa1f",
+    "text": "S:/sg44.jpg"
+  },
+  {
+    "offset": "0x3fa2b",
+    "text": "S:/page1_dg05.jpg"
+  },
+  {
+    "offset": "0x3fa3d",
+    "text": "S:/page6_dg05.jpg"
+  },
+  {
+    "offset": "0x3fa4f",
+    "text": "S:/sg05.jpg"
+  },
+  {
+    "offset": "0x3fa5b",
+    "text": "S:/page1_dg15.jpg"
+  },
+  {
+    "offset": "0x3fa6d",
+    "text": "S:/page6_dg15.jpg"
+  },
+  {
+    "offset": "0x3fa7f",
+    "text": "S:/sg15.jpg"
+  },
+  {
+    "offset": "0x3fa8b",
+    "text": "S:/sg25.jpg"
+  },
+  {
+    "offset": "0x3fa97",
+    "text": "S:/sg35.jpg"
+  },
+  {
+    "offset": "0x3faa3",
+    "text": "S:/sg45.jpg"
+  },
+  {
+    "offset": "0x3faaf",
+    "text": "S:/page1_dg06.jpg"
+  },
+  {
+    "offset": "0x3fac1",
+    "text": "S:/page6_dg06.jpg"
+  },
+  {
+    "offset": "0x3fad3",
+    "text": "S:/sg06.jpg"
+  },
+  {
+    "offset": "0x3fadf",
+    "text": "S:/page6_dg16.jpg"
+  },
+  {
+    "offset": "0x3faf1",
+    "text": "S:/sg16.jpg"
+  },
+  {
+    "offset": "0x3fafd",
+    "text": "S:/sg26.jpg"
+  },
+  {
+    "offset": "0x3fb09",
+    "text": "S:/sg36.jpg"
+  },
+  {
+    "offset": "0x3fb15",
+    "text": "S:/sg46.jpg"
+  },
+  {
+    "offset": "0x3fb21",
+    "text": "S:/page1_dg07.jpg"
+  },
+  {
+    "offset": "0x3fb33",
+    "text": "S:/page6_dg07.jpg"
+  },
+  {
+    "offset": "0x3fb45",
+    "text": "S:/sg07.jpg"
+  },
+  {
+    "offset": "0x3fb51",
+    "text": "S:/page6_dg17.jpg"
+  },
+  {
+    "offset": "0x3fb63",
+    "text": "S:/sg17.jpg"
+  },
+  {
+    "offset": "0x3fb6f",
+    "text": "S:/sg27.jpg"
+  },
+  {
+    "offset": "0x3fb7b",
+    "text": "S:/sg37.jpg"
+  },
+  {
+    "offset": "0x3fb87",
+    "text": "S:/sg47.jpg"
+  },
+  {
+    "offset": "0x3fb93",
+    "text": "S:/page1_dg08.jpg"
+  },
+  {
+    "offset": "0x3fba5",
+    "text": "S:/page6_dg08.jpg"
+  },
+  {
+    "offset": "0x3fbb7",
+    "text": "S:/sg08.jpg"
+  },
+  {
+    "offset": "0x3fbc3",
+    "text": "S:/page6_dg18.jpg"
+  },
+  {
+    "offset": "0x3fbd5",
+    "text": "S:/sg18.jpg"
+  },
+  {
+    "offset": "0x3fbe1",
+    "text": "S:/sg28.jpg"
+  },
+  {
+    "offset": "0x3fbed",
+    "text": "S:/sg38.jpg"
+  },
+  {
+    "offset": "0x3fbf9",
+    "text": "S:/sg48.jpg"
+  },
+  {
+    "offset": "0x3fc05",
+    "text": "S:/page1_dg09.jpg"
+  },
+  {
+    "offset": "0x3fc17",
+    "text": "S:/page6_dg09.jpg"
+  },
+  {
+    "offset": "0x3fc29",
+    "text": "S:/sg09.jpg"
+  },
+  {
+    "offset": "0x3fc35",
+    "text": "S:/page6_dg19.jpg"
+  },
+  {
+    "offset": "0x3fc47",
+    "text": "S:/sg19.jpg"
+  },
+  {
+    "offset": "0x3fc53",
+    "text": "S:/sg29.jpg"
+  },
+  {
+    "offset": "0x3fc5f",
+    "text": "S:/sg39.jpg"
+  },
+  {
+    "offset": "0x3fc6b",
+    "text": "S:/sg49.jpg"
+  },
+  {
+    "offset": "0x3fc77",
+    "text": "Wednesday"
+  },
+  {
+    "offset": "0x3fc84",
+    "text": "RTX V5.5.4"
+  },
+  {
+    "offset": "0x3fc90",
+    "text": "Standard C/C++ library mutex initialization failed"
+  },
+  {
+    "offset": "0x3fcc8",
+    "text": "User Timer Callback Queue overflow detected"
+  },
+  {
+    "offset": "0x3fcf8",
+    "text": "ISR FIFO Queue buffer overflow detected"
+  },
+  {
+    "offset": "0x3fd24",
+    "text": "Standard C/C++ library libspace not available"
+  },
+  {
+    "offset": "0x3fd54",
+    "text": "Stack overflow detected for the currently running task"
+  },
+  {
+    "offset": "0x40c42",
+    "text": "]F(F1FBF"
+  },
+  {
+    "offset": "0x41710",
+    "text": " / -JxBp"
+  }
+]

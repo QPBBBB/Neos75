@@ -1,0 +1,273 @@
+{
+  "file": "2915-ZG06_2_31_V20_NEOS_SCREEN_UI_20260615.bin",
+  "bytes": 2441516,
+  "sha256": "5da483d3b31f48e9dc6c64ca66487aa6b7d7c84492d05726ac99feff337d94dc",
+  "entropy_bits_per_byte": 4.937182204508435,
+  "first_64_hex": "4c56474c20414c4c2042494e20564552204e454f53203438302a3336302020202020202056312e302e3120323032362d30362d31352032323a30353a32340000",
+  "last_64_hex": "d1bc99a2699adcd26ab6515c5f5dab4fa838abc61e67334891720802f37dc855e54068005551c362d37bd3ffd9000000ffff00104255000155464410ea789375",
+  "candidate_vectors": [
+    {
+      "offset": "0x0",
+      "words": [
+        "0x4c47564c",
+        "0x4c4c4120",
+        "0x4e494220",
+        "0x52455620"
+      ]
+    },
+    {
+      "offset": "0x100",
+      "words": [
+        "0x6e69",
+        "0x0",
+        "0x0",
+        "0x0"
+      ]
+    },
+    {
+      "offset": "0x1000",
+      "words": [
+        "0x53666666",
+        "0xffffff0a",
+        "0xc0be5ff",
+        "0x6000f"
+      ]
+    },
+    {
+      "offset": "0x2000",
+      "words": [
+        "0x5000c",
+        "0xa3cc8c00",
+        "0xacfc0c00",
+        "0xc05e80ee"
+      ]
+    },
+    {
+      "offset": "0x4000",
+      "words": [
+        "0x80",
+        "0xef030000",
+        "0xaf0000fe",
+        "0xc0ff"
+      ]
+    },
+    {
+      "offset": "0x4400",
+      "words": [
+        "0x33",
+        "0x0",
+        "0x8c000000",
+        "0xc5feffef"
+      ]
+    },
+    {
+      "offset": "0x6000",
+      "words": [
+        "0xe3ff0c00",
+        "0x0",
+        "0x0",
+        "0xe3ff0c"
+      ]
+    },
+    {
+      "offset": "0x8000",
+      "words": [
+        "0x0",
+        "0x0",
+        "0x80feef03",
+        "0x0"
+      ]
+    }
+  ],
+  "dfu_suffix": {
+    "vid": "0x5542",
+    "pid": "0x1000",
+    "signature": "UFD",
+    "crc_stored": "0x759378ea",
+    "crc_calculated": "0x759378ea",
+    "crc_valid": true
+  }
+}
+Interesting strings: [{"offset": "0x0", "text": "LVGL ALL BIN VER NEOS 480*360       V1.0.1 2026-06-15 22:05:24"}, {"offset": "0x174", "text": "LVGL FONTS VER 1.0.0  CreateTime:2026-06-15 22:05:24"}, {"offset": "0x646bc", "text": "LVGL IMGS VER 1.0.0  CreateTime:2026-06-15 22:05:24"}, {"offset": "0x194560", "text": "LVGL JPGS VER 1.0.0  CreateTime:2026-06-15 22:05:24"}]
+{
+  "file": "SI-2915_ZB48A1UBG2_V20_5125_KB84_RGB_LCD_SV_20261027.bin",
+  "bytes": 118336,
+  "sha256": "8ccf3952213844d006f864693eb57ba6d48dbaf7c138280259f3ad63361c0fa5",
+  "entropy_bits_per_byte": 6.848637733064747,
+  "first_64_hex": "a8710020e9020008133800089d01000811380008ff130008416e0008000000000000000000000000000000001d020008d51900080000000095020008d1020008",
+  "last_64_hex": "0a4be803172dffffff010812203a804b09fd030bfaff20fd9903311aff0181890a011613f8681420ac69021420000000ffff11df3c2e000155464410103242f7",
+  "candidate_vectors": [
+    {
+      "offset": "0x0",
+      "words": [
+        "0x200071a8",
+        "0x80002e9",
+        "0x8003813",
+        "0x800019d"
+      ]
+    },
+    {
+      "offset": "0x100",
+      "words": [
+        "0x0",
+        "0x8003fed",
+        "0x8000303",
+        "0x0"
+      ]
+    },
+    {
+      "offset": "0x1000",
+      "words": [
+        "0x6b01f810",
+        "0x6b01f801",
+        "0xd1f91e5b",
+        "0xd405072b"
+      ]
+    },
+    {
+      "offset": "0x2000",
+      "words": [
+        "0xf8baf000",
+        "0x2040b110",
+        "0xfa34f012",
+        "0xf0002080"
+      ]
+    },
+    {
+      "offset": "0x4000",
+      "words": [
+        "0x2e335653",
+        "0x20332e30",
+        "0x2074634f",
+        "0x32203732"
+      ]
+    },
+    {
+      "offset": "0x4400",
+      "words": [
+        "0xa15430b0",
+        "0x19331032",
+        "0x2900b51f",
+        "0x44189806"
+      ]
+    },
+    {
+      "offset": "0x6000",
+      "words": [
+        "0x4390f04f",
+        "0xe01127ff",
+        "0x280eb04",
+        "0xc018f8d2"
+      ]
+    },
+    {
+      "offset": "0x8000",
+      "words": [
+        "0x46214806",
+        "0xf7ff6800",
+        "0x4620ffd5",
+        "0x4010e8bd"
+      ]
+    }
+  ],
+  "dfu_suffix": {
+    "vid": "0x2e3c",
+    "pid": "0xdf11",
+    "signature": "UFD",
+    "crc_stored": "0xf7423210",
+    "crc_calculated": "0xf7423210",
+    "crc_valid": true
+  }
+}
+Interesting strings: [{"offset": "0xed73", "text": " AULA-Neos75"}, {"offset": "0xf468", "text": "..\\components\\rtx\\RTX_Conf_CM.c"}, {"offset": "0x10e4e", "text": "100|https://hub.aulacn.com"}, {"offset": "0x1a1b8", "text": "AT+NAME=AULA-Neos75 BT1"}, {"offset": "0x1a1d0", "text": "AT+NAME=AULA-Neos75 BT2"}, {"offset": "0x1a1e8", "text": "AT+NAME=AULA-Neos75 BT3"}, {"offset": "0x1c810", "text": "UB32F401B"}, {"offset": "0x1c98a", "text": "power on read all prarm"}, {"offset": "0x1cd47", "text": ".AT+NAME=AULA-Neos75"}]
+{
+  "file": "ZG06_2_31_V20_AULA_NEOS75_SCREEN_MCU_20260906.bin",
+  "bytes": 272336,
+  "sha256": "0deb0afce2e5846e2b90336d331361eb70c089a4ea95ca783be70b17c82f8cc0",
+  "entropy_bits_per_byte": 6.871186498304714,
+  "first_64_hex": "20c50020bd810000d1810000f5930000fd8f0000698c000009ba000000000000000000000000000000000000ad820000858d0000000000004d8300005d830000",
+  "last_64_hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffff00104255000155464410d24b7732",
+  "candidate_vectors": [
+    {
+      "offset": "0x0",
+      "words": [
+        "0x2000c520",
+        "0x81bd",
+        "0x81d1",
+        "0x93f5"
+      ]
+    },
+    {
+      "offset": "0x100",
+      "words": [
+        "0x8243",
+        "0x8245",
+        "0x8247",
+        "0x8249"
+      ]
+    },
+    {
+      "offset": "0x1000",
+      "words": [
+        "0xa0e01e0",
+        "0x19331002",
+        "0x3630475a",
+        "0x332e325f"
+      ]
+    },
+    {
+      "offset": "0x2000",
+      "words": [
+        "0xf00f1bc",
+        "0x2b00bf08",
+        "0xf1a0d011",
+        "0xf5a04080"
+      ]
+    },
+    {
+      "offset": "0x4000",
+      "words": [
+        "0x21064628",
+        "0xf81af000",
+        "0x78427801",
+        "0x80a17883"
+      ]
+    },
+    {
+      "offset": "0x4400",
+      "words": [
+        "0x27017004",
+        "0x3000f8a9",
+        "0x2002f8a9",
+        "0x1006f8a9"
+      ]
+    },
+    {
+      "offset": "0x6000",
+      "words": [
+        "0x78289d10",
+        "0xd118282e",
+        "0x90101c68",
+        "0xa001f895"
+      ]
+    },
+    {
+      "offset": "0x8000",
+      "words": [
+        "0x82878241",
+        "0xb1ad6183",
+        "0x69ad462b",
+        "0x681fb1b5"
+      ]
+    }
+  ],
+  "dfu_suffix": {
+    "vid": "0x5542",
+    "pid": "0x1000",
+    "signature": "UFD",
+    "crc_stored": "0x32774bd2",
+    "crc_calculated": "0x32774bd2",
+    "crc_valid": true
+  }
+}
+Interesting strings: [{"offset": "0x1028", "text": "UB32F341S_BOOT_LOADER  MAJOR V1.0.3 MINOR V1.0.4 Sep  6 2026 20:47:09"}, {"offset": "0x1b148", "text": ".h(F!FRF;F"}, {"offset": "0x277f0", "text": "../components/rtx/RTX_Config.c"}, {"offset": "0x34418", "text": "task_lvgl: err!"}, {"offset": "0x39283", "text": "task_lvgl_init"}, {"offset": "0x3e71c", "text": "../platform/ringbuffer.c"}, {"offset": "0x3e768", "text": "task_lvgl"}]

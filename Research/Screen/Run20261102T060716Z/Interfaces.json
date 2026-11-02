@@ -1,0 +1,15 @@
+[
+  {
+    "path": "\\\\?\\HID#VID_5542&PID_0001#7&286117fb&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+    "vendor_id": 21826,
+    "product_id": 1,
+    "serial_number": "507556D1326C",
+    "release_number": 0,
+    "manufacturer_string": "AULA",
+    "product_string": "AULA-Neos75 Screen",
+    "usage_page": 65376,
+    "usage": 97,
+    "interface_number": 0,
+    "bus_type": 1
+  }
+]

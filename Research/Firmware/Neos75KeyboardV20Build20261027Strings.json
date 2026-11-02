@@ -1,0 +1,966 @@
+[
+  {
+    "offset": "0x322",
+    "text": "(FAFGF\"F"
+  },
+  {
+    "offset": "0x362",
+    "text": "HF1F*FCF"
+  },
+  {
+    "offset": "0x106f",
+    "text": "F(1(FIy)Da"
+  },
+  {
+    "offset": "0x12fa",
+    "text": "CFJFQF F"
+  },
+  {
+    "offset": "0x1707",
+    "text": " pGpGpGpG"
+  },
+  {
+    "offset": "0x1800",
+    "text": "H`pG(J(2"
+  },
+  {
+    "offset": "0x20b4",
+    "text": "Gh<`Gi<`"
+  },
+  {
+    "offset": "0x2d26",
+    "text": "CFJFQF F"
+  },
+  {
+    "offset": "0x2e3b",
+    "text": " pGpGpGpG"
+  },
+  {
+    "offset": "0x356c",
+    "text": "#F*F1F8F"
+  },
+  {
+    "offset": "0x358e",
+    "text": "#F*F1F8F"
+  },
+  {
+    "offset": "0x36c7",
+    "text": "$'*369<?BI"
+  },
+  {
+    "offset": "0x3744",
+    "text": "' pGo pGp pG@"
+  },
+  {
+    "offset": "0x376d",
+    "text": "$'*369<?BI"
+  },
+  {
+    "offset": "0x37ea",
+    "text": "' pGo pGp pG@"
+  },
+  {
+    "offset": "0x3892",
+    "text": "5``hd!HC```h"
+  },
+  {
+    "offset": "0x3b32",
+    "text": "[F(\\RFIF"
+  },
+  {
+    "offset": "0x3b80",
+    "text": "(zSFJF!F"
+  },
+  {
+    "offset": "0x4000",
+    "text": "SV3.0.3 Oct 27 2026 19:55:42"
+  },
+  {
+    "offset": "0x4100",
+    "text": "ZB-48-B1-84-1-UBG-2-V2.0-5125"
+  },
+  {
+    "offset": "0x431e",
+    "text": "CFJFQF F"
+  },
+  {
+    "offset": "0x439a",
+    "text": "CFJFQF F"
+  },
+  {
+    "offset": "0x43f8",
+    "text": "pGpGpGpG"
+  },
+  {
+    "offset": "0x4849",
+    "text": "`AhA`Ah!"
+  },
+  {
+    "offset": "0x4852",
+    "text": "`QA`AhA`Ah!"
+  },
+  {
+    "offset": "0x485f",
+    "text": "aA`AhA`Ah!"
+  },
+  {
+    "offset": "0x48e1",
+    "text": "``h```h "
+  },
+  {
+    "offset": "0x4f54",
+    "text": "/Fthh! F"
+  },
+  {
+    "offset": "0x4feb",
+    "text": " `vhh a!F"
+  },
+  {
+    "offset": "0x582a",
+    "text": "#F\"F!F(F"
+  },
+  {
+    "offset": "0x586c",
+    "text": "#F\"F!F(F"
+  },
+  {
+    "offset": "0x5f93",
+    "text": "!Ab  /F`"
+  },
+  {
+    "offset": "0x5fed",
+    "text": "a iEa!iO"
+  },
+  {
+    "offset": "0x6c20",
+    "text": "%V@h*F1F"
+  },
+  {
+    "offset": "0x727c",
+    "text": "2F;F@FIF"
+  },
+  {
+    "offset": "0x77c8",
+    "text": "0123456789abcdef"
+  },
+  {
+    "offset": "0x77dc",
+    "text": "0123456789ABCDEF"
+  },
+  {
+    "offset": "0x84e3",
+    "text": " timeout"
+  },
+  {
+    "offset": "0x92c8",
+    "text": "channel_param_sendmail->MailPut->Err=%x"
+  },
+  {
+    "offset": "0x98a0",
+    "text": "%15s %3s %d %d %15s"
+  },
+  {
+    "offset": "0x98b4",
+    "text": "%d:%d:%d"
+  },
+  {
+    "offset": "0x98c3",
+    "text": " %s %04d%02d%02d_%02d%02d%02d"
+  },
+  {
+    "offset": "0xb588",
+    "text": "matrix led[%d][%d], count:%d"
+  },
+  {
+    "offset": "0xb5bc",
+    "text": "matrix point, count:%d"
+  },
+  {
+    "offset": "0xb5d8",
+    "text": "[%3d, %3d], "
+  },
+  {
+    "offset": "0xba50",
+    "text": "ph9FBh@F"
+  },
+  {
+    "offset": "0xbca2",
+    "text": "Fh3`Fi3`"
+  },
+  {
+    "offset": "0xcd34",
+    "text": "4Flq\"F9F"
+  },
+  {
+    "offset": "0xd13e",
+    "text": "(q!h1`:h"
+  },
+  {
+    "offset": "0xe45d",
+    "text": "\"&*.147:?"
+  },
+  {
+    "offset": "0xed73",
+    "text": " AULA-Neos75"
+  },
+  {
+    "offset": "0xee0a",
+    "text": "Dx,qq\\iq"
+  },
+  {
+    "offset": "0xeee7",
+    "text": " SV3.0.0"
+  },
+  {
+    "offset": "0xf468",
+    "text": "..\\components\\rtx\\RTX_Conf_CM.c"
+  },
+  {
+    "offset": "0xf488",
+    "text": "File:%s->Fun:%s->Line:%d,error_code:0x%08X,task_id:0x%08X"
+  },
+  {
+    "offset": "0xf4d4",
+    "text": "Stack overflow detected for the currently running task"
+  },
+  {
+    "offset": "0xf510",
+    "text": "ISR FIFO Queue buffer overflow detected"
+  },
+  {
+    "offset": "0xf53c",
+    "text": "Mailbox overflow detected task"
+  },
+  {
+    "offset": "0xf560",
+    "text": "User Timer Callback Queue overflow detected"
+  },
+  {
+    "offset": "0xf61c",
+    "text": "%DAp4Fd)"
+  },
+  {
+    "offset": "0x1064f",
+    "text": "!:FPZdpz"
+  },
+  {
+    "offset": "0x10caf",
+    "text": "a59e=jl?"
+  },
+  {
+    "offset": "0x10e4e",
+    "text": "100|https://hub.aulacn.com"
+  },
+  {
+    "offset": "0x110ef",
+    "text": "LIyP4 xY"
+  },
+  {
+    "offset": "0x11560",
+    "text": "WpvxVrSt"
+  },
+  {
+    "offset": "0x127e2",
+    "text": "pGpGpGpG"
+  },
+  {
+    "offset": "0x12e26",
+    "text": "6=BOTY^chnsx}"
+  },
+  {
+    "offset": "0x13720",
+    "text": "A`!hJ`!h"
+  },
+  {
+    "offset": "0x14ef7",
+    "text": " serial lcd control :%d"
+  },
+  {
+    "offset": "0x14f10",
+    "text": "serial lcd close"
+  },
+  {
+    "offset": "0x14f24",
+    "text": "serial lcd off"
+  },
+  {
+    "offset": "0x14f34",
+    "text": "serial lcd init"
+  },
+  {
+    "offset": "0x14f48",
+    "text": "serial lcd wakeup"
+  },
+  {
+    "offset": "0x150f7",
+    "text": " auto switch serial lcd off"
+  },
+  {
+    "offset": "0x152c7",
+    "text": "$+F2F9F F"
+  },
+  {
+    "offset": "0x162fe",
+    "text": "Fh3`Fi3`"
+  },
+  {
+    "offset": "0x164bb",
+    "text": "\"UBZ\\U@5@U@]TI"
+  },
+  {
+    "offset": "0x16c6b",
+    "text": " DISABLE"
+  },
+  {
+    "offset": "0x16e0c",
+    "text": "+BATSAVE:"
+  },
+  {
+    "offset": "0x16fcc",
+    "text": "Connected"
+  },
+  {
+    "offset": "0x16fdb",
+    "text": " Disconnect"
+  },
+  {
+    "offset": "0x17060",
+    "text": "+DATA:%d"
+  },
+  {
+    "offset": "0x170cf",
+    "text": " +EVENT:%x"
+  },
+  {
+    "offset": "0x17174",
+    "text": "+KEYBOARD:"
+  },
+  {
+    "offset": "0x17180",
+    "text": "+KEYBOARD:%d"
+  },
+  {
+    "offset": "0x1722f",
+    "text": " CH%d,%d,%d,%d"
+  },
+  {
+    "offset": "0x1732c",
+    "text": "AT+RESET"
+  },
+  {
+    "offset": "0x1747b",
+    "text": " +EVENT:%x"
+  },
+  {
+    "offset": "0x174b8",
+    "text": "+VERSION"
+  },
+  {
+    "offset": "0x17754",
+    "text": "AT+DISCONN"
+  },
+  {
+    "offset": "0x17764",
+    "text": "AT+DEEPSLEEP"
+  },
+  {
+    "offset": "0x18588",
+    "text": "0y p0z`p"
+  },
+  {
+    "offset": "0x185a2",
+    "text": "0y p0z`p0{"
+  },
+  {
+    "offset": "0x18b5f",
+    "text": " System is up"
+  },
+  {
+    "offset": "0x18b7c",
+    "text": "+BATSTATE:"
+  },
+  {
+    "offset": "0x18b88",
+    "text": "+BATSTATE:%d,%d,%d,%d"
+  },
+  {
+    "offset": "0x18ba0",
+    "text": "+EVENT:%x"
+  },
+  {
+    "offset": "0x18bb4",
+    "text": "+LEDPAGE:%x"
+  },
+  {
+    "offset": "0x193d1",
+    "text": "Task dog"
+  },
+  {
+    "offset": "0x19402",
+    "text": "KEY_BOARD"
+  },
+  {
+    "offset": "0x1940c",
+    "text": "key_board"
+  },
+  {
+    "offset": "0x19416",
+    "text": "BLUETOOTH"
+  },
+  {
+    "offset": "0x19420",
+    "text": "bluetooth"
+  },
+  {
+    "offset": "0x1942a",
+    "text": "SerialLcd"
+  },
+  {
+    "offset": "0x19434",
+    "text": "SerialLcd"
+  },
+  {
+    "offset": "0x19c54",
+    "text": "INACTIVE"
+  },
+  {
+    "offset": "0x19c5d",
+    "text": "READY   "
+  },
+  {
+    "offset": "0x19c66",
+    "text": "RUNNING "
+  },
+  {
+    "offset": "0x19c6f",
+    "text": "WAIT_DLY"
+  },
+  {
+    "offset": "0x19c78",
+    "text": "WAIT_ITV"
+  },
+  {
+    "offset": "0x19c81",
+    "text": "WAIT_OR "
+  },
+  {
+    "offset": "0x19c8a",
+    "text": "WAIT_AND"
+  },
+  {
+    "offset": "0x19c93",
+    "text": "WAIT_SEM"
+  },
+  {
+    "offset": "0x19c9c",
+    "text": "WAIT_MBX"
+  },
+  {
+    "offset": "0x19ca5",
+    "text": "WAIT_MUT"
+  },
+  {
+    "offset": "0x19eb4",
+    "text": "43 /.-)+"
+  },
+  {
+    "offset": "0x19f00",
+    "text": "os_error"
+  },
+  {
+    "offset": "0x19f58",
+    "text": "EEPROM_READ"
+  },
+  {
+    "offset": "0x19f64",
+    "text": "EEPROM_WRITE"
+  },
+  {
+    "offset": "0x19f71",
+    "text": "EEPROM_ERASE"
+  },
+  {
+    "offset": "0x19f7e",
+    "text": "DATA_FLASH_READ"
+  },
+  {
+    "offset": "0x19f8e",
+    "text": "DATA_FLASH_WRITE"
+  },
+  {
+    "offset": "0x19f9f",
+    "text": "DATA_FLASH_ERASE"
+  },
+  {
+    "offset": "0x19fb0",
+    "text": "DATA_FLASH_SECTOR_WRITE"
+  },
+  {
+    "offset": "0x19fc8",
+    "text": "DATA_FLASH_READ_CHECK"
+  },
+  {
+    "offset": "0x19fde",
+    "text": "DATA_FLASH_RC_SE_WRITE"
+  },
+  {
+    "offset": "0x19ff5",
+    "text": "NAND_FLASH_ADDR_READ"
+  },
+  {
+    "offset": "0x1a00a",
+    "text": "NAND_FLASH_ADDR_WRITE"
+  },
+  {
+    "offset": "0x1a020",
+    "text": "NAND_FLASH_SECTOR_READ"
+  },
+  {
+    "offset": "0x1a037",
+    "text": "NAND_FLASH_SECTOR_WRITE"
+  },
+  {
+    "offset": "0x1a04f",
+    "text": "NAND_FLASH_ERASE"
+  },
+  {
+    "offset": "0x1a060",
+    "text": "FILE_READ"
+  },
+  {
+    "offset": "0x1a06a",
+    "text": "FILE_WRITE"
+  },
+  {
+    "offset": "0x1a075",
+    "text": "FILE_MKDIR"
+  },
+  {
+    "offset": "0x1a080",
+    "text": "FILE_COPY_COVER_NO"
+  },
+  {
+    "offset": "0x1a093",
+    "text": "FILE_COPY_COVER_YES"
+  },
+  {
+    "offset": "0x1a0a7",
+    "text": "FILE_DELETE"
+  },
+  {
+    "offset": "0x1a0b3",
+    "text": "FILE_LOG_WRITE"
+  },
+  {
+    "offset": "0x1a0c2",
+    "text": "EEPROM_READ_CHECK_BACK"
+  },
+  {
+    "offset": "0x1a0d9",
+    "text": "EEPROM_WRITE_CHECK_BACK"
+  },
+  {
+    "offset": "0x1a1a4",
+    "text": "AT+VIDPID=1EA84884"
+  },
+  {
+    "offset": "0x1a1b8",
+    "text": "AT+NAME=AULA-Neos75 BT1"
+  },
+  {
+    "offset": "0x1a1d0",
+    "text": "AT+NAME=AULA-Neos75 BT2"
+  },
+  {
+    "offset": "0x1a1e8",
+    "text": "AT+NAME=AULA-Neos75 BT3"
+  },
+  {
+    "offset": "0x1aba3",
+    "text": " NONE-NONE-NONE-ICRGB-NONE-NONE-NONE"
+  },
+  {
+    "offset": "0x1adf8",
+    "text": "key_protocol_reset"
+  },
+  {
+    "offset": "0x1ae0b",
+    "text": "key_protocol_dfu"
+  },
+  {
+    "offset": "0x1ae1c",
+    "text": "key_protocol_Rev_Mode"
+  },
+  {
+    "offset": "0x1afb4",
+    "text": "&~#x%x!x x"
+  },
+  {
+    "offset": "0x1b1f2",
+    "text": " !\"#$%&'()*+,-"
+  },
+  {
+    "offset": "0x1b201",
+    "text": "./0123456789:"
+  },
+  {
+    "offset": "0x1b211",
+    "text": "<=>?@ABCDEFG<HI"
+  },
+  {
+    "offset": "0x1b282",
+    "text": "&$&3&B&P&_&n&|&"
+  },
+  {
+    "offset": "0x1b2a0",
+    "text": "3(373E3T3c3q3"
+  },
+  {
+    "offset": "0x1b2ba",
+    "text": "@/@>@M@[@j@y@"
+  },
+  {
+    "offset": "0x1b58a",
+    "text": "&~#x%x!x x"
+  },
+  {
+    "offset": "0x1b854",
+    "text": "43 /.-)$%"
+  },
+  {
+    "offset": "0x1bf0f",
+    "text": "4 !\"$4&'%.6-78'"
+  },
+  {
+    "offset": "0x1bf20",
+    "text": " !\"#$%&336.78"
+  },
+  {
+    "offset": "0x1c4b6",
+    "text": " !\"#$%&'()*+,-./012"
+  },
+  {
+    "offset": "0x1c54d",
+    "text": "@@@@@@@@@AAAAA@@@@@@@@@@@@@@@@@@"
+  },
+  {
+    "offset": "0x1c57d",
+    "text": "          "
+  },
+  {
+    "offset": "0x1c5d4",
+    "text": "channel_10ms_cb"
+  },
+  {
+    "offset": "0x1c5ec",
+    "text": "osTimerThread"
+  },
+  {
+    "offset": "0x1c5fc",
+    "text": "vtask_data"
+  },
+  {
+    "offset": "0x1c608",
+    "text": "vtast_appdog"
+  },
+  {
+    "offset": "0x1c618",
+    "text": "vTask_Uart"
+  },
+  {
+    "offset": "0x1c624",
+    "text": "vTask_UsbHid"
+  },
+  {
+    "offset": "0x1c634",
+    "text": "backlight_Timer_1ms_cb"
+  },
+  {
+    "offset": "0x1c64c",
+    "text": "AT+MODULETYPE=09"
+  },
+  {
+    "offset": "0x1c660",
+    "text": "AT+BATCHARGE="
+  },
+  {
+    "offset": "0x1c670",
+    "text": "AT+AUTOIDLE="
+  },
+  {
+    "offset": "0x1c680",
+    "text": "AT+IDLETIMES="
+  },
+  {
+    "offset": "0x1c690",
+    "text": "AT+KEYBOARD?"
+  },
+  {
+    "offset": "0x1c6a0",
+    "text": "AT+BATSTATE?"
+  },
+  {
+    "offset": "0x1c6b0",
+    "text": "AT+VERSION?"
+  },
+  {
+    "offset": "0x1c6bc",
+    "text": "AT+EVENT=00FF"
+  },
+  {
+    "offset": "0x1c6d0",
+    "text": "AT+RESET"
+  },
+  {
+    "offset": "0x1c6dc",
+    "text": "AT+DISCOVER=2"
+  },
+  {
+    "offset": "0x1c6ec",
+    "text": "AT+KEYBOARD="
+  },
+  {
+    "offset": "0x1c6fc",
+    "text": "AT+CONN=12"
+  },
+  {
+    "offset": "0x1c708",
+    "text": "AT+CONN?"
+  },
+  {
+    "offset": "0x1c714",
+    "text": "AT+LEDPAGE?"
+  },
+  {
+    "offset": "0x1c720",
+    "text": "AT+RSSI?"
+  },
+  {
+    "offset": "0x1c72c",
+    "text": "AT+DISCONN"
+  },
+  {
+    "offset": "0x1c738",
+    "text": "AT+DEEPSLEEP"
+  },
+  {
+    "offset": "0x1c758",
+    "text": "AT+FTYRESET"
+  },
+  {
+    "offset": "0x1c764",
+    "text": "AT+BATSAVE?"
+  },
+  {
+    "offset": "0x1c770",
+    "text": "AT+BATCFG?"
+  },
+  {
+    "offset": "0x1c77c",
+    "text": "AT+BATSAVE=1"
+  },
+  {
+    "offset": "0x1c78c",
+    "text": "AT+BATCFG="
+  },
+  {
+    "offset": "0x1c798",
+    "text": "AT+BATDOWN="
+  },
+  {
+    "offset": "0x1c7a4",
+    "text": "AT+BATUP="
+  },
+  {
+    "offset": "0x1c7b0",
+    "text": "Bluetooth_Timer_10ms_cb"
+  },
+  {
+    "offset": "0x1c7c8",
+    "text": "vtask_bluetooth"
+  },
+  {
+    "offset": "0x1c810",
+    "text": "UB32F401B"
+  },
+  {
+    "offset": "0x1c822",
+    "text": "Board_Init"
+  },
+  {
+    "offset": "0x1c82d",
+    "text": "board init"
+  },
+  {
+    "offset": "0x1c838",
+    "text": "UartInit"
+  },
+  {
+    "offset": "0x1c841",
+    "text": "uart init"
+  },
+  {
+    "offset": "0x1c84b",
+    "text": "rgb_initpins"
+  },
+  {
+    "offset": "0x1c858",
+    "text": "rgb init"
+  },
+  {
+    "offset": "0x1c861",
+    "text": "soft_time_init"
+  },
+  {
+    "offset": "0x1c870",
+    "text": "soft_time init andstart"
+  },
+  {
+    "offset": "0x1c888",
+    "text": "channel_init"
+  },
+  {
+    "offset": "0x1c895",
+    "text": "channel init"
+  },
+  {
+    "offset": "0x1c8a2",
+    "text": "OS_StatInit"
+  },
+  {
+    "offset": "0x1c8ae",
+    "text": "cout cpu usage"
+  },
+  {
+    "offset": "0x1c8bd",
+    "text": "memory_init"
+  },
+  {
+    "offset": "0x1c8c9",
+    "text": "memory init"
+  },
+  {
+    "offset": "0x1c8d5",
+    "text": "export_start"
+  },
+  {
+    "offset": "0x1c8ea",
+    "text": "export_board_start"
+  },
+  {
+    "offset": "0x1c903",
+    "text": "export_board_end"
+  },
+  {
+    "offset": "0x1c91a",
+    "text": "export_app_end"
+  },
+  {
+    "offset": "0x1c92f",
+    "text": "export_end"
+  },
+  {
+    "offset": "0x1c940",
+    "text": "wdg_init"
+  },
+  {
+    "offset": "0x1c949",
+    "text": "wdg init andstart"
+  },
+  {
+    "offset": "0x1c95b",
+    "text": "param_init"
+  },
+  {
+    "offset": "0x1c966",
+    "text": "param init"
+  },
+  {
+    "offset": "0x1c971",
+    "text": "app_power_on_data_config"
+  },
+  {
+    "offset": "0x1c98a",
+    "text": "power on read all prarm"
+  },
+  {
+    "offset": "0x1c9a2",
+    "text": "task_data_init"
+  },
+  {
+    "offset": "0x1c9b6",
+    "text": "task_appdog_init"
+  },
+  {
+    "offset": "0x1c9c7",
+    "text": "sotfware dog task"
+  },
+  {
+    "offset": "0x1c9d9",
+    "text": "Task_Uart_Init"
+  },
+  {
+    "offset": "0x1c9e8",
+    "text": "task uart init"
+  },
+  {
+    "offset": "0x1c9f7",
+    "text": "UsbHid_HidMsg"
+  },
+  {
+    "offset": "0x1ca05",
+    "text": "usb hid msg"
+  },
+  {
+    "offset": "0x1ca11",
+    "text": "Task_UsbHid_Init"
+  },
+  {
+    "offset": "0x1ca22",
+    "text": "task usb hid init"
+  },
+  {
+    "offset": "0x1ca34",
+    "text": "keyboard_bootmagic_init"
+  },
+  {
+    "offset": "0x1ca4c",
+    "text": "keyboard boot init"
+  },
+  {
+    "offset": "0x1ca5f",
+    "text": "task_keyboard_init"
+  },
+  {
+    "offset": "0x1ca72",
+    "text": "task key init"
+  },
+  {
+    "offset": "0x1ca80",
+    "text": "task_bluetooth_init"
+  },
+  {
+    "offset": "0x1ca94",
+    "text": "task bluetooth init"
+  },
+  {
+    "offset": "0x1caa8",
+    "text": "key_protocol_init"
+  },
+  {
+    "offset": "0x1caba",
+    "text": "key protocol init"
+  },
+  {
+    "offset": "0x1cacc",
+    "text": "var_test"
+  },
+  {
+    "offset": "0x1cd47",
+    "text": ".AT+NAME=AULA-Neos75"
+  },
+  {
+    "offset": "0x1cd67",
+    "text": "SV3.0.3 Oct 27 2026 19:55:48"
+  }
+]

@@ -1,0 +1,2426 @@
+[
+  {
+    "offset": "0x0",
+    "text": "LVGL ALL BIN VER NEOS 480*360       V1.0.1 2026-06-15 22:05:24"
+  },
+  {
+    "offset": "0x50",
+    "text": "/mergeFontHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x9c",
+    "text": "/mergeImgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0xe8",
+    "text": "/mergeJpgHeaderBinFile.bin"
+  },
+  {
+    "offset": "0x134",
+    "text": "/signature.bin"
+  },
+  {
+    "offset": "0x174",
+    "text": "LVGL FONTS VER 1.0.0  CreateTime:2026-06-15 22:05:24"
+  },
+  {
+    "offset": "0x1c4",
+    "text": "/font_MiSansVF_20.bin"
+  },
+  {
+    "offset": "0x210",
+    "text": "/font_MiSansVF_40.bin"
+  },
+  {
+    "offset": "0x25c",
+    "text": "/font_MiSansVF_50.bin"
+  },
+  {
+    "offset": "0x2a8",
+    "text": "/font_MiSansVF_60.bin"
+  },
+  {
+    "offset": "0x3344",
+    "text": "fffffffe"
+  },
+  {
+    "offset": "0x488c",
+    "text": "3333333330"
+  },
+  {
+    "offset": "0x4918",
+    "text": "3333333330"
+  },
+  {
+    "offset": "0x5829",
+    "text": "33333333"
+  },
+  {
+    "offset": "0x5d2c",
+    "text": "ffffffff"
+  },
+  {
+    "offset": "0x63f7",
+    "text": "33333333"
+  },
+  {
+    "offset": "0x8116",
+    "text": "333333330"
+  },
+  {
+    "offset": "0x8c5b",
+    "text": "33333333"
+  },
+  {
+    "offset": "0xa736",
+    "text": "333333330"
+  },
+  {
+    "offset": "0xc4a3",
+    "text": "33333333330"
+  },
+  {
+    "offset": "0xce8d",
+    "text": "Vffffffffffe"
+  },
+  {
+    "offset": "0xd43f",
+    "text": "Vfffffffffe"
+  },
+  {
+    "offset": "0xd9ff",
+    "text": "ffffffffffffP"
+  },
+  {
+    "offset": "0xe744",
+    "text": "Vfffffffffffe"
+  },
+  {
+    "offset": "0xe788",
+    "text": "Vfffffffffffe"
+  },
+  {
+    "offset": "0xf332",
+    "text": "Vfffffffe0"
+  },
+  {
+    "offset": "0xf9cc",
+    "text": "Vfffffffe0"
+  },
+  {
+    "offset": "0xfd44",
+    "text": "Vfffffffffffe"
+  },
+  {
+    "offset": "0xfebd",
+    "text": "fffffffffP"
+  },
+  {
+    "offset": "0xffbc",
+    "text": "33333333330"
+  },
+  {
+    "offset": "0x10014",
+    "text": "Vfffffffffffc"
+  },
+  {
+    "offset": "0x10187",
+    "text": "333333333"
+  },
+  {
+    "offset": "0x10467",
+    "text": "33333330"
+  },
+  {
+    "offset": "0x107c7",
+    "text": "ffffffffff"
+  },
+  {
+    "offset": "0x11283",
+    "text": "3333333333"
+  },
+  {
+    "offset": "0x11e3c",
+    "text": "Vfffffffc0"
+  },
+  {
+    "offset": "0x1255c",
+    "text": "VfffffffS"
+  },
+  {
+    "offset": "0x12b47",
+    "text": "fffffffffffffff0>"
+  },
+  {
+    "offset": "0x13edb",
+    "text": "Vfffffffffffff0"
+  },
+  {
+    "offset": "0x14153",
+    "text": "333333333330"
+  },
+  {
+    "offset": "0x14866",
+    "text": "Vfffffffffffc"
+  },
+  {
+    "offset": "0x1536e",
+    "text": "3333333333"
+  },
+  {
+    "offset": "0x17ddf",
+    "text": "33333333"
+  },
+  {
+    "offset": "0x5dfd7",
+    "text": "UUUUUUUUT"
+  },
+  {
+    "offset": "0x5ee49",
+    "text": "UUUUUUUU"
+  },
+  {
+    "offset": "0x646bc",
+    "text": "LVGL IMGS VER 1.0.0  CreateTime:2026-06-15 22:05:24"
+  },
+  {
+    "offset": "0x6470c",
+    "text": "/page4_1.bin"
+  },
+  {
+    "offset": "0x64758",
+    "text": "/page4_2.bin"
+  },
+  {
+    "offset": "0x647a4",
+    "text": "/page4_3.bin"
+  },
+  {
+    "offset": "0x647f0",
+    "text": "/page4_4.bin"
+  },
+  {
+    "offset": "0x194560",
+    "text": "LVGL JPGS VER 1.0.0  CreateTime:2026-06-15 22:05:24"
+  },
+  {
+    "offset": "0x1945b0",
+    "text": "/page1_bg.jpg"
+  },
+  {
+    "offset": "0x1945fc",
+    "text": "/page1_dg00.jpg"
+  },
+  {
+    "offset": "0x194648",
+    "text": "/page1_dg01.jpg"
+  },
+  {
+    "offset": "0x194694",
+    "text": "/page1_dg02.jpg"
+  },
+  {
+    "offset": "0x1946e0",
+    "text": "/page1_dg03.jpg"
+  },
+  {
+    "offset": "0x19472c",
+    "text": "/page1_dg04.jpg"
+  },
+  {
+    "offset": "0x194778",
+    "text": "/page1_dg05.jpg"
+  },
+  {
+    "offset": "0x1947c4",
+    "text": "/page1_dg06.jpg"
+  },
+  {
+    "offset": "0x194810",
+    "text": "/page1_dg07.jpg"
+  },
+  {
+    "offset": "0x19485c",
+    "text": "/page1_dg08.jpg"
+  },
+  {
+    "offset": "0x1948a8",
+    "text": "/page1_dg09.jpg"
+  },
+  {
+    "offset": "0x1948f4",
+    "text": "/page1_dg10.jpg"
+  },
+  {
+    "offset": "0x194940",
+    "text": "/page1_dg11.jpg"
+  },
+  {
+    "offset": "0x19498c",
+    "text": "/page1_dg12.jpg"
+  },
+  {
+    "offset": "0x1949d8",
+    "text": "/page1_dg13.jpg"
+  },
+  {
+    "offset": "0x194a24",
+    "text": "/page1_dg14.jpg"
+  },
+  {
+    "offset": "0x194a70",
+    "text": "/page1_dg15.jpg"
+  },
+  {
+    "offset": "0x194abc",
+    "text": "/page2_bg.jpg"
+  },
+  {
+    "offset": "0x194b08",
+    "text": "/page3_bg.jpg"
+  },
+  {
+    "offset": "0x194b54",
+    "text": "/page4_bg.jpg"
+  },
+  {
+    "offset": "0x194ba0",
+    "text": "/page5_bg.jpg"
+  },
+  {
+    "offset": "0x194bec",
+    "text": "/page6_bg.jpg"
+  },
+  {
+    "offset": "0x194c38",
+    "text": "/page6_dg00.jpg"
+  },
+  {
+    "offset": "0x194c84",
+    "text": "/page6_dg01.jpg"
+  },
+  {
+    "offset": "0x194cd0",
+    "text": "/page6_dg02.jpg"
+  },
+  {
+    "offset": "0x194d1c",
+    "text": "/page6_dg03.jpg"
+  },
+  {
+    "offset": "0x194d68",
+    "text": "/page6_dg04.jpg"
+  },
+  {
+    "offset": "0x194db4",
+    "text": "/page6_dg05.jpg"
+  },
+  {
+    "offset": "0x194e00",
+    "text": "/page6_dg06.jpg"
+  },
+  {
+    "offset": "0x194e4c",
+    "text": "/page6_dg07.jpg"
+  },
+  {
+    "offset": "0x194e98",
+    "text": "/page6_dg08.jpg"
+  },
+  {
+    "offset": "0x194ee4",
+    "text": "/page6_dg09.jpg"
+  },
+  {
+    "offset": "0x194f30",
+    "text": "/page6_dg10.jpg"
+  },
+  {
+    "offset": "0x194f7c",
+    "text": "/page6_dg11.jpg"
+  },
+  {
+    "offset": "0x194fc8",
+    "text": "/page6_dg12.jpg"
+  },
+  {
+    "offset": "0x195014",
+    "text": "/page6_dg13.jpg"
+  },
+  {
+    "offset": "0x195060",
+    "text": "/page6_dg14.jpg"
+  },
+  {
+    "offset": "0x1950ac",
+    "text": "/page6_dg15.jpg"
+  },
+  {
+    "offset": "0x1950f8",
+    "text": "/page6_dg16.jpg"
+  },
+  {
+    "offset": "0x195144",
+    "text": "/page6_dg17.jpg"
+  },
+  {
+    "offset": "0x195190",
+    "text": "/page6_dg18.jpg"
+  },
+  {
+    "offset": "0x1951dc",
+    "text": "/page6_dg19.jpg"
+  },
+  {
+    "offset": "0x195228",
+    "text": "/page6_dg20.jpg"
+  },
+  {
+    "offset": "0x195274",
+    "text": "/page6_dg21.jpg"
+  },
+  {
+    "offset": "0x1952c0",
+    "text": "/sg_bg.jpg"
+  },
+  {
+    "offset": "0x19530c",
+    "text": "/sg00.jpg"
+  },
+  {
+    "offset": "0x195358",
+    "text": "/sg01.jpg"
+  },
+  {
+    "offset": "0x1953a4",
+    "text": "/sg02.jpg"
+  },
+  {
+    "offset": "0x1953f0",
+    "text": "/sg03.jpg"
+  },
+  {
+    "offset": "0x19543c",
+    "text": "/sg04.jpg"
+  },
+  {
+    "offset": "0x195488",
+    "text": "/sg05.jpg"
+  },
+  {
+    "offset": "0x1954d4",
+    "text": "/sg06.jpg"
+  },
+  {
+    "offset": "0x195520",
+    "text": "/sg07.jpg"
+  },
+  {
+    "offset": "0x19556c",
+    "text": "/sg08.jpg"
+  },
+  {
+    "offset": "0x1955b8",
+    "text": "/sg09.jpg"
+  },
+  {
+    "offset": "0x195604",
+    "text": "/sg10.jpg"
+  },
+  {
+    "offset": "0x195650",
+    "text": "/sg11.jpg"
+  },
+  {
+    "offset": "0x19569c",
+    "text": "/sg12.jpg"
+  },
+  {
+    "offset": "0x1956e8",
+    "text": "/sg13.jpg"
+  },
+  {
+    "offset": "0x195734",
+    "text": "/sg14.jpg"
+  },
+  {
+    "offset": "0x195780",
+    "text": "/sg15.jpg"
+  },
+  {
+    "offset": "0x1957cc",
+    "text": "/sg16.jpg"
+  },
+  {
+    "offset": "0x195818",
+    "text": "/sg17.jpg"
+  },
+  {
+    "offset": "0x195864",
+    "text": "/sg18.jpg"
+  },
+  {
+    "offset": "0x1958b0",
+    "text": "/sg19.jpg"
+  },
+  {
+    "offset": "0x1958fc",
+    "text": "/sg20.jpg"
+  },
+  {
+    "offset": "0x195948",
+    "text": "/sg21.jpg"
+  },
+  {
+    "offset": "0x195994",
+    "text": "/sg22.jpg"
+  },
+  {
+    "offset": "0x1959e0",
+    "text": "/sg23.jpg"
+  },
+  {
+    "offset": "0x195a2c",
+    "text": "/sg24.jpg"
+  },
+  {
+    "offset": "0x195a78",
+    "text": "/sg25.jpg"
+  },
+  {
+    "offset": "0x195ac4",
+    "text": "/sg26.jpg"
+  },
+  {
+    "offset": "0x195b10",
+    "text": "/sg27.jpg"
+  },
+  {
+    "offset": "0x195b5c",
+    "text": "/sg28.jpg"
+  },
+  {
+    "offset": "0x195ba8",
+    "text": "/sg29.jpg"
+  },
+  {
+    "offset": "0x195bf4",
+    "text": "/sg30.jpg"
+  },
+  {
+    "offset": "0x195c40",
+    "text": "/sg31.jpg"
+  },
+  {
+    "offset": "0x195c8c",
+    "text": "/sg32.jpg"
+  },
+  {
+    "offset": "0x195cd8",
+    "text": "/sg33.jpg"
+  },
+  {
+    "offset": "0x195d24",
+    "text": "/sg34.jpg"
+  },
+  {
+    "offset": "0x195d70",
+    "text": "/sg35.jpg"
+  },
+  {
+    "offset": "0x195dbc",
+    "text": "/sg36.jpg"
+  },
+  {
+    "offset": "0x195e08",
+    "text": "/sg37.jpg"
+  },
+  {
+    "offset": "0x195e54",
+    "text": "/sg38.jpg"
+  },
+  {
+    "offset": "0x195ea0",
+    "text": "/sg39.jpg"
+  },
+  {
+    "offset": "0x195eec",
+    "text": "/sg40.jpg"
+  },
+  {
+    "offset": "0x195f38",
+    "text": "/sg41.jpg"
+  },
+  {
+    "offset": "0x195f84",
+    "text": "/sg42.jpg"
+  },
+  {
+    "offset": "0x195fd0",
+    "text": "/sg43.jpg"
+  },
+  {
+    "offset": "0x19601c",
+    "text": "/sg44.jpg"
+  },
+  {
+    "offset": "0x196068",
+    "text": "/sg45.jpg"
+  },
+  {
+    "offset": "0x1960b4",
+    "text": "/sg46.jpg"
+  },
+  {
+    "offset": "0x196100",
+    "text": "/sg47.jpg"
+  },
+  {
+    "offset": "0x19614c",
+    "text": "/sg48.jpg"
+  },
+  {
+    "offset": "0x196198",
+    "text": "/sg49.jpg"
+  },
+  {
+    "offset": "0x1961e4",
+    "text": "/static.jpg"
+  },
+  {
+    "offset": "0x19623c",
+    "text": "ICC_PROFILE"
+  },
+  {
+    "offset": "0x196256",
+    "text": "mntrRGB XYZ "
+  },
+  {
+    "offset": "0x197977",
+    "text": "V?U%z>Iw"
+  },
+  {
+    "offset": "0x1993fa",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x199418",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x19942c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:875056C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:05A0CB92617611F1A18E9327CA1F0DB4\" xmpMM:InstanceID=\"xmp.iid:05A0CB91617611F1A18E9327CA1F0DB4\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:885056C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:875056C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x19a4c0",
+    "text": "(331f5bjI"
+  },
+  {
+    "offset": "0x19a969",
+    "text": "w{;Ou+K#nK"
+  },
+  {
+    "offset": "0x19ab32",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x19ab50",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x19ab64",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:8B5056C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:05F17BAC617611F1BACBCF37C1131F37\" xmpMM:InstanceID=\"xmp.iid:05F17BAB617611F1BACBCF37C1131F37\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:8C5056C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:8B5056C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x19c30a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x19c328",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x19c33c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:8F5056C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0646445B617611F198009B7A66FF2E3D\" xmpMM:InstanceID=\"xmp.iid:0646445A617611F198009B7A66FF2E3D\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:905056C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:8F5056C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x19d4cc",
+    "text": "UilUmqU{"
+  },
+  {
+    "offset": "0x19db9a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x19dbb8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x19dbcc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:76E381C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:068FCE4B617611F1ABBCC54CF2E0C7CA\" xmpMM:InstanceID=\"xmp.iid:068FCE4A617611F1ABBCC54CF2E0C7CA\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:77E381C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:76E381C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x19e675",
+    "text": "[YqUU`qU"
+  },
+  {
+    "offset": "0x19e7c0",
+    "text": "LUNU=qT+"
+  },
+  {
+    "offset": "0x19eb98",
+    "text": "U;aAA]6M"
+  },
+  {
+    "offset": "0x19f2d1",
+    "text": "hHg3H?ei"
+  },
+  {
+    "offset": "0x19f4d2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x19f4f0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x19f504",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:7AE381C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:06D954F2617611F19C46F8ADEA31CE4A\" xmpMM:InstanceID=\"xmp.iid:06D954F1617611F19C46F8ADEA31CE4A\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:7BE381C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:7AE381C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x19fe2a",
+    "text": "zn2lPjJ5"
+  },
+  {
+    "offset": "0x1a0f02",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1a0f20",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1a0f34",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:7EE381C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:07E683A5617611F1B9FCDB5F88EDC103\" xmpMM:InstanceID=\"xmp.iid:07E683A4617611F1B9FCDB5F88EDC103\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:2F21A6C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:7EE381C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1a1e78",
+    "text": "-qU?YqVE"
+  },
+  {
+    "offset": "0x1a1e81",
+    "text": "-9u?3ZBG$G"
+  },
+  {
+    "offset": "0x1a2a62",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1a2a80",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1a2a94",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:3621A6C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0874B3B8617611F197CDE666456818E4\" xmpMM:InstanceID=\"xmp.iid:0874B3B7617611F197CDE666456818E4\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:3721A6C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:3621A6C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1a3e7b",
+    "text": "`JE<tlU@"
+  },
+  {
+    "offset": "0x1a474e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1a476c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1a4780",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:537FD1C97561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:093989A2617611F18C4AAC3531BE0102\" xmpMM:InstanceID=\"xmp.iid:093989A1617611F18C4AAC3531BE0102\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:547FD1C97561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:537FD1C97561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1a5015",
+    "text": "v=2`02R,{"
+  },
+  {
+    "offset": "0x1a52cd",
+    "text": "1v5f5b|N"
+  },
+  {
+    "offset": "0x1a5bb3",
+    "text": "sbwu0NG~+"
+  },
+  {
+    "offset": "0x1a665e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1a667c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1a6690",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:E49B0DCA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:09FB6955617611F1B44F865671AB447C\" xmpMM:InstanceID=\"xmp.iid:09FB6954617611F1B44F865671AB447C\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:E59B0DCA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:E49B0DCA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1a76ad",
+    "text": "p%/dbz`TM"
+  },
+  {
+    "offset": "0x1a78bf",
+    "text": "9hEw#l!^I"
+  },
+  {
+    "offset": "0x1a7e52",
+    "text": "I,R0V!OL"
+  },
+  {
+    "offset": "0x1a7f42",
+    "text": "JC}|EEra"
+  },
+  {
+    "offset": "0x1a8696",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1a86b4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1a86c8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:A5583CCA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0ABFA2E7617611F1A06BC0D9E8027F3E\" xmpMM:InstanceID=\"xmp.iid:0ABFA2E6617611F1A06BC0D9E8027F3E\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:A6583CCA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:A5583CCA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1a915d",
+    "text": "*Uot5t$."
+  },
+  {
+    "offset": "0x1a98f3",
+    "text": "Y{cPh0%)"
+  },
+  {
+    "offset": "0x1a9efd",
+    "text": "|U:MR2(N*"
+  },
+  {
+    "offset": "0x1aa78a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1aa7a8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1aa7bc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:5FEC63CA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0B959603617611F1A8D5B45FFA04CAB3\" xmpMM:InstanceID=\"xmp.iid:0B959602617611F1A8D5B45FFA04CAB3\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:60EC63CA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:5FEC63CA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1abd5b",
+    "text": "|UB-NE=qT"
+  },
+  {
+    "offset": "0x1ac982",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ac9a0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ac9b4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:9E6695CA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0C4CDAD5617611F18729CD15B7E53999\" xmpMM:InstanceID=\"xmp.iid:0C4CDAD4617611F18729CD15B7E53999\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:9F6695CA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:9E6695CA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ad4f9",
+    "text": "k2i&''Lm"
+  },
+  {
+    "offset": "0x1ae5c8",
+    "text": "`O- @*{t"
+  },
+  {
+    "offset": "0x1aeb9e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1aebbc",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1aebd0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:97C0BDCA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0D2A810F617611F1AFEAACE85C075DDF\" xmpMM:InstanceID=\"xmp.iid:0D2A810E617611F1AFEAACE85C075DDF\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:98C0BDCA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:97C0BDCA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1af3a5",
+    "text": "*O@1TbZG"
+  },
+  {
+    "offset": "0x1b00e0",
+    "text": ">C1$wr\"6I"
+  },
+  {
+    "offset": "0x1b0de6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1b0e04",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1b0e18",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:99C0BDCA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0D4FF315617611F192709942008F5943\" xmpMM:InstanceID=\"xmp.iid:0D4FF314617611F192709942008F5943\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:9AC0BDCA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:99C0BDCA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1b1726",
+    "text": "imR;6=r$"
+  },
+  {
+    "offset": "0x1b2c5b",
+    "text": "E5L(u1Kt"
+  },
+  {
+    "offset": "0x1b305e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1b307c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1b3090",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:9BC0BDCA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0D8013E6617611F18AF69889D87A7582\" xmpMM:InstanceID=\"xmp.iid:0D8013E5617611F18AF69889D87A7582\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:9CC0BDCA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:9BC0BDCA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1b52d6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1b52f4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1b5308",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:B71BEBCA7561F111B3AAA7B94C86AA9C\" xmpMM:DocumentID=\"xmp.did:0E032324617611F19819C6008DF8540B\" xmpMM:InstanceID=\"xmp.iid:0E032323617611F19819C6008DF8540B\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:B81BEBCA7561F111B3AAA7B94C86AA9C\" stRef:documentID=\"xmp.did:B71BEBCA7561F111B3AAA7B94C86AA9C\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1b58cf",
+    "text": "A\\UPY\\t1"
+  },
+  {
+    "offset": "0x1b5d8f",
+    "text": ";1=r`1%aBp"
+  },
+  {
+    "offset": "0x1b7508",
+    "text": "ICC_PROFILE"
+  },
+  {
+    "offset": "0x1b7522",
+    "text": "mntrRGB XYZ "
+  },
+  {
+    "offset": "0x1b77c0",
+    "text": "2Ta#ABQRSq"
+  },
+  {
+    "offset": "0x1b7dbe",
+    "text": "%y[trpg}"
+  },
+  {
+    "offset": "0x1b7e1a",
+    "text": "k+z<XL,qV"
+  },
+  {
+    "offset": "0x1b812b",
+    "text": "\"!`JAov>r"
+  },
+  {
+    "offset": "0x1b8ed5",
+    "text": "[PYmYmYl"
+  },
+  {
+    "offset": "0x1b982e",
+    "text": "i%heT{Jq"
+  },
+  {
+    "offset": "0x1b99d2",
+    "text": "+Jj/'a)UG"
+  },
+  {
+    "offset": "0x1b9bef",
+    "text": "/,7-v-(>"
+  },
+  {
+    "offset": "0x1b9e03",
+    "text": "`{H%FJDd"
+  },
+  {
+    "offset": "0x1bb604",
+    "text": "ICC_PROFILE"
+  },
+  {
+    "offset": "0x1bb61e",
+    "text": "mntrRGB XYZ "
+  },
+  {
+    "offset": "0x1bc3a2",
+    "text": " W(NOvUy"
+  },
+  {
+    "offset": "0x1bd562",
+    "text": ")%#]5jgI'"
+  },
+  {
+    "offset": "0x1bd6e7",
+    "text": "'SjeB3k("
+  },
+  {
+    "offset": "0x1bde8e",
+    "text": "\"M1{Gtk8"
+  },
+  {
+    "offset": "0x1be772",
+    "text": "$AEB:pnJ[qH'RX"
+  },
+  {
+    "offset": "0x1bea55",
+    "text": "%Bm)=mVk"
+  },
+  {
+    "offset": "0x1bf454",
+    "text": "ICC_PROFILE"
+  },
+  {
+    "offset": "0x1bf46e",
+    "text": "mntrRGB XYZ "
+  },
+  {
+    "offset": "0x1bf70b",
+    "text": "\"2A#BQRUa"
+  },
+  {
+    "offset": "0x1c013f",
+    "text": "w$s`j+U?"
+  },
+  {
+    "offset": "0x1c070d",
+    "text": "3 |4cIQ\\"
+  },
+  {
+    "offset": "0x1c1ba0",
+    "text": "ICC_PROFILE"
+  },
+  {
+    "offset": "0x1c1bba",
+    "text": "mntrRGB XYZ "
+  },
+  {
+    "offset": "0x1c2b2b",
+    "text": "~T2/#yIGD"
+  },
+  {
+    "offset": "0x1c2e74",
+    "text": "ICC_PROFILE"
+  },
+  {
+    "offset": "0x1c2e8e",
+    "text": "mntrRGB XYZ "
+  },
+  {
+    "offset": "0x1c3419",
+    "text": "frvu\"\"'Z"
+  },
+  {
+    "offset": "0x1c38c7",
+    "text": "Z7]`qxL|x"
+  },
+  {
+    "offset": "0x1c4f58",
+    "text": "Ew4j99sDT>h"
+  },
+  {
+    "offset": "0x1c579b",
+    "text": "W9y'R'_R'R"
+  },
+  {
+    "offset": "0x1c59b6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1c59d4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1c59e8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:73D5F7DD0964F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A7068884640A11F18D3FBEF2CCAB6899\" xmpMM:InstanceID=\"xmp.iid:A7068883640A11F18D3FBEF2CCAB6899\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:74D5F7DD0964F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:73D5F7DD0964F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1c638a",
+    "text": "qU21U6\\Ui\\Ui"
+  },
+  {
+    "offset": "0x1c6c9c",
+    "text": "qUElUxlU"
+  },
+  {
+    "offset": "0x1c739a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1c73b8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1c73cc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:75D5F7DD0964F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A741BB89640A11F186D9ECDE77C54541\" xmpMM:InstanceID=\"xmp.iid:A741BB88640A11F186D9ECDE77C54541\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:76D5F7DD0964F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:75D5F7DD0964F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1c8571",
+    "text": ",Uw,UplUxlUz"
+  },
+  {
+    "offset": "0x1c8e22",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1c8e40",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1c8e54",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:77D5F7DD0964F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A7999047640A11F19BACCBBD292BF350\" xmpMM:InstanceID=\"xmp.iid:A7999046640A11F19BACCBBD292BF350\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:78D5F7DD0964F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:77D5F7DD0964F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ca9a6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ca9c4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ca9d8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:79D5F7DD0964F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A7D81E48640A11F195D8AA1B676A7840\" xmpMM:InstanceID=\"xmp.iid:A7D81E47640A11F195D8AA1B676A7840\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:7AD5F7DD0964F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:79D5F7DD0964F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1cb5c5",
+    "text": "qU6\\Ui\\Ui\\U"
+  },
+  {
+    "offset": "0x1cbc8c",
+    "text": "\"eEu:iD["
+  },
+  {
+    "offset": "0x1cbe3e",
+    "text": "sc83y<+["
+  },
+  {
+    "offset": "0x1cc6a2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1cc6c0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1cc6d4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:7BD5F7DD0964F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A816D18F640A11F19FDCDD65A85E40D8\" xmpMM:InstanceID=\"xmp.iid:A816D18E640A11F19FDCDD65A85E40D8\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:F51CD49C0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:7BD5F7DD0964F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1cce4a",
+    "text": "TbG6K}]7"
+  },
+  {
+    "offset": "0x1cd45d",
+    "text": "Ui\\Ui\\Ui\\Ui"
+  },
+  {
+    "offset": "0x1cd669",
+    "text": "\"h=r_3iZN"
+  },
+  {
+    "offset": "0x1ce03e",
+    "text": "DG2:?T$t>"
+  },
+  {
+    "offset": "0x1ce3ca",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ce3e8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ce3fc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F61CD49C0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A84C63C5640A11F1AF9DEA458176081E\" xmpMM:InstanceID=\"xmp.iid:A84C63C4640A11F1AF9DEA458176081E\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:F71CD49C0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:F61CD49C0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1cece4",
+    "text": "Y'Y@v:oV9E"
+  },
+  {
+    "offset": "0x1cff5a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1cff78",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1cff8c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F81CD49C0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A884B427640A11F18D56899A66FA4F01\" xmpMM:InstanceID=\"xmp.iid:A884B426640A11F18D56899A66FA4F01\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:F91CD49C0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:F81CD49C0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1d1096",
+    "text": ",Uw,UplUxlUz"
+  },
+  {
+    "offset": "0x1d11c4",
+    "text": "qUElUxlU"
+  },
+  {
+    "offset": "0x1d189a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1d18b8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1d18cc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:FA1CD49C0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A8C4A013640A11F1BF4BC8AB97BCB3E4\" xmpMM:InstanceID=\"xmp.iid:A8C4A012640A11F1BF4BC8AB97BCB3E4\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FB1CD49C0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:FA1CD49C0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1d3112",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1d3130",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1d3144",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:FC1CD49C0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A8FE5056640A11F185DEC09A30A02574\" xmpMM:InstanceID=\"xmp.iid:A8FE5055640A11F185DEC09A30A02574\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FD1CD49C0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:FC1CD49C0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1d43af",
+    "text": "mVI>#+q5"
+  },
+  {
+    "offset": "0x1d45f2",
+    "text": "DQs%1.K|"
+  },
+  {
+    "offset": "0x1d479b",
+    "text": "1-'Nof_m"
+  },
+  {
+    "offset": "0x1d49fe",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1d4a1c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1d4a30",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:07A4069D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:A96DBA26640A11F1A38AA65157470BEF\" xmpMM:InstanceID=\"xmp.iid:A96DBA25640A11F1A38AA65157470BEF\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:08A4069D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:07A4069D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1d56ca",
+    "text": "T!\\Ui\\Ui\\Ui"
+  },
+  {
+    "offset": "0x1d5c71",
+    "text": "Gkx=2l]LU"
+  },
+  {
+    "offset": "0x1d62ce",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1d62ec",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1d6300",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:0FA4069D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:AA478492640A11F1931CB6073B5FBB57\" xmpMM:InstanceID=\"xmp.iid:AA478491640A11F1931CB6073B5FBB57\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:10A4069D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:0FA4069D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1d7466",
+    "text": "O)GiowrmT<Zt?"
+  },
+  {
+    "offset": "0x1d7c5e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1d7c7c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1d7c90",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:37952F9D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:AB57AABC640A11F193269367C6AF729D\" xmpMM:InstanceID=\"xmp.iid:AB57AABB640A11F193269367C6AF729D\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:38952F9D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:37952F9D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1d8fa7",
+    "text": "qUElUxlU"
+  },
+  {
+    "offset": "0x1d9732",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1d9750",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1d9764",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:5EE4679D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:AC39D549640A11F189DE86AD6C3A5565\" xmpMM:InstanceID=\"xmp.iid:AC39D548640A11F189DE86AD6C3A5565\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:5FE4679D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:5EE4679D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1db02f",
+    "text": ">A:=Xm3%"
+  },
+  {
+    "offset": "0x1db35e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1db37c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1db390",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:62E4679D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:ACAD3481640A11F19C8D9F4ED67A5CE6\" xmpMM:InstanceID=\"xmp.iid:ACAD3480640A11F19C8D9F4ED67A5CE6\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:63E4679D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:62E4679D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1dc16f",
+    "text": "\\Ui\\Ui\\Ui\\Ui"
+  },
+  {
+    "offset": "0x1dceda",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1dcef8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1dcf0c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:BCC7A89D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:AD8FA958640A11F18B39D1FC93ECC73B\" xmpMM:InstanceID=\"xmp.iid:AD8FA957640A11F18B39D1FC93ECC73B\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:BDC7A89D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:BCC7A89D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ddee6",
+    "text": "_7~lylh>o"
+  },
+  {
+    "offset": "0x1deb52",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1deb70",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1deb84",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:C0C7A89D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:ADFC2CFC640A11F1968AC54D0455B9B6\" xmpMM:InstanceID=\"xmp.iid:ADFC2CFB640A11F1968AC54D0455B9B6\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:C1C7A89D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:C0C7A89D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1df68f",
+    "text": " \"6uYsJgt>I"
+  },
+  {
+    "offset": "0x1e07ca",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1e07e8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1e07fc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:28EADB9D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:AEFC28F4640A11F1A537C9E22E2ADD22\" xmpMM:InstanceID=\"xmp.iid:AEFC28F3640A11F1A537C9E22E2ADD22\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:29EADB9D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:28EADB9D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1e0ee8",
+    "text": "q2O$'DzT<"
+  },
+  {
+    "offset": "0x1e0efa",
+    "text": "Y3\\-*$yH"
+  },
+  {
+    "offset": "0x1e173a",
+    "text": "Ui\\Ua\\Ua"
+  },
+  {
+    "offset": "0x1e23c2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1e23e0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1e23f4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:2CEADB9D0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:AF783063640A11F19D96B564B6B9A58F\" xmpMM:InstanceID=\"xmp.iid:AF783062640A11F19D96B564B6B9A58F\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:2DEADB9D0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:2CEADB9D0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1e4002",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1e4020",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1e4034",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:0C400B9E0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:B051FA92640A11F19DCF87134DB4974C\" xmpMM:InstanceID=\"xmp.iid:B051FA91640A11F19DCF87134DB4974C\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:0D400B9E0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:0C400B9E0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1e55c0",
+    "text": "^1U@qUE8"
+  },
+  {
+    "offset": "0x1e5cba",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1e5cd8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1e5cec",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:10400B9E0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:B0C02A41640A11F191FFE2AE9B56F1FE\" xmpMM:InstanceID=\"xmp.iid:B0C02A40640A11F191FFE2AE9B56F1FE\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:11400B9E0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:10400B9E0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1e6b7c",
+    "text": "Ui\\Ui\\Ui"
+  },
+  {
+    "offset": "0x1e704e",
+    "text": ".jdbE|;b"
+  },
+  {
+    "offset": "0x1e70b4",
+    "text": "LUxlUuqV"
+  },
+  {
+    "offset": "0x1e7685",
+    "text": "fdFv,A`7c]"
+  },
+  {
+    "offset": "0x1e7962",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1e7980",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1e7994",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:503E3E9E0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:B1ABEB66640A11F1956582D54FB9F2B6\" xmpMM:InstanceID=\"xmp.iid:B1ABEB65640A11F1956582D54FB9F2B6\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:513E3E9E0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:503E3E9E0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1e8802",
+    "text": "aFSB>Y%Y"
+  },
+  {
+    "offset": "0x1e8a62",
+    "text": "1T8lUplUx8"
+  },
+  {
+    "offset": "0x1e9562",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1e9580",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1e9594",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:E32F679E0A64F11186D2FDCF5522B966\" xmpMM:DocumentID=\"xmp.did:B2609160640A11F1955AC5A4B8B2F20E\" xmpMM:InstanceID=\"xmp.iid:B260915F640A11F1955AC5A4B8B2F20E\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:E42F679E0A64F11186D2FDCF5522B966\" stRef:documentID=\"xmp.did:E32F679E0A64F11186D2FDCF5522B966\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ea139",
+    "text": "C''#NjOz"
+  },
+  {
+    "offset": "0x1eb17e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1eb19c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1eb1b0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F46079071C60F111B993985BC7BA8527\" xmpMM:DocumentID=\"xmp.did:C5B9D01F617411F19228C86EBE5168B9\" xmpMM:InstanceID=\"xmp.iid:C5B9D01E617411F19228C86EBE5168B9\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:A8E3EE76602B11F1BFBFA7FFB2650B96\" stRef:documentID=\"xmp.did:A8E3EE77602B11F1BFBFA7FFB2650B96\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ed272",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ed290",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ed2a4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F3A2DD327461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:A8C396D1617411F1844A87FA7774E72E\" xmpMM:InstanceID=\"xmp.iid:A8C396D0617411F1844A87FA7774E72E\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:F4A2DD327461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:F3A2DD327461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1edbb8",
+    "text": ">m>)-uK8"
+  },
+  {
+    "offset": "0x1ee4da",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ee4f8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ee50c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F5A2DD327461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:A8FE3411617411F19A96F37AF5F72D1E\" xmpMM:InstanceID=\"xmp.iid:A8FE3410617411F19A96F37AF5F72D1E\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:F6A2DD327461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:F5A2DD327461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ef148",
+    "text": "Kto?HY#yr(.x;"
+  },
+  {
+    "offset": "0x1ef856",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ef874",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ef888",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F7A2DD327461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:A9381B29617411F1AEE3C5FE0D90C7C3\" xmpMM:InstanceID=\"xmp.iid:A9381B28617411F1AEE3C5FE0D90C7C3\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:F8A2DD327461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:F7A2DD327461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f0588",
+    "text": "Kto?HY#yr(.x;"
+  },
+  {
+    "offset": "0x1f0944",
+    "text": "a[{{M+ZS"
+  },
+  {
+    "offset": "0x1f0d6e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1f0d8c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1f0da0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:F9A2DD327461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:A97B3CCA617411F1AC80DF57FF6F49EE\" xmpMM:InstanceID=\"xmp.iid:A97B3CC9617411F1AC80DF57FF6F49EE\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FAA2DD327461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:F9A2DD327461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f20b3",
+    "text": "|UkLjGlU"
+  },
+  {
+    "offset": "0x1f23c2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1f23e0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1f23f4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:FBA2DD327461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:A9B9816B617411F1B5E1E8846C423BF2\" xmpMM:InstanceID=\"xmp.iid:A9B9816A617411F1B5E1E8846C423BF2\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FCA2DD327461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:FBA2DD327461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f3267",
+    "text": "Kto?HY#yr(.x;"
+  },
+  {
+    "offset": "0x1f33de",
+    "text": "+<qpWfNR|"
+  },
+  {
+    "offset": "0x1f3b72",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1f3b90",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1f3ba4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:423F01337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:A9FC5D66617411F1A7BAF8EB35E99BE5\" xmpMM:InstanceID=\"xmp.iid:A9FC5D65617411F1A7BAF8EB35E99BE5\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:433F01337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:423F01337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f5482",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1f54a0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1f54b4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:443F01337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AA3462BC617411F184A8F6FDD7D0EC3C\" xmpMM:InstanceID=\"xmp.iid:AA3462BB617411F184A8F6FDD7D0EC3C\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:453F01337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:443F01337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f5bf2",
+    "text": "Y?##oQ\\U"
+  },
+  {
+    "offset": "0x1f6ed2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1f6ef0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1f6f04",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:463F01337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AA6FBE43617411F18C1AC53151E782BF\" xmpMM:InstanceID=\"xmp.iid:AA6FBE42617411F18C1AC53151E782BF\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:473F01337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:463F01337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f7994",
+    "text": "D+R|<qW$"
+  },
+  {
+    "offset": "0x1f813c",
+    "text": "Rm$vb%U*"
+  },
+  {
+    "offset": "0x1f82e2",
+    "text": "a[{{M+ZS"
+  },
+  {
+    "offset": "0x1f89f2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1f8a10",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1f8a24",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:483F01337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AAB4D6FD617411F1826CB0BEFAB2CA0C\" xmpMM:InstanceID=\"xmp.iid:AAB4D6FC617411F1826CB0BEFAB2CA0C\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:493F01337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:483F01337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1f90e3",
+    "text": "Un4(n!7:["
+  },
+  {
+    "offset": "0x1fa5b6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1fa5d4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1fa5e8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:4A3F01337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AAE98162617411F19184B3D5BC467FDA\" xmpMM:InstanceID=\"xmp.iid:AAE98161617411F19184B3D5BC467FDA\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:4B3F01337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:4A3F01337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1fc206",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1fc224",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1fc238",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:4C3F01337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AB1AD14B617411F1A01ABEC908241749\" xmpMM:InstanceID=\"xmp.iid:AB1AD14A617411F1A01ABEC908241749\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:1D0325337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:4C3F01337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1fc96b",
+    "text": "j^TK-6;}=+"
+  },
+  {
+    "offset": "0x1fdeea",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1fdf08",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1fdf1c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:1E0325337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AB4E213D617411F1857999369A20C1C6\" xmpMM:InstanceID=\"xmp.iid:AB4E213C617411F1857999369A20C1C6\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:1F0325337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:1E0325337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x1ffc6a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x1ffc88",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x1ffc9c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:200325337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AB86D581617411F18EF5D403A3C42976\" xmpMM:InstanceID=\"xmp.iid:AB86D580617411F18EF5D403A3C42976\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:210325337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:200325337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x201aae",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x201acc",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x201ae0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:220325337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:ABB89E30617411F189CBA4C9C6C8238C\" xmpMM:InstanceID=\"xmp.iid:ABB89E2F617411F189CBA4C9C6C8238C\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:230325337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:220325337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2020c6",
+    "text": "G\\y:I\"<!@{':"
+  },
+  {
+    "offset": "0x202fd8",
+    "text": "w%*bFj<R:7"
+  },
+  {
+    "offset": "0x203a2a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x203a48",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x203a5c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:240325337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AC0337CF617411F19091D19A08F239AC\" xmpMM:InstanceID=\"xmp.iid:AC0337CE617411F19091D19A08F239AC\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:250325337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:240325337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x204fe2",
+    "text": "g%*bF!^9"
+  },
+  {
+    "offset": "0x205117",
+    "text": "'9n.atW)"
+  },
+  {
+    "offset": "0x205408",
+    "text": "o-CpKiw*I"
+  },
+  {
+    "offset": "0x205ad2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x205af0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x205b04",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:260325337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AC3B6181617411F1B6778742A7FA72FC\" xmpMM:InstanceID=\"xmp.iid:AC3B6180617411F1B6778742A7FA72FC\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:270325337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:260325337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x207dee",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x207e0c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x207e20",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:A3084F337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AC73B672617411F195C79313C67270AF\" xmpMM:InstanceID=\"xmp.iid:AC73B671617411F195C79313C67270AF\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:A4084F337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:A3084F337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2092fc",
+    "text": "l#v<R9bgo"
+  },
+  {
+    "offset": "0x2094c8",
+    "text": "iA^b4z#vn"
+  },
+  {
+    "offset": "0x20a0a2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x20a0c0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x20a0d4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:A5084F337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:ACAB7252617411F18AE59B803ABB5DAB\" xmpMM:InstanceID=\"xmp.iid:ACAB7251617411F18AE59B803ABB5DAB\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:A6084F337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:A5084F337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x20ae35",
+    "text": "QyAnCH<Mv"
+  },
+  {
+    "offset": "0x20c332",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x20c350",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x20c364",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:A7084F337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:ACE52491617411F187C0F07948EEE71C\" xmpMM:InstanceID=\"xmp.iid:ACE52490617411F187C0F07948EEE71C\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:A8084F337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:A7084F337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x20c986",
+    "text": "O1yjWib7"
+  },
+  {
+    "offset": "0x20d3e5",
+    "text": "}sZawyb["
+  },
+  {
+    "offset": "0x20e57e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x20e59c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x20e5b0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:A9084F337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AD2905C0617411F1B60E8708CFB6199F\" xmpMM:InstanceID=\"xmp.iid:AD2905BF617411F1B60E8708CFB6199F\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:AA084F337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:A9084F337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x20ebdb",
+    "text": "&kU$}f0h)"
+  },
+  {
+    "offset": "0x20fce8",
+    "text": "a[{{M+ZS"
+  },
+  {
+    "offset": "0x20fd43",
+    "text": "'9n.atW)"
+  },
+  {
+    "offset": "0x210772",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x210790",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2107a4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:AB084F337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AD5E289B617411F1B01A84421E2F80BC\" xmpMM:InstanceID=\"xmp.iid:AD5E289A617411F1B01A84421E2F80BC\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:AC084F337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:AB084F337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x210dcf",
+    "text": "&kU$}f0h)"
+  },
+  {
+    "offset": "0x210ffd",
+    "text": "mn-gh.#h"
+  },
+  {
+    "offset": "0x211d34",
+    "text": "Rm$vb%U*"
+  },
+  {
+    "offset": "0x21296a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x212988",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x21299c",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:AD084F337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AD92B2D4617411F1B655D73BFBECC5F2\" xmpMM:InstanceID=\"xmp.iid:AD92B2D3617411F1B655D73BFBECC5F2\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FA9771337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:AD084F337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x214b22",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x214b40",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x214b54",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:FB9771337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:ADC9F71F617411F1AE08A32E4FD315FD\" xmpMM:InstanceID=\"xmp.iid:ADC9F71E617411F1AE08A32E4FD315FD\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FC9771337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:FB9771337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2161f2",
+    "text": "}GQY }by"
+  },
+  {
+    "offset": "0x21656a",
+    "text": "Gduu%YH*"
+  },
+  {
+    "offset": "0x216ce6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x216d04",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x216d18",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:FD9771337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:ADFEA3C4617411F1AA17DFD302A02224\" xmpMM:InstanceID=\"xmp.iid:ADFEA3C3617411F1AA17DFD302A02224\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:FE9771337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:FD9771337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x218e8a",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x218ea8",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x218ebc",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:FF9771337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AE3525E0617411F194EEC3CA904F9525\" xmpMM:InstanceID=\"xmp.iid:AE3525DF617411F194EEC3CA904F9525\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:009871337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:FF9771337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2195e7",
+    "text": "mnmfh.bh&M"
+  },
+  {
+    "offset": "0x21a21b",
+    "text": "Ito?HY#yr(.x;"
+  },
+  {
+    "offset": "0x21a5d2",
+    "text": "a[{{M+ZS"
+  },
+  {
+    "offset": "0x21a62d",
+    "text": "'9n.atW)"
+  },
+  {
+    "offset": "0x21b022",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x21b040",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x21b054",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:019871337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AE7A6741617411F1BDFBB956E2AFFFE2\" xmpMM:InstanceID=\"xmp.iid:AE7A6740617411F1BDFBB956E2AFFFE2\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:029871337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:019871337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x21bf64",
+    "text": "-uK7){g\""
+  },
+  {
+    "offset": "0x21c2db",
+    "text": "zs,WP32I"
+  },
+  {
+    "offset": "0x21d1be",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x21d1dc",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x21d1f0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:039871337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AEB0E4EB617411F19BA9DACF9D954BF8\" xmpMM:InstanceID=\"xmp.iid:AEB0E4EA617411F19BA9DACF9D954BF8\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:049871337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:039871337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x21dd89",
+    "text": "5mJm;C_J"
+  },
+  {
+    "offset": "0x21e2c3",
+    "text": ">m:)-uK8"
+  },
+  {
+    "offset": "0x21e89b",
+    "text": "=9XY[#4s"
+  },
+  {
+    "offset": "0x21f34e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x21f36c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x21f380",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:ADD0AA337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AEE9366B617411F18A5B87C9F47A52FE\" xmpMM:InstanceID=\"xmp.iid:AEE9366A617411F18A5B87C9F47A52FE\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:AED0AA337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:ADD0AA337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2214d6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2214f4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x221508",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:AFD0AA337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AF1C6192617411F1B2C9882DCD728263\" xmpMM:InstanceID=\"xmp.iid:AF1C6191617411F1B2C9882DCD728263\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:B0D0AA337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:AFD0AA337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2225b1",
+    "text": ">m:)-u;8"
+  },
+  {
+    "offset": "0x222b1f",
+    "text": "HC#H*aBx"
+  },
+  {
+    "offset": "0x222b45",
+    "text": "iA^b4z#vn"
+  },
+  {
+    "offset": "0x222bf9",
+    "text": "a[{{M+ZS"
+  },
+  {
+    "offset": "0x222c54",
+    "text": "'9n.atW)"
+  },
+  {
+    "offset": "0x223229",
+    "text": "\\U/}9n# "
+  },
+  {
+    "offset": "0x223408",
+    "text": "15di$<Uc^"
+  },
+  {
+    "offset": "0x223672",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x223690",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2236a4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:B1D0AA337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AF52B8D0617411F19D49CDA99D2C4574\" xmpMM:InstanceID=\"xmp.iid:AF52B8CF617411F19D49CDA99D2C4574\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:B2D0AA337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:B1D0AA337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x224d97",
+    "text": "a[{{M+ZS"
+  },
+  {
+    "offset": "0x224df2",
+    "text": "'9n.atW)"
+  },
+  {
+    "offset": "0x2252ba",
+    "text": "i5n'sCkd"
+  },
+  {
+    "offset": "0x22580e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x22582c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x225840",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:B3D0AA337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AFBC7E8F617411F1A2C6C1E5B6C5D119\" xmpMM:InstanceID=\"xmp.iid:AFBC7E8E617411F1A2C6C1E5B6C5D119\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:B4D0AA337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:B3D0AA337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2278fe",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x22791c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x227930",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:B5D0AA337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:AFF6A576617411F1B9C1FAF12AAC2538\" xmpMM:InstanceID=\"xmp.iid:AFF6A575617411F1B9C1FAF12AAC2538\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:B6D0AA337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:B5D0AA337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x228da3",
+    "text": "}K+;[xllbW!"
+  },
+  {
+    "offset": "0x2296f2",
+    "text": ".M$Ck/nu_"
+  },
+  {
+    "offset": "0x2299a2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2299c0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2299d4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:B7D0AA337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B0300ACB617411F193FFB81ABB4DAFE1\" xmpMM:InstanceID=\"xmp.iid:B0300ACA617411F193FFB81ABB4DAFE1\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:8B88D2337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:B7D0AA337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x22ad32",
+    "text": "}H}3myi&"
+  },
+  {
+    "offset": "0x22b30b",
+    "text": "pECsw%DQ)"
+  },
+  {
+    "offset": "0x22b9e6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x22ba04",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x22ba18",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:8C88D2337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B06687B6617411F1A2B9F0AED9A207EF\" xmpMM:InstanceID=\"xmp.iid:B06687B5617411F1A2B9F0AED9A207EF\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:8D88D2337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:8C88D2337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x22c5b9",
+    "text": "43FCG,lU"
+  },
+  {
+    "offset": "0x22d9b6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x22d9d4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x22d9e8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:8E88D2337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B09C94D8617411F1ABC58FCC73375E44\" xmpMM:InstanceID=\"xmp.iid:B09C94D7617411F1ABC58FCC73375E44\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:8F88D2337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:8E88D2337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x22e5ef",
+    "text": "y-?m*1VK6"
+  },
+  {
+    "offset": "0x22e6d7",
+    "text": "c/;[I9j7"
+  },
+  {
+    "offset": "0x22ed9d",
+    "text": "#en\"@~)P"
+  },
+  {
+    "offset": "0x22f906",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x22f924",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x22f938",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:9088D2337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B0E47139617411F1AE06945F442F7701\" xmpMM:InstanceID=\"xmp.iid:B0E47138617411F1AE06945F442F7701\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:9188D2337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:9088D2337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x23053f",
+    "text": "y-?m*1VK6"
+  },
+  {
+    "offset": "0x2314b2",
+    "text": "_EuhSq<G"
+  },
+  {
+    "offset": "0x231561",
+    "text": "w^jyt?/3"
+  },
+  {
+    "offset": "0x23179e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2317bc",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2317d0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:9288D2337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B11D6264617411F1B074D0372CE05CCC\" xmpMM:InstanceID=\"xmp.iid:B11D6263617411F1B074D0372CE05CCC\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:9388D2337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:9288D2337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2323d7",
+    "text": "y-?m*1VK6"
+  },
+  {
+    "offset": "0x232b3f",
+    "text": "oN]1T#4Kh"
+  },
+  {
+    "offset": "0x232b5b",
+    "text": "c$3)7!U\""
+  },
+  {
+    "offset": "0x233586",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2335a4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2335b8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:9488D2337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B1551C57617411F19760CF6B39EC313E\" xmpMM:InstanceID=\"xmp.iid:B1551C56617411F19760CF6B39EC313E\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:9588D2337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:9488D2337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2341bf",
+    "text": "y-?m*1VK6"
+  },
+  {
+    "offset": "0x23528e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2352ac",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2352c0",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:27FAFE337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B18977EC617411F18EF485B1F7A68972\" xmpMM:InstanceID=\"xmp.iid:B18977EB617411F18EF485B1F7A68972\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:28FAFE337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:27FAFE337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x235ec7",
+    "text": "y-?m*1VK6"
+  },
+  {
+    "offset": "0x236ea6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x236ec4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x236ed8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:29FAFE337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B1C0E4FE617411F19EEF82C91048104A\" xmpMM:InstanceID=\"xmp.iid:B1C0E4FD617411F19EEF82C91048104A\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:2AFAFE337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:29FAFE337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x237adf",
+    "text": "y-?m*1VK6"
+  },
+  {
+    "offset": "0x238314",
+    "text": "ZI\\RI$aB"
+  },
+  {
+    "offset": "0x2389ce",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2389ec",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x238a00",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:2BFAFE337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B207B43E617411F19390C80213F889BD\" xmpMM:InstanceID=\"xmp.iid:B207B43D617411F19390C80213F889BD\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:2CFAFE337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:2BFAFE337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x23a4de",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x23a4fc",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x23a510",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:2DFAFE337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B23F9220617411F1B84EE4EADD2A2CC3\" xmpMM:InstanceID=\"xmp.iid:B23F921F617411F1B84EE4EADD2A2CC3\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:2EFAFE337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:2DFAFE337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x23c01e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x23c03c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x23c050",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:2FFAFE337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B276D214617411F1AA8ABF959B108222\" xmpMM:InstanceID=\"xmp.iid:B276D213617411F1AA8ABF959B108222\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:30FAFE337461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:2FFAFE337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x23ca60",
+    "text": "5m<yS^<u"
+  },
+  {
+    "offset": "0x23d0b5",
+    "text": "V[;EaFQ  "
+  },
+  {
+    "offset": "0x23db1e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x23db3c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x23db50",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:31FAFE337461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B2B082CE617411F1AC0FFA4B6DCA97E5\" xmpMM:InstanceID=\"xmp.iid:B2B082CD617411F1AC0FFA4B6DCA97E5\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:DD3D26347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:31FAFE337461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x23eea7",
+    "text": "WKqq-=Y]"
+  },
+  {
+    "offset": "0x23f592",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x23f5b0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x23f5c4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:DE3D26347461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B2FC05A3617411F18E27B744D8EDBF91\" xmpMM:InstanceID=\"xmp.iid:B2FC05A2617411F18E27B744D8EDBF91\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:DF3D26347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:DE3D26347461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x240f2e",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x240f4c",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x240f60",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:E03D26347461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B34EAAE0617411F1B2C9B376A96E7E68\" xmpMM:InstanceID=\"xmp.iid:B34EAADF617411F1B2C9B376A96E7E68\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:E13D26347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:E03D26347461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x24238e",
+    "text": "Uz:ve=F*"
+  },
+  {
+    "offset": "0x2427a2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2427c0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2427d4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:E23D26347461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B38AF45A617411F18675DC45DC2C24DB\" xmpMM:InstanceID=\"xmp.iid:B38AF459617411F18675DC45DC2C24DB\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:E33D26347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:E23D26347461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2436f2",
+    "text": "^7{pu]gT"
+  },
+  {
+    "offset": "0x243ea2",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x243ec0",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x243ed4",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:E43D26347461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B3C60503617411F18A94C83E3E89A5C3\" xmpMM:InstanceID=\"xmp.iid:B3C60502617411F18A94C83E3E89A5C3\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:E53D26347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:E43D26347461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x2453f6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x245414",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x245428",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:E63D26347461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B40008D5617411F1B3BFCFB32E9B71A1\" xmpMM:InstanceID=\"xmp.iid:B40008D4617411F1B3BFCFB32E9B71A1\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:E73D26347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:E63D26347461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x245cd6",
+    "text": "xYcuVUq<m_"
+  },
+  {
+    "offset": "0x2466c6",
+    "text": "ohttp://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x2466e4",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x2466f8",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:OriginalDocumentID=\"xmp.did:3FCA51347461F111B38EFCECC8B30580\" xmpMM:DocumentID=\"xmp.did:B43D177C617411F186DBF81FCC85DC40\" xmpMM:InstanceID=\"xmp.iid:B43D177B617411F186DBF81FCC85DC40\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:40CA51347461F111B38EFCECC8B30580\" stRef:documentID=\"xmp.did:3FCA51347461F111B38EFCECC8B30580\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x247842",
+    "text": "+http://ns.adobe.com/xap/1.0/"
+  },
+  {
+    "offset": "0x247860",
+    "text": "<?xpacket begin=\""
+  },
+  {
+    "offset": "0x247874",
+    "text": "\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?> <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.3-c011 66.145661, 2012/02/06-14:56:27        \"> <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"> <rdf:Description rdf:about=\"\" xmlns:xmpMM=\"http://ns.adobe.com/xap/1.0/mm/\" xmlns:stRef=\"http://ns.adobe.com/xap/1.0/sType/ResourceRef#\" xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\" xmpMM:DocumentID=\"xmp.did:2F5BAAC6617511F1ABABB6886F3B5E1D\" xmpMM:InstanceID=\"xmp.iid:2F5BAAC5617511F1ABABB6886F3B5E1D\" xmp:CreatorTool=\"Adobe Photoshop CS6 (Windows)\"> <xmpMM:DerivedFrom stRef:instanceID=\"xmp.iid:A89169A9608511F18E19AF710A16D5A6\" stRef:documentID=\"xmp.did:A89169AA608511F18E19AF710A16D5A6\"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end=\"r\"?>"
+  },
+  {
+    "offset": "0x24884b",
+    "text": "8IIEOQBH"
+  },
+  {
+    "offset": "0x249f05",
+    "text": "bMMEnn6,"
+  },
+  {
+    "offset": "0x24b85d",
+    "text": "k>ciy|[|"
+  },
+  {
+    "offset": "0x24c783",
+    "text": ":*;q nJP"
+  },
+  {
+    "offset": "0x24c96d",
+    "text": "G/Y f;E7"
+  },
+  {
+    "offset": "0x24ce46",
+    "text": "$.@R@%C+"
+  },
+  {
+    "offset": "0x24d98e",
+    "text": "]DOPCGRi"
+  },
+  {
+    "offset": "0x2500bd",
+    "text": "@RY2Eve`$"
+  },
+  {
+    "offset": "0x250eb6",
+    "text": "aoZ'QXnc\""
+  },
+  {
+    "offset": "0x251618",
+    "text": "j 45+S#i"
+  },
+  {
+    "offset": "0x2525c6",
+    "text": "n\\ eu&6F2(x"
+  },
+  {
+    "offset": "0x252985",
+    "text": "\\;K3sfv~~<"
+  },
+  {
+    "offset": "0x252a29",
+    "text": ":FONJQcl$l"
+  },
+  {
+    "offset": "0x253df3",
+    "text": "6jl*2|,x"
+  }
+]

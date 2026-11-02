@@ -1,0 +1,122 @@
+[
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_36B0&PID_3002&MI_00\\6&2DDD164C&0&0000"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_36B0&PID_3002&MI_01\\6&2DDD164C&0&0001"
+  },
+  {
+    "Class": "USB",
+    "FriendlyName": "USB Composite Device",
+    "InstanceId": "USB\\VID_1EA7&PID_4884\\VIAL:F64C2B3C"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_01\\7&2D17FF95&0&0000"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_36B0&PID_3002&MI_02\\6&2DDD164C&0&0002"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_1EA7&PID_4884&MI_00\\7&1A373F3A&0&0000"
+  },
+  {
+    "Class": "Keyboard",
+    "FriendlyName": "HID Keyboard Device",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_00\\7&15547350&0&0000"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "HID-compliant device",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL07\\8&2AA18D9&0&0006"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL06\\8&2AA18D9&0&0005"
+  },
+  {
+    "Class": "Keyboard",
+    "FriendlyName": "HID Keyboard Device",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL05\\8&2AA18D9&0&0004"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的用户控制设备",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL04\\8&2AA18D9&0&0003"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_1EA7&PID_4884&MI_01\\7&1A373F3A&0&0001"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的系统控制器",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL03\\8&2AA18D9&0&0002"
+  },
+  {
+    "Class": "USB",
+    "FriendlyName": "USB Composite Device",
+    "InstanceId": "USB\\VID_36B0&PID_3002\\5&987101&0&10"
+  },
+  {
+    "Class": "Mouse",
+    "FriendlyName": "HID-compliant mouse",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL02\\8&2AA18D9&0&0001"
+  },
+  {
+    "Class": "Keyboard",
+    "FriendlyName": "HID Keyboard Device",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_00&COL01\\8&2AA18D9&0&0000"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_01\\8&1A6DA51E&0&0000"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_1EA7&PID_4884&MI_02\\8&32313163&0&0000"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_02&COL05\\7&940C1D3&0&0004"
+  },
+  {
+    "Class": "Keyboard",
+    "FriendlyName": "HID Keyboard Device",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_02&COL04\\7&940C1D3&0&0003"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_1EA7&PID_4884&MI_02\\7&1A373F3A&0&0002"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的用户控制设备",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_02&COL03\\7&940C1D3&0&0002"
+  },
+  {
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的系统控制器",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_02&COL02\\7&940C1D3&0&0001"
+  },
+  {
+    "Class": "Mouse",
+    "FriendlyName": "HID-compliant mouse",
+    "InstanceId": "HID\\VID_36B0&PID_3002&MI_02&COL01\\7&940C1D3&0&0000"
+  }
+]
