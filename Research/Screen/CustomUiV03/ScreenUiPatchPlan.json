@@ -1,0 +1,62 @@
+{
+  "Device": "AULA-Neos75 Screen",
+  "BaseBackup": "D:\\Git\\Neos75\\Research\\Screen\\Backup20261102T084907Z\\ScreenApplication.bin",
+  "BaseSha256": "6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b",
+  "FirmwareWritten": false,
+  "HardwareDisplayVerified": false,
+  "Configuration": {
+    "Title": "NEOS75 UI",
+    "Message": "hellow world",
+    "Status": "",
+    "ShowUptime": true
+  },
+  "PayloadLength": 1948,
+  "HookAddress": "0x3c390",
+  "StatusSelector": "0x7F",
+  "CustomPagesOnly": true,
+  "PreservedConfigurationAddress": "0x7F000",
+  "RecoverySymbols": {
+    "InitializeScreenRecovery": "0x50000",
+    "GuardScreenSysTick": "0x5000e",
+    "RecoverScreenFault": "0x5004e"
+  },
+  "Pages": [
+    {
+      "Name": "Payload",
+      "Address": "0x50000",
+      "Length": 4096,
+      "File": "PayloadPage.bin",
+      "Sha256": "0c07a19044cbabed90dd6fac80b2c3f692fb9c7ce64a82cbd84dd161f1765809",
+      "RestoreFile": "RestorePayloadPage.bin",
+      "RestoreSha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09"
+    },
+    {
+      "Name": "Vector",
+      "Address": "0x8000",
+      "Length": 4096,
+      "File": "VectorPage.bin",
+      "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+      "RestoreFile": "RestoreVectorPage.bin",
+      "RestoreSha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430"
+    },
+    {
+      "Name": "Information",
+      "Address": "0x35000",
+      "Length": 4096,
+      "File": "InformationPage.bin",
+      "Sha256": "713d3df0eea94ad144a2f8274e11e9dfd87f045e912970fb5d1e63d5e46db260",
+      "RestoreFile": "RestoreInformationPage.bin",
+      "RestoreSha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058"
+    },
+    {
+      "Name": "Hook",
+      "Address": "0x3c000",
+      "Length": 4096,
+      "File": "HookPage.bin",
+      "Sha256": "c0f6ac0f21782225d0eaf9024dbf2d03675ecd510f8c44cdda1a4fec65c5e82b",
+      "RestoreFile": "RestoreHookPage.bin",
+      "RestoreSha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874"
+    }
+  ],
+  "PatchedApplicationSha256": "afb03cbed5401cc8db72c82de3555f201d8bfcd568fef024d63e5d88483f4d71"
+}

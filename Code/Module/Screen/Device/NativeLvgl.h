@@ -62,6 +62,7 @@ void lv_obj_set_style_text_line_space(lv_obj_t *Object, lv_coord_t Value, lv_sty
 void *lv_mem_alloc(size_t Size);
 uint32_t lv_tick_get(void);
 lv_timer_t *lv_timer_create(lv_timer_cb_t Callback, uint32_t Period, void *UserData);
+lv_obj_t *GetNativeActiveScreen(void);
 
 static inline lv_coord_t lv_pct(lv_coord_t Percent)
 {

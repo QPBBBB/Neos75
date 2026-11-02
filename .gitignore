@@ -1,5 +1,49 @@
-**/__pycache__/
+# Python bytecode and tool caches. Keep the portable runtime and .pyd modules.
+__pycache__/
 *.pyc
 *.pyo
-Code/Module/Screen/Runtime/
-Tools/ArmCompiler/Runtime/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+
+# Reproducible module builds and the downloaded compiler runtime.
+/Code/Module/**/Runtime/
+/Tools/ArmCompiler/Runtime/
+/Build/
+/Dist/
+/Temp/
+/Tmp/
+/Code/**/*.o
+/Code/**/*.obj
+/Code/**/*.map
+/Code/**/*.pdb
+/Code/**/*.ilk
+/Code/**/*.idb
+/Code/**/*.pch
+/Code/**/*.ipch
+/Code/**/*.exp
+/Code/**/*.tlog/
+
+# Local IDE state, editor recovery files and OS metadata.
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Research captures, firmware/recovery packages, logs and portable dependencies
+# are intentional versioned assets. Do not ignore *.bin, *.elf, *.exe or *.dll.

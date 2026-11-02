@@ -162,3 +162,20 @@ https://gist.github.com/borrougagnou/a21613093f323a05167a92212ab1ff7b
    当前没有专用 HID 在线文字更新协议；UI 为设备原生控件，扩展入口是 C API 与设备 timer。
    初期图片文字示例已从项目移走，原生 UI 不依赖图片生成或上传工具。
    运行、刷写和恢复方法见 Documentation/ScreenUi.txt。
+
+七、官方更新后重新适配与只保留自定义页面（2026-11-02）
+用户先确认 V02 自定义 UI/计时正常，随后要求停止修改并自行升级官方固件。
+确认官方更新完成后，重新备份应用区 Backup20261102T084907Z 和 Bootloader Backup20261102T084911Z，均双份一致。
+新的代码前缀与下载的 20:47:09 官方 MCU 文件一致；原生函数地址已重新定位，未沿用 23:18:16 的接口。
+V03 不调用原厂 GUI 初始化，只保留存储初始化并复用 LVGL 初始空白 screen。
+原厂页面对象、页面专用 timer 注册与业务报文执行链已移除，七个原 GUI 页面指针回报全部为零。
+当前定时器持续运行，ActiveScreen 与 UiScreen 相同，ActivationCount=1。
+新增只读状态查询 A5 41 selector 7F，版本 3 同时报告 CustomPagesOnly、LegacyPageRootCount 等状态。
+原厂镜像/资源仍作恢复归档，底层 RTX、LVGL、USB 和硬件驱动仍来自原厂二进制，未声称整片厂商字节被物理清空。
+屏幕刷写 Flash20261102T090614Z，完整回读 SHA256 afb03cbed5401cc8db72c82de3555f201d8bfcd568fef024d63e5d88483f4d71。
+下方 encoder index 1 的三层双方向和 row5/column8 按压均写入 0000。
+ScreenKnob20261102T090653Z 保留完整前后映射及写入记录，其他按键/上方旋钮逐项一致。
+用户明确确认彻底断电重启后：自定义画面、计时、下方旋钮无作用、上方音量均正常。
+重启后 UiState20261102T090848Z 再次回报原厂页面对象 0、页面仅加载 1 次、计时递增。
+主键盘在后续 Raw HID 回查时先不回复、随后 USB 不在枚举中，未将这次尝试当作成功；断电后旋钮效果以用户实测确认记载。
+源代码、生成页、恢复页与原生接口指纹归档于 Research/Screen/CustomUiV03。

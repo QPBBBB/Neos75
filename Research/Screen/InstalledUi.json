@@ -1,9 +1,16 @@
 {
   "Mode": "Install",
-  "BaseSha256": "5da95e4ac051fa2f64558fc48bf3d3501685b9c27b2e974d62dd3aa3a1db4895",
-  "ApplicationSha256": "0c8575c03d7eae24792dd016e8817f3e64015bdc7b73d3c35cb842f241c08810",
-  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\CustomUiV01\\ScreenUiPatchPlan.json",
-  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T071349Z\\Report.json",
-  "HardwareDisplayVerified": false,
-  "ConfirmationStatus": "AwaitingUserAtPhysicalDevice"
+  "BaseSha256": "6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b",
+  "ApplicationSha256": "afb03cbed5401cc8db72c82de3555f201d8bfcd568fef024d63e5d88483f4d71",
+  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T090614Z\\Package\\ScreenUiPatchPlan.json",
+  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T090614Z\\Report.json",
+  "HardwareDisplayVerified": true,
+  "UserPowerCycleVerified": true,
+  "LowerKnobPhysicallyDisabled": true,
+  "UpperVolumeKnobPhysicallyVerified": true,
+  "LegacyPageRootCount": 0,
+  "CustomPagesOnly": true,
+  "ProductionPackage": "Research/Screen/CustomUiV03",
+  "RuntimeState": "Research/Screen/UiState20261102T090848Z/Summary.json",
+  "KnobConfiguration": "Research/Device/ScreenKnob20261102T090653Z/Report.json"
 }

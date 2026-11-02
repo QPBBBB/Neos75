@@ -1,6 +1,13 @@
 #include "NativeLvgl.h"
 #include "NativeSymbols.h"
 
+/* Standard Arm compiler ABI, used for stack aggregate initialization. */
+void __aeabi_memclr4(void *Destination, size_t Length)
+{
+    volatile uint8_t *Bytes = Destination;
+    while (Length != 0) { *Bytes++ = 0; --Length; }
+}
+
 /* External LVGL API names and parameter types intentionally match upstream.
  * Only these verified entry points are imported from the backed-up image. */
 static void SetNumberStyle(lv_obj_t *Object, unsigned Property, int Value, unsigned Selector)
@@ -31,6 +38,12 @@ void lv_obj_clear_flag(lv_obj_t *Object, lv_obj_flag_t Flags)
 void lv_disp_load_scr(lv_obj_t *Screen)
 {
     ((void (*)(lv_obj_t *))NativeLoadScreen)(Screen);
+}
+
+lv_obj_t *GetNativeActiveScreen(void)
+{
+    void *Display = ((void *(*)(void))NativeGetDefaultDisplay)();
+    return ((lv_obj_t *(*)(void *))NativeGetActiveScreen)(Display);
 }
 
 void lv_obj_del(lv_obj_t *Object)

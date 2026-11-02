@@ -1,0 +1,803 @@
+
+D:\Git\Neos75\Code\Module\Screen\Runtime\Device\ScreenUi.elf:	file format elf32-littlearm
+
+Disassembly of section .NativeHook:
+
+0003c390 <ScreenUiNativeHook>:
+   3c390: f014 f8ee    	bl	0x50570 <EnterDeviceScreenUi> @ imm = #0x141dc
+
+Disassembly of section .NativeInformationHook:
+
+000353b2 <ScreenUiInformationHook>:
+   353b2: f01b f82f    	bl	0x50414 <HandleScreenInformation> @ imm = #0x1b05e
+
+Disassembly of section .NativePacketHook:
+
+00035064 <ScreenUiPacketHook>:
+   35064: f01b b9a2    	b.w	0x503ac <HandleScreenPacket> @ imm = #0x1b344
+
+Disassembly of section .Payload:
+
+00050000 <InitializeScreenRecovery>:
+   50000: f04f 5000    	mov.w	r0, #0x20000000
+   50004: 2100         	movs	r1, #0x0
+   50006: 6001         	str	r1, [r0]
+   50008: f248 10bd    	movw	r0, #0x81bd
+   5000c: 4700         	bx	r0
+
+0005000e <GuardScreenSysTick>:
+   5000e: b40f         	push	{r0, r1, r2, r3}
+   50010: f04f 5000    	mov.w	r0, #0x20000000
+   50014: 6800         	ldr	r0, [r0]
+   50016: f010 0f03    	tst.w	r0, #0x3
+   5001a: d111         	bne	0x50040 <ContinueScreenSysTick> @ imm = #0x22
+   5001c: 0c01         	lsrs	r1, r0, #0x10
+   5001e: f242 0200    	movw	r2, #0x2000
+   50022: 4291         	cmp	r1, r2
+   50024: d003         	beq	0x5002e <CheckScreenState> @ imm = #0x6
+   50026: 0d41         	lsrs	r1, r0, #0x15
+   50028: f5b1 6f80    	cmp.w	r1, #0x400
+   5002c: d108         	bne	0x50040 <ContinueScreenSysTick> @ imm = #0x10
+
+0005002e <CheckScreenState>:
+   5002e: 6801         	ldr	r1, [r0]
+   50030: 4a0e         	ldr	r2, [pc, #0x38]         @ 0x5006c <WaitForScreenReset+0x4>
+   50032: 4291         	cmp	r1, r2
+   50034: d104         	bne	0x50040 <ContinueScreenSysTick> @ imm = #0x8
+   50036: 6841         	ldr	r1, [r0, #0x4]
+   50038: b111         	cbz	r1, 0x50040 <ContinueScreenSysTick> @ imm = #0x4
+   5003a: 1e49         	subs	r1, r1, #0x1
+   5003c: 6041         	str	r1, [r0, #0x4]
+   5003e: d003         	beq	0x50048 <RecoverFromScreenSysTick> @ imm = #0x6
+
+00050040 <ContinueScreenSysTick>:
+   50040: bc0f         	pop	{r0, r1, r2, r3}
+   50042: f248 3c5d    	movw	r12, #0x835d
+   50046: 4760         	bx	r12
+
+00050048 <RecoverFromScreenSysTick>:
+   50048: bc0f         	pop	{r0, r1, r2, r3}
+   5004a: f000 b800    	b.w	0x5004e <RecoverScreenFault> @ imm = #0x0
+
+0005004e <RecoverScreenFault>:
+   5004e: b672         	cpsid i
+   50050: f04f 5000    	mov.w	r0, #0x20000000
+   50054: f04f 31a5    	mov.w	r1, #0xa5a5a5a5
+   50058: 6001         	str	r1, [r0]
+   5005a: f3bf 8f4f    	dsb	sy
+   5005e: 4804         	ldr	r0, [pc, #0x10]         @ 0x50070 <WaitForScreenReset+0x8>
+   50060: 4904         	ldr	r1, [pc, #0x10]         @ 0x50074 <WaitForScreenReset+0xc>
+   50062: 6001         	str	r1, [r0]
+   50064: f3bf 8f4f    	dsb	sy
+
+00050068 <WaitForScreenReset>:
+   50068: e7fe         	b	0x50068 <WaitForScreenReset> @ imm = #-0x4
+   5006a: 0000         	movs	r0, r0
+   5006c: 4e 53 55 49  	.word	0x4955534e
+   50070: 0c ed 00 e0  	.word	0xe000ed0c
+   50074: 04 00 fa 05  	.word	0x05fa0004
+
+00050078 <CreateScreenUiOnScreen>:
+   50078: 2800         	cmp	r0, #0x0
+   5007a: f000 80ac    	beq.w	0x501d6 <CreateScreenUiOnScreen+0x15e> @ imm = #0x158
+   5007e: b5f0         	push	{r4, r5, r6, r7, lr}
+   50080: af03         	add	r7, sp, #0xc
+   50082: f84d bd04    	str	r11, [sp, #-4]!
+   50086: 4615         	mov	r5, r2
+   50088: 4604         	mov	r4, r0
+   5008a: b919         	cbnz	r1, 0x50094 <CreateScreenUiOnScreen+0x1c> @ imm = #0x6
+   5008c: 2000         	movs	r0, #0x0
+   5008e: f000 f8d3    	bl	0x50238 <lv_obj_create> @ imm = #0x1a6
+   50092: 4601         	mov	r1, r0
+   50094: 6021         	str	r1, [r4]
+   50096: 4608         	mov	r0, r1
+   50098: 2100         	movs	r1, #0x0
+   5009a: 2200         	movs	r2, #0x0
+   5009c: f000 f93f    	bl	0x5031e <lv_obj_set_style_border_width> @ imm = #0x27e
+   500a0: 6820         	ldr	r0, [r4]
+   500a2: 2100         	movs	r1, #0x0
+   500a4: 2200         	movs	r2, #0x0
+   500a6: f000 f942    	bl	0x5032e <lv_obj_set_style_radius> @ imm = #0x284
+   500aa: 6826         	ldr	r6, [r4]
+   500ac: 2100         	movs	r1, #0x0
+   500ae: 4630         	mov	r0, r6
+   500b0: 2200         	movs	r2, #0x0
+   500b2: f000 f944    	bl	0x5033e <lv_obj_set_style_pad_top> @ imm = #0x288
+   500b6: 4630         	mov	r0, r6
+   500b8: 2100         	movs	r1, #0x0
+   500ba: 2200         	movs	r2, #0x0
+   500bc: f000 f947    	bl	0x5034e <lv_obj_set_style_pad_bottom> @ imm = #0x28e
+   500c0: 4630         	mov	r0, r6
+   500c2: 2100         	movs	r1, #0x0
+   500c4: 2200         	movs	r2, #0x0
+   500c6: f000 f94a    	bl	0x5035e <lv_obj_set_style_pad_left> @ imm = #0x294
+   500ca: 4630         	mov	r0, r6
+   500cc: 2100         	movs	r1, #0x0
+   500ce: 2200         	movs	r2, #0x0
+   500d0: f000 f94d    	bl	0x5036e <lv_obj_set_style_pad_right> @ imm = #0x29a
+   500d4: 6820         	ldr	r0, [r4]
+   500d6: 2100         	movs	r1, #0x0
+   500d8: 2200         	movs	r2, #0x0
+   500da: f000 f8f8    	bl	0x502ce <lv_obj_set_style_bg_color> @ imm = #0x1f0
+   500de: 6820         	ldr	r0, [r4]
+   500e0: 21ff         	movs	r1, #0xff
+   500e2: 2200         	movs	r2, #0x0
+   500e4: f000 f8fb    	bl	0x502de <lv_obj_set_style_bg_opa> @ imm = #0x1f6
+   500e8: 6820         	ldr	r0, [r4]
+   500ea: 2110         	movs	r1, #0x10
+   500ec: f000 f8b3    	bl	0x50256 <lv_obj_clear_flag> @ imm = #0x166
+   500f0: 6820         	ldr	r0, [r4]
+   500f2: f000 f8a6    	bl	0x50242 <lv_label_create> @ imm = #0x14c
+   500f6: f242 015a    	movw	r1, #0x205a
+   500fa: 6060         	str	r0, [r4, #0x4]
+   500fc: f000 f8c1    	bl	0x50282 <lv_obj_set_width> @ imm = #0x182
+   50100: 6860         	ldr	r0, [r4, #0x4]
+   50102: 2102         	movs	r1, #0x2
+   50104: 2200         	movs	r2, #0x0
+   50106: f000 f902    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #0x204
+   5010a: 6860         	ldr	r0, [r4, #0x4]
+   5010c: f24a 5114    	movw	r1, #0xa514
+   50110: 2200         	movs	r2, #0x0
+   50112: f000 f8ec    	bl	0x502ee <lv_obj_set_style_text_color> @ imm = #0x1d8
+   50116: 6860         	ldr	r0, [r4, #0x4]
+   50118: 2102         	movs	r1, #0x2
+   5011a: 2200         	movs	r2, #0x0
+   5011c: 2310         	movs	r3, #0x10
+   5011e: f000 f8b8    	bl	0x50292 <lv_obj_align>  @ imm = #0x170
+   50122: 6820         	ldr	r0, [r4]
+   50124: f000 f88d    	bl	0x50242 <lv_label_create> @ imm = #0x11a
+   50128: f242 015a    	movw	r1, #0x205a
+   5012c: 60a0         	str	r0, [r4, #0x8]
+   5012e: f000 f8a8    	bl	0x50282 <lv_obj_set_width> @ imm = #0x150
+   50132: 68a0         	ldr	r0, [r4, #0x8]
+   50134: 2102         	movs	r1, #0x2
+   50136: 2200         	movs	r2, #0x0
+   50138: f000 f8e9    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #0x1d2
+   5013c: 68a0         	ldr	r0, [r4, #0x8]
+   5013e: f64f 71ff    	movw	r1, #0xffff
+   50142: 2200         	movs	r2, #0x0
+   50144: f000 f8d3    	bl	0x502ee <lv_obj_set_style_text_color> @ imm = #0x1a6
+   50148: b125         	cbz	r5, 0x50154 <CreateScreenUiOnScreen+0xdc> @ imm = #0x8
+   5014a: 68a0         	ldr	r0, [r4, #0x8]
+   5014c: 4629         	mov	r1, r5
+   5014e: 2200         	movs	r2, #0x0
+   50150: f000 f8d5    	bl	0x502fe <lv_obj_set_style_text_font> @ imm = #0x1aa
+   50154: 68a0         	ldr	r0, [r4, #0x8]
+   50156: 2106         	movs	r1, #0x6
+   50158: 2200         	movs	r2, #0x0
+   5015a: f000 f910    	bl	0x5037e <lv_obj_set_style_text_line_space> @ imm = #0x220
+   5015e: 68a0         	ldr	r0, [r4, #0x8]
+   50160: 2109         	movs	r1, #0x9
+   50162: 2200         	movs	r2, #0x0
+   50164: 2300         	movs	r3, #0x0
+   50166: f000 f894    	bl	0x50292 <lv_obj_align>  @ imm = #0x128
+   5016a: 6820         	ldr	r0, [r4]
+   5016c: f000 f869    	bl	0x50242 <lv_label_create> @ imm = #0xd2
+   50170: f242 015a    	movw	r1, #0x205a
+   50174: 60e0         	str	r0, [r4, #0xc]
+   50176: f000 f884    	bl	0x50282 <lv_obj_set_width> @ imm = #0x108
+   5017a: 68e0         	ldr	r0, [r4, #0xc]
+   5017c: 2102         	movs	r1, #0x2
+   5017e: 2200         	movs	r2, #0x0
+   50180: f000 f8c5    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #0x18a
+   50184: 68e0         	ldr	r0, [r4, #0xc]
+   50186: f248 4110    	movw	r1, #0x8410
+   5018a: 2200         	movs	r2, #0x0
+   5018c: f000 f8af    	bl	0x502ee <lv_obj_set_style_text_color> @ imm = #0x15e
+   50190: 68e0         	ldr	r0, [r4, #0xc]
+   50192: 2105         	movs	r1, #0x5
+   50194: 2200         	movs	r2, #0x0
+   50196: f06f 030f    	mvn	r3, #0xf
+   5019a: f000 f87a    	bl	0x50292 <lv_obj_align>  @ imm = #0xf4
+   5019e: 6860         	ldr	r0, [r4, #0x4]
+   501a0: b128         	cbz	r0, 0x501ae <CreateScreenUiOnScreen+0x136> @ imm = #0xa
+   501a2: f240 7158    	movw	r1, #0x758
+   501a6: f2c0 0105    	movt	r1, #0x5
+   501aa: f000 f84f    	bl	0x5024c <lv_label_set_text> @ imm = #0x9e
+   501ae: 68a0         	ldr	r0, [r4, #0x8]
+   501b0: b128         	cbz	r0, 0x501be <CreateScreenUiOnScreen+0x146> @ imm = #0xa
+   501b2: f240 7159    	movw	r1, #0x759
+   501b6: f2c0 0105    	movt	r1, #0x5
+   501ba: f000 f847    	bl	0x5024c <lv_label_set_text> @ imm = #0x8e
+   501be: 68e0         	ldr	r0, [r4, #0xc]
+   501c0: f85d bb04    	ldr	r11, [sp], #4
+   501c4: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   501c8: b128         	cbz	r0, 0x501d6 <CreateScreenUiOnScreen+0x15e> @ imm = #0xa
+   501ca: f240 7158    	movw	r1, #0x758
+   501ce: f2c0 0105    	movt	r1, #0x5
+   501d2: f000 b83b    	b.w	0x5024c <lv_label_set_text> @ imm = #0x76
+   501d6: 4770         	bx	lr
+
+000501d8 <SetScreenUiTitle>:
+   501d8: b158         	cbz	r0, 0x501f2 <SetScreenUiTitle+0x1a> @ imm = #0x16
+   501da: 6840         	ldr	r0, [r0, #0x4]
+   501dc: b148         	cbz	r0, 0x501f2 <SetScreenUiTitle+0x1a> @ imm = #0x12
+   501de: f240 7258    	movw	r2, #0x758
+   501e2: f2c0 0205    	movt	r2, #0x5
+   501e6: 2900         	cmp	r1, #0x0
+   501e8: bf18         	it	ne
+   501ea: 460a         	movne	r2, r1
+   501ec: 4611         	mov	r1, r2
+   501ee: f000 b82d    	b.w	0x5024c <lv_label_set_text> @ imm = #0x5a
+   501f2: 4770         	bx	lr
+
+000501f4 <SetScreenUiMessage>:
+   501f4: b158         	cbz	r0, 0x5020e <SetScreenUiMessage+0x1a> @ imm = #0x16
+   501f6: 6880         	ldr	r0, [r0, #0x8]
+   501f8: b148         	cbz	r0, 0x5020e <SetScreenUiMessage+0x1a> @ imm = #0x12
+   501fa: f240 7258    	movw	r2, #0x758
+   501fe: f2c0 0205    	movt	r2, #0x5
+   50202: 2900         	cmp	r1, #0x0
+   50204: bf18         	it	ne
+   50206: 460a         	movne	r2, r1
+   50208: 4611         	mov	r1, r2
+   5020a: f000 b81f    	b.w	0x5024c <lv_label_set_text> @ imm = #0x3e
+   5020e: 4770         	bx	lr
+
+00050210 <SetScreenUiStatus>:
+   50210: b158         	cbz	r0, 0x5022a <SetScreenUiStatus+0x1a> @ imm = #0x16
+   50212: 68c0         	ldr	r0, [r0, #0xc]
+   50214: b148         	cbz	r0, 0x5022a <SetScreenUiStatus+0x1a> @ imm = #0x12
+   50216: f240 7258    	movw	r2, #0x758
+   5021a: f2c0 0205    	movt	r2, #0x5
+   5021e: 2900         	cmp	r1, #0x0
+   50220: bf18         	it	ne
+   50222: 460a         	movne	r2, r1
+   50224: 4611         	mov	r1, r2
+   50226: f000 b811    	b.w	0x5024c <lv_label_set_text> @ imm = #0x22
+   5022a: 4770         	bx	lr
+
+0005022c <LoadScreenUi>:
+   5022c: b118         	cbz	r0, 0x50236 <LoadScreenUi+0xa> @ imm = #0x6
+   5022e: 6800         	ldr	r0, [r0]
+   50230: b108         	cbz	r0, 0x50236 <LoadScreenUi+0xa> @ imm = #0x2
+   50232: f000 b815    	b.w	0x50260 <lv_disp_load_scr> @ imm = #0x2a
+   50236: 4770         	bx	lr
+
+00050238 <lv_obj_create>:
+   50238: f646 5119    	movw	r1, #0x6d19
+   5023c: f2c0 0102    	movt	r1, #0x2
+   50240: 4708         	bx	r1
+
+00050242 <lv_label_create>:
+   50242: f245 317d    	movw	r1, #0x537d
+   50246: f2c0 0102    	movt	r1, #0x2
+   5024a: 4708         	bx	r1
+
+0005024c <lv_label_set_text>:
+   5024c: f246 12a9    	movw	r2, #0x61a9
+   50250: f2c0 0202    	movt	r2, #0x2
+   50254: 4710         	bx	r2
+
+00050256 <lv_obj_clear_flag>:
+   50256: f646 32fd    	movw	r2, #0x6bfd
+   5025a: f2c0 0202    	movt	r2, #0x2
+   5025e: 4710         	bx	r2
+
+00050260 <lv_disp_load_scr>:
+   50260: f640 1101    	movw	r1, #0x901
+   50264: f2c0 0102    	movt	r1, #0x2
+   50268: 4708         	bx	r1
+
+0005026a <GetNativeActiveScreen>:
+   5026a: b5d0         	push	{r4, r6, r7, lr}
+   5026c: af02         	add	r7, sp, #0x8
+   5026e: f240 74d1    	movw	r4, #0x7d1
+   50272: f2c0 0402    	movt	r4, #0x2
+   50276: 47a0         	blx	r4
+   50278: f104 01a8    	add.w	r1, r4, #0xa8
+   5027c: e8bd 40d0    	pop.w	{r4, r6, r7, lr}
+   50280: 4708         	bx	r1
+
+00050282 <lv_obj_set_width>:
+   50282: f24a 6c05    	movw	r12, #0xa605
+   50286: 460a         	mov	r2, r1
+   50288: f2c0 0c02    	movt	r12, #0x2
+   5028c: 2101         	movs	r1, #0x1
+   5028e: 2300         	movs	r3, #0x0
+   50290: 4760         	bx	r12
+
+00050292 <lv_obj_align>:
+   50292: b5f0         	push	{r4, r5, r6, r7, lr}
+   50294: af03         	add	r7, sp, #0xc
+   50296: f84d 8d04    	str	r8, [sp, #-4]!
+   5029a: f24a 6405    	movw	r4, #0xa605
+   5029e: 4698         	mov	r8, r3
+   502a0: 4615         	mov	r5, r2
+   502a2: 460a         	mov	r2, r1
+   502a4: f2c0 0402    	movt	r4, #0x2
+   502a8: 2109         	movs	r1, #0x9
+   502aa: 2300         	movs	r3, #0x0
+   502ac: 4606         	mov	r6, r0
+   502ae: 47a0         	blx	r4
+   502b0: 4630         	mov	r0, r6
+   502b2: 2107         	movs	r1, #0x7
+   502b4: 462a         	mov	r2, r5
+   502b6: 2300         	movs	r3, #0x0
+   502b8: 47a0         	blx	r4
+   502ba: 4630         	mov	r0, r6
+   502bc: 2108         	movs	r1, #0x8
+   502be: 4642         	mov	r2, r8
+   502c0: 2300         	movs	r3, #0x0
+   502c2: 46a4         	mov	r12, r4
+   502c4: f85d 8b04    	ldr	r8, [sp], #4
+   502c8: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   502cc: 4760         	bx	r12
+
+000502ce <lv_obj_set_style_bg_color>:
+   502ce: f24a 6c05    	movw	r12, #0xa605
+   502d2: 4613         	mov	r3, r2
+   502d4: b28a         	uxth	r2, r1
+   502d6: f2c0 0c02    	movt	r12, #0x2
+   502da: 2120         	movs	r1, #0x20
+   502dc: 4760         	bx	r12
+
+000502de <lv_obj_set_style_bg_opa>:
+   502de: f24a 6c05    	movw	r12, #0xa605
+   502e2: 4613         	mov	r3, r2
+   502e4: 460a         	mov	r2, r1
+   502e6: f2c0 0c02    	movt	r12, #0x2
+   502ea: 2121         	movs	r1, #0x21
+   502ec: 4760         	bx	r12
+
+000502ee <lv_obj_set_style_text_color>:
+   502ee: f24a 6c05    	movw	r12, #0xa605
+   502f2: 4613         	mov	r3, r2
+   502f4: b28a         	uxth	r2, r1
+   502f6: f2c0 0c02    	movt	r12, #0x2
+   502fa: 2155         	movs	r1, #0x55
+   502fc: 4760         	bx	r12
+
+000502fe <lv_obj_set_style_text_font>:
+   502fe: f24a 6c05    	movw	r12, #0xa605
+   50302: 4613         	mov	r3, r2
+   50304: 460a         	mov	r2, r1
+   50306: f2c0 0c02    	movt	r12, #0x2
+   5030a: 2157         	movs	r1, #0x57
+   5030c: 4760         	bx	r12
+
+0005030e <lv_obj_set_style_text_align>:
+   5030e: f24a 6c05    	movw	r12, #0xa605
+   50312: 4613         	mov	r3, r2
+   50314: 460a         	mov	r2, r1
+   50316: f2c0 0c02    	movt	r12, #0x2
+   5031a: 215b         	movs	r1, #0x5b
+   5031c: 4760         	bx	r12
+
+0005031e <lv_obj_set_style_border_width>:
+   5031e: f24a 6c05    	movw	r12, #0xa605
+   50322: 4613         	mov	r3, r2
+   50324: 460a         	mov	r2, r1
+   50326: f2c0 0c02    	movt	r12, #0x2
+   5032a: 2132         	movs	r1, #0x32
+   5032c: 4760         	bx	r12
+
+0005032e <lv_obj_set_style_radius>:
+   5032e: f24a 6c05    	movw	r12, #0xa605
+   50332: 4613         	mov	r3, r2
+   50334: 460a         	mov	r2, r1
+   50336: f2c0 0c02    	movt	r12, #0x2
+   5033a: 210b         	movs	r1, #0xb
+   5033c: 4760         	bx	r12
+
+0005033e <lv_obj_set_style_pad_top>:
+   5033e: f24a 6c05    	movw	r12, #0xa605
+   50342: 4613         	mov	r3, r2
+   50344: 460a         	mov	r2, r1
+   50346: f2c0 0c02    	movt	r12, #0x2
+   5034a: 2110         	movs	r1, #0x10
+   5034c: 4760         	bx	r12
+
+0005034e <lv_obj_set_style_pad_bottom>:
+   5034e: f24a 6c05    	movw	r12, #0xa605
+   50352: 4613         	mov	r3, r2
+   50354: 460a         	mov	r2, r1
+   50356: f2c0 0c02    	movt	r12, #0x2
+   5035a: 2111         	movs	r1, #0x11
+   5035c: 4760         	bx	r12
+
+0005035e <lv_obj_set_style_pad_left>:
+   5035e: f24a 6c05    	movw	r12, #0xa605
+   50362: 4613         	mov	r3, r2
+   50364: 460a         	mov	r2, r1
+   50366: f2c0 0c02    	movt	r12, #0x2
+   5036a: 2112         	movs	r1, #0x12
+   5036c: 4760         	bx	r12
+
+0005036e <lv_obj_set_style_pad_right>:
+   5036e: f24a 6c05    	movw	r12, #0xa605
+   50372: 4613         	mov	r3, r2
+   50374: 460a         	mov	r2, r1
+   50376: f2c0 0c02    	movt	r12, #0x2
+   5037a: 2113         	movs	r1, #0x13
+   5037c: 4760         	bx	r12
+
+0005037e <lv_obj_set_style_text_line_space>:
+   5037e: f24a 6c05    	movw	r12, #0xa605
+   50382: 4613         	mov	r3, r2
+   50384: 460a         	mov	r2, r1
+   50386: f2c0 0c02    	movt	r12, #0x2
+   5038a: 2159         	movs	r1, #0x59
+   5038c: 4760         	bx	r12
+
+0005038e <lv_mem_alloc>:
+   5038e: f246 21c9    	movw	r1, #0x62c9
+   50392: f2c0 0102    	movt	r1, #0x2
+   50396: 4708         	bx	r1
+
+00050398 <lv_tick_get>:
+   50398: f24c 4081    	movw	r0, #0xc481
+   5039c: f2c0 0002    	movt	r0, #0x2
+   503a0: 4700         	bx	r0
+
+000503a2 <lv_timer_create>:
+   503a2: f24c 43bd    	movw	r3, #0xc4bd
+   503a6: f2c0 0302    	movt	r3, #0x2
+   503aa: 4718         	bx	r3
+
+000503ac <HandleScreenPacket>:
+   503ac: b160         	cbz	r0, 0x503c8 <HandleScreenPacket+0x1c> @ imm = #0x18
+   503ae: 2200         	movs	r2, #0x0
+   503b0: b139         	cbz	r1, 0x503c2 <HandleScreenPacket+0x16> @ imm = #0xe
+   503b2: bf00         	nop
+   503b4: 5c83         	ldrb	r3, [r0, r2]
+   503b6: 2ba5         	cmp	r3, #0xa5
+   503b8: d003         	beq	0x503c2 <HandleScreenPacket+0x16> @ imm = #0x6
+   503ba: 3201         	adds	r2, #0x1
+   503bc: 4291         	cmp	r1, r2
+   503be: d1f9         	bne	0x503b4 <HandleScreenPacket+0x8> @ imm = #-0xe
+   503c0: 460a         	mov	r2, r1
+   503c2: 1a8b         	subs	r3, r1, r2
+   503c4: 2b06         	cmp	r3, #0x6
+   503c6: d201         	bhs	0x503cc <HandleScreenPacket+0x20> @ imm = #0x2
+   503c8: 2001         	movs	r0, #0x1
+   503ca: 4770         	bx	lr
+   503cc: 4402         	add	r2, r0
+   503ce: 7852         	ldrb	r2, [r2, #0x1]
+   503d0: 2a41         	cmp	r2, #0x41
+   503d2: bf08         	it	eq
+   503d4: f000 b9b8    	beq.w	0x50748 <ContinueNativeScreenPacket> @ imm = #0x370
+   503d8: f04f 5000    	mov.w	r0, #0x20000000
+   503dc: 6800         	ldr	r0, [r0]
+   503de: 0781         	lsls	r1, r0, #0x1e
+   503e0: d116         	bne	0x50410 <HandleScreenPacket+0x64> @ imm = #0x2c
+   503e2: f64f 71c1    	movw	r1, #0xffc1
+   503e6: f2c8 011f    	movt	r1, #0x801f
+   503ea: 4288         	cmp	r0, r1
+   503ec: db06         	blt	0x503fc <HandleScreenPacket+0x50> @ imm = #0xc
+   503ee: f1a0 5100    	sub.w	r1, r0, #0x20000000
+   503f2: 3908         	subs	r1, #0x8
+   503f4: f64f 72b8    	movw	r2, #0xffb8
+   503f8: 4291         	cmp	r1, r2
+   503fa: d809         	bhi	0x50410 <HandleScreenPacket+0x64> @ imm = #0x12
+   503fc: 6801         	ldr	r1, [r0]
+   503fe: f245 324e    	movw	r2, #0x534e
+   50402: f6c4 1255    	movt	r2, #0x4955
+   50406: 4291         	cmp	r1, r2
+   50408: d102         	bne	0x50410 <HandleScreenPacket+0x64> @ imm = #0x4
+   5040a: 6a81         	ldr	r1, [r0, #0x28]
+   5040c: 3101         	adds	r1, #0x1
+   5040e: 6281         	str	r1, [r0, #0x28]
+   50410: 2000         	movs	r0, #0x0
+   50412: 4770         	bx	lr
+
+00050414 <HandleScreenInformation>:
+   50414: b5f0         	push	{r4, r5, r6, r7, lr}
+   50416: af03         	add	r7, sp, #0xc
+   50418: f84d 8d04    	str	r8, [sp, #-4]!
+   5041c: b08a         	sub	sp, #0x28
+   5041e: 7801         	ldrb	r1, [r0]
+   50420: f644 7431    	movw	r4, #0x4f31
+   50424: 29a5         	cmp	r1, #0xa5
+   50426: f2c0 0403    	movt	r4, #0x3
+   5042a: d13d         	bne	0x504a8 <HandleScreenInformation+0x94> @ imm = #0x7a
+   5042c: 7841         	ldrb	r1, [r0, #0x1]
+   5042e: 2941         	cmp	r1, #0x41
+   50430: d13a         	bne	0x504a8 <HandleScreenInformation+0x94> @ imm = #0x74
+   50432: 78c1         	ldrb	r1, [r0, #0x3]
+   50434: 2901         	cmp	r1, #0x1
+   50436: d137         	bne	0x504a8 <HandleScreenInformation+0x94> @ imm = #0x6e
+   50438: 7901         	ldrb	r1, [r0, #0x4]
+   5043a: 297f         	cmp	r1, #0x7f
+   5043c: d134         	bne	0x504a8 <HandleScreenInformation+0x94> @ imm = #0x68
+   5043e: 2000         	movs	r0, #0x0
+   50440: f1a7 0131    	sub.w	r1, r7, #0x31
+   50444: 2200         	movs	r2, #0x0
+   50446: bf00         	nop
+   50448: 5488         	strb	r0, [r1, r2]
+   5044a: 3201         	adds	r2, #0x1
+   5044c: 2a21         	cmp	r2, #0x21
+   5044e: d1fb         	bne	0x50448 <HandleScreenInformation+0x34> @ imm = #-0xa
+   50450: f245 304e    	movw	r0, #0x534e
+   50454: 2103         	movs	r1, #0x3
+   50456: f240 7380    	movw	r3, #0x780
+   5045a: f243 4678    	movw	r6, #0x3478
+   5045e: f6c4 1055    	movt	r0, #0x4955
+   50462: f807 1c2d    	strb	r1, [r7, #-45]
+   50466: 2200         	movs	r2, #0x0
+   50468: f2c0 0305    	movt	r3, #0x5
+   5046c: f2c2 0600    	movt	r6, #0x2000
+   50470: 2100         	movs	r1, #0x0
+   50472: f847 0c31    	str	r0, [r7, #-49]
+   50476: bf00         	nop
+   50478: f853 5022    	ldr.w	r5, [r3, r2, lsl #2]
+   5047c: 3201         	adds	r2, #0x1
+   5047e: 59ad         	ldr	r5, [r5, r6]
+   50480: 2d00         	cmp	r5, #0x0
+   50482: bf18         	it	ne
+   50484: 3101         	addne	r1, #0x1
+   50486: 2a07         	cmp	r2, #0x7
+   50488: d1f6         	bne	0x50478 <HandleScreenInformation+0x64> @ imm = #-0x14
+   5048a: 2630         	movs	r6, #0x30
+   5048c: 2900         	cmp	r1, #0x0
+   5048e: bf08         	it	eq
+   50490: 2670         	moveq	r6, #0x70
+   50492: f807 6c2c    	strb	r6, [r7, #-44]
+   50496: f807 1c2b    	strb	r1, [r7, #-43]
+   5049a: f04f 5100    	mov.w	r1, #0x20000000
+   5049e: 6809         	ldr	r1, [r1]
+   504a0: 078a         	lsls	r2, r1, #0x1e
+   504a2: d009         	beq	0x504b8 <HandleScreenInformation+0xa4> @ imm = #0x12
+   504a4: 2500         	movs	r5, #0x0
+   504a6: e01a         	b	0x504de <HandleScreenInformation+0xca> @ imm = #0x34
+   504a8: f104 015c    	add.w	r1, r4, #0x5c
+   504ac: b00a         	add	sp, #0x28
+   504ae: f85d 8b04    	ldr	r8, [sp], #4
+   504b2: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   504b6: 4708         	bx	r1
+   504b8: f64f 72c1    	movw	r2, #0xffc1
+   504bc: f2c8 021f    	movt	r2, #0x801f
+   504c0: 4291         	cmp	r1, r2
+   504c2: f04f 0500    	mov.w	r5, #0x0
+   504c6: db06         	blt	0x504d6 <HandleScreenInformation+0xc2> @ imm = #0xc
+   504c8: f1a1 5200    	sub.w	r2, r1, #0x20000000
+   504cc: 3a08         	subs	r2, #0x8
+   504ce: f64f 73b8    	movw	r3, #0xffb8
+   504d2: 429a         	cmp	r2, r3
+   504d4: d803         	bhi	0x504de <HandleScreenInformation+0xca> @ imm = #0x6
+   504d6: 680a         	ldr	r2, [r1]
+   504d8: 4282         	cmp	r2, r0
+   504da: bf08         	it	eq
+   504dc: 460d         	moveq	r5, r1
+   504de: f7ff fec4    	bl	0x5026a <GetNativeActiveScreen> @ imm = #-0x278
+   504e2: f847 0c19    	str	r0, [r7, #-25]
+   504e6: b3c5         	cbz	r5, 0x5055a <HandleScreenInformation+0x146> @ imm = #0x70
+   504e8: 6a69         	ldr	r1, [r5, #0x24]
+   504ea: 6a6a         	ldr	r2, [r5, #0x24]
+   504ec: f04f 0800    	mov.w	r8, #0x0
+   504f0: b132         	cbz	r2, 0x50500 <HandleScreenInformation+0xec> @ imm = #0xc
+   504f2: 68aa         	ldr	r2, [r5, #0x8]
+   504f4: 1a80         	subs	r0, r0, r2
+   504f6: fab0 f080    	clz	r0, r0
+   504fa: 0940         	lsrs	r0, r0, #0x5
+   504fc: 0080         	lsls	r0, r0, #0x2
+   504fe: e000         	b	0x50502 <HandleScreenInformation+0xee> @ imm = #0x0
+   50500: 2000         	movs	r0, #0x0
+   50502: 220b         	movs	r2, #0xb
+   50504: 2900         	cmp	r1, #0x0
+   50506: bf08         	it	eq
+   50508: 2209         	moveq	r2, #0x9
+   5050a: 4310         	orrs	r0, r2
+   5050c: 4330         	orrs	r0, r6
+   5050e: f807 0c2c    	strb	r0, [r7, #-44]
+   50512: 6aa8         	ldr	r0, [r5, #0x28]
+   50514: f807 0c2a    	strb	r0, [r7, #-42]
+   50518: f7ff ff3e    	bl	0x50398 <lv_tick_get>   @ imm = #-0x184
+   5051c: 69a9         	ldr	r1, [r5, #0x18]
+   5051e: 1a40         	subs	r0, r0, r1
+   50520: f644 51d3    	movw	r1, #0x4dd3
+   50524: f2c1 0162    	movt	r1, #0x1062
+   50528: fba0 0101    	umull	r0, r1, r0, r1
+   5052c: 69e8         	ldr	r0, [r5, #0x1c]
+   5052e: 098a         	lsrs	r2, r1, #0x6
+   50530: f807 2c29    	strb	r2, [r7, #-41]
+   50534: 0b8a         	lsrs	r2, r1, #0xe
+   50536: 0d89         	lsrs	r1, r1, #0x16
+   50538: f807 2c28    	strb	r2, [r7, #-40]
+   5053c: f807 1c27    	strb	r1, [r7, #-39]
+   50540: f807 8c26    	strb	r8, [r7, #-38]
+   50544: f847 0c25    	str	r0, [r7, #-37]
+   50548: 6a28         	ldr	r0, [r5, #0x20]
+   5054a: f847 0c21    	str	r0, [r7, #-33]
+   5054e: 68a8         	ldr	r0, [r5, #0x8]
+   50550: f847 0c1d    	str	r0, [r7, #-29]
+   50554: 6868         	ldr	r0, [r5, #0x4]
+   50556: f847 0c15    	str	r0, [r7, #-21]
+   5055a: f1a7 0231    	sub.w	r2, r7, #0x31
+   5055e: 2041         	movs	r0, #0x41
+   50560: 217f         	movs	r1, #0x7f
+   50562: 2320         	movs	r3, #0x20
+   50564: 47a0         	blx	r4
+   50566: 2000         	movs	r0, #0x0
+   50568: b00a         	add	sp, #0x28
+   5056a: f85d 8b04    	ldr	r8, [sp], #4
+   5056e: bdf0         	pop	{r4, r5, r6, r7, pc}
+
+00050570 <EnterDeviceScreenUi>:
+   50570: b5f0         	push	{r4, r5, r6, r7, lr}
+   50572: af03         	add	r7, sp, #0xc
+   50574: f84d bd04    	str	r11, [sp, #-4]!
+   50578: b086         	sub	sp, #0x18
+   5057a: f648 709d    	movw	r0, #0x8f9d
+   5057e: f2c0 0001    	movt	r0, #0x1
+   50582: 4780         	blx	r0
+   50584: 2044         	movs	r0, #0x44
+   50586: f7ff ff02    	bl	0x5038e <lv_mem_alloc>  @ imm = #-0x1fc
+   5058a: 2800         	cmp	r0, #0x0
+   5058c: d048         	beq	0x50620 <EnterDeviceScreenUi+0xb0> @ imm = #0x90
+   5058e: 4604         	mov	r4, r0
+   50590: f245 304e    	movw	r0, #0x534e
+   50594: f6c4 1055    	movt	r0, #0x4955
+   50598: 6020         	str	r0, [r4]
+   5059a: f242 7010    	movw	r0, #0x2710
+   5059e: 2600         	movs	r6, #0x0
+   505a0: 4625         	mov	r5, r4
+   505a2: 6060         	str	r0, [r4, #0x4]
+   505a4: f845 6f08    	str	r6, [r5, #8]!
+   505a8: e9c4 6603    	strd	r6, r6, [r4, #12]
+   505ac: 6166         	str	r6, [r4, #0x14]
+   505ae: f7ff fef3    	bl	0x50398 <lv_tick_get>   @ imm = #-0x21a
+   505b2: 61a0         	str	r0, [r4, #0x18]
+   505b4: f04f 5000    	mov.w	r0, #0x20000000
+   505b8: 61e6         	str	r6, [r4, #0x1c]
+   505ba: 6226         	str	r6, [r4, #0x20]
+   505bc: 6266         	str	r6, [r4, #0x24]
+   505be: 62a6         	str	r6, [r4, #0x28]
+   505c0: 6004         	str	r4, [r0]
+   505c2: f7ff fe52    	bl	0x5026a <GetNativeActiveScreen> @ imm = #-0x35c
+   505c6: 4601         	mov	r1, r0
+   505c8: 4628         	mov	r0, r5
+   505ca: 2200         	movs	r2, #0x0
+   505cc: f7ff fd54    	bl	0x50078 <CreateScreenUiOnScreen> @ imm = #-0x558
+   505d0: f240 7166    	movw	r1, #0x766
+   505d4: f2c0 0105    	movt	r1, #0x5
+   505d8: 4628         	mov	r0, r5
+   505da: f7ff fdfd    	bl	0x501d8 <SetScreenUiTitle> @ imm = #-0x406
+   505de: f240 7170    	movw	r1, #0x770
+   505e2: f2c0 0105    	movt	r1, #0x5
+   505e6: 4628         	mov	r0, r5
+   505e8: f7ff fe04    	bl	0x501f4 <SetScreenUiMessage> @ imm = #-0x3f8
+   505ec: f240 717d    	movw	r1, #0x77d
+   505f0: f2c0 0105    	movt	r1, #0x5
+   505f4: 4628         	mov	r0, r5
+   505f6: f7ff fe0b    	bl	0x50210 <SetScreenUiStatus> @ imm = #-0x3ea
+   505fa: 2601         	movs	r6, #0x1
+   505fc: 4628         	mov	r0, r5
+   505fe: 6266         	str	r6, [r4, #0x24]
+   50600: f7ff fe14    	bl	0x5022c <LoadScreenUi>  @ imm = #-0x3d8
+   50604: 4668         	mov	r0, sp
+   50606: 6226         	str	r6, [r4, #0x20]
+   50608: 9403         	str	r4, [sp, #0xc]
+   5060a: f000 f80d    	bl	0x50628 <UpdateDeviceScreenUi> @ imm = #0x1a
+   5060e: f240 6029    	movw	r0, #0x629
+   50612: f2c0 0005    	movt	r0, #0x5
+   50616: f44f 717a    	mov.w	r1, #0x3e8
+   5061a: 4622         	mov	r2, r4
+   5061c: f7ff fec1    	bl	0x503a2 <lv_timer_create> @ imm = #-0x27e
+   50620: b006         	add	sp, #0x18
+   50622: f85d bb04    	ldr	r11, [sp], #4
+   50626: bdf0         	pop	{r4, r5, r6, r7, pc}
+
+00050628 <UpdateDeviceScreenUi>:
+   50628: b5f0         	push	{r4, r5, r6, r7, lr}
+   5062a: af03         	add	r7, sp, #0xc
+   5062c: f84d 8d04    	str	r8, [sp, #-4]!
+   50630: 68c4         	ldr	r4, [r0, #0xc]
+   50632: f242 7010    	movw	r0, #0x2710
+   50636: 6060         	str	r0, [r4, #0x4]
+   50638: 69e0         	ldr	r0, [r4, #0x1c]
+   5063a: 3001         	adds	r0, #0x1
+   5063c: 61e0         	str	r0, [r4, #0x1c]
+   5063e: f7ff fe14    	bl	0x5026a <GetNativeActiveScreen> @ imm = #-0x3d8
+   50642: 46a0         	mov	r8, r4
+   50644: f858 1f08    	ldr	r1, [r8, #8]!
+   50648: 4288         	cmp	r0, r1
+   5064a: d005         	beq	0x50658 <UpdateDeviceScreenUi+0x30> @ imm = #0xa
+   5064c: 4640         	mov	r0, r8
+   5064e: f7ff fded    	bl	0x5022c <LoadScreenUi>  @ imm = #-0x426
+   50652: 6a20         	ldr	r0, [r4, #0x20]
+   50654: 3001         	adds	r0, #0x1
+   50656: 6220         	str	r0, [r4, #0x20]
+   50658: f7ff fe9e    	bl	0x50398 <lv_tick_get>   @ imm = #-0x2c4
+   5065c: f247 5152    	movw	r1, #0x7552
+   50660: f6c6 616e    	movt	r1, #0x6e6e
+   50664: f844 1f2c    	str	r1, [r4, #44]!
+   50668: f854 1c14    	ldr	r1, [r4, #-20]
+   5066c: f240 561f    	movw	r6, #0x51f
+   50670: 1a40         	subs	r0, r0, r1
+   50672: f644 51d3    	movw	r1, #0x4dd3
+   50676: f2c1 0162    	movt	r1, #0x1062
+   5067a: fba0 1201    	umull	r1, r2, r0, r1
+   5067e: f647 41b1    	movw	r1, #0x7cb1
+   50682: f2c9 5121    	movt	r1, #0x9521
+   50686: fba0 1301    	umull	r1, r3, r0, r1
+   5068a: f24b 2173    	movw	r1, #0xb273
+   5068e: f2c4 51e7    	movt	r1, #0x45e7
+   50692: fba0 0101    	umull	r0, r1, r0, r1
+   50696: 0990         	lsrs	r0, r2, #0x6
+   50698: f244 4245    	movw	r2, #0x4445
+   5069c: 0b89         	lsrs	r1, r1, #0xe
+   5069e: f2c0 4244    	movt	r2, #0x444
+   506a2: fba1 5c02    	umull	r5, r12, r1, r2
+   506a6: fba0 2502    	umull	r2, r5, r0, r2
+   506aa: 0d5a         	lsrs	r2, r3, #0x15
+   506ac: 4372         	muls	r2, r6, r2
+   506ae: 0c52         	lsrs	r2, r2, #0x11
+   506b0: 2664         	movs	r6, #0x64
+   506b2: 4372         	muls	r2, r6, r2
+   506b4: ebc2 5253    	rsb	r2, r2, r3, lsr #21
+   506b8: ebcc 130c    	rsb	r3, r12, r12, lsl #4
+   506bc: eba1 0183    	sub.w	r1, r1, r3, lsl #2
+   506c0: ebc5 1305    	rsb	r3, r5, r5, lsl #4
+   506c4: eba0 0083    	sub.w	r0, r0, r3, lsl #2
+   506c8: f646 6369    	movw	r3, #0x6e69
+   506cc: f2c2 0367    	movt	r3, #0x2067
+   506d0: 6063         	str	r3, [r4, #0x4]
+   506d2: b2d3         	uxtb	r3, r2
+   506d4: f04f 0ccd    	mov.w	r12, #0xcd
+   506d8: fb03 f30c    	mul	r3, r3, r12
+   506dc: 2630         	movs	r6, #0x30
+   506de: 0add         	lsrs	r5, r3, #0xb
+   506e0: ea46 23d3    	orr.w	r3, r6, r3, lsr #11
+   506e4: 7223         	strb	r3, [r4, #0x8]
+   506e6: eb05 0385    	add.w	r3, r5, r5, lsl #2
+   506ea: eba2 0243    	sub.w	r2, r2, r3, lsl #1
+   506ee: b2cb         	uxtb	r3, r1
+   506f0: fb03 f30c    	mul	r3, r3, r12
+   506f4: 0add         	lsrs	r5, r3, #0xb
+   506f6: ea46 23d3    	orr.w	r3, r6, r3, lsr #11
+   506fa: 72e3         	strb	r3, [r4, #0xb]
+   506fc: eb05 0385    	add.w	r3, r5, r5, lsl #2
+   50700: eba1 0143    	sub.w	r1, r1, r3, lsl #1
+   50704: f041 0130    	orr	r1, r1, #0x30
+   50708: f042 0230    	orr	r2, r2, #0x30
+   5070c: 7321         	strb	r1, [r4, #0xc]
+   5070e: b2c1         	uxtb	r1, r0
+   50710: 7262         	strb	r2, [r4, #0x9]
+   50712: 223a         	movs	r2, #0x3a
+   50714: fb01 f10c    	mul	r1, r1, r12
+   50718: 72a2         	strb	r2, [r4, #0xa]
+   5071a: 7362         	strb	r2, [r4, #0xd]
+   5071c: 0aca         	lsrs	r2, r1, #0xb
+   5071e: ea46 21d1    	orr.w	r1, r6, r1, lsr #11
+   50722: 73a1         	strb	r1, [r4, #0xe]
+   50724: eb02 0182    	add.w	r1, r2, r2, lsl #2
+   50728: eba0 0041    	sub.w	r0, r0, r1, lsl #1
+   5072c: f040 0030    	orr	r0, r0, #0x30
+   50730: 2200         	movs	r2, #0x0
+   50732: 73e0         	strb	r0, [r4, #0xf]
+   50734: 4640         	mov	r0, r8
+   50736: 4621         	mov	r1, r4
+   50738: 7422         	strb	r2, [r4, #0x10]
+   5073a: f85d 8b04    	ldr	r8, [sp], #4
+   5073e: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   50742: f7ff bd65    	b.w	0x50210 <SetScreenUiStatus> @ imm = #-0x536
+   50746: d4d4         	bmi	0x506f2 <UpdateDeviceScreenUi+0xca> @ imm = #-0x58
+
+00050748 <ContinueNativeScreenPacket>:
+   50748: e92d 4ff0    	push.w	{r4, r5, r6, r7, r8, r9, r10, r11, lr}
+   5074c: f8df c004    	ldr.w	r12, [pc, #0x4]         @ 0x50754 <ContinueNativeScreenPacket+0xc>
+   50750: 4760         	bx	r12
+   50752: 0000         	movs	r0, r0
+   50754: 69 50 03 00  	.word	0x00035069
+   50758: 00 68 65 6c  	.word	0x6c656800
+   5075c: 6c 6f 77 20  	.word	0x20776f6c
+   50760: 77 6f 72 6c  	.word	0x6c726f77
+   50764: 64 00        	.short	0x0064
+
+00050766 <ScreenUiTitle>:
+   50766: 4e 45 4f 53 37 35 20 55         NEOS75 U
+   5076e: 49 00                           I.
+
+00050770 <ScreenUiMessage>:
+   50770: 68 65 6c 6c 6f 77 20 77         hellow w
+   50778: 6f 72 6c 64 00                  orld.
+
+0005077d <ScreenUiStatus>:
+   5077d: 00 d4 d4                        ...
+
+00050780 <.L__const.GetLegacyPageRootCount.Offsets>:
+   50780: 00 00 00 00 10 00 00 00         ........
+   50788: 40 00 00 00 74 00 00 00         @...t...
+   50790: a8 00 00 00 cc 00 00 00         ........
+   50798: e4 00 00 00                     ....

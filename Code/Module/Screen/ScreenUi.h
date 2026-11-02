@@ -21,6 +21,7 @@ typedef struct ScreenUi
 
 /* All calls belong on the LVGL/UI thread, after registering a display driver. */
 void CreateScreenUi(ScreenUi *Ui, const lv_font_t *MessageFont);
+void CreateScreenUiOnScreen(ScreenUi *Ui, lv_obj_t *Screen, const lv_font_t *MessageFont);
 void LoadScreenUi(ScreenUi *Ui);
 void SetScreenUiTitle(ScreenUi *Ui, const char *Text);
 void SetScreenUiMessage(ScreenUi *Ui, const char *Text);

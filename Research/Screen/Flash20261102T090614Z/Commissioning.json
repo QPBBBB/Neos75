@@ -1,0 +1,11 @@
+{
+  "Source": "User explicitly reported: full power cycle completed, all requested functions normal",
+  "ScreenUiAndTimerVerified": true,
+  "LowerKnobBothDirectionsAndPressInert": true,
+  "UpperVolumeKnobWorking": true,
+  "FullPowerCycleConfirmedByUser": true,
+  "PostRebootScreenQuery": "Research/Screen/UiState20261102T090848Z/Summary.json",
+  "PostRebootKeyboardRawRead": "Unavailable during subsequent keyboard USB disconnect; persistence confirmation is the user physical check",
+  "NativePageRootCount": 0,
+  "CustomScreenActivationCount": 1
+}

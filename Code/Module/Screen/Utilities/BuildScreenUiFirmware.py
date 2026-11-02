@@ -1,6 +1,6 @@
 """Build a native LVGL UI patch for the exact twice-read NEOS75 screen image.
 
-Offline only. Produces two changed flash pages and the corresponding original
+Offline only. Produces the changed flash pages and the corresponding original
 pages for recovery. It never opens a USB/HID device or invokes a flash command.
 """
 import argparse as ArgumentParsing
@@ -46,9 +46,19 @@ def Main():
     Instruction = next(Decoder.disasm(Original[HookOffset:HookOffset + 4], HookAddress))
     if Instruction.mnemonic != 'bl' or int(Instruction.op_str.lstrip('#'), 16) != int(Profile['HookOriginalTarget'], 16):
         raise ValueError('Native hook instruction does not call the verified UI initialization')
+    InformationAddress = int(Profile['InformationHookAddress'], 16)
+    InformationOffset = InformationAddress - Base
+    InformationInstruction = next(Decoder.disasm(Original[InformationOffset:InformationOffset + 4], InformationAddress))
+    if InformationInstruction.mnemonic != 'bl' or int(InformationInstruction.op_str.lstrip('#'), 16) != int(Profile['InformationHookOriginalTarget'], 16):
+        raise ValueError('Native information hook does not match the supported firmware')
     PayloadOffset = PayloadAddress - Base
-    if Original[PayloadOffset:PayloadOffset + PageSize] != b'\xff' * PageSize:
-        raise ValueError('Payload page is not unused in the original backup')
+    PayloadOriginal = Original[PayloadOffset:PayloadOffset + PageSize]
+    if PayloadOriginal != b'\xff' * PageSize and Hash.sha256(PayloadOriginal).hexdigest() != Profile.get('PayloadPageSha256'):
+        raise ValueError('Payload page is neither unused nor the verified inactive former payload')
+    PacketAddress = int(Profile['PacketHookAddress'], 16)
+    PacketOffset = PacketAddress - Base
+    if Original[PacketOffset:PacketOffset + 4].hex() != Profile['PacketHookExpectedHex']:
+        raise ValueError('Packet prologue does not match the supported firmware')
     Configuration = Json.loads(Arguments.Configuration.read_text(encoding='utf-8'))
     if set(Configuration) != {'Title', 'Message', 'Status', 'ShowUptime'} or type(Configuration['ShowUptime']) is not bool:
         raise ValueError('Configuration requires Title, Message, Status and boolean ShowUptime')
@@ -70,17 +80,23 @@ def Main():
     if not Compiler.is_file():
         raise FileNotFoundError('Install the pinned compiler with InstallArmCompiler.py first')
     ElfFile = OutputDirectory / 'ScreenUi.elf'
+    PacketAssembly = OutputDirectory / 'PacketHook.s'
+    PacketSource = (ScreenDirectory / 'Device/PacketHook.s').read_text(encoding='utf-8')
+    PacketSource = PacketSource.replace('#include "NativeSymbols.h"', '').replace('NativePacketContinuation', hex(int(Profile['PacketContinuationAddress'], 16) | 1))
+    PacketAssembly.write_text(PacketSource, encoding='utf-8')
     Sources = [ScreenDirectory / 'ScreenUi.c', ScreenDirectory / 'Device/NativeLvgl.c',
         ScreenDirectory / 'Device/DeviceScreenUi.c', ScreenDirectory / 'Device/ApplicationHook.s',
-        ScreenDirectory / 'Device/ScreenRecovery.s']
+        ScreenDirectory / 'Device/ScreenRecovery.s', ScreenDirectory / 'Device/InformationHook.s', PacketAssembly]
     Command = [Compiler, '--target=arm-none-eabi', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=soft',
         '-std=c11', '-Os', '-ffreestanding', '-fno-builtin', '-ffunction-sections', '-fdata-sections',
         '-fno-unwind-tables', '-fno-asynchronous-unwind-tables', '-nostdlib', '-Wall', '-Wextra', '-Werror',
         '-DNativeScreenUi', '-I', ScreenDirectory,
         '-I', ScreenDirectory / 'Device', '-I', OutputDirectory, *Sources,
-        '-Wl,--gc-sections', f'-Wl,-T,{LinkerScript}', f'-Wl,-Map,{OutputDirectory / "ScreenUi.map"}', '-o', ElfFile]
+        '-Wl,--gc-sections', f'-Wl,--defsym,HookAddress={HookAddress}',
+        f'-Wl,--defsym,InformationAddress={InformationAddress}', f'-Wl,--defsym,PacketAddress={PacketAddress}',
+        f'-Wl,--defsym,PayloadAddress={PayloadAddress}', f'-Wl,-T,{LinkerScript}', f'-Wl,-Map,{OutputDirectory / "ScreenUi.map"}', '-o', ElfFile]
     RunCompiler(Command, OutputDirectory)
-    for Section, Name in (('.NativeHook', 'Hook.bin'), ('.Payload', 'Payload.bin')):
+    for Section, Name in (('.NativeHook', 'Hook.bin'), ('.NativeInformationHook', 'InformationHook.bin'), ('.NativePacketHook', 'PacketHook.bin'), ('.Payload', 'Payload.bin')):
         RunCompiler([CompilerDirectory / 'llvm-objcopy.exe', '--only-section', Section, '-O', 'binary', ElfFile,
             OutputDirectory / Name], OutputDirectory)
     Hook = (OutputDirectory / 'Hook.bin').read_bytes()
@@ -96,19 +112,38 @@ def Main():
     SymbolOutput = Subprocess.run([str(CompilerDirectory / 'llvm-nm.exe'), str(ElfFile)], capture_output=True, check=True).stdout.decode('ascii')
     Symbols = {Parts[2]: int(Parts[0], 16) for Line in SymbolOutput.splitlines() if len(Parts := Line.split()) == 3}
     VectorPage = bytearray(Original[:PageSize])
+    Struct.pack_into('<I', VectorPage, 4, Symbols['InitializeScreenRecovery'] | 1)
     for VectorOffset in (12, 16, 20, 24):
         Struct.pack_into('<I', VectorPage, VectorOffset, Symbols['RecoverScreenFault'] | 1)
     Struct.pack_into('<I', VectorPage, 60, Symbols['GuardScreenSysTick'] | 1)
+    InformationPageAddress = InformationAddress & ~(PageSize - 1)
+    InformationPageOffset = InformationPageAddress - Base
+    InformationOriginal = Original[InformationPageOffset:InformationPageOffset + PageSize]
+    InformationPage = bytearray(InformationOriginal)
+    InformationWithinPage = InformationAddress - InformationPageAddress
+    InformationHook = (OutputDirectory / 'InformationHook.bin').read_bytes()
+    if len(InformationHook) != 4:
+        raise ValueError('Information hook must be exactly one BL instruction')
+    InformationPage[InformationWithinPage:InformationWithinPage + 4] = InformationHook
+    PacketPatch = (OutputDirectory / 'PacketHook.bin').read_bytes()
+    if len(PacketPatch) != 4 or PacketAddress // PageSize != InformationAddress // PageSize:
+        raise ValueError('Packet and information hooks must fit the same verified page')
+    PacketWithinPage = PacketAddress - InformationPageAddress
+    InformationPage[PacketWithinPage:PacketWithinPage + 4] = PacketPatch
     Pages = [
         ('Payload', PayloadAddress, Payload + b'\xff' * (PageSize - len(Payload)), Original[PayloadOffset:PayloadOffset + PageSize]),
         ('Vector', Base, bytes(VectorPage), Original[:PageSize]),
+        ('Information', InformationPageAddress, bytes(InformationPage), InformationOriginal),
         ('Hook', HookPageAddress, bytes(HookPage), OriginalHook),
     ]
     Plan = {'Device': Profile['Device'], 'BaseBackup': str(BackupFile.resolve()),
         'BaseSha256': Profile['ApplicationSha256'], 'FirmwareWritten': False,
         'HardwareDisplayVerified': False, 'Configuration': Configuration,
         'PayloadLength': len(Payload), 'HookAddress': hex(HookAddress),
-        'RecoverySymbols': {Name: hex(Symbols[Name]) for Name in ('GuardScreenSysTick', 'RecoverScreenFault')},
+        'StatusSelector': '0x7F',
+        'CustomPagesOnly': True,
+        'PreservedConfigurationAddress': Profile['PreservedConfigurationAddress'],
+        'RecoverySymbols': {Name: hex(Symbols[Name]) for Name in ('InitializeScreenRecovery', 'GuardScreenSysTick', 'RecoverScreenFault')},
         'Pages': []}
     Patched = bytearray(Original)
     for Name, Address, Modified, Restore in Pages:

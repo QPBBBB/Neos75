@@ -1,0 +1,10 @@
+{
+  "Mode": "Install",
+  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T083413Z\\Package\\ScreenUiPatchPlan.json",
+  "ApplicationVerified": false,
+  "ApplicationHidReturned": true,
+  "BootloaderWritten": false,
+  "Error": "Current device differs outside the supported patch pages",
+  "ExitRequested": true,
+  "ApplicationHidStable": true
+}

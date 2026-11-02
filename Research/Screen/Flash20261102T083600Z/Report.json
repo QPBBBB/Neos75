@@ -1,0 +1,13 @@
+{
+  "Mode": "Install",
+  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T083600Z\\Package\\ScreenUiPatchPlan.json",
+  "ApplicationVerified": true,
+  "ApplicationHidReturned": true,
+  "BootloaderWritten": false,
+  "ConfigurationPreserved": true,
+  "ConfigurationAddress": "0x7f000",
+  "ApplicationSha256": "0241442a3936ca32c2ff6a92b71060ee5087c443f09bb4aea918e10f4c3a7cec",
+  "FirmwareWritten": true,
+  "ExitRequested": true,
+  "ApplicationHidStable": true
+}

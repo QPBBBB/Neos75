@@ -1,0 +1,46 @@
+{
+  "Samples": [
+    {
+      "Version": 2,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "ElapsedSeconds": 20,
+      "UpdateCount": 21,
+      "ActivationCount": 2,
+      "UiScreenAddress": "0x80181dc0",
+      "ActiveScreenAddress": "0x80181dc0",
+      "RecoveryCountdown": 9486
+    },
+    {
+      "Version": 2,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "ElapsedSeconds": 21,
+      "UpdateCount": 22,
+      "ActivationCount": 2,
+      "UiScreenAddress": "0x80181dc0",
+      "ActiveScreenAddress": "0x80181dc0",
+      "RecoveryCountdown": 9281
+    },
+    {
+      "Version": 2,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "ElapsedSeconds": 22,
+      "UpdateCount": 23,
+      "ActivationCount": 2,
+      "UiScreenAddress": "0x80181dc0",
+      "ActiveScreenAddress": "0x80181dc0",
+      "RecoveryCountdown": 9077
+    }
+  ],
+  "UiCreatedAndActive": true,
+  "DeviceTimerAdvancing": true,
+  "PhysicalDisplayVerified": false
+}

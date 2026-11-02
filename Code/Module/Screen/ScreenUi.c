@@ -7,8 +7,13 @@ static void SetLabelText(lv_obj_t *Label, const char *Text)
 
 void CreateScreenUi(ScreenUi *Ui, const lv_font_t *MessageFont)
 {
+    CreateScreenUiOnScreen(Ui, NULL, MessageFont);
+}
+
+void CreateScreenUiOnScreen(ScreenUi *Ui, lv_obj_t *Screen, const lv_font_t *MessageFont)
+{
     if (Ui == NULL) return;
-    Ui->Screen = lv_obj_create(NULL);
+    Ui->Screen = Screen != NULL ? Screen : lv_obj_create(NULL);
     lv_obj_set_style_border_width(Ui->Screen, 0, LV_PART_MAIN);
     lv_obj_set_style_radius(Ui->Screen, 0, LV_PART_MAIN);
     lv_obj_set_style_pad_all(Ui->Screen, 0, LV_PART_MAIN);

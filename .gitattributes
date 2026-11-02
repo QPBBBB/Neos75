@@ -1,5 +1,7 @@
 # Preserve captured bytes and unmodified portable dependencies for SHA256 checks.
 Research/** -text -whitespace
+# Production source fingerprints must also survive checkout without conversion.
+Code/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 Tools/Python39/** -text -whitespace
 Tools/Lvgl/** -text -whitespace
 Tools/Dfu/** -text -whitespace

@@ -1,4 +1,4 @@
-"""Install or restore the three verified NEOS75 screen application pages.
+"""Install or restore the verified NEOS75 screen application pages.
 
 This is an explicit firmware-writing tool, separate from read-only probes.
 It checks the complete current image, writes payload/vector/hook in that order,
@@ -33,8 +33,8 @@ def RunDfu(Arguments, Transcript):
 
 def WritePage(Page, PageFile, Expected, EvidenceDirectory, Transcript, Label):
     Address = int(Page['Address'], 16)
-    if Address not in (0x50000, 0x8000, 0x3C000) or len(Expected) != 4096:
-        raise ValueError('Refusing to write outside the three exact application pages')
+    if Address not in (0x50000, 0x8000, 0x35000, 0x3C000) or len(Expected) != 4096:
+        raise ValueError('Refusing to write outside the exact supported application pages')
     print(f'{Label} {Page["Name"]} page at {Address:#x}', flush=True)
     RunDfu(['--dfuse-address', hex(Address), '--download', str(PageFile)], Transcript)
     ReadbackFile = EvidenceDirectory / f'{Label}{Page["Name"]}Readback.bin'
@@ -55,8 +55,12 @@ def Main():
     Original = Path(Plan['BaseBackup']).read_bytes()
     if Hash.sha256(Original).hexdigest() != Profile['ApplicationSha256'] or Plan['BaseSha256'] != Profile['ApplicationSha256']:
         raise ValueError('Original device backup fingerprint mismatch')
-    if [(Page['Name'], int(Page['Address'], 16), Page['Length']) for Page in Plan['Pages']] != [('Payload', 0x50000, 4096), ('Vector', 0x8000, 4096), ('Hook', 0x3C000, 4096)]:
-        raise ValueError('Patch plan must contain payload, vector and hook pages in safe order')
+    Layout = [(Page['Name'], int(Page['Address'], 16), Page['Length']) for Page in Plan['Pages']]
+    AllowedLayouts = [
+        [('Payload', 0x50000, 4096), ('Vector', 0x8000, 4096), ('Hook', 0x3C000, 4096)],
+        [('Payload', 0x50000, 4096), ('Vector', 0x8000, 4096), ('Information', 0x35000, 4096), ('Hook', 0x3C000, 4096)]]
+    if Layout not in AllowedLayouts:
+        raise ValueError('Patch plan must contain only supported pages in safe order')
     Modified = bytearray(Original)
     for Page in Plan['Pages']:
         for FileKey, HashKey in (('File', 'Sha256'), ('RestoreFile', 'RestoreSha256')):
@@ -85,6 +89,8 @@ def Main():
         'ApplicationVerified': False, 'ApplicationHidReturned': False, 'BootloaderWritten': False}
     WritesStarted, SafeToBoot = False, False
     Target = Original if Arguments.Restore else bytes(Modified)
+    RestoreTarget = Original
+    ConfigurationOffset = 0x7F000 - 0x8000
 
     def RestorePages():
         for Page in reversed(Plan['Pages']):
@@ -92,7 +98,7 @@ def Main():
             WritePage(Page, File, File.read_bytes(), OutputDirectory, Transcript, 'Rollback')
         Readback = OutputDirectory / 'RestoredApplication.bin'
         BackupUtilities.ReadScreenFlash(Readback, Transcript)
-        if Readback.read_bytes() != Original:
+        if Readback.read_bytes() != RestoreTarget:
             raise RuntimeError('Restored whole application differs from original backup')
         Report['OriginalRestored'] = True
 
@@ -104,15 +110,29 @@ def Main():
         Before = BeforeFile.read_bytes()
         if len(Before) != len(Original):
             raise ValueError('Current device application has an unexpected length')
+        # The final 4 KiB is native mutable configuration, observed changing
+        # independently of all code pages. Preserve it byte for byte, including
+        # during rollback; never use it to identify the executable version.
+        BeforeNormalized = Before[:ConfigurationOffset] + Original[ConfigurationOffset:]
+        RestoreTarget = Original[:ConfigurationOffset] + Before[ConfigurationOffset:]
+        Target = RestoreTarget if Arguments.Restore else bytes(Modified[:ConfigurationOffset]) + Before[ConfigurationOffset:]
+        Report['ConfigurationPreserved'] = True
+        Report['ConfigurationAddress'] = '0x7f000'
         # Any bytes outside these pages must still match this device backup.
-        Outside = bytearray(Before)
+        Outside = bytearray(BeforeNormalized)
         for Page in Plan['Pages']:
             Offset = int(Page['Address'], 16) - 0x8000
             Outside[Offset:Offset + 4096] = Original[Offset:Offset + 4096]
         if Outside != Original:
             raise ValueError('Current device differs outside the supported patch pages')
-        KnownPrevious = PreviousInstallation.get('BaseSha256') == Profile['ApplicationSha256'] and Hash.sha256(Before).hexdigest() == PreviousInstallation.get('ApplicationSha256')
-        if not Arguments.Restore and Before not in (Original, bytes(Modified)) and not KnownPrevious:
+        KnownPrevious = False
+        if PreviousInstallation.get('BaseSha256') == Profile['ApplicationSha256'] and PreviousInstallation.get('Report'):
+            PreviousSnapshot = Path(PreviousInstallation['Report']).parent / 'AfterApplication.bin'
+            if PreviousSnapshot.is_file():
+                PreviousBytes = PreviousSnapshot.read_bytes()
+                if Hash.sha256(PreviousBytes).hexdigest() == PreviousInstallation.get('ApplicationSha256'):
+                    KnownPrevious = BeforeNormalized == PreviousBytes[:ConfigurationOffset] + Original[ConfigurationOffset:]
+        if not Arguments.Restore and BeforeNormalized not in (Original, bytes(Modified)) and not KnownPrevious:
             raise ValueError('Current patch pages are unknown; restore the original first')
         if Before != Target:
             WritesStarted = True
