@@ -33,7 +33,7 @@ def RunDfu(Arguments, Transcript):
 
 def WritePage(Page, PageFile, Expected, EvidenceDirectory, Transcript, Label):
     Address = int(Page['Address'], 16)
-    if Address not in (0x50000, 0x8000, 0x35000, 0x3C000) or len(Expected) != 4096:
+    if Address not in (0x50000, 0x51000, 0x52000, 0x53000, 0x8000, 0x35000, 0x3C000) or len(Expected) != 4096:
         raise ValueError('Refusing to write outside the exact supported application pages')
     print(f'{Label} {Page["Name"]} page at {Address:#x}', flush=True)
     RunDfu(['--dfuse-address', hex(Address), '--download', str(PageFile)], Transcript)
@@ -58,7 +58,9 @@ def Main():
     Layout = [(Page['Name'], int(Page['Address'], 16), Page['Length']) for Page in Plan['Pages']]
     AllowedLayouts = [
         [('Payload', 0x50000, 4096), ('Vector', 0x8000, 4096), ('Hook', 0x3C000, 4096)],
-        [('Payload', 0x50000, 4096), ('Vector', 0x8000, 4096), ('Information', 0x35000, 4096), ('Hook', 0x3C000, 4096)]]
+        [('Payload', 0x50000, 4096), ('Vector', 0x8000, 4096), ('Information', 0x35000, 4096), ('Hook', 0x3C000, 4096)],
+        [('Payload', 0x50000, 4096), ('Payload01', 0x51000, 4096), ('Payload02', 0x52000, 4096),
+         ('Payload03', 0x53000, 4096), ('Vector', 0x8000, 4096), ('Information', 0x35000, 4096), ('Hook', 0x3C000, 4096)]]
     if Layout not in AllowedLayouts:
         raise ValueError('Patch plan must contain only supported pages in safe order')
     Modified = bytearray(Original)
@@ -138,6 +140,10 @@ def Main():
             WritesStarted = True
             for Page in (list(reversed(Plan['Pages'])) if Arguments.Restore else Plan['Pages']):
                 File = PlanDirectory / Page['RestoreFile' if Arguments.Restore else 'File']
+                Offset = int(Page['Address'], 16) - 0x8000
+                if Before[Offset:Offset + 4096] == File.read_bytes():
+                    Report.setdefault('UnchangedPagesSkipped', []).append(Page['Name'])
+                    continue
                 WritePage(Page, File, File.read_bytes(), OutputDirectory, Transcript, 'Restore' if Arguments.Restore else 'Install')
         AfterFile = OutputDirectory / 'AfterApplication.bin'
         BackupUtilities.ReadScreenFlash(AfterFile, Transcript)
