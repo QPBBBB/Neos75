@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stddef.h>
+#include <stdbool.h>
 
 /* Narrow LVGL ABI declaration, verified against NativeProfile.json. External
  * API/type/field names follow LVGL, whose MIT license is in Tools/Lvgl.
@@ -16,6 +17,22 @@ typedef unsigned lv_style_selector_t;
 typedef unsigned lv_align_t;
 typedef unsigned lv_text_align_t;
 typedef union { uint16_t full; } lv_color_t;
+typedef struct {
+    const lv_font_t *resolved_font;
+    uint16_t adv_w, box_w, box_h;
+    int16_t ofs_x, ofs_y;
+    uint8_t bpp : 4;
+    uint8_t is_placeholder : 1;
+} lv_font_glyph_dsc_t;
+struct _lv_font_t {
+    bool (*get_glyph_dsc)(const lv_font_t *, lv_font_glyph_dsc_t *, uint32_t, uint32_t);
+    const uint8_t *(*get_glyph_bitmap)(const lv_font_t *, uint32_t);
+    int16_t line_height, base_line;
+    uint8_t subpx;
+    int8_t underline_position, underline_thickness;
+    const void *dsc;
+    const lv_font_t *fallback;
+};
 typedef struct _lv_timer_t lv_timer_t;
 typedef void (*lv_timer_cb_t)(lv_timer_t *Timer);
 struct _lv_timer_t {
@@ -60,6 +77,7 @@ void lv_obj_set_style_pad_left(lv_obj_t *Object, lv_coord_t Value, lv_style_sele
 void lv_obj_set_style_pad_right(lv_obj_t *Object, lv_coord_t Value, lv_style_selector_t Selector);
 void lv_obj_set_style_text_line_space(lv_obj_t *Object, lv_coord_t Value, lv_style_selector_t Selector);
 void *lv_mem_alloc(size_t Size);
+void lv_mem_free(void *Memory);
 uint32_t lv_tick_get(void);
 lv_timer_t *lv_timer_create(lv_timer_cb_t Callback, uint32_t Period, void *UserData);
 lv_obj_t *GetNativeActiveScreen(void);

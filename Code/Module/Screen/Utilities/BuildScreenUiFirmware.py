@@ -55,6 +55,9 @@ def Main():
     PayloadOriginal = Original[PayloadOffset:PayloadOffset + PageSize]
     if PayloadOriginal != b'\xff' * PageSize and Hash.sha256(PayloadOriginal).hexdigest() != Profile.get('PayloadPageSha256'):
         raise ValueError('Payload page is neither unused nor the verified inactive former payload')
+    PayloadCapacity = Profile.get('PayloadCapacity', PageSize)
+    if PayloadCapacity not in (4096, 16384) or Original[PayloadOffset + PageSize:PayloadOffset + PayloadCapacity] != b'\xff' * (PayloadCapacity - PageSize):
+        raise ValueError('Application extension must use only the exactly verified blank pages')
     PacketAddress = int(Profile['PacketHookAddress'], 16)
     PacketOffset = PacketAddress - Base
     if Original[PacketOffset:PacketOffset + 4].hex() != Profile['PacketHookExpectedHex']:
@@ -85,6 +88,7 @@ def Main():
     PacketSource = PacketSource.replace('#include "NativeSymbols.h"', '').replace('NativePacketContinuation', hex(int(Profile['PacketContinuationAddress'], 16) | 1))
     PacketAssembly.write_text(PacketSource, encoding='utf-8')
     Sources = [ScreenDirectory / 'ScreenUi.c', ScreenDirectory / 'Device/NativeLvgl.c',
+        ScreenDirectory / 'Markdown/MarkdownDocument.c',
         ScreenDirectory / 'Device/DeviceScreenUi.c', ScreenDirectory / 'Device/ApplicationHook.s',
         ScreenDirectory / 'Device/ScreenRecovery.s', ScreenDirectory / 'Device/InformationHook.s', PacketAssembly]
     Command = [Compiler, '--target=arm-none-eabi', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=soft',
@@ -94,14 +98,15 @@ def Main():
         '-I', ScreenDirectory / 'Device', '-I', OutputDirectory, *Sources,
         '-Wl,--gc-sections', f'-Wl,--defsym,HookAddress={HookAddress}',
         f'-Wl,--defsym,InformationAddress={InformationAddress}', f'-Wl,--defsym,PacketAddress={PacketAddress}',
-        f'-Wl,--defsym,PayloadAddress={PayloadAddress}', f'-Wl,-T,{LinkerScript}', f'-Wl,-Map,{OutputDirectory / "ScreenUi.map"}', '-o', ElfFile]
+        f'-Wl,--defsym,PayloadAddress={PayloadAddress}', f'-Wl,--defsym,PayloadCapacity={PayloadCapacity}',
+        f'-Wl,-T,{LinkerScript}', f'-Wl,-Map,{OutputDirectory / "ScreenUi.map"}', '-o', ElfFile]
     RunCompiler(Command, OutputDirectory)
     for Section, Name in (('.NativeHook', 'Hook.bin'), ('.NativeInformationHook', 'InformationHook.bin'), ('.NativePacketHook', 'PacketHook.bin'), ('.Payload', 'Payload.bin')):
         RunCompiler([CompilerDirectory / 'llvm-objcopy.exe', '--only-section', Section, '-O', 'binary', ElfFile,
             OutputDirectory / Name], OutputDirectory)
     Hook = (OutputDirectory / 'Hook.bin').read_bytes()
     Payload = (OutputDirectory / 'Payload.bin').read_bytes()
-    if len(Hook) != 4 or not 0 < len(Payload) <= PageSize:
+    if len(Hook) != 4 or not 0 < len(Payload) <= PayloadCapacity:
         raise ValueError('Compiled patch section size is invalid')
     HookPageAddress = HookAddress & ~(PageSize - 1)
     HookPageOffset = HookPageAddress - Base
@@ -125,17 +130,29 @@ def Main():
     if len(InformationHook) != 4:
         raise ValueError('Information hook must be exactly one BL instruction')
     InformationPage[InformationWithinPage:InformationWithinPage + 4] = InformationHook
+    LengthGateAddress = int(Profile['InformationLengthGateAddress'], 16)
+    LengthGateOffset = LengthGateAddress - Base
+    if Original[LengthGateOffset:LengthGateOffset + 2].hex() != Profile['InformationLengthGateExpectedHex']:
+        raise ValueError('Original one-byte information length gate does not match')
+    if LengthGateAddress // PageSize != InformationAddress // PageSize:
+        raise ValueError('Information length gate must remain in the verified information page')
+    # BNE -> BLO after CMP length,#1. The packet hook separately bounds length
+    # to 1..59 before the preserved checksum/parser path is entered.
+    InformationPage[LengthGateAddress - InformationPageAddress:LengthGateAddress - InformationPageAddress + 2] = bytes.fromhex('0dd3')
     PacketPatch = (OutputDirectory / 'PacketHook.bin').read_bytes()
     if len(PacketPatch) != 4 or PacketAddress // PageSize != InformationAddress // PageSize:
         raise ValueError('Packet and information hooks must fit the same verified page')
     PacketWithinPage = PacketAddress - InformationPageAddress
     InformationPage[PacketWithinPage:PacketWithinPage + 4] = PacketPatch
-    Pages = [
-        ('Payload', PayloadAddress, Payload + b'\xff' * (PageSize - len(Payload)), Original[PayloadOffset:PayloadOffset + PageSize]),
+    PayloadPadded = Payload + b'\xff' * (PayloadCapacity - len(Payload))
+    Pages = [('Payload' + (f'{Index // PageSize:02}' if Index else ''), PayloadAddress + Index,
+        PayloadPadded[Index:Index + PageSize], Original[PayloadOffset + Index:PayloadOffset + Index + PageSize])
+        for Index in range(0, PayloadCapacity, PageSize)]
+    Pages.extend([
         ('Vector', Base, bytes(VectorPage), Original[:PageSize]),
         ('Information', InformationPageAddress, bytes(InformationPage), InformationOriginal),
         ('Hook', HookPageAddress, bytes(HookPage), OriginalHook),
-    ]
+    ])
     Plan = {'Device': Profile['Device'], 'BaseBackup': str(BackupFile.resolve()),
         'BaseSha256': Profile['ApplicationSha256'], 'FirmwareWritten': False,
         'HardwareDisplayVerified': False, 'Configuration': Configuration,

@@ -8,6 +8,13 @@ void __aeabi_memclr4(void *Destination, size_t Length)
     while (Length != 0) { *Bytes++ = 0; --Length; }
 }
 
+void __aeabi_memcpy4(void *Destination, const void *Source, size_t Length)
+{
+    volatile uint8_t *Output = Destination;
+    const volatile uint8_t *Input = Source;
+    while (Length != 0) { *Output++ = *Input++; --Length; }
+}
+
 /* External LVGL API names and parameter types intentionally match upstream.
  * Only these verified entry points are imported from the backed-up image. */
 static void SetNumberStyle(lv_obj_t *Object, unsigned Property, int Value, unsigned Selector)
@@ -103,6 +110,11 @@ DefineCoordinateStyle(lv_obj_set_style_text_line_space, LV_STYLE_TEXT_LINE_SPACE
 void *lv_mem_alloc(size_t Size)
 {
     return ((void *(*)(size_t))NativeAllocateMemory)(Size);
+}
+
+void lv_mem_free(void *Memory)
+{
+    ((void (*)(void *))NativeFreeMemory)(Memory);
 }
 
 uint32_t lv_tick_get(void)

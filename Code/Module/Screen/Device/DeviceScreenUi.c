@@ -1,6 +1,7 @@
 #include "ScreenUi.h"
 #include "NativeSymbols.h"
 #include "ScreenUiConfiguration.h"
+#include "Markdown/MarkdownDocument.h"
 #include <stddef.h>
 
 typedef struct DeviceScreenUiState
@@ -14,6 +15,8 @@ typedef struct DeviceScreenUiState
     volatile uint32_t Ready;
     volatile uint32_t IgnoredLegacyPackets;
     char RunningText[24];
+    uint32_t LastRunningSecond;
+    MarkdownState Markdown;
 } DeviceScreenUiState;
 
 /* Reset clears the first boot flag before RTX starts. During application
@@ -67,9 +70,28 @@ unsigned HandleScreenPacket(const uint8_t *Packet, unsigned Length)
     unsigned Position = 0;
     while (Position < Length && Packet[Position] != 0xA5) ++Position;
     if (Length - Position < 6) return 1;
-    if (Packet[Position + 1] == 0x41) return ContinueNativeScreenPacket(Packet, Length);
+    if (Packet[Position + 1] == 0x41) {
+        unsigned PayloadLength = Packet[Position + 3];
+        if (Packet[Position + 2] != 0 || PayloadLength < 1 || PayloadLength > 59 || PayloadLength + 5 > Length - Position) return 1;
+        return ContinueNativeScreenPacket(Packet, Length);
+    }
     DeviceScreenUiState *State = GetDeviceScreenUiState();
-    if (State != NULL) State->IgnoredLegacyPackets++;
+    if (State != NULL) {
+        State->IgnoredLegacyPackets++;
+        unsigned FrameLength = ((unsigned)Packet[Position + 2] << 8) | Packet[Position + 3];
+        if (FrameLength <= Length - Position - 5) {
+            unsigned Sum = 0;
+            for (unsigned Index = 1; Index < FrameLength + 4; ++Index) Sum += Packet[Position + Index];
+            if ((uint8_t)(Sum ^ 255) == Packet[Position + 4 + FrameLength]) {
+                RecordMarkdownControl(&State->Markdown, Packet + Position, FrameLength + 5);
+                if (Packet[Position + 1] == 0x39 && FrameLength == 2 &&
+                    (Packet[Position + 5] == 1 || Packet[Position + 5] == 2)) {
+                    const uint8_t Acknowledgement[7] = {0xA5, 0x39, 0, 2, 0xFE, 0, 0xC6};
+                    ((unsigned (*)(unsigned, const void *, unsigned, unsigned))NativeWriteScreenPort)(1, Acknowledgement, 7, 50);
+                }
+            }
+        }
+    }
     return 0;
 }
 
@@ -77,17 +99,33 @@ unsigned HandleScreenPacket(const uint8_t *Packet, unsigned Length)
  * checksum before this call; all original selectors keep their native path. */
 unsigned HandleScreenInformation(const uint8_t *Request)
 {
+    unsigned PayloadLength = ((unsigned)Request[2] << 8) | Request[3];
+    DeviceScreenUiState *State = GetDeviceScreenUiState();
+    if (State != NULL && Request[0] == 0xA5 && Request[1] == 0x41 && PayloadLength >= 2 && PayloadLength <= 59) {
+        if (Request[4] == 0x7E) {
+            if (Request[5] != 0) QueueMarkdown(&State->Markdown, Request + 5, PayloadLength - 1);
+            uint8_t MarkdownReply[33];
+            GetMarkdownStatus(&State->Markdown, MarkdownReply);
+            ((unsigned (*)(unsigned, unsigned, const uint8_t *, unsigned))NativeSendInformation)(0x41, 0x7E, MarkdownReply, 32);
+            return 0;
+        }
+        if (Request[4] == 0x7D && PayloadLength == 2) {
+            uint8_t ControlReply[25];
+            GetMarkdownControl(&State->Markdown, Request[5], ControlReply);
+            ((unsigned (*)(unsigned, unsigned, const uint8_t *, unsigned))NativeSendInformation)(0x41, 0x7D, ControlReply, 24);
+            return 0;
+        }
+    }
     if (Request[0] != 0xA5 || Request[1] != 0x41 || Request[3] != 1 || Request[4] != 0x7F) {
         return ((unsigned (*)(const uint8_t *))NativeOriginalInformation)(Request);
     }
     uint8_t Reply[33];
     for (unsigned Index = 0; Index < sizeof(Reply); ++Index) Reply[Index] = 0;
     Reply[0] = 'N'; Reply[1] = 'S'; Reply[2] = 'U'; Reply[3] = 'I';
-    Reply[4] = 3;
+    Reply[4] = 4;
     unsigned LegacyRoots = GetLegacyPageRootCount();
     Reply[5] = 0x10 | 0x20 | (LegacyRoots == 0 ? 0x40 : 0);
     Reply[6] = (uint8_t)LegacyRoots;
-    DeviceScreenUiState *State = GetDeviceScreenUiState();
     lv_obj_t *ActiveScreen = GetNativeActiveScreen();
     WriteStatusWord(Reply + 24, (uint32_t)ActiveScreen);
     if (State != NULL) {
@@ -110,12 +148,15 @@ static void UpdateDeviceScreenUi(lv_timer_t *Timer)
     DeviceScreenUiState *State = Timer->user_data;
     FeedScreenRecoveryGuard(State);
     State->UpdateCount++;
+    UpdateMarkdown(&State->Markdown);
     if (GetNativeActiveScreen() != State->Ui.Screen) {
         LoadScreenUi(&State->Ui);
         State->ActivationCount++;
     }
-    if (ScreenUiShowUptime) {
+    if (ScreenUiShowUptime && State->Markdown.Total == 0) {
         uint32_t Seconds = (lv_tick_get() - State->StartTick) / 1000;
+        if (Seconds == State->LastRunningSecond && State->UpdateCount != 1) return;
+        State->LastRunningSecond = Seconds;
         uint32_t Hours = (Seconds / 3600) % 100;
         uint32_t Minutes = (Seconds / 60) % 60;
         Seconds %= 60;
@@ -149,16 +190,21 @@ void EnterDeviceScreenUi(void *OriginalArgument)
     State->ActivationCount = 0;
     State->Ready = 0;
     State->IgnoredLegacyPackets = 0;
+    State->LastRunningSecond = 0;
+    for (unsigned Index = 0; Index < sizeof(State->Markdown); ++Index)
+        ((volatile uint8_t *)&State->Markdown)[Index] = 0;
     *(DeviceScreenUiState * volatile *)0x20000000 = State;
     CreateScreenUiOnScreen(&State->Ui, GetNativeActiveScreen(), NULL);
     SetScreenUiTitle(&State->Ui, ScreenUiTitle);
     SetScreenUiMessage(&State->Ui, ScreenUiMessage);
     SetScreenUiStatus(&State->Ui, ScreenUiStatus);
     State->Ready = 1;
+    InitializeMarkdown(&State->Markdown, &State->Ui);
     LoadScreenUi(&State->Ui);
     State->ActivationCount = 1;
+    ((void (*)(unsigned))NativeAnnounceScreenState)(2);
     lv_timer_t FirstTimer;
     FirstTimer.user_data = State;
     UpdateDeviceScreenUi(&FirstTimer);
-    lv_timer_create(UpdateDeviceScreenUi, 1000, State);
+    lv_timer_create(UpdateDeviceScreenUi, 10, State);
 }
