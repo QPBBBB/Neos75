@@ -1,0 +1,14 @@
+{
+  "Mode": "Scroll",
+  "Transport": "Wired",
+  "ReadbackVerified": true,
+  "ReopenVerified": true,
+  "UpperKnobUnchanged": true,
+  "OtherKeysUnchanged": true,
+  "Layers": 3,
+  "LowerEncoderIndex": 1,
+  "LowerPushRow": 5,
+  "LowerPushColumn": 8,
+  "WritesSent": true,
+  "PowerCycleVerified": false
+}

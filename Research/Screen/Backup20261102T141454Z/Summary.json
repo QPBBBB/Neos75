@@ -1,0 +1,11 @@
+{
+  "EraseSent": false,
+  "FirmwareDataWritten": false,
+  "BackupVerified": true,
+  "Region": "Application",
+  "Address": "0x8000",
+  "Length": 491520,
+  "Sha256": "31bab6139361a170a02a44ef91cdfd3ef717a12a3b2b9885658e830516cfb37e",
+  "ExitRequested": true,
+  "ApplicationHidReturned": true
+}

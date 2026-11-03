@@ -1,0 +1,6 @@
+{
+  "Mode": "Scroll",
+  "Transport": "Wired",
+  "ReadbackVerified": false,
+  "Error": "Unexpected command reply: ReadKeymap28"
+}

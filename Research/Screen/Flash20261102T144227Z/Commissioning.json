@@ -1,0 +1,44 @@
+{
+  "FirmwareRevision": "MarkdownUiV04",
+  "Report": "Research/Screen/Flash20261102T144227Z/Report.json",
+  "EarlierRevisionUserConfirmation": {
+    "FirmwareReport": "Research/Screen/Flash20261102T141629Z/Report.json",
+    "Source": "User: picture normal, typing without stutter",
+    "ChineseAndStylesAndCodeAndTablesNormal": true,
+    "TypingStutterObserved": false
+  },
+  "ActualDeviceCapacity": {
+    "SourceBytes": 65536,
+    "CompiledBytes": 218542,
+    "Rows": 21846,
+    "CrcAcceptedAndDocumentActive": true,
+    "ElapsedUploadSeconds": 59.0,
+    "HostScrollLastRowVerified": 21845
+  },
+  "RuntimeState": "Research/Screen/UiState20261103T024538Z/Summary.json",
+  "NativePageRootCount": 0,
+  "CustomScreenActivationCount": 1,
+  "KnobMappingVerified": "Research/Device/ScreenKnob20261102T142424Z/Report.json",
+  "PhysicalKnobScrollingVerified": true,
+  "FullPowerCycleConfirmedForThisRevision": false,
+  "KeyboardInputLatencyInstrumented": false,
+  "RemainingAcceptance": null,
+  "UserScrollConfirmation": {
+    "LocalDate": "2026-11-03",
+    "TimeZone": "Asia/Shanghai",
+    "Source": "User confirmed clockwise scrolls down and both clockwise/counterclockwise scroll normally",
+    "ClockwiseScrollsDown": true,
+    "CounterclockwiseScrollsUp": true
+  },
+  "ControlCapture": "Research/Screen/Controls20261103T024537Z/Packets.jsonl",
+  "ReadOnlyFollowUp": {
+    "DocumentActive": true,
+    "SourceBytes": 2710,
+    "CompiledBytes": 39197,
+    "Rows": 68,
+    "LegacyControlCount": 289,
+    "LastKnobAction": 2,
+    "ScrollRow": 0,
+    "ControlCountAndScrollUnchangedAcrossTwoSeconds": true
+  }
+}

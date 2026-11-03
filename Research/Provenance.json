@@ -709,10 +709,12 @@
     "OriginalRelativePath": "Research/Screen/InstalledUi.json",
     "RelativePath": "Research/Screen/InstalledUi.json",
     "OriginalName": "InstalledUi.json",
-    "Sha256": "ae9c78958b2506bfb9bd74ba0c1f5f4d2c520fb42980460a9103b6c2bc11f952",
-    "Source": "Mutable index of current installed screen UI and user acceptance",
-    "PreviousSha256": [
-      "cb3fecb10ef1babb2341bd32288754ab31e08fe1ceab9e301684080e355a9f44"
+    "Sha256": "d4dc169599dbbae494a2acca9f09716a7a9545fe12591066c2d250f455553464",
+    "Source": "Mutable V04 deployment metadata updated with 2026-11-03 user confirmation of clockwise/down and counterclockwise/up scrolling",
+    "PreviousSha256": "86b642f08695f9d5e9b2f9b7ea7a594b4e2e2d6b76fec0c0d8c2121fc2db56af",
+    "Sha256History": [
+      "ae9c78958b2506bfb9bd74ba0c1f5f4d2c520fb42980460a9103b6c2bc11f952",
+      "86b642f08695f9d5e9b2f9b7ea7a594b4e2e2d6b76fec0c0d8c2121fc2db56af"
     ]
   },
   {
@@ -1449,5 +1451,1053 @@
     "OriginalName": "Transcript.json",
     "Sha256": "4158a3854e7a6b2ffe316170dac7d071f11c2dfba2002d513a16dec993d6b69a",
     "Source": "Local NEOS75 read-only device capture"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardInfo20261102T114125Z/Transcript.json",
+    "RelativePath": "Research/Device/KeyboardInfo20261102T114125Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "6a275728b4d02d336d95a0f891dfff377478b9e6eb025be94f051a7c58fb3ffa",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114101Z/Definition.json",
+    "RelativePath": "Research/Device/Run20261102T114101Z/Definition.json",
+    "OriginalName": "Definition.json",
+    "Sha256": "dc37e519d330e1a9c2290bbd2135148bedcc46fb4b92fb68cabf49662b37413b",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114101Z/Definition.xz",
+    "RelativePath": "Research/Device/Run20261102T114101Z/Definition.xz",
+    "OriginalName": "Definition.xz",
+    "Sha256": "dc6cbae89cda83cfb8f648eb2d10b96158546f77eaa1936add41dace0f348581",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114101Z/HidInterfaces.json",
+    "RelativePath": "Research/Device/Run20261102T114101Z/HidInterfaces.json",
+    "OriginalName": "HidInterfaces.json",
+    "Sha256": "679ec749293fa4b6dd2d3fed55dec6ce9f0089b691faf8f75474cb3c86afab58",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114101Z/Keymap.bin",
+    "RelativePath": "Research/Device/Run20261102T114101Z/Keymap.bin",
+    "OriginalName": "Keymap.bin",
+    "Sha256": "f4ac0ed8d36ba4f46287e010557b6433e4cb2d935269abae95e6f5e59d861a05",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114101Z/ReadTranscript.json",
+    "RelativePath": "Research/Device/Run20261102T114101Z/ReadTranscript.json",
+    "OriginalName": "ReadTranscript.json",
+    "Sha256": "f852e888496e64d9519077a105573c5630288a7f350ddf0452e1ead6d51e3e28",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114101Z/Summary.json",
+    "RelativePath": "Research/Device/Run20261102T114101Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "765eea98192d6f97a3c42556dbb0c839abadde88947694f2d5d30f5c8b7e15c8",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114509Z/Definition.json",
+    "RelativePath": "Research/Device/Run20261102T114509Z/Definition.json",
+    "OriginalName": "Definition.json",
+    "Sha256": "dc37e519d330e1a9c2290bbd2135148bedcc46fb4b92fb68cabf49662b37413b",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114509Z/Definition.xz",
+    "RelativePath": "Research/Device/Run20261102T114509Z/Definition.xz",
+    "OriginalName": "Definition.xz",
+    "Sha256": "dc6cbae89cda83cfb8f648eb2d10b96158546f77eaa1936add41dace0f348581",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114509Z/HidInterfaces.json",
+    "RelativePath": "Research/Device/Run20261102T114509Z/HidInterfaces.json",
+    "OriginalName": "HidInterfaces.json",
+    "Sha256": "f761cc554a63fa58826e44783a63c97ae0863c26277ce9b1902ff6a387e00586",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114509Z/Keymap.bin",
+    "RelativePath": "Research/Device/Run20261102T114509Z/Keymap.bin",
+    "OriginalName": "Keymap.bin",
+    "Sha256": "f4ac0ed8d36ba4f46287e010557b6433e4cb2d935269abae95e6f5e59d861a05",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114509Z/ReadTranscript.json",
+    "RelativePath": "Research/Device/Run20261102T114509Z/ReadTranscript.json",
+    "OriginalName": "ReadTranscript.json",
+    "Sha256": "c0e46ed623f6eb18a8485e747e5d599b2ff59f8797aa3b6cdb33656c62f9eea8",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/Run20261102T114509Z/Summary.json",
+    "RelativePath": "Research/Device/Run20261102T114509Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "58458923d743d05b9193e6e6e534d13489fa3c499ee3569c91bc32a1d1720fb7",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WiredQueries20261102T113908Z/Transcript.json",
+    "RelativePath": "Research/Device/WiredQueries20261102T113908Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "8191136d593052103fd360ea7d00f267ac5996b6e1d924c228e12c73f0c547ce",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WiredQueries20261102T114102Z/Transcript.json",
+    "RelativePath": "Research/Device/WiredQueries20261102T114102Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "362599a36140b4422a812d10310cafef199648dfadc570d4e74367ec94f904b9",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessQueries20261102T113048Z/HidInterfaces.json",
+    "RelativePath": "Research/Device/WirelessQueries20261102T113048Z/HidInterfaces.json",
+    "OriginalName": "HidInterfaces.json",
+    "Sha256": "5dfb547866c6b78b57ed0b8882439c4853e0c27524a85f05c7658b2b3b8be092",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessQueries20261102T113048Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessQueries20261102T113048Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "6808af2b1d6bce6aaee63faaa14da6c54c4c8d54d7483328b7e394c64f7a42a4",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessQueries20261102T113208Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessQueries20261102T113208Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "11a4bb0ad5d25de97819600e72405fc0e581645e343fdb1f18ae8caf3fe31c3a",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessQueries20261102T113251Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessQueries20261102T113251Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "8e68343d3a935ef5f29516d661f606cb0614e0e4d9e76d9b1ba95d430a95cb9b",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRun20261102T112853Z/Definition.json",
+    "RelativePath": "Research/Device/WirelessRun20261102T112853Z/Definition.json",
+    "OriginalName": "Definition.json",
+    "Sha256": "dc37e519d330e1a9c2290bbd2135148bedcc46fb4b92fb68cabf49662b37413b",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRun20261102T112853Z/Definition.xz",
+    "RelativePath": "Research/Device/WirelessRun20261102T112853Z/Definition.xz",
+    "OriginalName": "Definition.xz",
+    "Sha256": "dc6cbae89cda83cfb8f648eb2d10b96158546f77eaa1936add41dace0f348581",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRun20261102T112853Z/HidInterfaces.json",
+    "RelativePath": "Research/Device/WirelessRun20261102T112853Z/HidInterfaces.json",
+    "OriginalName": "HidInterfaces.json",
+    "Sha256": "f761cc554a63fa58826e44783a63c97ae0863c26277ce9b1902ff6a387e00586",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRun20261102T112853Z/Keymap.bin",
+    "RelativePath": "Research/Device/WirelessRun20261102T112853Z/Keymap.bin",
+    "OriginalName": "Keymap.bin",
+    "Sha256": "f4ac0ed8d36ba4f46287e010557b6433e4cb2d935269abae95e6f5e59d861a05",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRun20261102T112853Z/ReadTranscript.json",
+    "RelativePath": "Research/Device/WirelessRun20261102T112853Z/ReadTranscript.json",
+    "OriginalName": "ReadTranscript.json",
+    "Sha256": "0156aae66798f7fd37fcd7e662e5420f6ae3c2dcba855c87a9b8a1c623041ef0",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRun20261102T112853Z/Summary.json",
+    "RelativePath": "Research/Device/WirelessRun20261102T112853Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "567de68ca3beb90d4fe1a2fd4cc0267ba1a032be7500b65a9d342b44b337ff79",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/Neos75DongleV20Build20261027.bin",
+    "RelativePath": "Research/Firmware/Neos75DongleV20Build20261027.bin",
+    "OriginalName": "SI-2915_DONGLE_20261027.bin",
+    "Sha256": "c054f8a6539bd40ab2ae9507ce9f3801ac041d70aa43eaf1b6e97a8f18001a9d",
+    "Source": "Official NEOS75 dongle firmware, archived without execution or flashing",
+    "SourceUrl": "https://hubapi.aulacn.com/user/BIN/getFile/453"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/Neos75KeyboardScreenProtocol.json",
+    "RelativePath": "Research/Firmware/Neos75KeyboardScreenProtocol.json",
+    "OriginalName": "Neos75KeyboardScreenProtocol.json",
+    "Sha256": "047a78711b5dc085f4dcfb266e31c410881136b348f426f65b4bb4656aaec4ad",
+    "Source": "Offline analysis of the pinned older main-keyboard reference; current firmware addresses unverified"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T113757Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261102T113757Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "e84c81edc25a2ec81dbc02595191020410f5bcb5f77644896262a0d72057f76f",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T113757Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261102T113757Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "6787afd6cd490a74944b0ef9a732b634ccc08caf3dac79219d8d1d915e1e317c",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T113908Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261102T113908Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "afe72da7575ff1c7dfab6399b0f9f7c49fc91a141e2359196b3c5f505ac1a5a7",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T113908Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261102T113908Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "d9ea397aac3292dc47d4f030eddae036cf2167d3f23016b15978f24dea4440c8",
+    "Source": "Actual NEOS75 read-only HID capture during wired/wireless transport investigation"
+  },
+  {
+    "OriginalRelativePath": "Research/Vendor/FirmwareListing20261102T114245Z/DongleFirmwareList.json",
+    "RelativePath": "Research/Vendor/FirmwareListing20261102T114245Z/DongleFirmwareList.json",
+    "OriginalName": "DongleFirmwareList.json",
+    "Sha256": "a9312a44c63ea90df8fce2f64410511f37ec622063932ce18993d09b6bf4db63",
+    "Source": "Current official public firmware listing",
+    "SourceUrl": "https://hubapi.aulacn.com/user/BIN/binList?vid=28006&pid=34162"
+  },
+  {
+    "OriginalRelativePath": "Research/Vendor/FirmwareListing20261102T114245Z/KeyboardFirmwareList.json",
+    "RelativePath": "Research/Vendor/FirmwareListing20261102T114245Z/KeyboardFirmwareList.json",
+    "OriginalName": "KeyboardFirmwareList.json",
+    "Sha256": "1aa1cd07d51167b5a5d27306bcb1b576e18b43cd714f32d548ec333269ea5d46",
+    "Source": "Current official public firmware listing",
+    "SourceUrl": "https://hubapi.aulacn.com/user/BIN/binList?vid=7847&pid=18564"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/DongleInfo20261102T115039Z/Transcript.json",
+    "RelativePath": "Research/Device/DongleInfo20261102T115039Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "67a04fe0cadd21b84c4c7ee67f57f57ad9096b953ac361520368d397c0af4ec4",
+    "Source": "Actual NEOS75 read-only HID device information capture"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessQueries20261102T121053Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessQueries20261102T121053Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "0636b1f15d801e4a18b8eed4b2c84dd65327d97a44efbae7a5b47bca0de258ce",
+    "Source": "Actual read-only NEOS75 wireless HID capture after user disconnected USB and woke the keyboard"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessQueries20261102T121053Z/Transport.json",
+    "RelativePath": "Research/Device/WirelessQueries20261102T121053Z/Transport.json",
+    "OriginalName": "Transport.json",
+    "Sha256": "0ca0a43526830343e61536495ee87a588957110cdb42f99117f34d037e8ccf82",
+    "Source": "Actual read-only NEOS75 wireless HID capture after user disconnected USB and woke the keyboard"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/ScreenKnob20261102T142209Z/Report.json",
+    "RelativePath": "Research/Device/ScreenKnob20261102T142209Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "d02fbe41d024f51fa317dac3f99b8907d6c5a5e8e7c68fcd6d2c7608747f4b01",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/ScreenKnob20261102T142209Z/Transcript.json",
+    "RelativePath": "Research/Device/ScreenKnob20261102T142209Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "468257089496961333cc67de8f8cd3488d05bf63f23eef4a129df908d5b53ae8",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/ScreenKnob20261102T142424Z/After.json",
+    "RelativePath": "Research/Device/ScreenKnob20261102T142424Z/After.json",
+    "OriginalName": "After.json",
+    "Sha256": "15a94fdebfcb2ba6e93d9452754aedc2752610c43a8eb1414a4466798a5ebe0d",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/ScreenKnob20261102T142424Z/Before.json",
+    "RelativePath": "Research/Device/ScreenKnob20261102T142424Z/Before.json",
+    "OriginalName": "Before.json",
+    "Sha256": "3b1be472378825fae32d5c2c87255529401f5d4d54f5115406be2ea839d08952",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/ScreenKnob20261102T142424Z/Report.json",
+    "RelativePath": "Research/Device/ScreenKnob20261102T142424Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "bd1131b13e1628e1bbedcd5ff23042a2e848bb67b691fadfa02e41dcdfda28ee",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/ScreenKnob20261102T142424Z/Transcript.json",
+    "RelativePath": "Research/Device/ScreenKnob20261102T142424Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "cc3133b918946488e204231ac2e790157dbaa02aa163e00cffa96447c071be08",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T141454Z/ScreenApplication.bin",
+    "RelativePath": "Research/Screen/Backup20261102T141454Z/ScreenApplication.bin",
+    "OriginalName": "ScreenApplication.bin",
+    "Sha256": "31bab6139361a170a02a44ef91cdfd3ef717a12a3b2b9885658e830516cfb37e",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T141454Z/Summary.json",
+    "RelativePath": "Research/Screen/Backup20261102T141454Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "bdf6d7e88e4b76c519cea2dcf5e4d2d278a77b6e997e36f636687e820722cbbc",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Backup20261102T141454Z/Transcript.json",
+    "RelativePath": "Research/Screen/Backup20261102T141454Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "f4dec591ba78420590fb0ecd32ad260ca0495c6ce6af60152c61c53d7c567354",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Controls20261102T142541Z/Packets.jsonl",
+    "RelativePath": "Research/Screen/Controls20261102T142541Z/Packets.jsonl",
+    "OriginalName": "Packets.jsonl",
+    "Sha256": "5d5b30c242973052fe9b85415022458f835a2114ede83de2d3cea5418e84df89",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Controls20261102T144625Z/Packets.jsonl",
+    "RelativePath": "Research/Screen/Controls20261102T144625Z/Packets.jsonl",
+    "OriginalName": "Packets.jsonl",
+    "Sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/AfterApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "fbc9d0ea13c9401171590a15f44062ca928d81c97cddff6bb52332b94198de92",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/BeforeApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "31bab6139361a170a02a44ef91cdfd3ef717a12a3b2b9885658e830516cfb37e",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/ExitEntry.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/ExitEntry.bin",
+    "OriginalName": "ExitEntry.bin",
+    "Sha256": "3765c752fecec70395028cdc8b4a737bf8e1d219a7ed5a9c32ba2f7cf365eca2",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/InstallHookReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/InstallHookReadback.bin",
+    "OriginalName": "InstallHookReadback.bin",
+    "Sha256": "5a39f789935357895e17c76a9c03fc5c8801b2d8f4b3905edf5e3d8e3a9e0d6a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/InstallInformationReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/InstallInformationReadback.bin",
+    "OriginalName": "InstallInformationReadback.bin",
+    "Sha256": "c2bd843627bc9b8d73006ff7b3e945b5809cc728d003590db46cd5f3ca8e8c02",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/InstallPayload01Readback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/InstallPayload01Readback.bin",
+    "OriginalName": "InstallPayload01Readback.bin",
+    "Sha256": "46001d8c814298921accab51663c97db1e36830bf9633b08eb012060cdb93d1f",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "0bf73eff6bab3361676594f0bf2cb89633c2e66dfb73f463598e6be6a54ba26a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/HookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "5a39f789935357895e17c76a9c03fc5c8801b2d8f4b3905edf5e3d8e3a9e0d6a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/InformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "c2bd843627bc9b8d73006ff7b3e945b5809cc728d003590db46cd5f3ca8e8c02",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/Payload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "46001d8c814298921accab51663c97db1e36830bf9633b08eb012060cdb93d1f",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/Payload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/Payload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "0bf73eff6bab3361676594f0bf2cb89633c2e66dfb73f463598e6be6a54ba26a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestoreInformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "26740cc7ec8d6503330e8a6a6b121bd164e3de7ff55e369cb8d93e207ba617a7",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Package/VectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Package/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Report.json",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "e58c580bd70016961dfdfeab2f400762878ed2f610d2dc978568ee8a0fd57ab0",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T141629Z/Transcript.json",
+    "RelativePath": "Research/Screen/Flash20261102T141629Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "7f158ee26399a588fe70c2b98cd663e63c12e82f6a976451cae74755e1809b36",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/AfterApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "578a0084371ddf071bd599af8d1c2db70b01ce026b403d40386183318c190b08",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/BeforeApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "fbc9d0ea13c9401171590a15f44062ca928d81c97cddff6bb52332b94198de92",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/ExitEntry.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/ExitEntry.bin",
+    "OriginalName": "ExitEntry.bin",
+    "Sha256": "3765c752fecec70395028cdc8b4a737bf8e1d219a7ed5a9c32ba2f7cf365eca2",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/InstallHookReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/InstallHookReadback.bin",
+    "OriginalName": "InstallHookReadback.bin",
+    "Sha256": "8a107acd89e80d27d46f2efb0b0f556608f7d2659a731b4dc3affec0bcfc6a58",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/InstallInformationReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/InstallInformationReadback.bin",
+    "OriginalName": "InstallInformationReadback.bin",
+    "Sha256": "744551c50e9d5a9581f1191c7fe5af4a781b7eb5f34008813e7c52d7c8ce3b81",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/InstallPayload01Readback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/InstallPayload01Readback.bin",
+    "OriginalName": "InstallPayload01Readback.bin",
+    "Sha256": "f6157e6136e98be440cef15795c36409723d352cfa8c544806356e859816aa6f",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "353b8aff70c2eaa0fa3c1a1413276071192d8bbb26fbc949676be33bf3d097e2",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/HookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "8a107acd89e80d27d46f2efb0b0f556608f7d2659a731b4dc3affec0bcfc6a58",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/InformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "744551c50e9d5a9581f1191c7fe5af4a781b7eb5f34008813e7c52d7c8ce3b81",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/Payload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "f6157e6136e98be440cef15795c36409723d352cfa8c544806356e859816aa6f",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/Payload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/Payload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "353b8aff70c2eaa0fa3c1a1413276071192d8bbb26fbc949676be33bf3d097e2",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestoreInformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "2cc9c835bba1a01efcce95b226f118187a3ea544eb80603830c2854e272d497a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Package/VectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Package/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Report.json",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "6b0de04e4aa686353f30691e28a728d2f7ad01f0018c86d4d7ab3685a1df0792",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T143451Z/Transcript.json",
+    "RelativePath": "Research/Screen/Flash20261102T143451Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "4876360858d65a13485cb0628644b2f788d8d0b41606063b85b654fd83df936c",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/AfterApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "2fc302de522843c98ee54c8a6b7dd7202f044f8912fdde95cc41ef9b2f9eb6b0",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/BeforeApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "578a0084371ddf071bd599af8d1c2db70b01ce026b403d40386183318c190b08",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Commissioning.json",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Commissioning.json",
+    "OriginalName": "Commissioning.json",
+    "Sha256": "88d9aca380b562ba516054b7e185b7ff625c29867017261d84c0693d53ef6f89",
+    "Source": "Mutable V04 deployment metadata updated with 2026-11-03 user confirmation of clockwise/down and counterclockwise/up scrolling",
+    "Sha256History": [
+      "5c67ee4ae39c501f5ef81e044188775842b8982d560a665088a6a028d4ee1efb"
+    ],
+    "PreviousSha256": "5c67ee4ae39c501f5ef81e044188775842b8982d560a665088a6a028d4ee1efb"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/ExitEntry.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/ExitEntry.bin",
+    "OriginalName": "ExitEntry.bin",
+    "Sha256": "3765c752fecec70395028cdc8b4a737bf8e1d219a7ed5a9c32ba2f7cf365eca2",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/InstallHookReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/InstallHookReadback.bin",
+    "OriginalName": "InstallHookReadback.bin",
+    "Sha256": "07f3af74bdfa28cd32a21c4ed8f31e0cfaa58a03e95b3279170c46aaef0cf99d",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/InstallInformationReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/InstallInformationReadback.bin",
+    "OriginalName": "InstallInformationReadback.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/InstallPayload01Readback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/InstallPayload01Readback.bin",
+    "OriginalName": "InstallPayload01Readback.bin",
+    "Sha256": "87c87d70e9f1f607f93ce4f7be87a0e5ed5a88e58ab20ec3338f94a64491040e",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "3d646699669222d88747f6490490140965df1ae4fb0493a252cfaf2a895d4f8b",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/HookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "07f3af74bdfa28cd32a21c4ed8f31e0cfaa58a03e95b3279170c46aaef0cf99d",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/InformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/Payload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "87c87d70e9f1f607f93ce4f7be87a0e5ed5a88e58ab20ec3338f94a64491040e",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/Payload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/Payload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "3d646699669222d88747f6490490140965df1ae4fb0493a252cfaf2a895d4f8b",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestoreInformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "a77d393d90795699a69564f672d2b34e49b8ef88e582e01958cdc4643def735c",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Package/VectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Package/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Report.json",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "aa7be07edfa44a842438aac22219f6a73931fd1dc8b37ad2bca80622371a6d0a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261102T144227Z/Transcript.json",
+    "RelativePath": "Research/Screen/Flash20261102T144227Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "1ac2f5118a48db185ec9c9c7e773fcff2b5f0d7fbfeb109ef6cb02d2057eb913",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/HookPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "07f3af74bdfa28cd32a21c4ed8f31e0cfaa58a03e95b3279170c46aaef0cf99d",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/InformationPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/NativeProfile.json",
+    "RelativePath": "Research/Screen/MarkdownUiV04/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/Payload01Page.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "87c87d70e9f1f607f93ce4f7be87a0e5ed5a88e58ab20ec3338f94a64491040e",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/Payload02Page.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/Payload03Page.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/PayloadPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "3d646699669222d88747f6490490140965df1ae4fb0493a252cfaf2a895d4f8b",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestoreInformationPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestorePayload01Page.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestorePayload02Page.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestorePayload03Page.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/ScreenUi.elf",
+    "RelativePath": "Research/Screen/MarkdownUiV04/ScreenUi.elf",
+    "OriginalName": "ScreenUi.elf",
+    "Sha256": "d3aaa5ccc43ab3b96f8aa9f16af9fe7ec118cf1aaeccf736d1f1cea3aa6216d7",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/ScreenUiDisassembly.txt",
+    "RelativePath": "Research/Screen/MarkdownUiV04/ScreenUiDisassembly.txt",
+    "OriginalName": "ScreenUiDisassembly.txt",
+    "Sha256": "53d443a3d9ee8581f412b3e11f5a96134c5db5b312a05a4ba8c081ed6d7a4cb1",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/MarkdownUiV04/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "a77d393d90795699a69564f672d2b34e49b8ef88e582e01958cdc4643def735c",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/Source.json",
+    "RelativePath": "Research/Screen/MarkdownUiV04/Source.json",
+    "OriginalName": "Source.json",
+    "Sha256": "1a1ab3e1f2eb1d13f0329402f9ac9fe2f3d54998e7c0bcb66a7843e52c9851d5",
+    "Source": "V04 production source manifest updated with exact verified Git source commit",
+    "Sha256History": [
+      "cc8f403ba1c12ee83a9ef77ea8a4e6117babb602b7e922ca53b970e666c7f7af",
+      "617b41568a89701464d365cfdc04175d9bf127cf3d52662fa6cb7cd59b244a0c"
+    ],
+    "PreviousSha256": "617b41568a89701464d365cfdc04175d9bf127cf3d52662fa6cb7cd59b244a0c"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/MarkdownUiV04/VectorPage.bin",
+    "RelativePath": "Research/Screen/MarkdownUiV04/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T141750Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261102T141750Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "bdb12e45a7f77c3eaadd0a8eef9bc5eb4612e2681b77276db71cfbe384f39a84",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T141750Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261102T141750Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "30f35b995f07223c6248e3ee33651a0d1589d99a4f5227f5614a74f17c331eeb",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T142036Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261102T142036Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "92724a26aba2af3945774fee19bbb6fc59ca15af09939025d998d2943e99258a",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T142036Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261102T142036Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "08f8ea1a824f89d3496efedd8817d6fe98db589d85339af3a1b647500bd81270",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T145031Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261102T145031Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "a27582a53a75e47218d54800bf56aabae97b000ac2f6aa7e044f76de3941f326",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261102T145031Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261102T145031Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "4f13a50df4e88b5f66e45cc29003a165b8b20217b391b7552ad80d56f6ef0e40",
+    "Source": "NEOS75 actual device capture, verified firmware backup, deployment/recovery package or derived production record"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Controls20261103T024537Z/Packets.jsonl",
+    "RelativePath": "Research/Screen/Controls20261103T024537Z/Packets.jsonl",
+    "OriginalName": "Packets.jsonl",
+    "Sha256": "8553f6ebfe3aec0279c879e29138b42ecaf92de4ce96210a43aed3906d50b4d5",
+    "Source": "Actual read-only NEOS75 screen control/runtime capture after user confirmed bidirectional Markdown knob scrolling"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261103T024538Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261103T024538Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "f1dbbff513edc46a2ec462a1d3b0a61493419036ab10fdaafa15045f306103ad",
+    "Source": "Actual read-only NEOS75 screen control/runtime capture after user confirmed bidirectional Markdown knob scrolling"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261103T024538Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261103T024538Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "cd62da53ad18189e73297c3b7f55e8b999207094f988b2746ad782be54540e68",
+    "Source": "Actual read-only NEOS75 screen control/runtime capture after user confirmed bidirectional Markdown knob scrolling"
   }
 ]

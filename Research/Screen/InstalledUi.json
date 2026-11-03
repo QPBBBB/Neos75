@@ -1,16 +1,23 @@
 {
   "Mode": "Install",
   "BaseSha256": "6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b",
-  "ApplicationSha256": "afb03cbed5401cc8db72c82de3555f201d8bfcd568fef024d63e5d88483f4d71",
-  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T090614Z\\Package\\ScreenUiPatchPlan.json",
-  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T090614Z\\Report.json",
+  "ApplicationSha256": "2fc302de522843c98ee54c8a6b7dd7202f044f8912fdde95cc41ef9b2f9eb6b0",
+  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T144227Z\\Package\\ScreenUiPatchPlan.json",
+  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T144227Z\\Report.json",
   "HardwareDisplayVerified": true,
-  "UserPowerCycleVerified": true,
-  "LowerKnobPhysicallyDisabled": true,
-  "UpperVolumeKnobPhysicallyVerified": true,
-  "LegacyPageRootCount": 0,
-  "CustomPagesOnly": true,
-  "ProductionPackage": "Research/Screen/CustomUiV03",
-  "RuntimeState": "Research/Screen/UiState20261102T090848Z/Summary.json",
-  "KnobConfiguration": "Research/Device/ScreenKnob20261102T090653Z/Report.json"
+  "Version": "MarkdownUiV04",
+  "ProductionPackage": "Research/Screen/MarkdownUiV04",
+  "Commissioning": "Research/Screen/Flash20261102T144227Z/Commissioning.json",
+  "PhysicalKnobScrollingVerified": true,
+  "RuntimeState": "Research/Screen/UiState20261103T024538Z/Summary.json",
+  "MarkdownSourceLimitBytes": 65536,
+  "CompiledPackageLimitBytes": 262144,
+  "WirelessDocumentUploadImplemented": false,
+  "UserScrollConfirmation": {
+    "LocalDate": "2026-11-03",
+    "TimeZone": "Asia/Shanghai",
+    "Source": "User confirmed clockwise scrolls down and both clockwise/counterclockwise scroll normally",
+    "ClockwiseScrollsDown": true,
+    "CounterclockwiseScrollsUp": true
+  }
 }

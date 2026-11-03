@@ -1,0 +1,61 @@
+{
+  "Samples": [
+    {
+      "Version": 3,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "CustomPagesOnly": true,
+      "LegacyPacketFilterActive": true,
+      "LegacyRootsAbsent": true,
+      "LegacyPageRootCount": 0,
+      "IgnoredLegacyPacketsModulo256": 29,
+      "ElapsedSeconds": 23,
+      "UpdateCount": 24,
+      "ActivationCount": 1,
+      "UiScreenAddress": "0x8017dd8c",
+      "ActiveScreenAddress": "0x8017dd8c",
+      "RecoveryCountdown": 9690
+    },
+    {
+      "Version": 3,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "CustomPagesOnly": true,
+      "LegacyPacketFilterActive": true,
+      "LegacyRootsAbsent": true,
+      "LegacyPageRootCount": 0,
+      "IgnoredLegacyPacketsModulo256": 29,
+      "ElapsedSeconds": 23,
+      "UpdateCount": 24,
+      "ActivationCount": 1,
+      "UiScreenAddress": "0x8017dd8c",
+      "ActiveScreenAddress": "0x8017dd8c",
+      "RecoveryCountdown": 9425
+    },
+    {
+      "Version": 3,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "CustomPagesOnly": true,
+      "LegacyPacketFilterActive": true,
+      "LegacyRootsAbsent": true,
+      "LegacyPageRootCount": 0,
+      "IgnoredLegacyPacketsModulo256": 30,
+      "ElapsedSeconds": 23,
+      "UpdateCount": 24,
+      "ActivationCount": 1,
+      "UiScreenAddress": "0x8017dd8c",
+      "ActiveScreenAddress": "0x8017dd8c",
+      "RecoveryCountdown": 9160
+    }
+  ],
+  "UiCreatedAndActive": true,
+  "DeviceTimerAdvancing": false,
+  "PhysicalDisplayVerified": false
+}

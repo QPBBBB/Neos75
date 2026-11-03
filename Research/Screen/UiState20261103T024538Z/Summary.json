@@ -1,0 +1,43 @@
+{
+  "Samples": [
+    {
+      "Version": 4,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "CustomPagesOnly": true,
+      "LegacyPacketFilterActive": true,
+      "LegacyRootsAbsent": true,
+      "LegacyPageRootCount": 0,
+      "IgnoredLegacyPacketsModulo256": 79,
+      "ElapsedSeconds": 43389,
+      "UpdateCount": 4337073,
+      "ActivationCount": 1,
+      "UiScreenAddress": "0x8017dd8c",
+      "ActiveScreenAddress": "0x8017dd8c",
+      "RecoveryCountdown": 9959
+    },
+    {
+      "Version": 4,
+      "StateFound": true,
+      "UiCreated": true,
+      "UiActive": true,
+      "ShowUptime": true,
+      "CustomPagesOnly": true,
+      "LegacyPacketFilterActive": true,
+      "LegacyRootsAbsent": true,
+      "LegacyPageRootCount": 0,
+      "IgnoredLegacyPacketsModulo256": 88,
+      "ElapsedSeconds": 43390,
+      "UpdateCount": 4337128,
+      "ActivationCount": 1,
+      "UiScreenAddress": "0x8017dd8c",
+      "ActiveScreenAddress": "0x8017dd8c",
+      "RecoveryCountdown": 9992
+    }
+  ],
+  "UiCreatedAndActive": true,
+  "DeviceTimerAdvancing": true,
+  "PhysicalDisplayVerified": false
+}

@@ -1,0 +1,10 @@
+{
+  "Transport": "Wireless",
+  "KeyboardUsbConnected": false,
+  "ScreenUsbConnected": false,
+  "UserReportedUsbDisconnectedAndAwake": true,
+  "ReportBodyBytes": 32,
+  "MaximumConfigurationBytesPerReply": 28,
+  "QueryMode": "Sequential read-only VIA keymap queries",
+  "Scope": "Configuration readback, not screen text upload throughput"
+}
