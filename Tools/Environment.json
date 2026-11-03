@@ -19,6 +19,30 @@
       "Version": "5.0.6",
       "Wheel": "capstone-5.0.6-py3-none-win_amd64.whl",
       "Directory": "Tools/Python39/Lib/site-packages"
+    },
+    {
+      "Name": "mistune",
+      "Version": "3.3.4",
+      "Wheel": "mistune-3.3.4-py3-none-any.whl",
+      "Directory": "Tools/Python39/Lib/site-packages",
+      "Source": "https://files.pythonhosted.org/packages/77/e4/288365afae98953bc01de09f686f40d8ee84578135aa7767d5d4e60b5278/mistune-3.3.4-py3-none-any.whl",
+      "Sha256": "ee015381e955e370962968befe1d729ab60fafb6a715ac6751763fbce38c8d4a"
+    },
+    {
+      "Name": "pillow",
+      "Version": "11.3.0",
+      "Wheel": "pillow-11.3.0-cp39-cp39-win_amd64.whl",
+      "Directory": "Tools/Python39/Lib/site-packages",
+      "Source": "https://files.pythonhosted.org/packages/46/05/4106422f45a05716fd34ed21763f8ec182e8ea00af6e9cb05b93a247361a/pillow-11.3.0-cp39-cp39-win_amd64.whl",
+      "Sha256": "e5c5858ad8ec655450a7c7df532e9842cf8df7cc349df7225c60d5d348c8aada"
+    },
+    {
+      "Name": "typing_extensions",
+      "Version": "4.15.0",
+      "Wheel": "typing_extensions-4.15.0-py3-none-any.whl",
+      "Directory": "Tools/Python39/Lib/site-packages",
+      "Source": "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl",
+      "Sha256": "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"
     }
   ],
   "Lvgl": {
