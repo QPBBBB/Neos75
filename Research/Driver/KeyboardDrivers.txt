@@ -1,0 +1,1 @@
+winusb,UB32 Bootloader,2E3C,DF11,88bae032-5a81-49f0-bc3d-a4ff138216d6
