@@ -1,4 +1,4 @@
-"""Disable or restore only the lower screen knob's device-side mappings.
+"""Disable, enable document scrolling, or restore the lower screen knob mappings.
 
 Writes Vial encoder index 1 and matrix row 5, column 8 on three layers. Captures
 the complete keymap and both encoders, verifies every other mapping unchanged,
@@ -8,6 +8,7 @@ reset, bootloader, macro, lighting or other configuration command is exposed.
 import argparse as ArgumentParsing
 import json as Json
 import struct as Struct
+import time as Time
 from datetime import datetime as DateTime, timezone as TimeZone
 from pathlib import Path
 import hid as Hid
@@ -19,15 +20,19 @@ def Main():
     Parser = ArgumentParsing.ArgumentParser(description=__doc__)
     Mode = Parser.add_mutually_exclusive_group(required=True)
     Mode.add_argument('--Disable', action='store_true')
+    Mode.add_argument('--Scroll', action='store_true', help='restore only LCD rotation events; keep push disabled')
     Mode.add_argument('--Restore', type=Path, help='Before.json from a previous run')
+    Parser.add_argument('--Transport', choices=('Wired', 'Wireless'), default='Wired')
     Arguments = Parser.parse_args()
     OutputDirectory = RepositoryRoot / 'Research/Device' / DateTime.now(TimeZone.utc).strftime('ScreenKnob%Y%m%dT%H%M%SZ')
     OutputDirectory.mkdir(exist_ok=False)
-    Devices = [Item for Item in Hid.enumerate(0x1EA7, 0x4884) if Item['usage_page'] == 0xFF60 and Item['usage'] == 0x61]
+    Vendor, Product = (0x1EA7, 0x4884) if Arguments.Transport == 'Wired' else (0x6D66, 0x8572)
+    Devices = [Item for Item in Hid.enumerate(Vendor, Product) if Item['usage_page'] == 0xFF60 and Item['usage'] == 0x61]
     if len(Devices) != 1:
         raise RuntimeError('Expected exactly one NEOS75 configuration interface')
     Device = Hid.device()
-    Transcript, Report = [], {'Mode': 'Disable' if Arguments.Disable else 'Restore', 'ReadbackVerified': False}
+    Transcript, Report = [], {'Mode': 'Disable' if Arguments.Disable else 'Scroll' if Arguments.Scroll else 'Restore',
+        'Transport': Arguments.Transport, 'ReadbackVerified': False}
 
     def Exchange(Label, Data):
         Allowed = Data in (b'\xFE\x00', b'\x11')
@@ -44,14 +49,30 @@ def Main():
         Transcript.append(Entry)
         if Device.write(Packet) != 33:
             raise RuntimeError('Incomplete keyboard packet')
-        Reply = bytes(Device.read(32, timeout_ms=1500))
-        Entry['Rx'] = Reply.hex()
-        if len(Reply) != 32:
-            raise RuntimeError(f'No full reply: {Label}')
-        if Data[0] in (5, 0x12) or Data[:2] == b'\xFE\x04':
-            if Reply[:len(Data)] != Data:
-                raise RuntimeError(f'Unexpected command reply: {Label}')
-        return Reply
+        Deadline = Time.monotonic() + 1.5
+        while Time.monotonic() < Deadline:
+            Reply = bytes(Device.read(32, timeout_ms=100))
+            if not Reply:
+                continue
+            Matches = len(Reply) == 32
+            if Data[0] in (5, 0x12) or Data[:2] == b'\xFE\x04':
+                Matches &= Reply[:len(Data)] == Data
+            elif Data == b'\x11':
+                Matches &= Reply[:2] == b'\x11\x03'
+            elif Data == b'\xFE\x00':
+                Matches &= Reply[:12] == bytes.fromhex('06000000b03054a132103319')
+            elif Data[:2] == b'\xFE\x03':
+                # Encoder replies carry no request ID. Pin the observed mappings
+                # before any write instead of mistaking another app's lighting
+                # poll for a keycode pair. Upper mappings are never written.
+                Expected = [bytes.fromhex('00000000'), bytes.fromhex('7e107e0f')] if Data[3] == 1 else [
+                    bytes.fromhex('00aa00a9') if Data[2] == 0 else bytes.fromhex('78287827')]
+                Matches &= Reply[:4] in Expected and not any(Reply[4:])
+            if Matches:
+                Entry['Rx'] = Reply.hex()
+                return Reply
+            Entry.setdefault('Unmatched', []).append(Reply.hex())
+        raise RuntimeError(f'No correlated reply for the pinned NEOS75 mapping: {Label}')
 
     def ReadMappings():
         Keymap = bytearray()
@@ -98,10 +119,10 @@ def Main():
         Keymap = bytearray.fromhex(Before['KeymapHex'])
         for Entry in Desired['Encoders']:
             if Entry['Index'] == 1:
-                Entry['Codes'] = [0, 0] if Arguments.Disable else next(Item['Codes'] for Item in Restore['Encoders'] if Item['Layer'] == Entry['Layer'] and Item['Index'] == 1)
+                Entry['Codes'] = [0, 0] if Arguments.Disable else [0x7E10, 0x7E0F] if Arguments.Scroll else next(Item['Codes'] for Item in Restore['Encoders'] if Item['Layer'] == Entry['Layer'] and Item['Index'] == 1)
         for Layer in range(3):
             Offset = (Layer * 105 + 5 * 15 + 8) * 2
-            Keymap[Offset:Offset + 2] = b'\0\0' if Arguments.Disable else bytes.fromhex(Restore['KeymapHex'])[Offset:Offset + 2]
+            Keymap[Offset:Offset + 2] = b'\0\0' if Arguments.Disable or Arguments.Scroll else bytes.fromhex(Restore['KeymapHex'])[Offset:Offset + 2]
         Desired['KeymapHex'] = Keymap.hex()
         if Desired != Before:
             WritesStarted = True

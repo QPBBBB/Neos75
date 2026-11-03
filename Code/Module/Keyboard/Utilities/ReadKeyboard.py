@@ -2,6 +2,8 @@
 
 Never sends reset, bootloader, unlock, keymap-set, or vendor-specific commands.
 Requires hidapi installed in the portable Tools/Python39 runtime.
+--Transport Wireless selects the 2.4 GHz receiver. The keyboard must be awake;
+the USB keyboard configuration endpoint only replies in wired mode.
 """
 import argparse as ArgumentParsing
 import json as Json
@@ -12,7 +14,7 @@ from datetime import datetime as DateTime, timezone as TimeZone
 from pathlib import Path
 RepositoryRoot = Path(__file__).resolve().parents[4]
 import hid as Hid
-VendorId, ProductId = (7847, 18564)
+TransportDeviceIds = {'Wired': (7847, 18564), 'Wireless': (28006, 34162)}
 
 def IsReadQueryAllowed(Data):
     if not Data:
@@ -31,10 +33,13 @@ def IsReadQueryAllowed(Data):
 
 def Main():
     Parser = ArgumentParsing.ArgumentParser(description=__doc__)
+    Parser.add_argument('--Transport', choices=('Wired', 'Wireless'), default='Wired',
+        help='select the wired keyboard or its 2.4 GHz receiver; read queries only')
     Parser.add_argument('--Enumerate', action='store_true', help='enumerate only; send no packets')
     Parser.add_argument('--ReadEncoders', action='store_true', help='read documented Vial encoder slots 0 and 1')
     Parser.add_argument('--OutputDirectory', type=Path, help='directory for the captured snapshot')
     Arguments = Parser.parse_args()
+    VendorId, ProductId = TransportDeviceIds[Arguments.Transport]
     OutputDirectory = Arguments.OutputDirectory or RepositoryRoot / 'Research' / 'Device' / DateTime.now(TimeZone.utc).strftime('Run%Y%m%dT%H%M%SZ')
     OutputDirectory.mkdir(parents=True, exist_ok=True)
     Devices = [D for D in Hid.enumerate() if D['vendor_id'] == VendorId and D['product_id'] == ProductId]
@@ -48,7 +53,8 @@ def Main():
         raise RuntimeError(f'Expected one NEOS75 Raw HID interface; found {len(Candidates)}')
     Device = Hid.device()
     Transcript = []
-    Summary = {'timestamp_utc': DateTime.now(TimeZone.utc).isoformat(), 'vid': hex(VendorId), 'pid': hex(ProductId)}
+    Summary = {'timestamp_utc': DateTime.now(TimeZone.utc).isoformat(), 'vid': hex(VendorId), 'pid': hex(ProductId),
+        'Transport': Arguments.Transport}
 
     def Query(Label, Data):
         if not IsReadQueryAllowed(Data):
@@ -64,6 +70,8 @@ def Main():
             Stale.append(Pending.hex())
         if Stale:
             Entry['pending_before_query'] = Stale
+        Entry['QuerySentAtUtc'] = DateTime.now(TimeZone.utc).isoformat()
+        QueryStarted = Time.perf_counter()
         if Device.write(Packet) != 33:
             raise RuntimeError(f'Incomplete query transmission: {Label}')
         Deadline = Time.monotonic() + 1.5
@@ -81,6 +89,7 @@ def Main():
                 Matches = 1 <= Struct.unpack('<I', Response[:4])[0] <= 6
             if Matches:
                 Entry['rx'] = Response.hex()
+                Entry['RoundTripMilliseconds'] = round((Time.perf_counter() - QueryStarted) * 1000, 3)
                 return Response
             Entry.setdefault('unmatched', []).append(Response.hex())
         raise RuntimeError(f'No matching reply to {Label}; see ReadTranscript.json')
