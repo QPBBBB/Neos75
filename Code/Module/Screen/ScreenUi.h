@@ -14,7 +14,6 @@ extern "C" {
 typedef struct ScreenUi
 {
     lv_obj_t *Screen;
-    lv_obj_t *Title;
     lv_obj_t *Message;
     lv_obj_t *Status;
 } ScreenUi;
@@ -23,7 +22,6 @@ typedef struct ScreenUi
 void CreateScreenUi(ScreenUi *Ui, const lv_font_t *MessageFont);
 void CreateScreenUiOnScreen(ScreenUi *Ui, lv_obj_t *Screen, const lv_font_t *MessageFont);
 void LoadScreenUi(ScreenUi *Ui);
-void SetScreenUiTitle(ScreenUi *Ui, const char *Text);
 void SetScreenUiMessage(ScreenUi *Ui, const char *Text);
 void SetScreenUiStatus(ScreenUi *Ui, const char *Text);
 void DeleteScreenUi(ScreenUi *Ui);

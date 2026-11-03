@@ -13,7 +13,6 @@ static lv_color_t FramePixels[480 * 480];
 static lv_disp_draw_buf_t DrawBuffer;
 static lv_disp_drv_t DisplayDriver;
 static HWND PreviewWindow;
-static HWND TitleEditor;
 static HWND MessageEditor;
 static HWND StatusEditor;
 static int ScreenWidth = 320;
@@ -48,7 +47,6 @@ static void ApplyEditor(HWND Editor, void (*Apply)(ScreenUi *Ui, const char *Tex
 
 static void SetEditors(void)
 {
-    ApplyEditor(TitleEditor, SetScreenUiTitle);
     ApplyEditor(MessageEditor, SetScreenUiMessage);
     ApplyEditor(StatusEditor, SetScreenUiStatus);
 }
@@ -89,19 +87,16 @@ static LRESULT CALLBACK HandleWindow(HWND Window, UINT Message, WPARAM FirstPara
         {
             int EditorLeft = ScreenWidth + 40;
             CreateWindowW(L"STATIC", L"Live LVGL content", WS_CHILD | WS_VISIBLE, EditorLeft, 16, 280, 24, Window, NULL, NULL, NULL);
-            CreateWindowW(L"STATIC", L"Title", WS_CHILD | WS_VISIBLE, EditorLeft, 52, 280, 20, Window, NULL, NULL, NULL);
-            TitleEditor = CreateWindowExW(WS_EX_CLIENTEDGE, L"EDIT", L"", WS_CHILD | WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL,
-                                         EditorLeft, 76, 280, 28, Window, (HMENU)101, NULL, NULL);
-            CreateWindowW(L"STATIC", L"Message", WS_CHILD | WS_VISIBLE, EditorLeft, 116, 280, 20, Window, NULL, NULL, NULL);
-            MessageEditor = CreateWindowExW(WS_EX_CLIENTEDGE, L"EDIT", L"hellow world", WS_CHILD | WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL,
-                                           EditorLeft, 140, 280, 28, Window, (HMENU)102, NULL, NULL);
-            CreateWindowW(L"STATIC", L"Status / live value", WS_CHILD | WS_VISIBLE, EditorLeft, 180, 280, 20, Window, NULL, NULL, NULL);
+            CreateWindowW(L"STATIC", L"Message", WS_CHILD | WS_VISIBLE, EditorLeft, 52, 280, 20, Window, NULL, NULL, NULL);
+            MessageEditor = CreateWindowExW(WS_EX_CLIENTEDGE, L"EDIT", L"", WS_CHILD | WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL,
+                                           EditorLeft, 76, 280, 28, Window, (HMENU)102, NULL, NULL);
+            CreateWindowW(L"STATIC", L"Status / live value", WS_CHILD | WS_VISIBLE, EditorLeft, 116, 280, 20, Window, NULL, NULL, NULL);
             StatusEditor = CreateWindowExW(WS_EX_CLIENTEDGE, L"EDIT", L"", WS_CHILD | WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL,
-                                          EditorLeft, 204, 280, 28, Window, (HMENU)103, NULL, NULL);
-            CreateWindowW(L"STATIC", L"Edits update real LVGL labels immediately.\r\nPreview runs on this PC; device integration is pending.",
-                          WS_CHILD | WS_VISIBLE, EditorLeft, 254, 290, 64, Window, NULL, NULL, NULL);
+                                          EditorLeft, 140, 280, 28, Window, (HMENU)103, NULL, NULL);
+            CreateWindowW(L"STATIC", L"Legacy label preview.\r\nUse the Markdown CLI preview for document layout.",
+                          WS_CHILD | WS_VISIBLE, EditorLeft, 190, 290, 64, Window, NULL, NULL, NULL);
             CreateWindowW(L"BUTTON", L"Export current UI as BMP", WS_CHILD | WS_VISIBLE | WS_TABSTOP,
-                          EditorLeft, 328, 280, 28, Window, (HMENU)104, NULL, NULL);
+                          EditorLeft, 264, 280, 28, Window, (HMENU)104, NULL, NULL);
             SetTimer(Window, 1, 16, NULL);
             return 0;
         }

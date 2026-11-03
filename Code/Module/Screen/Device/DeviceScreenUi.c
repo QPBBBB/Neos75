@@ -1,6 +1,6 @@
 #include "ScreenUi.h"
 #include "NativeSymbols.h"
-#include "ScreenUiConfiguration.h"
+#include "DefaultMarkdown.h"
 #include "Markdown/MarkdownDocument.h"
 #include <stddef.h>
 
@@ -14,8 +14,6 @@ typedef struct DeviceScreenUiState
     volatile uint32_t ActivationCount;
     volatile uint32_t Ready;
     volatile uint32_t IgnoredLegacyPackets;
-    char RunningText[24];
-    uint32_t LastRunningSecond;
     MarkdownState Markdown;
     volatile uint32_t WirelessReplyPending;
 } DeviceScreenUiState;
@@ -151,7 +149,7 @@ unsigned HandleScreenInformation(const uint8_t *Request)
     uint8_t Reply[33];
     for (unsigned Index = 0; Index < sizeof(Reply); ++Index) Reply[Index] = 0;
     Reply[0] = 'N'; Reply[1] = 'S'; Reply[2] = 'U'; Reply[3] = 'I';
-    Reply[4] = 5;
+    Reply[4] = 6;
     unsigned LegacyRoots = GetLegacyPageRootCount();
     Reply[5] = 0x10 | 0x20 | (LegacyRoots == 0 ? 0x40 : 0);
     Reply[6] = (uint8_t)LegacyRoots;
@@ -159,8 +157,7 @@ unsigned HandleScreenInformation(const uint8_t *Request)
     WriteStatusWord(Reply + 24, (uint32_t)ActiveScreen);
     if (State != NULL) {
         Reply[5] |= 1 | (State->Ready ? 2 : 0) |
-            (State->Ready && ActiveScreen == State->Ui.Screen ? 4 : 0) |
-            (ScreenUiShowUptime ? 8 : 0);
+            (State->Ready && ActiveScreen == State->Ui.Screen ? 4 : 0);
         Reply[7] = (uint8_t)State->IgnoredLegacyPackets;
         WriteStatusWord(Reply + 8, (lv_tick_get() - State->StartTick) / 1000);
         WriteStatusWord(Reply + 12, State->UpdateCount);
@@ -186,24 +183,6 @@ static void UpdateDeviceScreenUi(lv_timer_t *Timer)
         LoadScreenUi(&State->Ui);
         State->ActivationCount++;
     }
-    if (ScreenUiShowUptime && State->Markdown.Total == 0) {
-        uint32_t Seconds = (lv_tick_get() - State->StartTick) / 1000;
-        if (Seconds == State->LastRunningSecond && State->UpdateCount != 1) return;
-        State->LastRunningSecond = Seconds;
-        uint32_t Hours = (Seconds / 3600) % 100;
-        uint32_t Minutes = (Seconds / 60) % 60;
-        Seconds %= 60;
-        char *Text = State->RunningText;
-        Text[0] = 'R'; Text[1] = 'u'; Text[2] = 'n'; Text[3] = 'n';
-        Text[4] = 'i'; Text[5] = 'n'; Text[6] = 'g'; Text[7] = ' ';
-        Text[8] = '0' + Hours / 10; Text[9] = '0' + Hours % 10;
-        Text[10] = ':';
-        Text[11] = '0' + Minutes / 10; Text[12] = '0' + Minutes % 10;
-        Text[13] = ':';
-        Text[14] = '0' + Seconds / 10; Text[15] = '0' + Seconds % 10;
-        Text[16] = '\0';
-        SetScreenUiStatus(&State->Ui, Text);
-    }
 }
 
 /* Only storage capacity/decoder setup is retained. Do not call the original
@@ -224,16 +203,14 @@ void EnterDeviceScreenUi(void *OriginalArgument)
     State->Ready = 0;
     State->IgnoredLegacyPackets = 0;
     State->WirelessReplyPending = 0;
-    State->LastRunningSecond = 0;
     for (unsigned Index = 0; Index < sizeof(State->Markdown); ++Index)
         ((volatile uint8_t *)&State->Markdown)[Index] = 0;
     *(DeviceScreenUiState * volatile *)0x20000000 = State;
     CreateScreenUiOnScreen(&State->Ui, GetNativeActiveScreen(), NULL);
-    SetScreenUiTitle(&State->Ui, ScreenUiTitle);
-    SetScreenUiMessage(&State->Ui, ScreenUiMessage);
-    SetScreenUiStatus(&State->Ui, ScreenUiStatus);
-    State->Ready = 1;
     InitializeMarkdown(&State->Markdown, &State->Ui);
+    if (!LoadDefaultMarkdown(&State->Markdown, ScreenUiDefaultMarkdown, sizeof(ScreenUiDefaultMarkdown)))
+        SetScreenUiMessage(&State->Ui, "Default Markdown unavailable");
+    State->Ready = 1;
     LoadScreenUi(&State->Ui);
     State->ActivationCount = 1;
     ((void (*)(unsigned))NativeAnnounceScreenState)(2);

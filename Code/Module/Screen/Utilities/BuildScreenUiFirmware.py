@@ -5,6 +5,7 @@ pages for recovery. It never opens a USB/HID device or invokes a flash command.
 """
 import argparse as ArgumentParsing
 import hashlib as Hash
+import importlib.util as Importing
 import json as Json
 import subprocess as Subprocess
 import struct as Struct
@@ -13,6 +14,9 @@ import capstone as Capstone
 
 RepositoryRoot = Path(__file__).resolve().parents[4]
 ScreenDirectory = RepositoryRoot / 'Code/Module/Screen'
+Specification = Importing.spec_from_file_location('MarkdownUtilities', Path(__file__).with_name('MarkdownUtilities.py'))
+MarkdownUtilities = Importing.module_from_spec(Specification)
+Specification.loader.exec_module(MarkdownUtilities)
 
 
 def RunCompiler(Arguments, OutputDirectory):
@@ -63,20 +67,26 @@ def Main():
     if Original[PacketOffset:PacketOffset + 4].hex() != Profile['PacketHookExpectedHex']:
         raise ValueError('Packet prologue does not match the supported firmware')
     Configuration = Json.loads(Arguments.Configuration.read_text(encoding='utf-8'))
-    if set(Configuration) != {'Title', 'Message', 'Status', 'ShowUptime'} or type(Configuration['ShowUptime']) is not bool:
-        raise ValueError('Configuration requires Title, Message, Status and boolean ShowUptime')
-    for Name in ('Title', 'Message', 'Status'):
-        Value = Configuration[Name]
-        if not isinstance(Value, str) or '\0' in Value or len(Value.encode('utf-8')) > 256:
-            raise ValueError(f'{Name} must be text without NUL, at most 256 UTF-8 bytes')
+    if set(Configuration) != {'DefaultMarkdownFile'} or not isinstance(Configuration['DefaultMarkdownFile'], str) or not Configuration['DefaultMarkdownFile'] or '\0' in Configuration['DefaultMarkdownFile']:
+        raise ValueError('Configuration requires a DefaultMarkdownFile path relative to the repository or absolute')
+    DefaultFile = (RepositoryRoot / Configuration['DefaultMarkdownFile']).resolve()
+    DefaultSource = DefaultFile.read_bytes()
+    if len(DefaultSource) > 65536:
+        raise ValueError('Built-in Markdown source exceeds the 64 KiB limit')
+    DefaultCompiler = MarkdownUtilities.MarkdownCompiler(BaseDirectory=DefaultFile.parent)
+    DefaultPackage = DefaultCompiler.Compile(DefaultSource.decode('utf-8-sig'))
+    if len(DefaultPackage) > PayloadCapacity:
+        raise ValueError('Built-in Markdown exceeds the application extension before accounting for code')
     OutputDirectory = Arguments.OutputDirectory.resolve()
     OutputDirectory.mkdir(parents=True, exist_ok=True)
     (OutputDirectory / 'Build.log').write_bytes(b'')
     SymbolsHeader = '\n'.join(f'#define {Name} {Value}u' for Name, Value in Profile['NativeSymbols'].items())
     (OutputDirectory / 'NativeSymbols.h').write_text(SymbolsHeader + '\n', encoding='utf-8')
-    ConfigurationHeader = '\n'.join(f'static const char ScreenUi{Name}[] = {Json.dumps(Configuration[Name], ensure_ascii=False)};' for Name in ('Title', 'Message', 'Status'))
-    ConfigurationHeader += f'\n#define ScreenUiShowUptime {int(Configuration["ShowUptime"])}\n'
-    (OutputDirectory / 'ScreenUiConfiguration.h').write_text(ConfigurationHeader, encoding='utf-8')
+    DefaultHeader = '_Alignas(4) static const uint8_t ScreenUiDefaultMarkdown[] = {\n'
+    DefaultHeader += '\n'.join('    ' + ', '.join(f'0x{Byte:02X}' for Byte in DefaultPackage[Offset:Offset + 16]) + ','
+        for Offset in range(0, len(DefaultPackage), 16))
+    (OutputDirectory / 'DefaultMarkdown.h').write_text(DefaultHeader + '\n};\n', encoding='utf-8')
+    (OutputDirectory / 'DefaultMarkdown.nsmd').write_bytes(DefaultPackage)
     CompilerDirectory = RepositoryRoot / 'Tools/ArmCompiler/Runtime/bin'
     Compiler = CompilerDirectory / 'clang.exe'
     LinkerScript = ScreenDirectory / 'Device/ScreenUiPatch.ld'
@@ -156,6 +166,11 @@ def Main():
     Plan = {'Device': Profile['Device'], 'BaseBackup': str(BackupFile.resolve()),
         'BaseSha256': Profile['ApplicationSha256'], 'FirmwareWritten': False,
         'HardwareDisplayVerified': False, 'Configuration': Configuration,
+        'DefaultMarkdown': {'SourceFile': str(DefaultFile), 'SourceBytes': len(DefaultSource),
+            'SourceSha256': Hash.sha256(DefaultSource).hexdigest(), 'PackageBytes': len(DefaultPackage),
+            'PackageSha256': Hash.sha256(DefaultPackage).hexdigest(),
+            'Rows': len(DefaultCompiler.Rows), 'Glyphs': len(DefaultCompiler.Glyphs)},
+        'UiVersion': 6, 'TitleLabelCreated': False,
         'PayloadLength': len(Payload), 'HookAddress': hex(HookAddress),
         'StatusSelector': '0x7F',
         'CustomPagesOnly': True,

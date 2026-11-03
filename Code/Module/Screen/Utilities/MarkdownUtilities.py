@@ -375,8 +375,7 @@ class MarkdownCompiler:
     def Preview(Self, File, ScrollRow=0):
         Canvas = Image.new('RGB', (Self.Width, Self.Height), (10, 13, 18))
         Drawing = ImageDraw.Draw(Canvas)
-        Drawing.text((16, 8), 'NEOS75 Markdown', font=Self.Font(14, True), fill=(145, 166, 192))
-        Top = 38
+        Top = 16
         for Glyphs, PackedHeight, Inset in Self.Rows[ScrollRow:]:
             Height, Kind = PackedHeight & 63, PackedHeight >> 6
             if Top + Height > Self.Height - 20:

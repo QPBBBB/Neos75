@@ -120,7 +120,7 @@ static void RenderMarkdown(MarkdownState *State)
     if (!State->Active) return;
     const MarkdownRow *Rows = (const MarkdownRow *)(State->Package + 32);
     const MarkdownGlyph *Glyphs = (const MarkdownGlyph *)(State->Package + State->GlyphOffset);
-    int Top = 38;
+    int Top = 16;
     unsigned Visible = 0, TextBudget = 24576;
     for (unsigned Index = State->ScrollRow; Index < State->RowCount && Visible < MarkdownVisibleRows; ++Index) {
         const MarkdownRow *Row = Rows + Index;
@@ -209,6 +209,35 @@ void QueueMarkdown(MarkdownState *State, const uint8_t *Request, unsigned Length
     State->LastError = 1;
     __atomic_store_n(&State->Pending, 1, __ATOMIC_RELEASE);
 }
+
+/* The built-in document uses the same validated package, glyph callbacks and
+ * scrolling as uploads. Own a heap copy so the first upload can free it using
+ * the normal lifecycle; never hand a flash pointer to lv_mem_free. */
+bool LoadDefaultMarkdown(MarkdownState *State, const uint8_t *Package, unsigned Length)
+{
+    if (State->Package || Package == NULL || Length < sizeof(MarkdownHeader) ||
+        Length > MarkdownMaximumBytes) return false;
+    State->Package = lv_mem_alloc(Length);
+    if (State->Package == NULL) { State->LastError = 4; return false; }
+    for (unsigned Index = 0; Index < Length; ++Index) State->Package[Index] = Package[Index];
+    State->Total = Length;
+    if (!ValidateDocument(State)) {
+        lv_mem_free(State->Package);
+        State->Package = NULL;
+        State->Total = 0;
+        State->LastError = 3;
+        return false;
+    }
+    State->Received = Length;
+    State->Session = 0;
+    State->ScrollRow = 0;
+    State->LastError = 0;
+    State->LastOperation = 0;
+    State->Active = 1;
+    State->RenderPending = 1;
+    SetScreenUiMessage(State->Ui, "");
+    return true;
+}
 void GetMarkdownStatus(MarkdownState *State, uint8_t Reply[32])
 {
     for (unsigned Index = 0; Index < 32; ++Index) Reply[Index] = 0;
@@ -262,7 +291,6 @@ void UpdateMarkdown(MarkdownState *State)
             else {
                 State->Active = 1;
                 State->RenderPending = 1;
-                SetScreenUiTitle(State->Ui, "NEOS75 Markdown");
                 SetScreenUiMessage(State->Ui, "");
             }
         } else if (Operation == 4 && Length == 5 && State->Active) ScrollMarkdown(State, (int16_t)Read16(Request + 3));

@@ -37,6 +37,7 @@ typedef struct {
 } MarkdownState;
 
 void InitializeMarkdown(MarkdownState *State, ScreenUi *Ui);
+bool LoadDefaultMarkdown(MarkdownState *State, const uint8_t *Package, unsigned Length);
 void UpdateMarkdown(MarkdownState *State);
 void QueueMarkdown(MarkdownState *State, const uint8_t *Request, unsigned Length);
 void GetMarkdownStatus(MarkdownState *State, uint8_t Reply[32]);
