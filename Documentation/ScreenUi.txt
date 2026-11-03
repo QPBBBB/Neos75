@@ -1,94 +1,97 @@
-NEOS75 设备端自定义 UI（V03）
+NEOS75 设备端自定义 UI（V04 Markdown，有线）
 
-当前结果（2026-11-02）
-用户更新官方固件后，重新完整读取应用区和 Bootloader，各连续读取两遍且完全一致。
-V03 已在此基础上刷入，四个修改页与完整应用区均回读一致。
-设备查询确认：CustomPagesOnly=true，LegacyPageRootCount=0，UiActive=true。
-页面加载次数始终为 1，设备定时器持续递增；不再创建原厂页后反复切回自定义页。
-用户已明确确认：彻底断电重启后，自定义 UI/计时正常，下方旋钮双向旋转及按压均无作用，上方音量正常。
+当前结果（2026-11-03）
+根目录 WriteMarkdown.bat 读取 UTF-8 MD，通过独立屏幕 HID 上传到设备 RAM。
+上传器退出后，设备继续用原生控件显示文档；不需要电脑定时推送画面，也不把全文当作一张长图。
+用户已确认中文、粗斜体、代码块、表格正常，正常打字未观察到卡顿。
+65536 字节源文件已实机完整接收，编译包 218542 字节、21846 行，主机滚动命令可到末行，上传约 59 秒。
+原厂页面对象仍为 0；下方旋转映射已恢复为屏幕控制事件，按压保持禁用，上方音量/其他键位回读一致。
+2026-11-03 用户确认下方旋钮顺时针向下、逆时针向上，双向滚动正常。
+随后只读回查确认文档仍激活、原厂页面对象为 0、自定义页只加载一次，设备 timer 持续更新。
+控制记录见 Research/Screen/Controls20261103T024537Z，运行状态见 UiState20261103T024538Z。
+当前仅完成 USB 有线文档通道，2.4G 文本转发未实现。
 
 当前索引：Research/Screen/InstalledUi.json
-生产构建：Research/Screen/CustomUiV03
-刷写记录：Research/Screen/Flash20261102T090614Z/Report.json
-现场确认：Research/Screen/Flash20261102T090614Z/Commissioning.json
-重启后屏幕状态：Research/Screen/UiState20261102T090848Z/Summary.json
-旋钮原始/修改后映射：Research/Device/ScreenKnob20261102T090653Z/Before.json、After.json
-旋钮写入与回读：Research/Device/ScreenKnob20261102T090653Z/Report.json
-旋钮配置接口关闭并重开后回读通过；断电持久化与上方音量效果由用户现场确认。
-重启后的主键盘 Raw HID 在回查时先无回复、随后 USB 不在枚举中，未将该次回查当作成功读数。
+V04 生产构建：Research/Screen/MarkdownUiV04
+最新刷写：Research/Screen/Flash20261102T144227Z/Report.json
+旋钮配置：Research/Device/ScreenKnob20261102T142424Z/Report.json
+使用方式与格式边界：Documentation/ScreenMarkdown.md
+容量规格：Documentation/MarkdownCapacity.txt
+V03 的源码和断电验收是独立历史归档 Research/Screen/CustomUiV03，对应 Git 提交 d40d595。
 
-原厂页面删除的实现范围
-替换原厂初始化调用入口（原目标 0x117A0），因此不创建其页面对象，也不注册其页面刷新定时器。
-只保留显示/USB/RTX/LVGL 与存储解码初始化；复用 LVGL 的初始空白 screen，创建三个自定义 label。
-原 GUI 结构的七个页面指针均为零，状态接口实时读取这些指针计数。
-原厂页面、菜单、主题、天气和时钟业务报文不再进入原业务解释器；只读信息查询保留。
-原始 DFU 服务独立保留，可继续备份/恢复。
-此处删除的是运行中的原厂页面构建、对象与事件链；仍复用原厂底层二进制库。
-原厂镜像和资源归档保留用于恢复；未将整片原厂固件/外部资源 Flash 物理清空，也没有完整厂商 SDK。
+文档与显示架构
+Code/Module/Screen/Utilities/MarkdownUtilities.py 使用 Mistune 3.3.4、Pillow 11.3.0 解析、排版和生成字形掩码。
+字体使用 Windows 自带微软雅黑/Consolas，不随仓库分发字体文件。
+WriteMarkdown.py 编译 NSMD 包，通过 HID 分块、节流、CRC32 校验后激活；只选择 5542:0001 屏幕接口。
+Code/Module/Screen/Markdown/MarkdownDocument.c 在 UI 定时器中分配内存、处理上传、渲染和滚动。
+文档由行索引、字形记录、字形引用和掩码组成；固定最多 24 个可见 label，每帧文字更新预算 24 KiB。
+全文使用行号窗口，不依赖超出 16 位坐标范围的单个长 label。
+单篇源文件最多 65536 字节，编译包最多 262144 字节；字形/图片位图最多 98304 字节、6400 个字形记录。
+上传新文档前释放旧文档；失败后需重新上传，不提供旧/新文档同时保留的原子切换。
+文档仅存 RAM，不写 Flash，断电后需重新上传；开机未上传时仍显示 NEOS75 UI/hellow world/Running。
+修改开机初始画面通过 Device/ScreenUiConfiguration.json 重新构建；日常 MD 更新不刷固件。
 
-屏幕代码
-Code/Module/Screen/ScreenUi.c 是设备与 Windows 预览共用的控件代码。
-CreateScreenUiOnScreen 在已有空白 screen 上创建标题、正文、状态控件。
-SetScreenUiTitle、SetScreenUiMessage、SetScreenUiStatus 在 UI 线程动态更新文字。
-Device/DeviceScreenUi.c 注册设备定时器，处理只读状态及原厂业务入口的移除。
-Device/NativeLvgl.c/.h 桥接已核对的原生接口，未确认原厂完整 LVGL 版本。
+原厂页面移除范围
+不调用原厂 GUI 初始化，保留显示/USB/RTX/LVGL 与存储解码初始化，复用初始空白 screen。
+原 GUI 七个页面指针均为零；不创建原厂页面对象，也不注册其页面专用刷新定时器。
+原厂页面、菜单、主题、天气和时钟报文不进入原业务解释器。
+V04 只额外处理已校验的旋转报文 A5 39，发送原协议确认，再把相对滚动交给 UI 线程。
+启动调用原生 screen-ready(state=2) 通知，旋钮确认固定发往 UART port 1。
+原始 DFU 服务与只读信息查询保留；底层二进制库、原始镜像和资源归档保留用于运行和恢复。
+没有完整厂商 SDK，未将整片原厂固件/资源物理清空。
 
-初始显示配置：Code/Module/Screen/Device/ScreenUiConfiguration.json
-  Title       NEOS75 UI
-  Message     hellow world
-  Status      空字符串
-  ShowUptime  true，设备自身每秒显示 Running HH:MM:SS
-ShowUptime=false 时使用配置的 Status，保护定时器仍工作。
-当前修改初始内容需重新构建/刷写；尚未实现电脑向设备发送任意文字的专用写入协议。
+协议
+外层 A5 41 帧：命令、两字节大端长度、载荷、原生求和异或校验，HID 报告体最多 64 字节。
+selector 7F：只读 UI 状态，NSUI 版本 4，页面对象数、活动页面、设备定时器和保护状态。
+selector 7D：只读最近控制帧，忽略周期 35 状态包，仅用于诊断控制事件，不记录 MD 正文。
+selector 7E：MDUI 版本 1。
+  0 状态，1 开始（总长度/CRC32/源文件长度），2 数据（严格递增偏移，每块最多 51 字节），3 提交，4 相对滚动。
+  每次只允许一个操作排队；状态返回处理结果、会话、接收字节、活动状态、行号和源文件长度。
+原信息长度门限由 ==1 改为 >=1；外层 hook 先限制 1..59 字节，再进入保留的原生校验路径。
+不增加任意地址写入、解锁或启动器命令。
 
-更新后的固件与接口
-应用区备份：Research/Screen/Backup20261102T084907Z/ScreenApplication.bin
-  0x8000 起 491520 字节
-  SHA256 6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b
-  build Sep 6 2026 20:47:09，代码前缀与官网下载的 MCU 镜像精确一致。
-Bootloader：Research/Screen/Backup20261102T084911Z/ScreenBootloader.bin
-  0x0 起 32768 字节
-  SHA256 3392e7e17bbb1ec414c586d1d0e82c892deaf4fd2ae227686bd207bb5d58fc40
-旧自定义 payload 曾残留在官方镜像长度以外，当前经过精确指纹确认后复用其 0x50000 页。
-完整指纹、原生函数和页面结构偏移见 Device/NativeProfile.json。
-当前完整安装镜像 SHA256：afb03cbed5401cc8db72c82de3555f201d8bfcd568fef024d63e5d88483f4d71。
+固件基准与保护
+应用区：Research/Screen/Backup20261102T084907Z/ScreenApplication.bin，0x8000 起 491520 字节。
+SHA256：6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b
+build Sep 6 2026 20:47:09，代码前缀与官网下载 MCU 精确一致。
+Bootloader：Research/Screen/Backup20261102T084911Z/ScreenBootloader.bin，0x0 起 32768 字节。
+SHA256：3392e7e17bbb1ec414c586d1d0e82c892deaf4fd2ae227686bd207bb5d58fc40
+MD 开发前额外双份备份：Research/Screen/Backup20261102T141454Z/ScreenApplication.bin。
+代码为 V03，配置页有设备自身更新；不能仅比较含配置的整镜像 SHA 判断代码版本。
+V04 计划顺序：Payload 0x50000、01 0x51000、02 0x52000、03 0x53000、Vector 0x8000、Information 0x35000、Hook 0x3C000。
+七页各 4096 字节，安装跳过已相同页面。当前实际写入前两个 payload、Information、Hook 四页。
+每页及完整应用区回读验证；不写 Bootloader，逐字节保留当前 0x7F000 配置页。
+当前安装镜像指纹见 InstalledUi.json，归档计划中的整镜像指纹使用基准备份配置，二者可因配置页不同而不同。
+故障入口、UI 超时保护保留；安装工具观察 20 秒稳定运行，必要时自动回退。
+软件保护通过临时指令级执行验证，未在实机故意触发硬件异常；验证脚本/依赖不留在仓库。
 
-写入顺序
-Payload 0x50000 -> Vector 0x8000 -> Information 0x35000 -> Hook 0x3C000。
-0x3C390 是自定义 UI 接入点；0x35064/0x353B2 接入业务包过滤和只读状态查询。
-每页 4096 字节，逐页及完整应用区回读验证；不写 Bootloader。
-0x7F000 配置页逐字节保留，包括自动回退时。
-故障处理入口和 UI 超时保护返回 DFU；计数存放在自有 LVGL 堆对象，不借用原厂第二个协议标志字。
-新状态锚点借用首个启动标志字；复位入口先清除锚点，原厂 DFU 标志仍保留其含义。
-软件保护已做临时指令级验证，未在实机故意制造硬件异常。
-
-使用（在 D:/Git/Neos75 运行）
+使用（从 D:/Git/Neos75 运行）
+  WriteMarkdown.bat "D:\Documents\Note.md"
+  WriteMarkdown.bat --Status
+  WriteMarkdown.bat --Scroll 5
+离线构建及安装固件：
   .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiFirmware.py
   .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --EnterDfu
   .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\ReadScreenUiState.py
-编译器为 Arm LLVM 19.1.5，已安装在忽略的 Tools/ArmCompiler/Runtime。
-新检出时先运行 Code/Module/Firmware/Utilities/InstallArmCompiler.py 安装固定版本。
+首次构建先运行 Code/Module/Firmware/Utilities/InstallArmCompiler.py 安装固定 Arm LLVM 19.1.5。
+新官方版本必须先备份、重新定位接口，不能把本档地址直接套到其他版本。
 
-恢复本次更新后的官方屏幕应用：
-  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\CustomUiV03\ScreenUiPatchPlan.json --EnterDfu --Restore
-已处于 5542:1000 DFU 时省略 --EnterDfu。
-恢复的是 08:49 UTC 读取的官方更新后状态，保留当前原厂配置页。
+使用归档 V04 页面包（无需编译）：
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\MarkdownUiV04\ScreenUiPatchPlan.json --EnterDfu
+恢复本次官方更新后的屏幕应用，保留当前配置页：
+  .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\MarkdownUiV04\ScreenUiPatchPlan.json --EnterDfu --Restore
+已处于 5542:1000 DFU 时省略 --EnterDfu。V04 恢复使用含全部修改页的 V04 计划。
 
 下方旋钮
-Vial encoder index 1，三层、双方向均设置 KC_NO=0000。
-下方按压为 matrix row=5、column=8，三层均设置 KC_NO。
-写入前保存完整键位及两个旋钮；写后及重新打开接口均核对全部映射。
-上方 encoder index 0、按压及所有其他键位保持不变。
+Vial encoder index 1，三层的 [逆时针,顺时针] 映射恢复为 [7E10,7E0F]，下方按压 row=5、column=8 仍为 KC_NO。
+上方 encoder index 0、按压及所有其他键位逐项回读一致。配置工具固定设备 UID 并过滤其他应用的无关响应。
+  .\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Scroll
   .\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Disable
-恢复原下方旋钮：
+恢复原始下方旋钮配置：
   .\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Restore Research\Device\ScreenKnob20261102T090653Z\Before.json
-该工具只有固定旋钮位置的配置入口，无解锁、重启、擦除或任意矩阵写入参数。
+屏幕恢复与主键盘映射分开管理，恢复屏幕不会自动恢复旋钮映射。
 
 Windows 预览
-  .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiPreview.py
-  .\Code\Module\Screen\Runtime\ScreenUiPreview.exe
-预览依赖 LVGL 8.3.11；设备使用原生库的 RGB565/16 位坐标窄接口。
-
-尺寸差异仍保留
-HID 信息回报 320×320，官方程序和资源声明 480×360。
-自定义 UI 的实际显示已由用户现场确认，不用 HID 回报值推断物理面板规格。
+BuildScreenUiPreview.py/ScreenUiPreview.exe 保留初始 UI 的桌面预览，使用 LVGL 8.3.11，不是原厂 LVGL 版本确认。
+Markdown 可用 WriteMarkdown.bat Note.md --CompileOnly --Preview Preview.png 导出排版预览；实机显示无需该图片。
+HID 信息回报 320×320，官方程序和资源声明 480×360；保留该差异，不按 HID 回报推断物理面板。

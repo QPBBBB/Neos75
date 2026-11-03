@@ -1,173 +1,206 @@
 # Neos75
 
-NEOS75 键盘屏幕的设备端自定义 UI、VIA/Vial 配置工具与固件研究归档。UI 使用原生控件和设备定时器，在键盘屏幕独立运行；当前未取得原厂可编译工程，底层显示、USB、RTX 与 LVGL 仍复用原厂固件。
+NEOS75 键盘屏幕的自定义固件、Markdown 写入工具与设备研究归档。当前 V04 通过独立屏幕 USB HID 接收文档，由键盘端原生控件显示和滚动；电脑上传程序结束后仍可阅读。底层显示、USB、RTX 与 LVGL 复用已核验的原厂二进制，尚未取得完整厂商 SDK。
 
-V03 已适配用户更新后的官方屏幕固件并在实机运行。启动只创建我们的自定义页面，正文为 `hellow world`，设备定时器更新运行时间；原厂页面初始化和专用定时器已从执行链移除，设备回报原厂页面对象数为 0。下方旋钮三层的旋转、按压映射均已清空，上方音量及其他按键保持原样。用户已确认彻底断电重启后全部正常。记录见 [实机刷写记录](Research/Screen/Flash20261102T090614Z/Report.json)、[旋钮记录](Research/Device/ScreenKnob20261102T090653Z/Report.json) 和 [屏幕 UI](Documentation/ScreenUi.txt)。
+用户已确认中文、粗斜体、代码块和表格显示正常，正常打字未观察到卡顿；2026-11-03 确认下方旋钮顺时针下滚、逆时针上滚。原厂页面对象数为 0，保留自定义页面。完整记录见 [V04 实机验收](Research/Screen/Flash20261102T144227Z/Commissioning.json)。
 
-## 环境准备
+## 快速使用
 
-在 Windows x64 下将仓库检出到 `D:\Git\Neos75`，下文命令均从仓库根目录运行。归档刷写计划保留了实机工作目录的绝对路径；在其他位置检出时，应重新构建计划。
+本设备已安装 V04。将键盘连接 USB 并切到有线模式，在 Windows x64 的仓库根目录运行：
 
-| 工具 | 仓库提供 | 用途 |
-| --- | --- | --- |
-| Python 3.9.11、hidapi、Capstone | `Tools/Python39` | 设备读取、配置和固件工具，无需系统 Python |
-| dfu-util 0.11 | `Tools/Dfu` | 屏幕应用区备份、刷写与恢复 |
-| Arm LLVM 19.1.5 | 安装脚本及固定来源指纹 | 编译设备端 UI，运行环境不提交 Git |
-| LVGL 8.3.11 | `Tools/Lvgl` | Windows 预览；不是原厂 LVGL 版本的确认结果 |
-| Visual Studio C/C++ 工具链 | 需本机安装 | 仅构建 Windows 预览时使用，脚本通过 vswhere 查找 |
-| Node.js | 需本机安装 | 仅离线解码网页驱动归档时使用，无额外 npm 依赖 |
+```powershell
+.\WriteMarkdown.bat "D:\Documents\Note.md"
+```
 
-新检出仓库先安装固定版本编译器，脚本从官方来源下载并核验 SHA256：
+也可以把 UTF-8 的 `.md` 文件拖到根目录的 [WriteMarkdown.bat](WriteMarkdown.bat) 上。使用仓库内的便携 Python，无需安装系统 Python，也无需为每次更新正文重新刷固件。
+
+上传完成后整篇新文档激活，上传器可以退出。文档只保存在设备 RAM，断电后需要重新上传；新上传会释放旧文档，上传失败时需重传。当前每次上传完整文档包及字形，尚未实现增量更新。
+
+| 操作 | 功能 |
+| --- | --- |
+| 下方旋钮顺时针 | 向下滚动 |
+| 下方旋钮逆时针 | 向上滚动 |
+| 下方旋钮按压 | 保持禁用 |
+| 上方旋钮 | 保留原有音量功能 |
+| 页脚 | 当前行号和全文总行数 |
+
+**当前文档写入使用有线 USB；2.4G 文档转发尚未实现。** 上述实物打字确认不是仪器测量的按键延迟结果。
+
+## 常用命令
+
+```powershell
+# 写入一篇文档
+.\WriteMarkdown.bat "D:\Documents\Note.md"
+
+# 只查询设备中的文档状态
+.\WriteMarkdown.bat --Status
+
+# 设备端向下滚动 5 行；负数向上
+.\WriteMarkdown.bat --Scroll 5
+
+# 离线编译并导出排版预览，不访问设备
+.\WriteMarkdown.bat "D:\Documents\Note.md" --CompileOnly --Preview "D:\Documents\Preview.png"
+
+# 允许文档引用有界的 HTTP(S) 图片
+.\WriteMarkdown.bat "D:\Documents\Note.md" --AllowRemoteImages
+```
+
+运行时编译包和上传回执保存在被 Git 忽略的 `Code/Module/Screen/Runtime/Markdown`，不会自动把用户正文加入设备研究归档。`--BytesPerSecond` 设置载荷发送上限，范围 256–16384 字节/秒，默认 8192；实际速度还受逐包确认影响。
+
+## 格式与容量
+
+支持标题、段落、粗体、斜体、删除线、行内代码、代码块、引用、有序/无序/嵌套列表、任务列表、表格、链接文字及图片。表格按列换行，过宽时逐单元格显示；链接显示文字，不提供网页跳转。
+
+| 资源 | 上限 |
+| --- | --- |
+| 单篇 UTF-8 MD 源文件 | 65536 字节（64 KiB，包含标记、空格和换行） |
+| 编译后的完整文档包 | 256 KiB |
+| 字形及图片位图 | 96 KiB，计入文档包 |
+| 字形记录 | 6400 个 |
+| 排版行数 | 32768 行 |
+| 设备可见行控件 | 最多 24 个，按当前窗口复用 |
+
+资源超限会明确报错，不静默截断。即使源文件小于 64 KiB，包含大量不同字形或图片时也可能先达到资源上限。
+
+字体来自本机 Windows 的微软雅黑和 Consolas，不随仓库分发字体文件。图片路径相对于 MD 所在目录，按内容宽度缩放、单张高最多 160 像素，当前最多 8 色量化。远程图片默认显示替代文字，显式开启后单次下载最多 4 MiB、解码最多 800 万像素。
+
+原始 HTML 仅处理静态文字和常用行内标签，不执行脚本或 CSS；公式与 Mermaid 当前按普通文字或代码显示。具体用法见 [Markdown 说明](Documentation/ScreenMarkdown.md)，资源依据见 [容量规格](Documentation/MarkdownCapacity.txt)。
+
+## 实测更新时间
+
+下表来自本设备的有线写入。编译包包含排版数据和字形，因此源文件大小不能直接换算成传输耗时。
+
+| 内容 | MD 源文件 | 编译包 | 上传至激活 | 含解析排版的总耗时 |
+| --- | ---: | ---: | ---: | ---: |
+| 第一段中文演示，含列表、代码和表格 | 595 字节 | 14215 字节 | 4.406 秒 | 5.135 秒 |
+| 第二段中文演示，含任务列表、代码和表格 | 618 字节 | 13808 字节 | 3.969 秒 | 4.229 秒 |
+| 64 KiB 密集短段落容量验收，21846 行 | 65536 字节 | 218542 字节 | 约 59 秒 | 未单独记录 |
+
+两段短文档的有效编译包传输约为 **3.15–3.40 KiB/s**。64 KiB 容量验收已完成 CRC 校验和激活，并通过主机滚动命令到达末行；随后旋钮双向滚动由用户实物确认。这些数值描述当前有线整包上传，不代表无线速率或持续文本流刷新率。
+
+此前完全无线的配置读取约为 0.6 kB/s、查询往返中位数约 42–48 ms；这是配置读回结果，不能当作文档写入带宽，也不能代替按键延迟测量。详细数据见 [研究记录](Documentation/ResearchNotes.txt)。
+
+## 环境与模块
+
+所有命令从仓库根目录运行。既有生产计划使用 `D:\Git\Neos75` 的绝对备份路径；换位置检出时应重新构建计划。
+
+| 组件 | 位置与用途 |
+| --- | --- |
+| Python 3.9.11 x64 | `Tools/Python39`，便携运行环境 |
+| hidapi 0.15.0、Capstone 5.0.6 | 设备通信与离线固件分析 |
+| Mistune 3.3.4、Pillow 11.3.0、typing_extensions 4.15.0 | MD 解析、排版和字形/图片编译 |
+| dfu-util 0.11 | `Tools/Dfu`，屏幕备份、安装与恢复 |
+| Arm LLVM 19.1.5 | 按固定来源安装到忽略的 `Tools/ArmCompiler/Runtime` |
+| LVGL 8.3.11 与本机 Visual Studio C/C++ | 仅用于旧初始 UI 的 Windows 预览；未据此确认设备 LVGL 版本 |
+| 本机 Node.js | 仅供离线网页驱动归档解码，无 npm 依赖 |
+
+依赖版本、下载来源和 SHA256 见 [Environment.json](Tools/Environment.json)，第三方许可证保留在各工具目录。
+
+```text
+WriteMarkdown.bat                   日常 MD 写入入口
+Code/Module/
+  Keyboard/Utilities/               配置读取、下方旋钮映射
+  Screen/Markdown/                  设备端文档接收、原生显示和滚动
+  Screen/Device/                    原生接口、固件 hook、初始化和恢复保护
+  Screen/Utilities/                 MD 编译/上传、只读状态、构建入口
+  Screen/ScreenUi.c                 初始画面的共用控件代码
+  Firmware/Utilities/               备份、安装、恢复与离线分析
+  Vendor/Utilities/                 网页驱动归档解码
+Documentation/                      使用说明、容量依据与研究记录
+Research/                           固件备份、实际采集、生产页及恢复页
+Tools/                              便携运行环境和工具
+```
+
+MD 在电脑端解析为结构化行、字形记录和掩码，设备端缓存文档并复用可见窗口控件；全文不生成一张长图。[WriteMarkdown.py](Code/Module/Screen/Utilities/WriteMarkdown.py) 负责传输，[MarkdownUtilities.py](Code/Module/Screen/Utilities/MarkdownUtilities.py) 负责编译，[MarkdownDocument.c](Code/Module/Screen/Markdown/MarkdownDocument.c) 负责设备端接收和滚动。
+
+## 固件构建与安装
+
+日常更新正文使用 BAT。本节仅用于新设备部署或修改设备程序。
+
+构建只支持 [NativeProfile.json](Code/Module/Screen/Device/NativeProfile.json) 对应的实机镜像：官方屏幕 MCU build `Sep 6 2026 20:47:09`，已双份备份核验。更换官方固件后必须重新备份、定位接口。主键盘和接收器固件不在本版刷写范围内。
+
+使用已归档的 V04 页面包无需编译器：
+
+```powershell
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\MarkdownUiV04\ScreenUiPatchPlan.json --EnterDfu
+```
+
+屏幕 DFU 接口 `5542:1000` 需要 WinUSB，本设备已安装。安装器核验已有程序与页面指纹，逐页及完整应用区回读核对，不写 Bootloader，保留当前 `0x7F000` 配置页；已处于 DFU 时省略 `--EnterDfu`。
+
+需要修改设备程序时，先安装固定编译器，再构建和安装：
 
 ```powershell
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallArmCompiler.py
-```
-
-普通读取使用 HID。屏幕备份和刷写需要屏幕 DFU 接口 `5542:1000` 的 WinUSB 驱动；本设备已安装，相关记录见 [屏幕 UI 说明](Documentation/ScreenUi.txt)。环境来源及版本见 [Environment.json](Tools/Environment.json)，第三方许可证保留在各工具目录。
-
-## 自定义内容与构建
-
-修改 [屏幕配置](Code/Module/Screen/Device/ScreenUiConfiguration.json)：
-
-```json
-{
-  "Title": "NEOS75 UI",
-  "Message": "hellow world",
-  "Status": "",
-  "ShowUptime": true
-}
-```
-
-`ShowUptime=true` 时由设备每秒更新 `Running HH:MM:SS`，设为 `false` 时显示 `Status`。布局和控件代码在 [ScreenUi.c](Code/Module/Screen/ScreenUi.c)，设备初始化、定时器与协议入口在 [DeviceScreenUi.c](Code/Module/Screen/Device/DeviceScreenUi.c)。
-
-先离线构建，再安装；只有第二条命令会刷写屏幕应用区：
-
-```powershell
 .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiFirmware.py
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --EnterDfu
-# 只读查询页面对象、活动页面和设备定时器状态
-.\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\ReadScreenUiState.py
 ```
 
-构建只支持 [NativeProfile.json](Code/Module/Screen/Device/NativeProfile.json) 固定的、已双份读取核对的实机镜像（官方屏幕 MCU build `Sep 6 2026 20:47:09`）。更换官方固件后需要重新备份并定位接口。当前文字修改通过重新构建/刷写生效，电脑端运行时文字更新协议尚未实现。
+V04 计划含七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以及 Vector、Information、Hook。安装跳过已相同页，带有故障返回 DFU 和 UI 超时保护。开机尚未上传 MD 时的 `NEOS75 UI`、`hellow world` 和 `Running` 可通过 [ScreenUiConfiguration.json](Code/Module/Screen/Device/ScreenUiConfiguration.json) 调整并重建。
 
-刷写四个 4 KiB 页面，逐页与完整应用区回读核对；不写 Bootloader，并保留当前 `0x7F000` 配置页。故障入口及 UI 超时保护可返回 DFU，安装工具保留恢复页及部署记录。原厂页面构建、专用定时器和业务事件入口已移出执行链，原厂底层库字节及恢复资源仍保留。
+## 旋钮配置、诊断与恢复
 
-## 生产归档与恢复
+本设备的下方旋钮已适配。需要重新设置时，工具只修改固定下方旋钮位置，保留其按压禁用；保存完整前后映射并关闭、重开接口回读，确认其他按键和上方音量映射未改变。
+
+```powershell
+# 下方旋转发送屏幕事件，交由 V04 处理滚动
+.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Scroll
+
+# 禁用下方旋转和按压
+.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Disable
+
+# 恢复最初的下方旋钮映射
+.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Restore Research\Device\ScreenKnob20261102T090653Z\Before.json
+
+# 只读查询屏幕状态和最近控制事件
+.\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\ReadScreenUiState.py
+.\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\ReadScreenControls.py --Seconds 2
+```
+
+配置工具固定本设备 UID 和已确认映射，过滤其他应用的无关响应，遇到未知映射会拒绝修改。恢复本次官方更新后的屏幕应用时，使用包含全部修改页的 V04 计划：
+
+```powershell
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\MarkdownUiV04\ScreenUiPatchPlan.json --EnterDfu --Restore
+```
+
+屏幕恢复保留当前配置页，不自动恢复主键盘的旋钮映射。完整协议、保护机制和恢复说明见 [ScreenUi.txt](Documentation/ScreenUi.txt)。
+
+## 生产归档与只读研究
 
 | 内容 | 位置 |
 | --- | --- |
-| 当前安装索引 | [InstalledUi.json](Research/Screen/InstalledUi.json) |
-| V03 生产页、恢复页、ELF 与源文件指纹 | [CustomUiV03](Research/Screen/CustomUiV03) |
-| 官方更新后的应用区备份 | [Backup20261102T084907Z](Research/Screen/Backup20261102T084907Z) |
-| 对应 Bootloader 备份 | [Backup20261102T084911Z](Research/Screen/Backup20261102T084911Z) |
-| 刷写、回读与用户断电重启确认 | [Flash20261102T090614Z](Research/Screen/Flash20261102T090614Z) |
-| 下方旋钮原始映射、修改后映射及回读 | [ScreenKnob20261102T090653Z](Research/Device/ScreenKnob20261102T090653Z) |
+| 当前安装指纹与验收索引 | [InstalledUi.json](Research/Screen/InstalledUi.json) |
+| V04 修改页、恢复页、ELF、反汇编、源文件指纹 | [MarkdownUiV04](Research/Screen/MarkdownUiV04) |
+| V04 完整回读及物理滚动验收 | [Flash20261102T144227Z](Research/Screen/Flash20261102T144227Z) |
+| 下方旋钮写入与全键位回读 | [ScreenKnob20261102T142424Z](Research/Device/ScreenKnob20261102T142424Z) |
+| 官方更新后的应用区双份备份 | [Backup20261102T084907Z](Research/Screen/Backup20261102T084907Z) |
+| 对应 Bootloader 双份备份 | [Backup20261102T084911Z](Research/Screen/Backup20261102T084911Z) |
+| 历史 V03 页面包与源文件指纹 | [CustomUiV03](Research/Screen/CustomUiV03) |
+| 归档来源、原名称与 SHA256 | [Provenance.json](Research/Provenance.json) |
 
-使用归档的 V03 页面包安装无需先编译：
+V04 的源文件指纹和对应 Git 提交记录在 [Source.json](Research/Screen/MarkdownUiV04/Source.json) 的 `SourceFilesSha256`、`SourceCommit` 中；日后工具继续演进时，可查回准确源码。V03 指纹对应[提交 d40d595](https://github.com/QPBBBB/Neos75/commit/d40d59501f8be51bcd7348015b16d190c03f6f2d)。历史页面包保持独立，当前恢复应采用 V04 计划。
 
-```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\CustomUiV03\ScreenUiPatchPlan.json --EnterDfu
-```
-
-恢复本次官方更新后的屏幕应用，保留当前配置页：
+只读设备与离线分析入口：
 
 ```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\CustomUiV03\ScreenUiPatchPlan.json --EnterDfu --Restore
-```
-
-已处于 `5542:1000` DFU 时省略 `--EnterDfu`。屏幕恢复与主键盘旋钮映射分别管理，恢复屏幕不会恢复旋钮映射。
-
-## 下方旋钮配置
-
-`ConfigureScreenKnob.py` 只操作已确认设备的下方旋钮：三层、双方向以及按压均写入 `KC_NO`。它保存完整前后键位，写入后关闭并重开接口回读，确认其他按键及上方旋钮未改变。
-
-```powershell
-# 禁用下方旋钮，配置保存到键盘
-.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Disable
-
-# 恢复本次修改前的下方旋钮映射
-.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Restore Research\Device\ScreenKnob20261102T090653Z\Before.json
-```
-
-## Windows 预览
-
-Windows 预览保留，运行同一份界面代码：
-
-```powershell
-.\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiPreview.py
-.\Code\Module\Screen\Runtime\ScreenUiPreview.exe
-```
-
-预览构建使用已安装的 Visual Studio C 工具链及 `Tools/Lvgl` 中的 LVGL 8.3.11 源码。`Preview/LvConf.h` 仅供电脑预览，不能当作原厂硬件配置直接刷入。
-
-## 目录约定
-
-```text
-Code/
-  Module/
-    Keyboard/Utilities/   ReadKeyboard.py、ConfigureScreenKnob.py
-    Screen/Device/        设备桥接、原生接口指纹、配置与故障恢复入口
-    Screen/Utilities/     只读查询、预览构建、固件构建
-    Firmware/Utilities/   固件分析、双份备份、屏幕 UI 刷写与恢复
-    Vendor/Utilities/     DecodeVendorChunk.cjs、DecodeVendorIndex.cjs、VendorStringUtilities.cjs
-Documentation/            调查记录和 SDK 咨询草稿
-Research/
-  Device/                 键盘读取快照
-  Screen/                 屏幕读取快照
-  Firmware/               原厂升级包与分析结果
-  UiResources/            拆分的原厂 UI 资源
-  Vendor/                 官方网页驱动归档与解码结果
-  Reference/              Vial 协议参考源码归档
-  Provenance.json         归档文件的原名称、现路径与 SHA256
-Tools/
-  Python39/               便携 Python 3.9.11、hidapi、Capstone
-  Lvgl/                   预览源码与上游许可证
-  Dfu/                    dfu-util 0.11 与上游许可证
-  ArmCompiler/            便携编译器的来源与安装入口
-  Environment.json        环境来源及版本
-.gitignore                全仓库唯一的忽略规则文件
-AGENTS.md                 项目组织、命名和归档约定
-```
-
-项目自有目录、文件名、函数、变量及参数使用 PascalCase。`.gitignore`、`AGENTS.md`、`LICENSE`、Python/Node 标准标识符、外部库 API、协议和既有数据字段遵循其规定名称；便携运行环境和第三方归档的内部内容保留原样。归档文件统一改名，原名称可通过 `Research/Provenance.json` 查回。
-
-## 读取与离线调查
-
-下面的设备读取入口不包含配置写入；固件分析和网页解码仅处理本地文件：
-
-```powershell
-# 仅枚举键盘，不发送报文
 .\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ReadKeyboard.py --Enumerate
-
-# 读取键位和双旋钮映射，保存新快照
 .\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ReadKeyboard.py --ReadEncoders
-
-# 读取屏幕信息
+.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ReadKeyboard.py --Transport Wireless --ReadEncoders
 .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\ReadScreen.py
-
-# 离线分析原厂固件 / 拆分 UI 资源
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InspectFirmware.py
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\ExtractUiResources.py
-```
-
-读取、分析、构建和刷写工具支持 `--help`，读取工具支持 `--OutputDirectory` 指定快照目录；离线分析支持指定输入与输出位置。默认输出目录为对应的 `Research` 子目录。`InstallArmCompiler.py` 是直接执行安装的入口，不提供命令行选项。
-
-网页驱动解码工具需要 Node.js，仅读取归档文件并执行抽取出的字符串解码函数，不运行网页应用：
-
-```powershell
-node Code\Module\Vendor\Utilities\DecodeVendorChunk.cjs ScreenSettings.js KeyboardUpgrade.js
 node Code\Module\Vendor\Utilities\DecodeVendorIndex.cjs
 ```
 
-这两个入口也支持 `--OutputDirectory <Directory>`。原厂驱动使用的旧文件名仍可通过来源映射定位。
+无线查询前先唤醒键盘；接收器在线不能保证休眠键盘应答。有线配置接口在无线模式下可能仍枚举但不回应。主键盘/接收器当前版本与公开下载版本不同，尚未建立已验证的无线文本转发，不沿用旧参考镜像地址修改当前程序。
 
-## Git 保留与忽略规则
+原厂页面初始化、专用定时器和业务事件链已移出运行路径，底层库和原始恢复资源保留。屏幕 HID 回报 `320×320`，实机程序的 LVGL 初始化为 `480×360`；保留这一差异，不根据协议值推断物理面板。
 
-全仓库只在根目录维护一份 [.gitignore](.gitignore)。忽略 Python 字节码及工具缓存、模块 `Runtime`、下载的 Arm 编译器、C/C++ 中间产物、编辑器状态和系统临时文件；清理缓存时同时检查已跟踪文件，已跟踪缓存必须移除后才能由规则生效。
+旧初始 UI 的 Windows 预览使用 `BuildScreenUiPreview.py` 和 `Runtime/ScreenUiPreview.exe`；Markdown 预览使用上文 `--CompileOnly --Preview`。二者均不代替实机验收。
 
-`Code/Module/Screen/Runtime` 可删除后重新构建，`Tools/ArmCompiler/Runtime` 可用安装脚本重新下载。便携 Python、dfu-util、LVGL 源码、原厂固件、真实设备采集、生产刷写包和恢复页均保留在 Git；不使用全局 `*.bin`、`*.elf`、`*.exe`、`*.dll` 或 `*.log` 规则误忽略这些文件。
+## 仓库约定
 
-原厂与设备归档的原名称和 SHA256 由 [Provenance.json](Research/Provenance.json) 索引，[.gitattributes](.gitattributes) 保留源码、归档和便携依赖字节，避免自动换行转换改变生产源文件指纹。仓库不保留测试代码、临时验证脚本、临时检查报告或缓存；生产刷写与回读记录属于设备归档，继续保留。V03 已通过设备构建、应用区回读、运行状态查询和用户彻底断电重启后的实物确认。
+项目自有目录、文件名、函数、变量和参数遵循 PascalCase，模块位于 `Code/Module`，工具实现放各模块 `Utilities`，便携 Python 放 `Tools/Python39`。标准 Git/法律文件名、语言与外部 API 标识符、协议键、未修改第三方内容保留规定命名。
 
-具体发现、固件来源和待确认问题见 [调查记录](Documentation/ResearchNotes.txt)。屏幕协议回报 320×320，而实机程序的 LVGL 显示初始化为 480×360；这一差异仍有保留，不能按协议尺寸推断物理面板。
+全仓库只维护根目录的一份 [.gitignore](.gitignore)：忽略模块 `Runtime`、下载的编译器、字节码、缓存、临时输出及编辑器状态。生产固件、ELF、恢复页、真实设备采集及便携依赖继续保留在 Git，不用全局二进制后缀规则误忽略。仓库不保留测试代码、临时验证脚本或样例测试数据。
+
+[.gitattributes](.gitattributes) 保留生产源文件、固件归档和便携依赖的原始字节，避免换行转换破坏 SHA256。`Runtime` 可重建或重新上传生成，编译器可用固定安装脚本恢复。生产来源、验收范围和未解决问题分别以归档和 [研究记录](Documentation/ResearchNotes.txt) 为准。
