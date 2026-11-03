@@ -1,18 +1,35 @@
 # Neos75
 
-NEOS75 键盘屏幕的自定义固件、Markdown 写入工具与设备研究归档。当前 V04 通过独立屏幕 USB HID 接收文档，由键盘端原生控件显示和滚动；电脑上传程序结束后仍可阅读。底层显示、USB、RTX 与 LVGL 复用已核验的原厂二进制，尚未取得完整厂商 SDK。
+NEOS75 键盘屏幕的自定义固件、Markdown CLI 与设备研究归档。当前屏幕 V05 和主控 WirelessBridgeV02 支持有线 USB 及 2.4G 接收器写入，由键盘端原生控件显示和滚动；电脑程序结束后仍可阅读。底层显示、USB、RTX 与 LVGL 复用已核验的原厂二进制，尚未取得完整厂商 SDK。
 
-用户已确认中文、粗斜体、代码块和表格显示正常，正常打字未观察到卡顿；2026-11-03 确认下方旋钮顺时针下滚、逆时针上滚。原厂页面对象数为 0，保留自定义页面。完整记录见 [V04 实机验收](Research/Screen/Flash20261102T144227Z/Commissioning.json)。
+用户已确认中文、粗斜体、代码块和表格显示正常，正常打字未观察到卡顿；2026-11-03 确认下方旋钮顺时针下滚、逆时针上滚。原厂页面对象数为 0，保留自定义页面。有线格式验收见 [V04 实机验收](Research/Screen/Flash20261102T144227Z/Commissioning.json)，当前完全无线与 agent CLI 记录见 [无线验收](Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json)。
 
 ## 快速使用
 
-本设备已安装 V04。将键盘连接 USB 并切到有线模式，在 Windows x64 的仓库根目录运行：
+本设备已安装配套固件。面向 agent 的 CLI 从 Windows x64 仓库根目录调用：
 
 ```powershell
-.\WriteMarkdown.bat "D:\Documents\Note.md"
+.\WriteMarkdown.bat "D:\Documents\Note.md" --Transport Wireless --Json --TimeoutSeconds 120
 ```
 
-也可以把 UTF-8 的 `.md` 文件拖到根目录的 [WriteMarkdown.bat](WriteMarkdown.bat) 上。使用仓库内的便携 Python，无需安装系统 Python，也无需为每次更新正文重新刷固件。
+支持 UTF-8 文件参数或 `--Stdin`，stdout 只返回一份 JSON，进度写到 stderr，退出码明确区分成功、输入错误和可重试错误。完整调用约定见 [AgentCli.md](Documentation/AgentCli.md)。使用仓库内便携 Python，无需系统 Python，也无需为正文更新重新刷固件。
+
+agent 可直接通过标准输入发送正文，无需创建 MD 文件：
+
+```python
+import json as Json
+import subprocess as Subprocess
+
+Markdown = "# Agent\n\n需要显示的内容。\n"
+Result = Subprocess.run([
+    "D:/Git/Neos75/Tools/Python39/python.exe", "-B",
+    "D:/Git/Neos75/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "--Stdin", "--Transport", "Wireless", "--Json", "--TimeoutSeconds", "120"
+], input=Markdown.encode("utf-8"), capture_output=True, timeout=130)
+Response = Json.loads(Result.stdout)
+if Result.returncode != 0:
+    raise RuntimeError(Response["Error"])
+```
 
 上传完成后整篇新文档激活，上传器可以退出。文档只保存在设备 RAM，断电后需要重新上传；新上传会释放旧文档，上传失败时需重传。当前每次上传完整文档包及字形，尚未实现增量更新。
 
@@ -24,7 +41,9 @@ NEOS75 键盘屏幕的自定义固件、Markdown 写入工具与设备研究归�
 | 上方旋钮 | 保留原有音量功能 |
 | 页脚 | 当前行号和全文总行数 |
 
-**当前文档写入使用有线 USB；2.4G 文档转发尚未实现。** 上述实物打字确认不是仪器测量的按键延迟结果。
+**有线与完全无线的 2.4G 均已跑通。** 2026-11-03 用户确认 USB 拔线后，中文和列表显示、旋钮上下滚动及正常打字均正常。按键延迟未做仪器测量。
+
+无线默认最多每秒发送 8 个请求，输入活跃时暂停，静止 500 ms 后继续；仅读取当前 Windows 会话的输入时间戳。`Auto` 默认优先使用在线的屏幕 USB，否则选择接收器；显式 `--Transport Wireless` 不会回落到 USB。部署与恢复见 [无线适配说明](Documentation/WirelessMarkdown.md)。
 
 ## 常用命令
 
@@ -68,15 +87,18 @@ NEOS75 键盘屏幕的自定义固件、Markdown 写入工具与设备研究归�
 
 ## 实测更新时间
 
-下表来自本设备的有线写入。编译包包含排版数据和字形，因此源文件大小不能直接换算成传输耗时。
+下表来自本设备的有线及完全无线写入。编译包包含排版数据和字形，因此源文件大小不能直接换算成传输耗时。
 
 | 内容 | MD 源文件 | 编译包 | 上传至激活 | 含解析排版的总耗时 |
 | --- | ---: | ---: | ---: | ---: |
 | 第一段中文演示，含列表、代码和表格 | 595 字节 | 14215 字节 | 4.406 秒 | 5.135 秒 |
 | 第二段中文演示，含任务列表、代码和表格 | 618 字节 | 13808 字节 | 3.969 秒 | 4.229 秒 |
+| 完全无线中文/列表，含输入暂停 | 156 字节 | 2120 字节 | 66.156 秒 | 66.470 秒 |
+| Agent stdin/JSON，完全无线、无暂停 | 17 字节 | 606 字节 | 5.140 秒 | 未单独记录 |
+| 中文 Agent CLI，含输入暂停，用户确认显示正常 | 90 字节 | 2514 字节 | 94.484 秒 | 未单独记录 |
 | 64 KiB 密集短段落容量验收，21846 行 | 65536 字节 | 218542 字节 | 约 59 秒 | 未单独记录 |
 
-两段短文档的有效编译包传输约为 **3.15–3.40 KiB/s**。64 KiB 容量验收已完成 CRC 校验和激活，并通过主机滚动命令到达末行；随后旋钮双向滚动由用户实物确认。这些数值描述当前有线整包上传，不代表无线速率或持续文本流刷新率。
+两段有线短文档的有效编译包传输约为 **3.15–3.40 KiB/s**。无线主动节流并等待输入空闲，含暂停的耗时不代表满载带宽。64 KiB 容量已通过有线接收、CRC 校验、激活和末行滚动验收；无线本次实测为短文档。
 
 此前完全无线的配置读取约为 0.6 kB/s、查询往返中位数约 42–48 ms；这是配置读回结果，不能当作文档写入带宽，也不能代替按键延迟测量。详细数据见 [研究记录](Documentation/ResearchNotes.txt)。
 
@@ -100,6 +122,7 @@ NEOS75 键盘屏幕的自定义固件、Markdown 写入工具与设备研究归�
 WriteMarkdown.bat                   日常 MD 写入入口
 Code/Module/
   Keyboard/Utilities/               配置读取、下方旋钮映射
+  Keyboard/Wireless/                主控受限转发补丁与固定接口指纹
   Screen/Markdown/                  设备端文档接收、原生显示和滚动
   Screen/Device/                    原生接口、固件 hook、初始化和恢复保护
   Screen/Utilities/                 MD 编译/上传、只读状态、构建入口
@@ -117,32 +140,35 @@ MD 在电脑端解析为结构化行、字形记录和掩码，设备端缓存�
 
 日常更新正文使用 BAT。本节仅用于新设备部署或修改设备程序。
 
-构建只支持 [NativeProfile.json](Code/Module/Screen/Device/NativeProfile.json) 对应的实机镜像：官方屏幕 MCU build `Sep 6 2026 20:47:09`，已双份备份核验。更换官方固件后必须重新备份、定位接口。主键盘和接收器固件不在本版刷写范围内。
+屏幕构建只支持 [NativeProfile.json](Code/Module/Screen/Device/NativeProfile.json) 对应的实机镜像：官方 MCU build `Sep 6 2026 20:47:09`。无线还需基于实机 `SV3.0.4` 双份备份的主控转发补丁，只改三个固定应用页，保留配置区及原厂 ROM。接收器固件保持原样。更换官方固件后必须重新备份、定位接口，详情见无线适配说明。
 
-使用已归档的 V04 页面包无需编译器：
+使用已归档的当前成套页面包无需编译器。主控安装会短暂停止键盘输入，部署条件和恢复顺序见 [无线适配说明](Documentation/WirelessMarkdown.md)：
 
 ```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\MarkdownUiV04\ScreenUiPatchPlan.json --EnterDfu
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallWirelessBridgeFirmware.py --Plan Research\Firmware\WirelessUiV01\Keyboard\WirelessBridgePlan.json --EnterDfu
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV01\Screen\ScreenUiPatchPlan.json --EnterDfu
 ```
 
-屏幕 DFU 接口 `5542:1000` 需要 WinUSB，本设备已安装。安装器核验已有程序与页面指纹，逐页及完整应用区回读核对，不写 Bootloader，保留当前 `0x7F000` 配置页；已处于 DFU 时省略 `--EnterDfu`。
+主控 DFU `2E3C:DF11` 与屏幕 DFU `5542:1000` 均需要各自的 WinUSB 驱动，本设备已安装；安装入口分别为 [InstallKeyboardDriver.ps1](Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1) 和 [InstallScreenDriver.ps1](Code/Module/Firmware/Utilities/InstallScreenDriver.ps1)。安装器核验已有程序与页面指纹，逐页及完整应用区回读核对；屏幕不写 Bootloader，保留当前 `0x7F000` 配置页。设备已处于对应 DFU 时省略 `--EnterDfu`。
 
 需要修改设备程序时，先安装固定编译器，再构建和安装：
 
 ```powershell
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallArmCompiler.py
+.\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\BuildWirelessBridgeFirmware.py
 .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\BuildScreenUiFirmware.py
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallWirelessBridgeFirmware.py --EnterDfu
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --EnterDfu
 ```
 
-V04 计划含七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以及 Vector、Information、Hook。安装跳过已相同页，带有故障返回 DFU 和 UI 超时保护。开机尚未上传 MD 时的 `NEOS75 UI`、`hellow world` 和 `Running` 可通过 [ScreenUiConfiguration.json](Code/Module/Screen/Device/ScreenUiConfiguration.json) 调整并重建。
+V05 屏幕计划沿用七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以及 Vector、Information、Hook。安装跳过已相同页，带有故障返回 DFU 和 UI 超时保护。开机尚未上传 MD 时的 `NEOS75 UI`、`hellow world` 和 `Running` 可通过 [ScreenUiConfiguration.json](Code/Module/Screen/Device/ScreenUiConfiguration.json) 调整并重建。
 
 ## 旋钮配置、诊断与恢复
 
 本设备的下方旋钮已适配。需要重新设置时，工具只修改固定下方旋钮位置，保留其按压禁用；保存完整前后映射并关闭、重开接口回读，确认其他按键和上方音量映射未改变。
 
 ```powershell
-# 下方旋转发送屏幕事件，交由 V04 处理滚动
+# 下方旋转发送屏幕事件，交由自定义 UI 处理滚动
 .\Tools\Python39\python.exe -B Code\Module\Keyboard\Utilities\ConfigureScreenKnob.py --Scroll
 
 # 禁用下方旋转和按压
@@ -156,10 +182,10 @@ V04 计划含七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以�
 .\Tools\Python39\python.exe -B Code\Module\Screen\Utilities\ReadScreenControls.py --Seconds 2
 ```
 
-配置工具固定本设备 UID 和已确认映射，过滤其他应用的无关响应，遇到未知映射会拒绝修改。恢复本次官方更新后的屏幕应用时，使用包含全部修改页的 V04 计划：
+配置工具固定本设备 UID 和已确认映射，过滤其他应用的无关响应，遇到未知映射会拒绝修改。恢复本次官方更新后的屏幕应用时，使用当前计划中的恢复页：
 
 ```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Screen\MarkdownUiV04\ScreenUiPatchPlan.json --EnterDfu --Restore
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV01\Screen\ScreenUiPatchPlan.json --EnterDfu --Restore
 ```
 
 屏幕恢复保留当前配置页，不自动恢复主键盘的旋钮映射。完整协议、保护机制和恢复说明见 [ScreenUi.txt](Documentation/ScreenUi.txt)。
@@ -168,6 +194,8 @@ V04 计划含七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以�
 
 | 内容 | 位置 |
 | --- | --- |
+| 当前成套主控/屏幕页面、恢复页与源码快照 | [WirelessUiV01](Research/Firmware/WirelessUiV01) |
+| 当前主控指纹与无线验收索引 | [InstalledWirelessBridge.json](Research/Device/InstalledWirelessBridge.json) |
 | 当前安装指纹与验收索引 | [InstalledUi.json](Research/Screen/InstalledUi.json) |
 | V04 修改页、恢复页、ELF、反汇编、源文件指纹 | [MarkdownUiV04](Research/Screen/MarkdownUiV04) |
 | V04 完整回读及物理滚动验收 | [Flash20261102T144227Z](Research/Screen/Flash20261102T144227Z) |
@@ -177,7 +205,7 @@ V04 计划含七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以�
 | 历史 V03 页面包与源文件指纹 | [CustomUiV03](Research/Screen/CustomUiV03) |
 | 归档来源、原名称与 SHA256 | [Provenance.json](Research/Provenance.json) |
 
-V04 的源文件指纹和对应 Git 提交记录在 [Source.json](Research/Screen/MarkdownUiV04/Source.json) 的 `SourceFilesSha256`、`SourceCommit` 中；日后工具继续演进时，可查回准确源码。V03 指纹对应[提交 d40d595](https://github.com/QPBBBB/Neos75/commit/d40d59501f8be51bcd7348015b16d190c03f6f2d)。历史页面包保持独立，当前恢复应采用 V04 计划。
+当前版本的源码快照、指纹及对应 Git 提交保存在 [WirelessUiV01/Source.json](Research/Firmware/WirelessUiV01/Source.json) 的 `SourceFilesSha256`、`SourceCommit` 及同目录 `Sources`；44 份文件已与该提交中的原始字节逐一核对。V04 的源文件指纹和对应 Git 提交记录在 [Source.json](Research/Screen/MarkdownUiV04/Source.json) 中；V03 指纹对应[提交 d40d595](https://github.com/QPBBBB/Neos75/commit/d40d59501f8be51bcd7348015b16d190c03f6f2d)。历史页面包保持独立，当前恢复应采用 WirelessUiV01 成套计划。
 
 只读设备与离线分析入口：
 
@@ -191,7 +219,7 @@ V04 的源文件指纹和对应 Git 提交记录在 [Source.json](Research/Scree
 node Code\Module\Vendor\Utilities\DecodeVendorIndex.cjs
 ```
 
-无线查询前先唤醒键盘；接收器在线不能保证休眠键盘应答。有线配置接口在无线模式下可能仍枚举但不回应。主键盘/接收器当前版本与公开下载版本不同，尚未建立已验证的无线文本转发，不沿用旧参考镜像地址修改当前程序。
+无线查询前先唤醒键盘；接收器在线不能保证休眠键盘应答，agent 会得到可重试错误。有线配置接口在无线模式下可能仍枚举但不回应。本版转发已基于现用主控实机备份适配，接收器固件保持原样；旧参考镜像地址不用于当前程序刷写。
 
 原厂页面初始化、专用定时器和业务事件链已移出运行路径，底层库和原始恢复资源保留。屏幕 HID 回报 `320×320`，实机程序的 LVGL 初始化为 `480×360`；保留这一差异，不根据协议值推断物理面板。
 

@@ -10,7 +10,7 @@
 WriteMarkdown.bat "D:\Documents\Note.md"
 ```
 
-也可以把 `.md` 文件拖到 `WriteMarkdown.bat` 上。输入文件使用 UTF-8 编码，单篇最多 **64 KiB**，原文件不会被修改。
+agent 可用 `--Stdin --Transport Wireless --Json --TimeoutSeconds 120` 直接传入 UTF-8 Markdown，调用约定见 [AgentCli.md](AgentCli.md)。文件输入同样使用 UTF-8，单篇最多 **64 KiB**，原文件不会被修改。
 
 ## 阅读与滚动
 
@@ -64,7 +64,7 @@ WriteMarkdown.bat --Scroll 5
 
 ## 当前边界
 
-此版本先完成有线流程；2.4G 转发仍需单独适配和验证。读取带宽不等于文档写入带宽，也不能代替按键延迟验收。
+有线与完全无线 2.4G 流程均已验证。无线固定使用 `--Transport Wireless`，输入活跃时暂停，静止 500 ms 后继续，默认每秒最多发送 8 个请求；休眠时需按普通键唤醒。读取带宽不等于文档写入带宽，也不能代替按键延迟验收。
 
 Markdown 由标准解析器处理，屏幕显示结构化文字行及字形；原始 HTML 只提供静态文本/常用行内标签处理，不运行网页脚本或 CSS。公式与 Mermaid 暂按代码或普通文本显示。
 

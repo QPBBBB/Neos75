@@ -1,4 +1,13 @@
-NEOS75 设备端自定义 UI（V04 Markdown，有线）
+NEOS75 当前自定义 UI（V05 Markdown，有线与 2.4G）
+
+2026-11-03：屏幕 V05 + 主控 WirelessBridgeV02 已部署，完全拔线后的显示、滚动和正常打字由用户确认。
+主控只改三个固定 2 KiB 应用页，配置区与向量保留；屏幕仍保留 Bootloader 和 0x7F000 配置页。
+新增 A5 41 / 7C 紧凑 MDUW 状态，整帧 32 字节，UI timer 处理写操作后再回 UART；原有 7E / MDUI 有线协议保留。
+日常入口为 agent CLI，支持文件或 UTF-8 stdin、单份 JSON stdout、进度 stderr 与稳定退出码。
+当前安装索引：Research/Screen/InstalledUi.json、Research/Device/InstalledWirelessBridge.json。
+成套包：Research/Firmware/WirelessUiV01；使用/恢复见 WirelessMarkdown.md，agent 接口见 AgentCli.md。
+
+以下是 V04 有线基线的技术归档；V05 新增内容以以上索引与无线说明为准。
 
 当前结果（2026-11-03）
 根目录 WriteMarkdown.bat 读取 UTF-8 MD，通过独立屏幕 HID 上传到设备 RAM。
@@ -9,7 +18,7 @@ NEOS75 设备端自定义 UI（V04 Markdown，有线）
 2026-11-03 用户确认下方旋钮顺时针向下、逆时针向上，双向滚动正常。
 随后只读回查确认文档仍激活、原厂页面对象为 0、自定义页只加载一次，设备 timer 持续更新。
 控制记录见 Research/Screen/Controls20261103T024537Z，运行状态见 UiState20261103T024538Z。
-当前仅完成 USB 有线文档通道，2.4G 文本转发未实现。
+V04 当时仅完成 USB 有线文档通道；当前 V05 的 2.4G 结果见本文开头。
 
 当前索引：Research/Screen/InstalledUi.json
 V04 生产构建：Research/Screen/MarkdownUiV04
