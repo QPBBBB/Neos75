@@ -17,6 +17,7 @@ typedef struct DeviceScreenUiState
     char RunningText[24];
     uint32_t LastRunningSecond;
     MarkdownState Markdown;
+    volatile uint32_t WirelessReplyPending;
 } DeviceScreenUiState;
 
 /* Reset clears the first boot flag before RTX starts. During application
@@ -61,6 +62,26 @@ static unsigned GetLegacyPageRootCount(void)
 
 extern unsigned ContinueNativeScreenPacket(const uint8_t *Packet, unsigned Length);
 
+/* Compact MDUW status fits the receiver's 32-byte HID report. Reply explicitly
+ * on the keyboard UART so an unrelated USB status poll cannot change routing.
+ * Non-status operations reply only after the UI timer has processed them. */
+static void SendWirelessMarkdownReply(DeviceScreenUiState *State)
+{
+    uint8_t Status[32], Frame[32];
+    GetMarkdownStatus(&State->Markdown, Status);
+    Frame[0] = 0xA5; Frame[1] = 0x41; Frame[2] = 0; Frame[3] = 27; Frame[4] = 0x7C;
+    Frame[5] = 'M'; Frame[6] = 'D'; Frame[7] = 'U'; Frame[8] = 'W';
+    for (unsigned Index = 0; Index < 6; ++Index) Frame[9 + Index] = Status[4 + Index];
+    for (unsigned Index = 0; Index < 8; ++Index) Frame[15 + Index] = Status[12 + Index];
+    Frame[23] = Status[20]; Frame[24] = Status[21];
+    Frame[25] = Status[24]; Frame[26] = Status[25];
+    for (unsigned Index = 0; Index < 4; ++Index) Frame[27 + Index] = Status[28 + Index];
+    unsigned Sum = 0;
+    for (unsigned Index = 1; Index < 31; ++Index) Sum += Frame[Index];
+    Frame[31] = (uint8_t)(Sum ^ 255);
+    ((unsigned (*)(unsigned, const void *, unsigned, unsigned))NativeWriteScreenPort)(1, Frame, 32, 50);
+}
+
 /* The original GUI packet interpreter is no longer an entry point for page,
  * menu, theme, weather or clock commands. Only read-only information queries
  * enter its preserved framing/response path. Raw DFU is a separate service. */
@@ -102,6 +123,14 @@ unsigned HandleScreenInformation(const uint8_t *Request)
     unsigned PayloadLength = ((unsigned)Request[2] << 8) | Request[3];
     DeviceScreenUiState *State = GetDeviceScreenUiState();
     if (State != NULL && Request[0] == 0xA5 && Request[1] == 0x41 && PayloadLength >= 2 && PayloadLength <= 59) {
+        if (Request[4] == 0x7C && PayloadLength <= 27) {
+            if (Request[5] == 0 && PayloadLength == 2) SendWirelessMarkdownReply(State);
+            else if (!State->WirelessReplyPending) {
+                QueueMarkdown(&State->Markdown, Request + 5, PayloadLength - 1);
+                State->WirelessReplyPending = 1;
+            }
+            return 0;
+        }
         if (Request[4] == 0x7E) {
             if (Request[5] != 0) QueueMarkdown(&State->Markdown, Request + 5, PayloadLength - 1);
             uint8_t MarkdownReply[33];
@@ -122,7 +151,7 @@ unsigned HandleScreenInformation(const uint8_t *Request)
     uint8_t Reply[33];
     for (unsigned Index = 0; Index < sizeof(Reply); ++Index) Reply[Index] = 0;
     Reply[0] = 'N'; Reply[1] = 'S'; Reply[2] = 'U'; Reply[3] = 'I';
-    Reply[4] = 4;
+    Reply[4] = 5;
     unsigned LegacyRoots = GetLegacyPageRootCount();
     Reply[5] = 0x10 | 0x20 | (LegacyRoots == 0 ? 0x40 : 0);
     Reply[6] = (uint8_t)LegacyRoots;
@@ -149,6 +178,10 @@ static void UpdateDeviceScreenUi(lv_timer_t *Timer)
     FeedScreenRecoveryGuard(State);
     State->UpdateCount++;
     UpdateMarkdown(&State->Markdown);
+    if (State->WirelessReplyPending && !__atomic_load_n(&State->Markdown.Pending, __ATOMIC_ACQUIRE)) {
+        State->WirelessReplyPending = 0;
+        SendWirelessMarkdownReply(State);
+    }
     if (GetNativeActiveScreen() != State->Ui.Screen) {
         LoadScreenUi(&State->Ui);
         State->ActivationCount++;
@@ -190,6 +223,7 @@ void EnterDeviceScreenUi(void *OriginalArgument)
     State->ActivationCount = 0;
     State->Ready = 0;
     State->IgnoredLegacyPackets = 0;
+    State->WirelessReplyPending = 0;
     State->LastRunningSecond = 0;
     for (unsigned Index = 0; Index < sizeof(State->Markdown); ++Index)
         ((volatile uint8_t *)&State->Markdown)[Index] = 0;

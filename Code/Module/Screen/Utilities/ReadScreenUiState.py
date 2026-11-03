@@ -29,7 +29,7 @@ def ReadState(Device, Transcript):
         if Length != 33 or ((sum(Reply[1:4 + Length]) ^ 255) & 255) != Reply[4 + Length]:
             raise RuntimeError('Invalid UI status length or checksum')
         Magic, Version, Flags, Reserved, Seconds, Updates, Activations, UiScreen, ActiveScreen, Countdown = Struct.unpack('<4sBBH6I', Reply[5:37])
-        if Magic != b'NSUI' or Version not in (2, 3, 4):
+        if Magic != b'NSUI' or Version not in (2, 3, 4, 5):
             raise RuntimeError('Unexpected UI status protocol identity')
         return {'Version': Version, 'StateFound': bool(Flags & 1), 'UiCreated': bool(Flags & 2),
             'UiActive': bool(Flags & 4), 'ShowUptime': bool(Flags & 8),
