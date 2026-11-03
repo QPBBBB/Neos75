@@ -1,0 +1,270 @@
+[
+  {
+    "Action": "ListMainBefore",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "ReadMainVersion",
+    "Tx": "00110200000000bc60000000000000000000000000000000000000000000000000",
+    "Rx": "110200000017b2e85356332e302e342032303236313032395f30343432323800"
+  },
+  {
+    "Action": "EnterMainKeyboardDfu",
+    "Tx": "0013020000000030d2000000000000000000000000000000000000000000000000",
+    "SerialNumber": "vial:f64c2b3c"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\n"
+  },
+  {
+    "Action": "WaitMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--list"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nFound DFU: [2e3c:df11] ver=0200, devnum=10, cfg=1, intf=0, path=\"2-10.1\", alt=0, name=\"@Internal Flash  /0x08000000/ 128*2Kg\", serial=\"AT32\"\r\n"
+  },
+  {
+    "Action": "ReadMainApplication",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8000000:262144",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\BeforeApplication.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=                        ]   4%        12288 bytes\rUpload\t[==                       ]   8%        22528 bytes\rUpload\t[===                      ]  12%        32768 bytes\rUpload\t[====                     ]  16%        43008 bytes\rUpload\t[=====                    ]  20%        53248 bytes\rUpload\t[======                   ]  24%        63488 bytes\rUpload\t[=======                  ]  28%        73728 bytes\rUpload\t[========                 ]  32%        83968 bytes\rUpload\t[=========                ]  36%        96256 bytes\rUpload\t[==========               ]  40%       106496 bytes\rUpload\t[===========              ]  44%       116736 bytes\rUpload\t[============             ]  48%       126976 bytes\rUpload\t[=============            ]  52%       137216 bytes\rUpload\t[==============           ]  56%       147456 bytes\rUpload\t[===============          ]  60%       157696 bytes\rUpload\t[================         ]  64%       167936 bytes\rUpload\t[=================        ]  68%       180224 bytes\rUpload\t[==================       ]  72%       190464 bytes\rUpload\t[===================      ]  76%       200704 bytes\rUpload\t[====================     ]  80%       210944 bytes\rUpload\t[=====================    ]  84%       221184 bytes\rUpload\t[======================   ]  88%       231424 bytes\rUpload\t[=======================  ]  92%       241664 bytes\rUpload\t[======================== ]  96%       251904 bytes\rUpload\t[=========================] 100%       262144 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "ReadMainApplication",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8000000:262144",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\BeforeApplicationConfirm.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=                        ]   4%        12288 bytes\rUpload\t[==                       ]   8%        22528 bytes\rUpload\t[===                      ]  12%        32768 bytes\rUpload\t[====                     ]  16%        43008 bytes\rUpload\t[=====                    ]  20%        53248 bytes\rUpload\t[======                   ]  24%        63488 bytes\rUpload\t[=======                  ]  28%        73728 bytes\rUpload\t[========                 ]  32%        83968 bytes\rUpload\t[=========                ]  36%        96256 bytes\rUpload\t[==========               ]  40%       106496 bytes\rUpload\t[===========              ]  44%       116736 bytes\rUpload\t[============             ]  48%       126976 bytes\rUpload\t[=============            ]  52%       137216 bytes\rUpload\t[==============           ]  56%       147456 bytes\rUpload\t[===============          ]  60%       157696 bytes\rUpload\t[================         ]  64%       167936 bytes\rUpload\t[=================        ]  68%       180224 bytes\rUpload\t[==================       ]  72%       190464 bytes\rUpload\t[===================      ]  76%       200704 bytes\rUpload\t[====================     ]  80%       210944 bytes\rUpload\t[=====================    ]  84%       221184 bytes\rUpload\t[======================   ]  88%       231424 bytes\rUpload\t[=======================  ]  92%       241664 bytes\rUpload\t[======================== ]  96%       251904 bytes\rUpload\t[=========================] 100%       262144 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "InstallPayload",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x801f000",
+      "--download",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\Package\\PayloadPage.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\nDownloading element to address = 0x0801f000, size = 2048\r\n\rErase   \t[                         ]   0%            0 bytes\rErase   \t[=========================] 100%         2048 bytes\r\nErase    done.\r\n\rDownload\t[                         ]   0%            0 bytes\rDownload\t[=========================] 100%         2048 bytes\r\nDownload done.\r\nFile downloaded successfully\r\nWarning: Invalid DFU suffix signature\r\nA valid DFU suffix will be required in a future dfu-util release\r\n"
+  },
+  {
+    "Action": "ReadbackPayload",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x801f000:2048",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\InstallPayloadReadback.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=========================] 100%         2048 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "InstallPacket",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8014000",
+      "--download",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\Package\\PacketPage.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\nDownloading element to address = 0x08014000, size = 2048\r\n\rErase   \t[                         ]   0%            0 bytes\rErase   \t[=========================] 100%         2048 bytes\r\nErase    done.\r\n\rDownload\t[                         ]   0%            0 bytes\rDownload\t[=========================] 100%         2048 bytes\r\nDownload done.\r\nFile downloaded successfully\r\nWarning: Invalid DFU suffix signature\r\nA valid DFU suffix will be required in a future dfu-util release\r\n"
+  },
+  {
+    "Action": "ReadbackPacket",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8014000:2048",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\InstallPacketReadback.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=========================] 100%         2048 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "InstallUnknown",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8012000",
+      "--download",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\Package\\UnknownPage.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\nDownloading element to address = 0x08012000, size = 2048\r\n\rErase   \t[                         ]   0%            0 bytes\rErase   \t[=========================] 100%         2048 bytes\r\nErase    done.\r\n\rDownload\t[                         ]   0%            0 bytes\rDownload\t[=========================] 100%         2048 bytes\r\nDownload done.\r\nFile downloaded successfully\r\nWarning: Invalid DFU suffix signature\r\nA valid DFU suffix will be required in a future dfu-util release\r\n"
+  },
+  {
+    "Action": "ReadbackUnknown",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8012000:2048",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\InstallUnknownReadback.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=========================] 100%         2048 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "ReadMainApplication",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8000000:262144",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\AfterApplication.bin"
+    ],
+    "ExitCode": 0,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=                        ]   4%        12288 bytes\rUpload\t[==                       ]   8%        22528 bytes\rUpload\t[===                      ]  12%        32768 bytes\rUpload\t[====                     ]  16%        43008 bytes\rUpload\t[=====                    ]  20%        53248 bytes\rUpload\t[======                   ]  24%        63488 bytes\rUpload\t[=======                  ]  28%        73728 bytes\rUpload\t[========                 ]  32%        83968 bytes\rUpload\t[=========                ]  36%        96256 bytes\rUpload\t[==========               ]  40%       106496 bytes\rUpload\t[===========              ]  44%       116736 bytes\rUpload\t[============             ]  48%       126976 bytes\rUpload\t[=============            ]  52%       137216 bytes\rUpload\t[==============           ]  56%       147456 bytes\rUpload\t[===============          ]  60%       157696 bytes\rUpload\t[================         ]  64%       167936 bytes\rUpload\t[=================        ]  68%       180224 bytes\rUpload\t[=================        ]  70%       184320 bytes\rUpload\t[==================       ]  72%       190464 bytes\rUpload\t[===================      ]  76%       200704 bytes\rUpload\t[====================     ]  80%       210944 bytes\rUpload\t[=====================    ]  84%       221184 bytes\rUpload\t[======================   ]  88%       231424 bytes\rUpload\t[=======================  ]  92%       241664 bytes\rUpload\t[======================== ]  96%       251904 bytes\rUpload\t[=========================] 100%       262144 bytes\r\nUpload done.\r\n"
+  },
+  {
+    "Action": "ReadAndLeaveMainDfu",
+    "Arguments": [
+      "--device",
+      ",2e3c:df11",
+      "--alt",
+      "0",
+      "--dfuse-address",
+      "0x8000000:8:leave",
+      "--upload",
+      "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\Entry.bin"
+    ],
+    "ExitCode": 74,
+    "Output": "dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=========================] 100%            8 bytes\r\nUpload done.\r\nSubmitting leave request...\r\nError during download get_status\r\n"
+  }
+]

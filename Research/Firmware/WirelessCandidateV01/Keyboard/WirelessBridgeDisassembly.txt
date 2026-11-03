@@ -1,0 +1,185 @@
+
+D:\Git\Neos75\Code\Module\Keyboard\Runtime\WirelessBridge\WirelessBridge.elf:	file format elf32-littlearm
+
+Disassembly of section .UnknownHook:
+
+0801213c <UnknownWirelessHook>:
+ 801213c: f00c bf60    	<unknown>
+
+Disassembly of section .PacketHook:
+
+08014794 <WirelessScreenPacketHook>:
+ 8014794: f00a bc98    	<unknown>
+
+Disassembly of section .Payload:
+
+0801f000 <HandleUnknownWirelessCommand>:
+ 801f000: 2800         	cmp	r0, #0x0
+ 801f002: d05f         	beq	0x801f0c4 <HandleUnknownWirelessCommand+0xc4> @ imm = #0xbe
+ 801f004: b5d0         	push	{r4, r6, r7, lr}
+ 801f006: af02         	add	r7, sp, #0x8
+ 801f008: b088         	sub	sp, #0x20
+ 801f00a: 4604         	mov	r4, r0
+ 801f00c: 2920         	cmp	r1, #0x20
+ 801f00e: d154         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0xa8
+ 801f010: f640 30ca    	<unknown>
+ 801f014: f2c2 0000    	<unknown>
+ 801f018: 7800         	ldrb	r0, [r0]
+ 801f01a: 2802         	cmp	r0, #0x2
+ 801f01c: d14d         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x9a
+ 801f01e: 7820         	ldrb	r0, [r4]
+ 801f020: 28a5         	cmp	r0, #0xa5
+ 801f022: d14a         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x94
+ 801f024: 7860         	ldrb	r0, [r4, #0x1]
+ 801f026: 2841         	cmp	r0, #0x41
+ 801f028: d147         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x8e
+ 801f02a: 78a0         	ldrb	r0, [r4, #0x2]
+ 801f02c: 2800         	cmp	r0, #0x0
+ 801f02e: d144         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x88
+ 801f030: f894 e003    	<unknown>
+ 801f034: f1ae 0102    	<unknown>
+ 801f038: 2919         	cmp	r1, #0x19
+ 801f03a: d83e         	bhi	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x7c
+ 801f03c: 7921         	ldrb	r1, [r4, #0x4]
+ 801f03e: 297c         	cmp	r1, #0x7c
+ 801f040: d13b         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x76
+ 801f042: 7961         	ldrb	r1, [r4, #0x5]
+ 801f044: f1be 0f02    	<unknown>
+ 801f048: bf08         	<unknown>
+ 801f04a: 2900         	cmp	r1, #0x0
+ 801f04c: d013         	beq	0x801f076 <HandleUnknownWirelessCommand+0x76> @ imm = #0x26
+ 801f04e: f1be 0f10    	<unknown>
+ 801f052: bf08         	<unknown>
+ 801f054: 2901         	cmp	r1, #0x1
+ 801f056: d00e         	beq	0x801f076 <HandleUnknownWirelessCommand+0x76> @ imm = #0x1c
+ 801f058: f1be 0f09    	<unknown>
+ 801f05c: d301         	blo	0x801f062 <HandleUnknownWirelessCommand+0x62> @ imm = #0x2
+ 801f05e: 2902         	cmp	r1, #0x2
+ 801f060: d009         	beq	0x801f076 <HandleUnknownWirelessCommand+0x76> @ imm = #0x12
+ 801f062: f1be 0f04    	<unknown>
+ 801f066: bf08         	<unknown>
+ 801f068: 2903         	cmp	r1, #0x3
+ 801f06a: d004         	beq	0x801f076 <HandleUnknownWirelessCommand+0x76> @ imm = #0x8
+ 801f06c: f1be 0f06    	<unknown>
+ 801f070: bf08         	<unknown>
+ 801f072: 2904         	cmp	r1, #0x4
+ 801f074: d121         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x42
+ 801f076: f10e 0c04    	<unknown>
+ 801f07a: f10e 0303    	<unknown>
+ 801f07e: 1c61         	adds	r1, r4, #0x1
+ 801f080: 2200         	movs	r2, #0x0
+ 801f082: f811 0b01    	<unknown>
+ 801f086: 3b01         	subs	r3, #0x1
+ 801f088: 4402         	add	r2, r0
+ 801f08a: d1fa         	bne	0x801f082 <HandleUnknownWirelessCommand+0x82> @ imm = #-0xc
+ 801f08c: f814 000c    	<unknown>
+ 801f090: b2d1         	<unknown>
+ 801f092: 4048         	eors	r0, r1
+ 801f094: 28ff         	cmp	r0, #0xff
+ 801f096: d110         	bne	0x801f0ba <HandleUnknownWirelessCommand+0xba> @ imm = #0x20
+ 801f098: f10e 0205    	<unknown>
+ 801f09c: 2000         	movs	r0, #0x0
+ 801f09e: 4669         	mov	r1, sp
+ 801f0a0: 5c23         	ldrb	r3, [r4, r0]
+ 801f0a2: 540b         	strb	r3, [r1, r0]
+ 801f0a4: 3001         	adds	r0, #0x1
+ 801f0a6: 4282         	cmp	r2, r0
+ 801f0a8: d1fa         	bne	0x801f0a0 <HandleUnknownWirelessCommand+0xa0> @ imm = #-0xc
+ 801f0aa: f249 0ca9    	<unknown>
+ 801f0ae: 4669         	mov	r1, sp
+ 801f0b0: f6c0 0c00    	<unknown>
+ 801f0b4: 2001         	movs	r0, #0x1
+ 801f0b6: 230a         	movs	r3, #0xa
+ 801f0b8: 47e0         	<unknown>
+ 801f0ba: 20ff         	movs	r0, #0xff
+ 801f0bc: 7020         	strb	r0, [r4]
+ 801f0be: b008         	add	sp, #0x20
+ 801f0c0: e8bd 40d0    	<unknown>
+ 801f0c4: 4770         	bx	lr
+ 801f0c6: d4d4         	bmi	0x801f072 <HandleUnknownWirelessCommand+0x72> @ imm = #-0x58
+
+0801f0c8 <HandleWirelessScreenPacket>:
+ 801f0c8: b5b0         	push	{r4, r5, r7, lr}
+ 801f0ca: af02         	add	r7, sp, #0x8
+ 801f0cc: b088         	sub	sp, #0x20
+ 801f0ce: 2800         	cmp	r0, #0x0
+ 801f0d0: d044         	beq	0x801f15c <HandleWirelessScreenPacket+0x94> @ imm = #0x88
+ 801f0d2: f1a1 0281    	<unknown>
+ 801f0d6: f112 0f61    	<unknown>
+ 801f0da: d33f         	blo	0x801f15c <HandleWirelessScreenPacket+0x94> @ imm = #0x7e
+ 801f0dc: 2300         	movs	r3, #0x0
+ 801f0de: 4602         	mov	r2, r0
+ 801f0e0: 5cc4         	ldrb	r4, [r0, r3]
+ 801f0e2: 2ca5         	cmp	r4, #0xa5
+ 801f0e4: d134         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x68
+ 801f0e6: eb00 0c03    	<unknown>
+ 801f0ea: f89c 4001    	<unknown>
+ 801f0ee: 2c41         	cmp	r4, #0x41
+ 801f0f0: d12e         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x5c
+ 801f0f2: f89c 4002    	<unknown>
+ 801f0f6: bb5c         	<unknown>
+ 801f0f8: f89c 4003    	<unknown>
+ 801f0fc: 2c1b         	cmp	r4, #0x1b
+ 801f0fe: d127         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x4e
+ 801f100: f89c 4004    	<unknown>
+ 801f104: 2c7c         	cmp	r4, #0x7c
+ 801f106: d123         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x46
+ 801f108: f89c 4005    	<unknown>
+ 801f10c: 2c4d         	cmp	r4, #0x4d
+ 801f10e: d11f         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x3e
+ 801f110: f89c 4006    	<unknown>
+ 801f114: 2c44         	cmp	r4, #0x44
+ 801f116: d11b         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x36
+ 801f118: f89c 4007    	<unknown>
+ 801f11c: 2c55         	cmp	r4, #0x55
+ 801f11e: d117         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x2e
+ 801f120: f89c 4008    	<unknown>
+ 801f124: 2c57         	cmp	r4, #0x57
+ 801f126: d113         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x26
+ 801f128: f89c 4009    	<unknown>
+ 801f12c: 2c01         	cmp	r4, #0x1
+ 801f12e: d10f         	bne	0x801f150 <HandleWirelessScreenPacket+0x88> @ imm = #0x1e
+ 801f130: f04f 0e00    	<unknown>
+ 801f134: 2401         	movs	r4, #0x1
+ 801f136: bf00         	<unknown>
+ 801f138: 5d15         	ldrb	r5, [r2, r4]
+ 801f13a: 3401         	adds	r4, #0x1
+ 801f13c: 2c1f         	cmp	r4, #0x1f
+ 801f13e: 44ae         	add	lr, r5
+ 801f140: d1fa         	bne	0x801f138 <HandleWirelessScreenPacket+0x70> @ imm = #-0xc
+ 801f142: f89c 401f    	<unknown>
+ 801f146: fa5f f58e    	<unknown>
+ 801f14a: 4065         	eors	r5, r4
+ 801f14c: 2dff         	cmp	r5, #0xff
+ 801f14e: d00a         	beq	0x801f166 <HandleWirelessScreenPacket+0x9e> @ imm = #0x14
+ 801f150: f103 0521    	<unknown>
+ 801f154: 3301         	adds	r3, #0x1
+ 801f156: 3201         	adds	r2, #0x1
+ 801f158: 428d         	cmp	r5, r1
+ 801f15a: d9c1         	bls	0x801f0e0 <HandleWirelessScreenPacket+0x18> @ imm = #-0x7e
+ 801f15c: b008         	add	sp, #0x20
+ 801f15e: e8bd 40b0    	<unknown>
+ 801f162: f000 b813    	<unknown>
+ 801f166: 2000         	movs	r0, #0x0
+ 801f168: 4669         	mov	r1, sp
+ 801f16a: f81c 2000    	<unknown>
+ 801f16e: 540a         	strb	r2, [r1, r0]
+ 801f170: 3001         	adds	r0, #0x1
+ 801f172: 2820         	cmp	r0, #0x20
+ 801f174: d1f9         	bne	0x801f16a <HandleWirelessScreenPacket+0xa2> @ imm = #-0xe
+ 801f176: f247 42d9    	<unknown>
+ 801f17a: 4668         	mov	r0, sp
+ 801f17c: f6c0 0201    	<unknown>
+ 801f180: 2120         	movs	r1, #0x20
+ 801f182: 4790         	<unknown>
+ 801f184: 2000         	movs	r0, #0x0
+ 801f186: b008         	add	sp, #0x20
+ 801f188: bdb0         	pop	{r4, r5, r7, pc}
+ 801f18a: d4d4         	bmi	0x801f136 <HandleWirelessScreenPacket+0x6e> @ imm = #-0x58
+
+0801f18c <ContinueNativeKeyboardPacket>:
+ 801f18c: e92d 5ff0    	<unknown>
+ 801f190: f8df c004    	<unknown>
+ 801f194: 4760         	bx	r12
+ 801f196: 0000         	movs	r0, r0
+ 801f198: 99 47 01 08  	.word	0x08014799

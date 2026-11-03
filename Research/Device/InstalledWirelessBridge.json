@@ -1,0 +1,11 @@
+{
+  "Version": "WirelessBridgeV02",
+  "Plan": "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T081321Z\\Package\\WirelessBridgePlan.json",
+  "Report": "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T081321Z\\Report.json",
+  "ApplicationSha256": "5f32265fd4ee65bb832d5c9d8f5247d7e6be568cffbec6df8ffa05ad0b0adeb9",
+  "ConfigurationSha256": "ec043a846db79f9dc314b1cd8d79324c051c933b7458f51e5850520a22e967d8",
+  "RadioDocumentHardwareVerified": true,
+  "UsbDisconnectedVerified": true,
+  "Commissioning": "Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json",
+  "ProductionPackage": "Research/Firmware/WirelessUiV01"
+}

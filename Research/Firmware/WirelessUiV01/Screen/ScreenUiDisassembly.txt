@@ -1,0 +1,2095 @@
+
+D:\Git\Neos75\Code\Module\Screen\Runtime\Device\ScreenUi.elf:	file format elf32-littlearm
+
+Disassembly of section .NativeHook:
+
+0003c390 <ScreenUiNativeHook>:
+   3c390: f014 ff70    	bl	0x51274 <EnterDeviceScreenUi> @ imm = #0x14ee0
+
+Disassembly of section .NativeInformationHook:
+
+000353b2 <ScreenUiInformationHook>:
+   353b2: f01b fe03    	bl	0x50fbc <HandleScreenInformation> @ imm = #0x1bc06
+
+Disassembly of section .NativePacketHook:
+
+00035064 <ScreenUiPacketHook>:
+   35064: f01b bf22    	b.w	0x50eac <HandleScreenPacket> @ imm = #0x1be44
+
+Disassembly of section .Payload:
+
+00050000 <InitializeScreenRecovery>:
+   50000: f04f 5000    	mov.w	r0, #0x20000000
+   50004: 2100         	movs	r1, #0x0
+   50006: 6001         	str	r1, [r0]
+   50008: f248 10bd    	movw	r0, #0x81bd
+   5000c: 4700         	bx	r0
+
+0005000e <GuardScreenSysTick>:
+   5000e: b40f         	push	{r0, r1, r2, r3}
+   50010: f04f 5000    	mov.w	r0, #0x20000000
+   50014: 6800         	ldr	r0, [r0]
+   50016: f010 0f03    	tst.w	r0, #0x3
+   5001a: d111         	bne	0x50040 <ContinueScreenSysTick> @ imm = #0x22
+   5001c: 0c01         	lsrs	r1, r0, #0x10
+   5001e: f242 0200    	movw	r2, #0x2000
+   50022: 4291         	cmp	r1, r2
+   50024: d003         	beq	0x5002e <CheckScreenState> @ imm = #0x6
+   50026: 0d41         	lsrs	r1, r0, #0x15
+   50028: f5b1 6f80    	cmp.w	r1, #0x400
+   5002c: d108         	bne	0x50040 <ContinueScreenSysTick> @ imm = #0x10
+
+0005002e <CheckScreenState>:
+   5002e: 6801         	ldr	r1, [r0]
+   50030: 4a0e         	ldr	r2, [pc, #0x38]         @ 0x5006c <WaitForScreenReset+0x4>
+   50032: 4291         	cmp	r1, r2
+   50034: d104         	bne	0x50040 <ContinueScreenSysTick> @ imm = #0x8
+   50036: 6841         	ldr	r1, [r0, #0x4]
+   50038: b111         	cbz	r1, 0x50040 <ContinueScreenSysTick> @ imm = #0x4
+   5003a: 1e49         	subs	r1, r1, #0x1
+   5003c: 6041         	str	r1, [r0, #0x4]
+   5003e: d003         	beq	0x50048 <RecoverFromScreenSysTick> @ imm = #0x6
+
+00050040 <ContinueScreenSysTick>:
+   50040: bc0f         	pop	{r0, r1, r2, r3}
+   50042: f248 3c5d    	movw	r12, #0x835d
+   50046: 4760         	bx	r12
+
+00050048 <RecoverFromScreenSysTick>:
+   50048: bc0f         	pop	{r0, r1, r2, r3}
+   5004a: f000 b800    	b.w	0x5004e <RecoverScreenFault> @ imm = #0x0
+
+0005004e <RecoverScreenFault>:
+   5004e: b672         	cpsid i
+   50050: f04f 5000    	mov.w	r0, #0x20000000
+   50054: f04f 31a5    	mov.w	r1, #0xa5a5a5a5
+   50058: 6001         	str	r1, [r0]
+   5005a: f3bf 8f4f    	dsb	sy
+   5005e: 4804         	ldr	r0, [pc, #0x10]         @ 0x50070 <WaitForScreenReset+0x8>
+   50060: 4904         	ldr	r1, [pc, #0x10]         @ 0x50074 <WaitForScreenReset+0xc>
+   50062: 6001         	str	r1, [r0]
+   50064: f3bf 8f4f    	dsb	sy
+
+00050068 <WaitForScreenReset>:
+   50068: e7fe         	b	0x50068 <WaitForScreenReset> @ imm = #-0x4
+   5006a: 0000         	movs	r0, r0
+   5006c: 4e 53 55 49  	.word	0x4955534e
+   50070: 0c ed 00 e0  	.word	0xe000ed0c
+   50074: 04 00 fa 05  	.word	0x05fa0004
+
+00050078 <CreateScreenUiOnScreen>:
+   50078: 2800         	cmp	r0, #0x0
+   5007a: f000 80ac    	beq.w	0x501d6 <CreateScreenUiOnScreen+0x15e> @ imm = #0x158
+   5007e: b5f0         	push	{r4, r5, r6, r7, lr}
+   50080: af03         	add	r7, sp, #0xc
+   50082: f84d bd04    	str	r11, [sp, #-4]!
+   50086: 4615         	mov	r5, r2
+   50088: 4604         	mov	r4, r0
+   5008a: b919         	cbnz	r1, 0x50094 <CreateScreenUiOnScreen+0x1c> @ imm = #0x6
+   5008c: 2000         	movs	r0, #0x0
+   5008e: f000 f8d3    	bl	0x50238 <lv_obj_create> @ imm = #0x1a6
+   50092: 4601         	mov	r1, r0
+   50094: 6021         	str	r1, [r4]
+   50096: 4608         	mov	r0, r1
+   50098: 2100         	movs	r1, #0x0
+   5009a: 2200         	movs	r2, #0x0
+   5009c: f000 f93f    	bl	0x5031e <lv_obj_set_style_border_width> @ imm = #0x27e
+   500a0: 6820         	ldr	r0, [r4]
+   500a2: 2100         	movs	r1, #0x0
+   500a4: 2200         	movs	r2, #0x0
+   500a6: f000 f942    	bl	0x5032e <lv_obj_set_style_radius> @ imm = #0x284
+   500aa: 6826         	ldr	r6, [r4]
+   500ac: 2100         	movs	r1, #0x0
+   500ae: 4630         	mov	r0, r6
+   500b0: 2200         	movs	r2, #0x0
+   500b2: f000 f944    	bl	0x5033e <lv_obj_set_style_pad_top> @ imm = #0x288
+   500b6: 4630         	mov	r0, r6
+   500b8: 2100         	movs	r1, #0x0
+   500ba: 2200         	movs	r2, #0x0
+   500bc: f000 f947    	bl	0x5034e <lv_obj_set_style_pad_bottom> @ imm = #0x28e
+   500c0: 4630         	mov	r0, r6
+   500c2: 2100         	movs	r1, #0x0
+   500c4: 2200         	movs	r2, #0x0
+   500c6: f000 f94a    	bl	0x5035e <lv_obj_set_style_pad_left> @ imm = #0x294
+   500ca: 4630         	mov	r0, r6
+   500cc: 2100         	movs	r1, #0x0
+   500ce: 2200         	movs	r2, #0x0
+   500d0: f000 f94d    	bl	0x5036e <lv_obj_set_style_pad_right> @ imm = #0x29a
+   500d4: 6820         	ldr	r0, [r4]
+   500d6: 2100         	movs	r1, #0x0
+   500d8: 2200         	movs	r2, #0x0
+   500da: f000 f8f8    	bl	0x502ce <lv_obj_set_style_bg_color> @ imm = #0x1f0
+   500de: 6820         	ldr	r0, [r4]
+   500e0: 21ff         	movs	r1, #0xff
+   500e2: 2200         	movs	r2, #0x0
+   500e4: f000 f8fb    	bl	0x502de <lv_obj_set_style_bg_opa> @ imm = #0x1f6
+   500e8: 6820         	ldr	r0, [r4]
+   500ea: 2110         	movs	r1, #0x10
+   500ec: f000 f8b3    	bl	0x50256 <lv_obj_clear_flag> @ imm = #0x166
+   500f0: 6820         	ldr	r0, [r4]
+   500f2: f000 f8a6    	bl	0x50242 <lv_label_create> @ imm = #0x14c
+   500f6: f242 015a    	movw	r1, #0x205a
+   500fa: 6060         	str	r0, [r4, #0x4]
+   500fc: f000 f8c1    	bl	0x50282 <lv_obj_set_width> @ imm = #0x182
+   50100: 6860         	ldr	r0, [r4, #0x4]
+   50102: 2102         	movs	r1, #0x2
+   50104: 2200         	movs	r2, #0x0
+   50106: f000 f902    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #0x204
+   5010a: 6860         	ldr	r0, [r4, #0x4]
+   5010c: f24a 5114    	movw	r1, #0xa514
+   50110: 2200         	movs	r2, #0x0
+   50112: f000 f8ec    	bl	0x502ee <lv_obj_set_style_text_color> @ imm = #0x1d8
+   50116: 6860         	ldr	r0, [r4, #0x4]
+   50118: 2102         	movs	r1, #0x2
+   5011a: 2200         	movs	r2, #0x0
+   5011c: 2310         	movs	r3, #0x10
+   5011e: f000 f8b8    	bl	0x50292 <lv_obj_align>  @ imm = #0x170
+   50122: 6820         	ldr	r0, [r4]
+   50124: f000 f88d    	bl	0x50242 <lv_label_create> @ imm = #0x11a
+   50128: f242 015a    	movw	r1, #0x205a
+   5012c: 60a0         	str	r0, [r4, #0x8]
+   5012e: f000 f8a8    	bl	0x50282 <lv_obj_set_width> @ imm = #0x150
+   50132: 68a0         	ldr	r0, [r4, #0x8]
+   50134: 2102         	movs	r1, #0x2
+   50136: 2200         	movs	r2, #0x0
+   50138: f000 f8e9    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #0x1d2
+   5013c: 68a0         	ldr	r0, [r4, #0x8]
+   5013e: f64f 71ff    	movw	r1, #0xffff
+   50142: 2200         	movs	r2, #0x0
+   50144: f000 f8d3    	bl	0x502ee <lv_obj_set_style_text_color> @ imm = #0x1a6
+   50148: b125         	cbz	r5, 0x50154 <CreateScreenUiOnScreen+0xdc> @ imm = #0x8
+   5014a: 68a0         	ldr	r0, [r4, #0x8]
+   5014c: 4629         	mov	r1, r5
+   5014e: 2200         	movs	r2, #0x0
+   50150: f000 f8d5    	bl	0x502fe <lv_obj_set_style_text_font> @ imm = #0x1aa
+   50154: 68a0         	ldr	r0, [r4, #0x8]
+   50156: 2106         	movs	r1, #0x6
+   50158: 2200         	movs	r2, #0x0
+   5015a: f000 f910    	bl	0x5037e <lv_obj_set_style_text_line_space> @ imm = #0x220
+   5015e: 68a0         	ldr	r0, [r4, #0x8]
+   50160: 2109         	movs	r1, #0x9
+   50162: 2200         	movs	r2, #0x0
+   50164: 2300         	movs	r3, #0x0
+   50166: f000 f894    	bl	0x50292 <lv_obj_align>  @ imm = #0x128
+   5016a: 6820         	ldr	r0, [r4]
+   5016c: f000 f869    	bl	0x50242 <lv_label_create> @ imm = #0xd2
+   50170: f242 015a    	movw	r1, #0x205a
+   50174: 60e0         	str	r0, [r4, #0xc]
+   50176: f000 f884    	bl	0x50282 <lv_obj_set_width> @ imm = #0x108
+   5017a: 68e0         	ldr	r0, [r4, #0xc]
+   5017c: 2102         	movs	r1, #0x2
+   5017e: 2200         	movs	r2, #0x0
+   50180: f000 f8c5    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #0x18a
+   50184: 68e0         	ldr	r0, [r4, #0xc]
+   50186: f248 4110    	movw	r1, #0x8410
+   5018a: 2200         	movs	r2, #0x0
+   5018c: f000 f8af    	bl	0x502ee <lv_obj_set_style_text_color> @ imm = #0x15e
+   50190: 68e0         	ldr	r0, [r4, #0xc]
+   50192: 2105         	movs	r1, #0x5
+   50194: 2200         	movs	r2, #0x0
+   50196: f06f 030f    	mvn	r3, #0xf
+   5019a: f000 f87a    	bl	0x50292 <lv_obj_align>  @ imm = #0xf4
+   5019e: 6860         	ldr	r0, [r4, #0x4]
+   501a0: b128         	cbz	r0, 0x501ae <CreateScreenUiOnScreen+0x136> @ imm = #0xa
+   501a2: f241 41d5    	movw	r1, #0x14d5
+   501a6: f2c0 0105    	movt	r1, #0x5
+   501aa: f000 f84f    	bl	0x5024c <lv_label_set_text> @ imm = #0x9e
+   501ae: 68a0         	ldr	r0, [r4, #0x8]
+   501b0: b128         	cbz	r0, 0x501be <CreateScreenUiOnScreen+0x146> @ imm = #0xa
+   501b2: f241 41d6    	movw	r1, #0x14d6
+   501b6: f2c0 0105    	movt	r1, #0x5
+   501ba: f000 f847    	bl	0x5024c <lv_label_set_text> @ imm = #0x8e
+   501be: 68e0         	ldr	r0, [r4, #0xc]
+   501c0: f85d bb04    	ldr	r11, [sp], #4
+   501c4: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   501c8: b128         	cbz	r0, 0x501d6 <CreateScreenUiOnScreen+0x15e> @ imm = #0xa
+   501ca: f241 41d5    	movw	r1, #0x14d5
+   501ce: f2c0 0105    	movt	r1, #0x5
+   501d2: f000 b83b    	b.w	0x5024c <lv_label_set_text> @ imm = #0x76
+   501d6: 4770         	bx	lr
+
+000501d8 <SetScreenUiTitle>:
+   501d8: b158         	cbz	r0, 0x501f2 <SetScreenUiTitle+0x1a> @ imm = #0x16
+   501da: 6840         	ldr	r0, [r0, #0x4]
+   501dc: b148         	cbz	r0, 0x501f2 <SetScreenUiTitle+0x1a> @ imm = #0x12
+   501de: f241 42d5    	movw	r2, #0x14d5
+   501e2: f2c0 0205    	movt	r2, #0x5
+   501e6: 2900         	cmp	r1, #0x0
+   501e8: bf18         	it	ne
+   501ea: 460a         	movne	r2, r1
+   501ec: 4611         	mov	r1, r2
+   501ee: f000 b82d    	b.w	0x5024c <lv_label_set_text> @ imm = #0x5a
+   501f2: 4770         	bx	lr
+
+000501f4 <SetScreenUiMessage>:
+   501f4: b158         	cbz	r0, 0x5020e <SetScreenUiMessage+0x1a> @ imm = #0x16
+   501f6: 6880         	ldr	r0, [r0, #0x8]
+   501f8: b148         	cbz	r0, 0x5020e <SetScreenUiMessage+0x1a> @ imm = #0x12
+   501fa: f241 42d5    	movw	r2, #0x14d5
+   501fe: f2c0 0205    	movt	r2, #0x5
+   50202: 2900         	cmp	r1, #0x0
+   50204: bf18         	it	ne
+   50206: 460a         	movne	r2, r1
+   50208: 4611         	mov	r1, r2
+   5020a: f000 b81f    	b.w	0x5024c <lv_label_set_text> @ imm = #0x3e
+   5020e: 4770         	bx	lr
+
+00050210 <SetScreenUiStatus>:
+   50210: b158         	cbz	r0, 0x5022a <SetScreenUiStatus+0x1a> @ imm = #0x16
+   50212: 68c0         	ldr	r0, [r0, #0xc]
+   50214: b148         	cbz	r0, 0x5022a <SetScreenUiStatus+0x1a> @ imm = #0x12
+   50216: f241 42d5    	movw	r2, #0x14d5
+   5021a: f2c0 0205    	movt	r2, #0x5
+   5021e: 2900         	cmp	r1, #0x0
+   50220: bf18         	it	ne
+   50222: 460a         	movne	r2, r1
+   50224: 4611         	mov	r1, r2
+   50226: f000 b811    	b.w	0x5024c <lv_label_set_text> @ imm = #0x22
+   5022a: 4770         	bx	lr
+
+0005022c <LoadScreenUi>:
+   5022c: b118         	cbz	r0, 0x50236 <LoadScreenUi+0xa> @ imm = #0x6
+   5022e: 6800         	ldr	r0, [r0]
+   50230: b108         	cbz	r0, 0x50236 <LoadScreenUi+0xa> @ imm = #0x2
+   50232: f000 b815    	b.w	0x50260 <lv_disp_load_scr> @ imm = #0x2a
+   50236: 4770         	bx	lr
+
+00050238 <lv_obj_create>:
+   50238: f646 5119    	movw	r1, #0x6d19
+   5023c: f2c0 0102    	movt	r1, #0x2
+   50240: 4708         	bx	r1
+
+00050242 <lv_label_create>:
+   50242: f245 317d    	movw	r1, #0x537d
+   50246: f2c0 0102    	movt	r1, #0x2
+   5024a: 4708         	bx	r1
+
+0005024c <lv_label_set_text>:
+   5024c: f246 12a9    	movw	r2, #0x61a9
+   50250: f2c0 0202    	movt	r2, #0x2
+   50254: 4710         	bx	r2
+
+00050256 <lv_obj_clear_flag>:
+   50256: f646 32fd    	movw	r2, #0x6bfd
+   5025a: f2c0 0202    	movt	r2, #0x2
+   5025e: 4710         	bx	r2
+
+00050260 <lv_disp_load_scr>:
+   50260: f640 1101    	movw	r1, #0x901
+   50264: f2c0 0102    	movt	r1, #0x2
+   50268: 4708         	bx	r1
+
+0005026a <GetNativeActiveScreen>:
+   5026a: b5d0         	push	{r4, r6, r7, lr}
+   5026c: af02         	add	r7, sp, #0x8
+   5026e: f240 74d1    	movw	r4, #0x7d1
+   50272: f2c0 0402    	movt	r4, #0x2
+   50276: 47a0         	blx	r4
+   50278: f104 01a8    	add.w	r1, r4, #0xa8
+   5027c: e8bd 40d0    	pop.w	{r4, r6, r7, lr}
+   50280: 4708         	bx	r1
+
+00050282 <lv_obj_set_width>:
+   50282: f24a 6c05    	movw	r12, #0xa605
+   50286: 460a         	mov	r2, r1
+   50288: f2c0 0c02    	movt	r12, #0x2
+   5028c: 2101         	movs	r1, #0x1
+   5028e: 2300         	movs	r3, #0x0
+   50290: 4760         	bx	r12
+
+00050292 <lv_obj_align>:
+   50292: b5f0         	push	{r4, r5, r6, r7, lr}
+   50294: af03         	add	r7, sp, #0xc
+   50296: f84d 8d04    	str	r8, [sp, #-4]!
+   5029a: f24a 6405    	movw	r4, #0xa605
+   5029e: 4698         	mov	r8, r3
+   502a0: 4615         	mov	r5, r2
+   502a2: 460a         	mov	r2, r1
+   502a4: f2c0 0402    	movt	r4, #0x2
+   502a8: 2109         	movs	r1, #0x9
+   502aa: 2300         	movs	r3, #0x0
+   502ac: 4606         	mov	r6, r0
+   502ae: 47a0         	blx	r4
+   502b0: 4630         	mov	r0, r6
+   502b2: 2107         	movs	r1, #0x7
+   502b4: 462a         	mov	r2, r5
+   502b6: 2300         	movs	r3, #0x0
+   502b8: 47a0         	blx	r4
+   502ba: 4630         	mov	r0, r6
+   502bc: 2108         	movs	r1, #0x8
+   502be: 4642         	mov	r2, r8
+   502c0: 2300         	movs	r3, #0x0
+   502c2: 46a4         	mov	r12, r4
+   502c4: f85d 8b04    	ldr	r8, [sp], #4
+   502c8: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   502cc: 4760         	bx	r12
+
+000502ce <lv_obj_set_style_bg_color>:
+   502ce: f24a 6c05    	movw	r12, #0xa605
+   502d2: 4613         	mov	r3, r2
+   502d4: b28a         	uxth	r2, r1
+   502d6: f2c0 0c02    	movt	r12, #0x2
+   502da: 2120         	movs	r1, #0x20
+   502dc: 4760         	bx	r12
+
+000502de <lv_obj_set_style_bg_opa>:
+   502de: f24a 6c05    	movw	r12, #0xa605
+   502e2: 4613         	mov	r3, r2
+   502e4: 460a         	mov	r2, r1
+   502e6: f2c0 0c02    	movt	r12, #0x2
+   502ea: 2121         	movs	r1, #0x21
+   502ec: 4760         	bx	r12
+
+000502ee <lv_obj_set_style_text_color>:
+   502ee: f24a 6c05    	movw	r12, #0xa605
+   502f2: 4613         	mov	r3, r2
+   502f4: b28a         	uxth	r2, r1
+   502f6: f2c0 0c02    	movt	r12, #0x2
+   502fa: 2155         	movs	r1, #0x55
+   502fc: 4760         	bx	r12
+
+000502fe <lv_obj_set_style_text_font>:
+   502fe: f24a 6c05    	movw	r12, #0xa605
+   50302: 4613         	mov	r3, r2
+   50304: 460a         	mov	r2, r1
+   50306: f2c0 0c02    	movt	r12, #0x2
+   5030a: 2157         	movs	r1, #0x57
+   5030c: 4760         	bx	r12
+
+0005030e <lv_obj_set_style_text_align>:
+   5030e: f24a 6c05    	movw	r12, #0xa605
+   50312: 4613         	mov	r3, r2
+   50314: 460a         	mov	r2, r1
+   50316: f2c0 0c02    	movt	r12, #0x2
+   5031a: 215b         	movs	r1, #0x5b
+   5031c: 4760         	bx	r12
+
+0005031e <lv_obj_set_style_border_width>:
+   5031e: f24a 6c05    	movw	r12, #0xa605
+   50322: 4613         	mov	r3, r2
+   50324: 460a         	mov	r2, r1
+   50326: f2c0 0c02    	movt	r12, #0x2
+   5032a: 2132         	movs	r1, #0x32
+   5032c: 4760         	bx	r12
+
+0005032e <lv_obj_set_style_radius>:
+   5032e: f24a 6c05    	movw	r12, #0xa605
+   50332: 4613         	mov	r3, r2
+   50334: 460a         	mov	r2, r1
+   50336: f2c0 0c02    	movt	r12, #0x2
+   5033a: 210b         	movs	r1, #0xb
+   5033c: 4760         	bx	r12
+
+0005033e <lv_obj_set_style_pad_top>:
+   5033e: f24a 6c05    	movw	r12, #0xa605
+   50342: 4613         	mov	r3, r2
+   50344: 460a         	mov	r2, r1
+   50346: f2c0 0c02    	movt	r12, #0x2
+   5034a: 2110         	movs	r1, #0x10
+   5034c: 4760         	bx	r12
+
+0005034e <lv_obj_set_style_pad_bottom>:
+   5034e: f24a 6c05    	movw	r12, #0xa605
+   50352: 4613         	mov	r3, r2
+   50354: 460a         	mov	r2, r1
+   50356: f2c0 0c02    	movt	r12, #0x2
+   5035a: 2111         	movs	r1, #0x11
+   5035c: 4760         	bx	r12
+
+0005035e <lv_obj_set_style_pad_left>:
+   5035e: f24a 6c05    	movw	r12, #0xa605
+   50362: 4613         	mov	r3, r2
+   50364: 460a         	mov	r2, r1
+   50366: f2c0 0c02    	movt	r12, #0x2
+   5036a: 2112         	movs	r1, #0x12
+   5036c: 4760         	bx	r12
+
+0005036e <lv_obj_set_style_pad_right>:
+   5036e: f24a 6c05    	movw	r12, #0xa605
+   50372: 4613         	mov	r3, r2
+   50374: 460a         	mov	r2, r1
+   50376: f2c0 0c02    	movt	r12, #0x2
+   5037a: 2113         	movs	r1, #0x13
+   5037c: 4760         	bx	r12
+
+0005037e <lv_obj_set_style_text_line_space>:
+   5037e: f24a 6c05    	movw	r12, #0xa605
+   50382: 4613         	mov	r3, r2
+   50384: 460a         	mov	r2, r1
+   50386: f2c0 0c02    	movt	r12, #0x2
+   5038a: 2159         	movs	r1, #0x59
+   5038c: 4760         	bx	r12
+
+0005038e <lv_mem_alloc>:
+   5038e: f246 21c9    	movw	r1, #0x62c9
+   50392: f2c0 0102    	movt	r1, #0x2
+   50396: 4708         	bx	r1
+
+00050398 <lv_mem_free>:
+   50398: f246 4155    	movw	r1, #0x6455
+   5039c: f2c0 0102    	movt	r1, #0x2
+   503a0: 4708         	bx	r1
+
+000503a2 <lv_tick_get>:
+   503a2: f24c 4081    	movw	r0, #0xc481
+   503a6: f2c0 0002    	movt	r0, #0x2
+   503aa: 4700         	bx	r0
+
+000503ac <lv_timer_create>:
+   503ac: f24c 43bd    	movw	r3, #0xc4bd
+   503b0: f2c0 0302    	movt	r3, #0x2
+   503b4: 4718         	bx	r3
+   503b6: d4d4         	bmi	0x50362 <lv_obj_set_style_pad_left+0x4> @ imm = #-0x58
+
+000503b8 <InitializeMarkdown>:
+   503b8: b5f0         	push	{r4, r5, r6, r7, lr}
+   503ba: af03         	add	r7, sp, #0xc
+   503bc: e92d 0f00    	push.w	{r8, r9, r10, r11}
+   503c0: b081         	sub	sp, #0x4
+   503c2: 4689         	mov	r9, r1
+   503c4: 4682         	mov	r10, r0
+   503c6: 2521         	movs	r5, #0x21
+   503c8: f04f 0b00    	mov.w	r11, #0x0
+   503cc: f04f 0800    	mov.w	r8, #0x0
+   503d0: 6001         	str	r1, [r0]
+   503d2: bf00         	nop
+   503d4: f240 407f    	movw	r0, #0x47f
+   503d8: eb0a 0408    	add.w	r4, r10, r8
+   503dc: f2c0 0005    	movt	r0, #0x5
+   503e0: f844 0fe4    	str	r0, [r4, #228]!
+   503e4: f240 40e5    	movw	r0, #0x4e5
+   503e8: f2c0 0005    	movt	r0, #0x5
+   503ec: e9c4 0b01    	strd	r0, r11, [r4, #4]
+   503f0: e9c4 bb03    	strd	r11, r11, [r4, #12]
+   503f4: f8c4 b014    	str.w	r11, [r4, #0x14]
+   503f8: 2018         	movs	r0, #0x18
+   503fa: 8120         	strh	r0, [r4, #0x8]
+   503fc: f8d9 0000    	ldr.w	r0, [r9]
+   50400: f8c4 a010    	str.w	r10, [r4, #0x10]
+   50404: f7ff ff1d    	bl	0x50242 <lv_label_create> @ imm = #-0x1c6
+   50408: 4621         	mov	r1, r4
+   5040a: 2200         	movs	r2, #0x0
+   5040c: 4606         	mov	r6, r0
+   5040e: f84a 0025    	str.w	r0, [r10, r5, lsl #2]
+   50412: f7ff ff74    	bl	0x502fe <lv_obj_set_style_text_font> @ imm = #-0x118
+   50416: 4630         	mov	r0, r6
+   50418: 2101         	movs	r1, #0x1
+   5041a: 2200         	movs	r2, #0x0
+   5041c: f7ff ff77    	bl	0x5030e <lv_obj_set_style_text_align> @ imm = #-0x112
+   50420: 4630         	mov	r0, r6
+   50422: 2100         	movs	r1, #0x0
+   50424: 2200         	movs	r2, #0x0
+   50426: f7ff ff8a    	bl	0x5033e <lv_obj_set_style_pad_top> @ imm = #-0xec
+   5042a: 4630         	mov	r0, r6
+   5042c: 2100         	movs	r1, #0x0
+   5042e: 2200         	movs	r2, #0x0
+   50430: f7ff ff8d    	bl	0x5034e <lv_obj_set_style_pad_bottom> @ imm = #-0xe6
+   50434: 4630         	mov	r0, r6
+   50436: 2100         	movs	r1, #0x0
+   50438: 2200         	movs	r2, #0x0
+   5043a: f7ff ff90    	bl	0x5035e <lv_obj_set_style_pad_left> @ imm = #-0xe0
+   5043e: 4630         	mov	r0, r6
+   50440: 2100         	movs	r1, #0x0
+   50442: 2200         	movs	r2, #0x0
+   50444: f7ff ff93    	bl	0x5036e <lv_obj_set_style_pad_right> @ imm = #-0xda
+   50448: 4630         	mov	r0, r6
+   5044a: 2100         	movs	r1, #0x0
+   5044c: 2200         	movs	r2, #0x0
+   5044e: f7ff ff96    	bl	0x5037e <lv_obj_set_style_text_line_space> @ imm = #-0xd4
+   50452: f896 0038    	ldrb.w	r0, [r6, #0x38]
+   50456: f241 41d5    	movw	r1, #0x14d5
+   5045a: f040 0010    	orr	r0, r0, #0x10
+   5045e: f886 0038    	strb.w	r0, [r6, #0x38]
+   50462: 4630         	mov	r0, r6
+   50464: f2c0 0105    	movt	r1, #0x5
+   50468: f7ff fef0    	bl	0x5024c <lv_label_set_text> @ imm = #-0x220
+   5046c: 3501         	adds	r5, #0x1
+   5046e: 2d39         	cmp	r5, #0x39
+   50470: f108 0818    	add.w	r8, r8, #0x18
+   50474: d1ae         	bne	0x503d4 <InitializeMarkdown+0x1c> @ imm = #-0xa4
+   50476: b001         	add	sp, #0x4
+   50478: e8bd 0f00    	pop.w	{r8, r9, r10, r11}
+   5047c: bdf0         	pop	{r4, r5, r6, r7, pc}
+
+0005047e <GetGlyphDescription>:
+   5047e: 4684         	mov	r12, r0
+   50480: f5b2 4f60    	cmp.w	r2, #0xe000
+   50484: f04f 0000    	mov.w	r0, #0x0
+   50488: bf38         	it	lo
+   5048a: 4770         	bxlo	lr
+   5048c: b5d0         	push	{r4, r6, r7, lr}
+   5048e: af02         	add	r7, sp, #0x8
+   50490: f8dc 4010    	ldr.w	r4, [r12, #0x10]
+   50494: 6ae3         	ldr	r3, [r4, #0x2c]
+   50496: b313         	cbz	r3, 0x504de <GetGlyphDescription+0x60> @ imm = #0x44
+   50498: 6a60         	ldr	r0, [r4, #0x24]
+   5049a: f5a2 4260    	sub.w	r2, r2, #0xe000
+   5049e: 4282         	cmp	r2, r0
+   504a0: d21c         	bhs	0x504dc <GetGlyphDescription+0x5e> @ imm = #0x38
+   504a2: f8d4 e004    	ldr.w	lr, [r4, #0x4]
+   504a6: 2000         	movs	r0, #0x0
+   504a8: f1be 0f00    	cmp.w	lr, #0x0
+   504ac: d017         	beq	0x504de <GetGlyphDescription+0x60> @ imm = #0x2e
+   504ae: 6aa3         	ldr	r3, [r4, #0x28]
+   504b0: eb02 0242    	add.w	r2, r2, r2, lsl #1
+   504b4: 4473         	add	r3, lr
+   504b6: eb03 0282    	add.w	r2, r3, r2, lsl #2
+   504ba: 7a13         	ldrb	r3, [r2, #0x8]
+   504bc: 7a54         	ldrb	r4, [r2, #0x9]
+   504be: 88d2         	ldrh	r2, [r2, #0x6]
+   504c0: f8c1 000a    	str.w	r0, [r1, #0xa]
+   504c4: 80ca         	strh	r2, [r1, #0x6]
+   504c6: 7b8a         	ldrb	r2, [r1, #0xe]
+   504c8: f8c1 c000    	str.w	r12, [r1]
+   504cc: f002 00e0    	and	r0, r2, #0xe0
+   504d0: 3001         	adds	r0, #0x1
+   504d2: 7388         	strb	r0, [r1, #0xe]
+   504d4: 2001         	movs	r0, #0x1
+   504d6: 808c         	strh	r4, [r1, #0x4]
+   504d8: 810b         	strh	r3, [r1, #0x8]
+   504da: e000         	b	0x504de <GetGlyphDescription+0x60> @ imm = #0x0
+   504dc: 2000         	movs	r0, #0x0
+   504de: e8bd 40d0    	pop.w	{r4, r6, r7, lr}
+   504e2: 4770         	bx	lr
+
+000504e4 <GetGlyphBitmap>:
+   504e4: 4602         	mov	r2, r0
+   504e6: f5b1 4f60    	cmp.w	r1, #0xe000
+   504ea: f04f 0000    	mov.w	r0, #0x0
+   504ee: d312         	blo	0x50516 <GetGlyphBitmap+0x32> @ imm = #0x24
+   504f0: 6912         	ldr	r2, [r2, #0x10]
+   504f2: 6ad3         	ldr	r3, [r2, #0x2c]
+   504f4: 2b00         	cmp	r3, #0x0
+   504f6: bf08         	it	eq
+   504f8: 4770         	bxeq	lr
+   504fa: 6a53         	ldr	r3, [r2, #0x24]
+   504fc: f5a1 4060    	sub.w	r0, r1, #0xe000
+   50500: 4298         	cmp	r0, r3
+   50502: d209         	bhs	0x50518 <GetGlyphBitmap+0x34> @ imm = #0x12
+   50504: 6851         	ldr	r1, [r2, #0x4]
+   50506: b139         	cbz	r1, 0x50518 <GetGlyphBitmap+0x34> @ imm = #0xe
+   50508: 6a92         	ldr	r2, [r2, #0x28]
+   5050a: eb00 0040    	add.w	r0, r0, r0, lsl #1
+   5050e: 440a         	add	r2, r1
+   50510: f852 0020    	ldr.w	r0, [r2, r0, lsl #2]
+   50514: 4408         	add	r0, r1
+   50516: 4770         	bx	lr
+   50518: 2000         	movs	r0, #0x0
+   5051a: 4770         	bx	lr
+
+0005051c <QueueMarkdown>:
+   5051c: f1a2 033d    	sub.w	r3, r2, #0x3d
+   50520: f113 0f3d    	cmn.w	r3, #0x3d
+   50524: bf9e         	ittt	ls
+   50526: 2103         	movls	r1, #0x3
+   50528: 6381         	strls	r1, [r0, #0x38]
+   5052a: 4770         	bxls	lr
+   5052c: 6c03         	ldr	r3, [r0, #0x40]
+   5052e: f3bf 8f5f    	dmb	sy
+   50532: b103         	cbz	r3, 0x50536 <QueueMarkdown+0x1a> @ imm = #0x0
+   50534: 4770         	bx	lr
+   50536: b580         	push	{r7, lr}
+   50538: 466f         	mov	r7, sp
+   5053a: f100 0c48    	add.w	r12, r0, #0x48
+   5053e: f04f 0e00    	mov.w	lr, #0x0
+   50542: bf00         	nop
+   50544: f811 300e    	ldrb.w	r3, [r1, lr]
+   50548: f80c 300e    	strb.w	r3, [r12, lr]
+   5054c: f10e 0e01    	add.w	lr, lr, #0x1
+   50550: 4572         	cmp	r2, lr
+   50552: d1f7         	bne	0x50544 <QueueMarkdown+0x28> @ imm = #-0x12
+   50554: 6442         	str	r2, [r0, #0x44]
+   50556: 7809         	ldrb	r1, [r1]
+   50558: 2201         	movs	r2, #0x1
+   5055a: e9c0 120d    	strd	r1, r2, [r0, #52]
+   5055e: f3bf 8f5f    	dmb	sy
+   50562: 6402         	str	r2, [r0, #0x40]
+   50564: e8bd 4080    	pop.w	{r7, lr}
+   50568: 4770         	bx	lr
+   5056a: d4d4         	bmi	0x50516 <GetGlyphBitmap+0x32> @ imm = #-0x58
+
+0005056c <GetMarkdownStatus>:
+   5056c: 2200         	movs	r2, #0x0
+   5056e: 2300         	movs	r3, #0x0
+   50570: 54ca         	strb	r2, [r1, r3]
+   50572: 3301         	adds	r3, #0x1
+   50574: 2b20         	cmp	r3, #0x20
+   50576: d1fb         	bne	0x50570 <GetMarkdownStatus+0x4> @ imm = #-0xa
+   50578: b580         	push	{r7, lr}
+   5057a: 466f         	mov	r7, sp
+   5057c: f244 424d    	movw	r2, #0x444d
+   50580: f6c4 1255    	movt	r2, #0x4955
+   50584: 600a         	str	r2, [r1]
+   50586: 2201         	movs	r2, #0x1
+   50588: 710a         	strb	r2, [r1, #0x4]
+   5058a: 6c03         	ldr	r3, [r0, #0x40]
+   5058c: f3bf 8f5f    	dmb	sy
+   50590: b903         	cbnz	r3, 0x50594 <GetMarkdownStatus+0x28> @ imm = #0x0
+   50592: 6b82         	ldr	r2, [r0, #0x38]
+   50594: 714a         	strb	r2, [r1, #0x5]
+   50596: 6b42         	ldr	r2, [r0, #0x34]
+   50598: 2300         	movs	r3, #0x0
+   5059a: 718a         	strb	r2, [r1, #0x6]
+   5059c: 6ac2         	ldr	r2, [r0, #0x2c]
+   5059e: 71ca         	strb	r2, [r1, #0x7]
+   505a0: f890 203c    	ldrb.w	r2, [r0, #0x3c]
+   505a4: 720a         	strb	r2, [r1, #0x8]
+   505a6: f890 203d    	ldrb.w	r2, [r0, #0x3d]
+   505aa: 724a         	strb	r2, [r1, #0x9]
+   505ac: f8d0 c00c    	ldr.w	r12, [r0, #0xc]
+   505b0: f101 020c    	add.w	r2, r1, #0xc
+   505b4: fa2c fe03    	lsr.w	lr, r12, r3
+   505b8: 3308         	adds	r3, #0x8
+   505ba: 2b20         	cmp	r3, #0x20
+   505bc: f802 eb01    	strb	lr, [r2], #1
+   505c0: d1f8         	bne	0x505b4 <GetMarkdownStatus+0x48> @ imm = #-0x10
+   505c2: f8d0 c008    	ldr.w	r12, [r0, #0x8]
+   505c6: f101 0210    	add.w	r2, r1, #0x10
+   505ca: 2300         	movs	r3, #0x0
+   505cc: fa2c fe03    	lsr.w	lr, r12, r3
+   505d0: 3308         	adds	r3, #0x8
+   505d2: 2b20         	cmp	r3, #0x20
+   505d4: f802 eb01    	strb	lr, [r2], #1
+   505d8: d1f8         	bne	0x505cc <GetMarkdownStatus+0x60> @ imm = #-0x10
+   505da: f8d0 c01c    	ldr.w	r12, [r0, #0x1c]
+   505de: f101 0214    	add.w	r2, r1, #0x14
+   505e2: 2300         	movs	r3, #0x0
+   505e4: fa2c fe03    	lsr.w	lr, r12, r3
+   505e8: 3308         	adds	r3, #0x8
+   505ea: 2b20         	cmp	r3, #0x20
+   505ec: f802 eb01    	strb	lr, [r2], #1
+   505f0: d1f8         	bne	0x505e4 <GetMarkdownStatus+0x78> @ imm = #-0x10
+   505f2: f8d0 c020    	ldr.w	r12, [r0, #0x20]
+   505f6: f101 0218    	add.w	r2, r1, #0x18
+   505fa: 2300         	movs	r3, #0x0
+   505fc: fa2c fe03    	lsr.w	lr, r12, r3
+   50600: 3308         	adds	r3, #0x8
+   50602: 2b20         	cmp	r3, #0x20
+   50604: f802 eb01    	strb	lr, [r2], #1
+   50608: d1f8         	bne	0x505fc <GetMarkdownStatus+0x90> @ imm = #-0x10
+   5060a: 6980         	ldr	r0, [r0, #0x18]
+   5060c: 311c         	adds	r1, #0x1c
+   5060e: 2200         	movs	r2, #0x0
+   50610: fa20 f302    	lsr.w	r3, r0, r2
+   50614: 3208         	adds	r2, #0x8
+   50616: 2a20         	cmp	r2, #0x20
+   50618: f801 3b01    	strb	r3, [r1], #1
+   5061c: d1f8         	bne	0x50610 <GetMarkdownStatus+0xa4> @ imm = #-0x10
+   5061e: bd80         	pop	{r7, pc}
+
+00050620 <UpdateMarkdown>:
+   50620: b5f0         	push	{r4, r5, r6, r7, lr}
+   50622: af03         	add	r7, sp, #0xc
+   50624: e92d 0f00    	push.w	{r8, r9, r10, r11}
+   50628: b09b         	sub	sp, #0x6c
+   5062a: 4680         	mov	r8, r0
+   5062c: f241 30bc    	movw	r0, #0x13bc
+   50630: eb08 0100    	add.w	r1, r8, r0
+   50634: 2200         	movs	r2, #0x0
+   50636: f3bf 8f5f    	dmb	sy
+   5063a: bf00         	nop
+   5063c: e851 0f00    	ldrex	r0, [r1]
+   50640: e841 2300    	strex	r3, r2, [r1]
+   50644: 2b00         	cmp	r3, #0x0
+   50646: d1f9         	bne	0x5063c <UpdateMarkdown+0x1c> @ imm = #-0xe
+   50648: f3bf 8f5f    	dmb	sy
+   5064c: b190         	cbz	r0, 0x50674 <UpdateMarkdown+0x54> @ imm = #0x24
+   5064e: f8d8 102c    	ldr.w	r1, [r8, #0x2c]
+   50652: b179         	cbz	r1, 0x50674 <UpdateMarkdown+0x54> @ imm = #0x1e
+   50654: f8d8 1020    	ldr.w	r1, [r8, #0x20]
+   50658: b161         	cbz	r1, 0x50674 <UpdateMarkdown+0x54> @ imm = #0x18
+   5065a: f8d8 201c    	ldr.w	r2, [r8, #0x1c]
+   5065e: 4410         	add	r0, r2
+   50660: ea20 70e0    	bic.w	r0, r0, r0, asr #31
+   50664: 4288         	cmp	r0, r1
+   50666: bf28         	it	hs
+   50668: 1e48         	subhs	r0, r1, #0x1
+   5066a: f8c8 001c    	str.w	r0, [r8, #0x1c]
+   5066e: 2001         	movs	r0, #0x1
+   50670: f8c8 0030    	str.w	r0, [r8, #0x30]
+   50674: f8d8 0040    	ldr.w	r0, [r8, #0x40]
+   50678: f3bf 8f5f    	dmb	sy
+   5067c: 2800         	cmp	r0, #0x0
+   5067e: f8cd 8024    	str.w	r8, [sp, #0x24]
+   50682: d062         	beq	0x5074a <UpdateMarkdown+0x12a> @ imm = #0xc4
+   50684: f8d8 0044    	ldr.w	r0, [r8, #0x44]
+   50688: 2803         	cmp	r0, #0x3
+   5068a: d356         	blo	0x5073a <UpdateMarkdown+0x11a> @ imm = #0xac
+   5068c: f898 1048    	ldrb.w	r1, [r8, #0x48]
+   50690: f8b8 4049    	ldrh.w	r4, [r8, #0x49]
+   50694: 280f         	cmp	r0, #0xf
+   50696: bf08         	it	eq
+   50698: 2901         	cmpeq	r1, #0x1
+   5069a: f000 81d9    	beq.w	0x50a50 <UpdateMarkdown+0x430> @ imm = #0x3b2
+   5069e: f8b8 203c    	ldrh.w	r2, [r8, #0x3c]
+   506a2: 4294         	cmp	r4, r2
+   506a4: d149         	bne	0x5073a <UpdateMarkdown+0x11a> @ imm = #0x92
+   506a6: 2808         	cmp	r0, #0x8
+   506a8: f0c0 8220    	blo.w	0x50aec <UpdateMarkdown+0x4cc> @ imm = #0x440
+   506ac: 2902         	cmp	r1, #0x2
+   506ae: f040 821d    	bne.w	0x50aec <UpdateMarkdown+0x4cc> @ imm = #0x43a
+   506b2: f8d8 1004    	ldr.w	r1, [r8, #0x4]
+   506b6: 2900         	cmp	r1, #0x0
+   506b8: f000 8240    	beq.w	0x50b3c <UpdateMarkdown+0x51c> @ imm = #0x480
+   506bc: f8d8 102c    	ldr.w	r1, [r8, #0x2c]
+   506c0: 2900         	cmp	r1, #0x0
+   506c2: f040 823b    	bne.w	0x50b3c <UpdateMarkdown+0x51c> @ imm = #0x476
+   506c6: f8d8 100c    	ldr.w	r1, [r8, #0xc]
+   506ca: f8d8 204b    	ldr.w	r2, [r8, #0x4b]
+   506ce: 428a         	cmp	r2, r1
+   506d0: f040 8234    	bne.w	0x50b3c <UpdateMarkdown+0x51c> @ imm = #0x468
+   506d4: f8d8 1008    	ldr.w	r1, [r8, #0x8]
+   506d8: 1fc4         	subs	r4, r0, #0x7
+   506da: 1a88         	subs	r0, r1, r2
+   506dc: 4284         	cmp	r4, r0
+   506de: f200 822d    	bhi.w	0x50b3c <UpdateMarkdown+0x51c> @ imm = #0x45a
+   506e2: f108 0c4f    	add.w	r12, r8, #0x4f
+   506e6: 4663         	mov	r3, r12
+   506e8: 4620         	mov	r0, r4
+   506ea: f813 1b01    	ldrb	r1, [r3], #1
+   506ee: f8d8 6004    	ldr.w	r6, [r8, #0x4]
+   506f2: 3801         	subs	r0, #0x1
+   506f4: 54b1         	strb	r1, [r6, r2]
+   506f6: f102 0201    	add.w	r2, r2, #0x1
+   506fa: d1f6         	bne	0x506ea <UpdateMarkdown+0xca> @ imm = #-0x14
+   506fc: f8d8 2014    	ldr.w	r2, [r8, #0x14]
+   50700: f248 3620    	movw	r6, #0x8320
+   50704: 2300         	movs	r3, #0x0
+   50706: f6ce 56b8    	movt	r6, #0xedb8
+   5070a: f81c 0003    	ldrb.w	r0, [r12, r3]
+   5070e: 2508         	movs	r5, #0x8
+   50710: 4042         	eors	r2, r0
+   50712: bf00         	nop
+   50714: ea86 0052    	eor.w	r0, r6, r2, lsr #1
+   50718: 07d1         	lsls	r1, r2, #0x1f
+   5071a: bf08         	it	eq
+   5071c: 0850         	lsreq	r0, r2, #0x1
+   5071e: 3d01         	subs	r5, #0x1
+   50720: 4602         	mov	r2, r0
+   50722: d1f7         	bne	0x50714 <UpdateMarkdown+0xf4> @ imm = #-0x12
+   50724: 3301         	adds	r3, #0x1
+   50726: 42a3         	cmp	r3, r4
+   50728: d1ef         	bne	0x5070a <UpdateMarkdown+0xea> @ imm = #-0x22
+   5072a: f8d8 000c    	ldr.w	r0, [r8, #0xc]
+   5072e: f8c8 2014    	str.w	r2, [r8, #0x14]
+   50732: 4420         	add	r0, r4
+   50734: f8c8 000c    	str.w	r0, [r8, #0xc]
+   50738: e1f8         	b	0x50b2c <UpdateMarkdown+0x50c> @ imm = #0x3f0
+   5073a: 2006         	movs	r0, #0x6
+   5073c: f8c8 0038    	str.w	r0, [r8, #0x38]
+   50740: 2000         	movs	r0, #0x0
+   50742: f3bf 8f5f    	dmb	sy
+   50746: f8c8 0040    	str.w	r0, [r8, #0x40]
+   5074a: f8d8 0030    	ldr.w	r0, [r8, #0x30]
+   5074e: 2800         	cmp	r0, #0x0
+   50750: f000 817a    	beq.w	0x50a48 <UpdateMarkdown+0x428> @ imm = #0x2f4
+   50754: 2000         	movs	r0, #0x0
+   50756: f8c8 0030    	str.w	r0, [r8, #0x30]
+   5075a: 4640         	mov	r0, r8
+   5075c: f000 fa16    	bl	0x50b8c <ClearRows>     @ imm = #0x42c
+   50760: f8d8 002c    	ldr.w	r0, [r8, #0x2c]
+   50764: 2800         	cmp	r0, #0x0
+   50766: f000 816f    	beq.w	0x50a48 <UpdateMarkdown+0x428> @ imm = #0x2de
+   5076a: e9d8 5007    	ldrd	r5, r0, [r8, #28]
+   5076e: 4285         	cmp	r5, r0
+   50770: f080 8111    	bhs.w	0x50996 <UpdateMarkdown+0x376> @ imm = #0x222
+   50774: f8d8 0004    	ldr.w	r0, [r8, #0x4]
+   50778: f8d8 1028    	ldr.w	r1, [r8, #0x28]
+   5077c: f100 0220    	add.w	r2, r0, #0x20
+   50780: 4408         	add	r0, r1
+   50782: 900b         	str	r0, [sp, #0x2c]
+   50784: f108 00e4    	add.w	r0, r8, #0xe4
+   50788: 9001         	str	r0, [sp, #0x4]
+   5078a: f108 0084    	add.w	r0, r8, #0x84
+   5078e: 9000         	str	r0, [sp]
+   50790: f44f 40c0    	mov.w	r0, #0x6000
+   50794: f241 4ac4    	movw	r10, #0x14c4
+   50798: f508 7649    	add.w	r6, r8, #0x324
+   5079c: f208 3b25    	addw	r11, r8, #0x325
+   507a0: 9007         	str	r0, [sp, #0x1c]
+   507a2: 2126         	movs	r1, #0x26
+   507a4: f2c0 0a05    	movt	r10, #0x5
+   507a8: 2000         	movs	r0, #0x0
+   507aa: 9202         	str	r2, [sp, #0x8]
+   507ac: 9008         	str	r0, [sp, #0x20]
+   507ae: 960d         	str	r6, [sp, #0x34]
+   507b0: 9802         	ldr	r0, [sp, #0x8]
+   507b2: eb00 02c5    	add.w	r2, r0, r5, lsl #3
+   507b6: 7990         	ldrb	r0, [r2, #0x6]
+   507b8: 9006         	str	r0, [sp, #0x18]
+   507ba: f000 003f    	and	r0, r0, #0x3f
+   507be: 4408         	add	r0, r1
+   507c0: f5b0 7fa9    	cmp.w	r0, #0x152
+   507c4: 9005         	str	r0, [sp, #0x14]
+   507c6: f200 80e4    	bhi.w	0x50992 <UpdateMarkdown+0x372> @ imm = #0x1c8
+   507ca: 8890         	ldrh	r0, [r2, #0x4]
+   507cc: 2800         	cmp	r0, #0x0
+   507ce: f000 808d    	beq.w	0x508ec <UpdateMarkdown+0x2cc> @ imm = #0x11a
+   507d2: e9cd 1503    	strd	r1, r5, [sp, #12]
+   507d6: f44f 3c80    	mov.w	r12, #0x10000
+   507da: f04f 0901    	mov.w	r9, #0x1
+   507de: 2300         	movs	r3, #0x0
+   507e0: 2100         	movs	r1, #0x0
+   507e2: 920c         	str	r2, [sp, #0x30]
+   507e4: f8d8 0004    	ldr.w	r0, [r8, #0x4]
+   507e8: 6812         	ldr	r2, [r2]
+   507ea: 9d0b         	ldr	r5, [sp, #0x2c]
+   507ec: 4410         	add	r0, r2
+   507ee: eb00 0641    	add.w	r6, r0, r1, lsl #1
+   507f2: f810 2011    	ldrb.w	r2, [r0, r1, lsl #1]
+   507f6: 7870         	ldrb	r0, [r6, #0x1]
+   507f8: 464c         	mov	r4, r9
+   507fa: ea42 2e00    	orr.w	lr, r2, r0, lsl #8
+   507fe: fa1f f68e    	uxth.w	r6, lr
+   50802: 0070         	lsls	r0, r6, #0x1
+   50804: fa10 f08e    	uxtah	r0, r0, lr
+   50808: eb05 0080    	add.w	r0, r5, r0, lsl #2
+   5080c: f890 9008    	ldrb.w	r9, [r0, #0x8]
+   50810: 8885         	ldrh	r5, [r0, #0x4]
+   50812: 454c         	cmp	r4, r9
+   50814: bf88         	it	hi
+   50816: 46a1         	movhi	r9, r4
+   50818: 45ac         	cmp	r12, r5
+   5081a: d103         	bne	0x50824 <UpdateMarkdown+0x204> @ imm = #0x6
+   5081c: 9d0d         	ldr	r5, [sp, #0x34]
+   5081e: 461c         	mov	r4, r3
+   50820: e041         	b	0x508a6 <UpdateMarkdown+0x286> @ imm = #0x82
+   50822: bf00         	nop
+   50824: 9c0d         	ldr	r4, [sp, #0x34]
+   50826: 960a         	str	r6, [sp, #0x28]
+   50828: f5bc 3f80    	cmp.w	r12, #0x10000
+   5082c: f04f 0623    	mov.w	r6, #0x23
+   50830: d002         	beq	0x50838 <UpdateMarkdown+0x218> @ imm = #0x4
+   50832: 54e6         	strb	r6, [r4, r3]
+   50834: 8885         	ldrh	r5, [r0, #0x4]
+   50836: 3301         	adds	r3, #0x1
+   50838: 0ae8         	lsrs	r0, r5, #0xb
+   5083a: 0200         	lsls	r0, r0, #0x8
+   5083c: f241 0885    	movw	r8, #0x1085
+   50840: eba0 20d5    	sub.w	r0, r0, r5, lsr #11
+   50844: f6c0 0842    	movt	r8, #0x842
+   50848: fba0 0c08    	umull	r0, r12, r0, r8
+   5084c: f3c5 1045    	ubfx	r0, r5, #0x5, #0x6
+   50850: f244 1405    	movw	r4, #0x4105
+   50854: ebc0 2000    	rsb	r0, r0, r0, lsl #8
+   50858: f2c0 4410    	movt	r4, #0x410
+   5085c: fba0 0404    	umull	r0, r4, r0, r4
+   50860: f005 001f    	and	r0, r5, #0x1f
+   50864: ebc0 2000    	rsb	r0, r0, r0, lsl #8
+   50868: fba0 0808    	umull	r0, r8, r0, r8
+   5086c: ea48 400c    	orr.w	r0, r8, r12, lsl #16
+   50870: ea40 2404    	orr.w	r4, r0, r4, lsl #8
+   50874: 980d         	ldr	r0, [sp, #0x34]
+   50876: 54c6         	strb	r6, [r0, r3]
+   50878: 2014         	movs	r0, #0x14
+   5087a: bf00         	nop
+   5087c: fa24 f600    	lsr.w	r6, r4, r0
+   50880: f006 060f    	and	r6, r6, #0xf
+   50884: f81a 6006    	ldrb.w	r6, [r10, r6]
+   50888: 3804         	subs	r0, #0x4
+   5088a: f80b 6003    	strb.w	r6, [r11, r3]
+   5088e: 1d06         	adds	r6, r0, #0x4
+   50890: f103 0301    	add.w	r3, r3, #0x1
+   50894: d1f2         	bne	0x5087c <UpdateMarkdown+0x25c> @ imm = #-0x1c
+   50896: 46ac         	mov	r12, r5
+   50898: 9d0d         	ldr	r5, [sp, #0x34]
+   5089a: e9dd 8609    	ldrd	r8, r6, [sp, #36]
+   5089e: 1c9c         	adds	r4, r3, #0x2
+   508a0: 2020         	movs	r0, #0x20
+   508a2: f80b 0003    	strb.w	r0, [r11, r3]
+   508a6: f506 4060    	add.w	r0, r6, #0xe000
+   508aa: 0b00         	lsrs	r0, r0, #0xc
+   508ac: 30e0         	adds	r0, #0xe0
+   508ae: 2602         	movs	r6, #0x2
+   508b0: 192b         	adds	r3, r5, r4
+   508b2: 5528         	strb	r0, [r5, r4]
+   508b4: ea4f 109e    	lsr.w	r0, lr, #0x6
+   508b8: f366 129f    	bfi	r2, r6, #6, #26
+   508bc: f366 109f    	bfi	r0, r6, #6, #26
+   508c0: 709a         	strb	r2, [r3, #0x2]
+   508c2: 9a0c         	ldr	r2, [sp, #0x30]
+   508c4: 7058         	strb	r0, [r3, #0x1]
+   508c6: 8890         	ldrh	r0, [r2, #0x4]
+   508c8: 3101         	adds	r1, #0x1
+   508ca: 4281         	cmp	r1, r0
+   508cc: f104 0303    	add.w	r3, r4, #0x3
+   508d0: d388         	blo	0x507e4 <UpdateMarkdown+0x1c4> @ imm = #-0xf0
+   508d2: 2023         	movs	r0, #0x23
+   508d4: 54e8         	strb	r0, [r5, r3]
+   508d6: 9807         	ldr	r0, [sp, #0x1c]
+   508d8: 3404         	adds	r4, #0x4
+   508da: 4284         	cmp	r4, r0
+   508dc: f04f 0000    	mov.w	r0, #0x0
+   508e0: 5528         	strb	r0, [r5, r4]
+   508e2: e9dd 1503    	ldrd	r1, r5, [sp, #12]
+   508e6: d905         	bls	0x508f4 <UpdateMarkdown+0x2d4> @ imm = #0xa
+   508e8: e053         	b	0x50992 <UpdateMarkdown+0x372> @ imm = #0xa6
+   508ea: bf00         	nop
+   508ec: 2400         	movs	r4, #0x0
+   508ee: 7034         	strb	r4, [r6]
+   508f0: f04f 0901    	mov.w	r9, #0x1
+   508f4: 9b08         	ldr	r3, [sp, #0x20]
+   508f6: 4688         	mov	r8, r1
+   508f8: 9901         	ldr	r1, [sp, #0x4]
+   508fa: eb03 0043    	add.w	r0, r3, r3, lsl #1
+   508fe: eb01 00c0    	add.w	r0, r1, r0, lsl #3
+   50902: 9900         	ldr	r1, [sp]
+   50904: f8a0 9008    	strh.w	r9, [r0, #0x8]
+   50908: 79d0         	ldrb	r0, [r2, #0x7]
+   5090a: f851 6023    	ldr.w	r6, [r1, r3, lsl #2]
+   5090e: f44f 71e0    	mov.w	r1, #0x1c0
+   50912: eba1 0140    	sub.w	r1, r1, r0, lsl #1
+   50916: 4630         	mov	r0, r6
+   50918: 940a         	str	r4, [sp, #0x28]
+   5091a: 4691         	mov	r9, r2
+   5091c: f7ff fcb1    	bl	0x50282 <lv_obj_set_width> @ imm = #-0x69e
+   50920: f899 0007    	ldrb.w	r0, [r9, #0x7]
+   50924: 2110         	movs	r1, #0x10
+   50926: eb01 0240    	add.w	r2, r1, r0, lsl #1
+   5092a: fa0f f388    	sxth.w	r3, r8
+   5092e: f8dd 8024    	ldr.w	r8, [sp, #0x24]
+   50932: 4630         	mov	r0, r6
+   50934: 2101         	movs	r1, #0x1
+   50936: f7ff fcac    	bl	0x50292 <lv_obj_align>  @ imm = #-0x6a8
+   5093a: 9c06         	ldr	r4, [sp, #0x18]
+   5093c: f641 01e5    	movw	r1, #0x18e5
+   50940: f004 00c0    	and	r0, r4, #0xc0
+   50944: 2840         	cmp	r0, #0x40
+   50946: 4630         	mov	r0, r6
+   50948: f04f 0200    	mov.w	r2, #0x0
+   5094c: bf08         	it	eq
+   5094e: f241 01e5    	movweq	r1, #0x10e5
+   50952: f7ff fcbc    	bl	0x502ce <lv_obj_set_style_bg_color> @ imm = #-0x688
+   50956: 2100         	movs	r1, #0x0
+   50958: 4630         	mov	r0, r6
+   5095a: 2200         	movs	r2, #0x0
+   5095c: 2c3f         	cmp	r4, #0x3f
+   5095e: bf88         	it	hi
+   50960: 21ff         	movhi	r1, #0xff
+   50962: f7ff fcbc    	bl	0x502de <lv_obj_set_style_bg_opa> @ imm = #-0x688
+   50966: 4630         	mov	r0, r6
+   50968: 9e0d         	ldr	r6, [sp, #0x34]
+   5096a: 4631         	mov	r1, r6
+   5096c: f7ff fc6e    	bl	0x5024c <lv_label_set_text> @ imm = #-0x724
+   50970: f8d8 0020    	ldr.w	r0, [r8, #0x20]
+   50974: 990a         	ldr	r1, [sp, #0x28]
+   50976: 3501         	adds	r5, #0x1
+   50978: 4285         	cmp	r5, r0
+   5097a: d20a         	bhs	0x50992 <UpdateMarkdown+0x372> @ imm = #0x14
+   5097c: 9807         	ldr	r0, [sp, #0x1c]
+   5097e: 1a40         	subs	r0, r0, r1
+   50980: 9007         	str	r0, [sp, #0x1c]
+   50982: 9808         	ldr	r0, [sp, #0x20]
+   50984: 9905         	ldr	r1, [sp, #0x14]
+   50986: 2817         	cmp	r0, #0x17
+   50988: f100 0001    	add.w	r0, r0, #0x1
+   5098c: 9008         	str	r0, [sp, #0x20]
+   5098e: f4ff af0f    	blo.w	0x507b0 <UpdateMarkdown+0x190> @ imm = #-0x1e2
+   50992: f8d8 501c    	ldr.w	r5, [r8, #0x1c]
+   50996: f646 7052    	movw	r0, #0x6f52
+   5099a: f2c2 0077    	movt	r0, #0x2077
+   5099e: f64c 42cd    	movw	r2, #0xcccd
+   509a2: 1c6b         	adds	r3, r5, #0x1
+   509a4: 9011         	str	r0, [sp, #0x44]
+   509a6: 2100         	movs	r1, #0x0
+   509a8: f6cc 42cc    	movt	r2, #0xcccc
+   509ac: a80e         	add	r0, sp, #0x38
+   509ae: bf00         	nop
+   509b0: fba3 6502    	umull	r6, r5, r3, r2
+   509b4: 08ee         	lsrs	r6, r5, #0x3
+   509b6: eb06 0586    	add.w	r5, r6, r6, lsl #2
+   509ba: eba3 0545    	sub.w	r5, r3, r5, lsl #1
+   509be: f045 0530    	orr	r5, r5, #0x30
+   509c2: 5445         	strb	r5, [r0, r1]
+   509c4: 3101         	adds	r1, #0x1
+   509c6: 2b09         	cmp	r3, #0x9
+   509c8: 4633         	mov	r3, r6
+   509ca: d8f1         	bhi	0x509b0 <UpdateMarkdown+0x390> @ imm = #-0x1e
+   509cc: b169         	cbz	r1, 0x509ea <UpdateMarkdown+0x3ca> @ imm = #0x1a
+   509ce: ae11         	add	r6, sp, #0x44
+   509d0: 1e43         	subs	r3, r0, #0x1
+   509d2: 1d35         	adds	r5, r6, #0x4
+   509d4: 2600         	movs	r6, #0x0
+   509d6: bf00         	nop
+   509d8: 5c5c         	ldrb	r4, [r3, r1]
+   509da: 3b01         	subs	r3, #0x1
+   509dc: 55ac         	strb	r4, [r5, r6]
+   509de: 3601         	adds	r6, #0x1
+   509e0: 42b1         	cmp	r1, r6
+   509e2: d1f9         	bne	0x509d8 <UpdateMarkdown+0x3b8> @ imm = #-0xe
+   509e4: f106 0c04    	add.w	r12, r6, #0x4
+   509e8: e001         	b	0x509ee <UpdateMarkdown+0x3ce> @ imm = #0x2
+   509ea: f04f 0c04    	mov.w	r12, #0x4
+   509ee: a911         	add	r1, sp, #0x44
+   509f0: f642 7520    	movw	r5, #0x2f20
+   509f4: eb01 060c    	add.w	r6, r1, r12
+   509f8: f821 500c    	strh.w	r5, [r1, r12]
+   509fc: 2520         	movs	r5, #0x20
+   509fe: 70b5         	strb	r5, [r6, #0x2]
+   50a00: f8d8 5020    	ldr.w	r5, [r8, #0x20]
+   50a04: 2600         	movs	r6, #0x0
+   50a06: bf00         	nop
+   50a08: fba5 4302    	umull	r4, r3, r5, r2
+   50a0c: 08db         	lsrs	r3, r3, #0x3
+   50a0e: eb03 0483    	add.w	r4, r3, r3, lsl #2
+   50a12: eba5 0444    	sub.w	r4, r5, r4, lsl #1
+   50a16: f044 0430    	orr	r4, r4, #0x30
+   50a1a: 5584         	strb	r4, [r0, r6]
+   50a1c: 3601         	adds	r6, #0x1
+   50a1e: 2d09         	cmp	r5, #0x9
+   50a20: 461d         	mov	r5, r3
+   50a22: d8f1         	bhi	0x50a08 <UpdateMarkdown+0x3e8> @ imm = #-0x1e
+   50a24: f10c 0203    	add.w	r2, r12, #0x3
+   50a28: b13e         	cbz	r6, 0x50a3a <UpdateMarkdown+0x41a> @ imm = #0xe
+   50a2a: 3801         	subs	r0, #0x1
+   50a2c: 5d85         	ldrb	r5, [r0, r6]
+   50a2e: 1c53         	adds	r3, r2, #0x1
+   50a30: 3e01         	subs	r6, #0x1
+   50a32: 548d         	strb	r5, [r1, r2]
+   50a34: 461a         	mov	r2, r3
+   50a36: d1f9         	bne	0x50a2c <UpdateMarkdown+0x40c> @ imm = #-0xe
+   50a38: e000         	b	0x50a3c <UpdateMarkdown+0x41c> @ imm = #0x0
+   50a3a: 4613         	mov	r3, r2
+   50a3c: f8d8 0000    	ldr.w	r0, [r8]
+   50a40: 2200         	movs	r2, #0x0
+   50a42: 54ca         	strb	r2, [r1, r3]
+   50a44: f7ff fbe4    	bl	0x50210 <SetScreenUiStatus> @ imm = #-0x838
+   50a48: b01b         	add	sp, #0x6c
+   50a4a: e8bd 0f00    	pop.w	{r8, r9, r10, r11}
+   50a4e: bdf0         	pop	{r4, r5, r6, r7, pc}
+   50a50: f8d8 504b    	ldr.w	r5, [r8, #0x4b]
+   50a54: f64f 71e0    	movw	r1, #0xffe0
+   50a58: f1a5 0020    	sub.w	r0, r5, #0x20
+   50a5c: f2c0 0103    	movt	r1, #0x3
+   50a60: 4288         	cmp	r0, r1
+   50a62: f04f 0003    	mov.w	r0, #0x3
+   50a66: f63f ae69    	bhi.w	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x32e
+   50a6a: f8d8 6053    	ldr.w	r6, [r8, #0x53]
+   50a6e: f5b6 3f80    	cmp.w	r6, #0x10000
+   50a72: f63f ae63    	bhi.w	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x33a
+   50a76: 2c00         	cmp	r4, #0x0
+   50a78: f43f ae60    	beq.w	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x340
+   50a7c: 4640         	mov	r0, r8
+   50a7e: f000 f885    	bl	0x50b8c <ClearRows>     @ imm = #0x10a
+   50a82: f8d8 0004    	ldr.w	r0, [r8, #0x4]
+   50a86: 4641         	mov	r1, r8
+   50a88: f04f 0800    	mov.w	r8, #0x0
+   50a8c: f8c1 802c    	str.w	r8, [r1, #0x2c]
+   50a90: b108         	cbz	r0, 0x50a96 <UpdateMarkdown+0x476> @ imm = #0x2
+   50a92: f7ff fc81    	bl	0x50398 <lv_mem_free>   @ imm = #-0x6fe
+   50a96: 4628         	mov	r0, r5
+   50a98: f7ff fc79    	bl	0x5038e <lv_mem_alloc>  @ imm = #-0x70e
+   50a9c: 9b09         	ldr	r3, [sp, #0x24]
+   50a9e: f04f 3cff    	mov.w	r12, #0xffffffff
+   50aa2: f8d3 104f    	ldr.w	r1, [r3, #0x4f]
+   50aa6: 681a         	ldr	r2, [r3]
+   50aa8: f103 0e04    	add.w	lr, r3, #0x4
+   50aac: e9c3 1c04    	strd	r1, r12, [r3, #16]
+   50ab0: f241 41f0    	movw	r1, #0x14f0
+   50ab4: e88e 0121    	stm.w	lr, {r0, r5, r8}
+   50ab8: f2c0 0105    	movt	r1, #0x5
+   50abc: 4610         	mov	r0, r2
+   50abe: 879c         	strh	r4, [r3, #0x3c]
+   50ac0: e9c3 6806    	strd	r6, r8, [r3, #24]
+   50ac4: f8c3 8020    	str.w	r8, [r3, #0x20]
+   50ac8: 4698         	mov	r8, r3
+   50aca: f7ff fb93    	bl	0x501f4 <SetScreenUiMessage> @ imm = #-0x8da
+   50ace: f8d8 0000    	ldr.w	r0, [r8]
+   50ad2: f241 41e3    	movw	r1, #0x14e3
+   50ad6: f2c0 0105    	movt	r1, #0x5
+   50ada: f7ff fb99    	bl	0x50210 <SetScreenUiStatus> @ imm = #-0x8ce
+   50ade: f8d8 0004    	ldr.w	r0, [r8, #0x4]
+   50ae2: fab0 f080    	clz	r0, r0
+   50ae6: 0940         	lsrs	r0, r0, #0x5
+   50ae8: 0080         	lsls	r0, r0, #0x2
+   50aea: e627         	b	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x3b2
+   50aec: 2803         	cmp	r0, #0x3
+   50aee: bf08         	it	eq
+   50af0: 2903         	cmpeq	r1, #0x3
+   50af2: d01d         	beq	0x50b30 <UpdateMarkdown+0x510> @ imm = #0x3a
+   50af4: 2805         	cmp	r0, #0x5
+   50af6: f04f 0003    	mov.w	r0, #0x3
+   50afa: bf08         	it	eq
+   50afc: 2904         	cmpeq	r1, #0x4
+   50afe: f47f ae1d    	bne.w	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x3c6
+   50b02: f8d8 002c    	ldr.w	r0, [r8, #0x2c]
+   50b06: b1c8         	cbz	r0, 0x50b3c <UpdateMarkdown+0x51c> @ imm = #0x32
+   50b08: f8d8 0020    	ldr.w	r0, [r8, #0x20]
+   50b0c: b170         	cbz	r0, 0x50b2c <UpdateMarkdown+0x50c> @ imm = #0x1c
+   50b0e: f9b8 104b    	ldrsh.w	r1, [r8, #0x4b]
+   50b12: f8d8 201c    	ldr.w	r2, [r8, #0x1c]
+   50b16: 4411         	add	r1, r2
+   50b18: ea21 71e1    	bic.w	r1, r1, r1, asr #31
+   50b1c: 4281         	cmp	r1, r0
+   50b1e: bf28         	it	hs
+   50b20: 1e41         	subhs	r1, r0, #0x1
+   50b22: 2001         	movs	r0, #0x1
+   50b24: f8c8 101c    	str.w	r1, [r8, #0x1c]
+   50b28: f8c8 0030    	str.w	r0, [r8, #0x30]
+   50b2c: 2000         	movs	r0, #0x0
+   50b2e: e605         	b	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x3f6
+   50b30: f8d8 0004    	ldr.w	r0, [r8, #0x4]
+   50b34: b110         	cbz	r0, 0x50b3c <UpdateMarkdown+0x51c> @ imm = #0x4
+   50b36: f8d8 002c    	ldr.w	r0, [r8, #0x2c]
+   50b3a: b108         	cbz	r0, 0x50b40 <UpdateMarkdown+0x520> @ imm = #0x2
+   50b3c: 2003         	movs	r0, #0x3
+   50b3e: e5fd         	b	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x406
+   50b40: e9d8 0102    	ldrd	r0, r1, [r8, #8]
+   50b44: 4281         	cmp	r1, r0
+   50b46: d104         	bne	0x50b52 <UpdateMarkdown+0x532> @ imm = #0x8
+   50b48: e9d8 0104    	ldrd	r0, r1, [r8, #16]
+   50b4c: 4048         	eors	r0, r1
+   50b4e: 3001         	adds	r0, #0x1
+   50b50: d001         	beq	0x50b56 <UpdateMarkdown+0x536> @ imm = #0x2
+   50b52: 2005         	movs	r0, #0x5
+   50b54: e5f2         	b	0x5073c <UpdateMarkdown+0x11c> @ imm = #-0x41c
+   50b56: 4640         	mov	r0, r8
+   50b58: f000 f835    	bl	0x50bc6 <ValidateDocument> @ imm = #0x6a
+   50b5c: 2800         	cmp	r0, #0x0
+   50b5e: d0ed         	beq	0x50b3c <UpdateMarkdown+0x51c> @ imm = #-0x26
+   50b60: 2101         	movs	r1, #0x1
+   50b62: f8c8 102c    	str.w	r1, [r8, #0x2c]
+   50b66: f8d8 0000    	ldr.w	r0, [r8]
+   50b6a: f8c8 1030    	str.w	r1, [r8, #0x30]
+   50b6e: f241 5106    	movw	r1, #0x1506
+   50b72: f2c0 0105    	movt	r1, #0x5
+   50b76: f7ff fb2f    	bl	0x501d8 <SetScreenUiTitle> @ imm = #-0x9a2
+   50b7a: f8d8 0000    	ldr.w	r0, [r8]
+   50b7e: f241 41d5    	movw	r1, #0x14d5
+   50b82: f2c0 0105    	movt	r1, #0x5
+   50b86: f7ff fb35    	bl	0x501f4 <SetScreenUiMessage> @ imm = #-0x996
+   50b8a: e7cf         	b	0x50b2c <UpdateMarkdown+0x50c> @ imm = #-0x62
+
+00050b8c <ClearRows>:
+   50b8c: b5f0         	push	{r4, r5, r6, r7, lr}
+   50b8e: af03         	add	r7, sp, #0xc
+   50b90: f84d bd04    	str	r11, [sp, #-4]!
+   50b94: f241 44d5    	movw	r4, #0x14d5
+   50b98: f100 0584    	add.w	r5, r0, #0x84
+   50b9c: 2600         	movs	r6, #0x0
+   50b9e: f2c0 0405    	movt	r4, #0x5
+   50ba2: bf00         	nop
+   50ba4: f855 0026    	ldr.w	r0, [r5, r6, lsl #2]
+   50ba8: 2100         	movs	r1, #0x0
+   50baa: 2200         	movs	r2, #0x0
+   50bac: f7ff fb97    	bl	0x502de <lv_obj_set_style_bg_opa> @ imm = #-0x8d2
+   50bb0: f855 0026    	ldr.w	r0, [r5, r6, lsl #2]
+   50bb4: 4621         	mov	r1, r4
+   50bb6: f7ff fb49    	bl	0x5024c <lv_label_set_text> @ imm = #-0x96e
+   50bba: 3601         	adds	r6, #0x1
+   50bbc: 2e18         	cmp	r6, #0x18
+   50bbe: d1f1         	bne	0x50ba4 <ClearRows+0x18> @ imm = #-0x1e
+   50bc0: f85d bb04    	ldr	r11, [sp], #4
+   50bc4: bdf0         	pop	{r4, r5, r6, r7, pc}
+
+00050bc6 <ValidateDocument>:
+   50bc6: b5f0         	push	{r4, r5, r6, r7, lr}
+   50bc8: af03         	add	r7, sp, #0xc
+   50bca: e92d 0f00    	push.w	{r8, r9, r10, r11}
+   50bce: b085         	sub	sp, #0x14
+   50bd0: 6886         	ldr	r6, [r0, #0x8]
+   50bd2: 2e20         	cmp	r6, #0x20
+   50bd4: d333         	blo	0x50c3e <ValidateDocument+0x78> @ imm = #0x66
+   50bd6: 6845         	ldr	r5, [r0, #0x4]
+   50bd8: 7829         	ldrb	r1, [r5]
+   50bda: 294e         	cmp	r1, #0x4e
+   50bdc: d12f         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x5e
+   50bde: 7869         	ldrb	r1, [r5, #0x1]
+   50be0: 2953         	cmp	r1, #0x53
+   50be2: d12c         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x58
+   50be4: 78a9         	ldrb	r1, [r5, #0x2]
+   50be6: 294d         	cmp	r1, #0x4d
+   50be8: d129         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x52
+   50bea: 78e9         	ldrb	r1, [r5, #0x3]
+   50bec: 2944         	cmp	r1, #0x44
+   50bee: d126         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x4c
+   50bf0: 88a9         	ldrh	r1, [r5, #0x4]
+   50bf2: 2901         	cmp	r1, #0x1
+   50bf4: d123         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x46
+   50bf6: 88e9         	ldrh	r1, [r5, #0x6]
+   50bf8: f5b1 7ff0    	cmp.w	r1, #0x1e0
+   50bfc: d11f         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x3e
+   50bfe: 68a9         	ldr	r1, [r5, #0x8]
+   50c00: f5b1 7fb4    	cmp.w	r1, #0x168
+   50c04: d11b         	bne	0x50c3e <ValidateDocument+0x78> @ imm = #0x36
+   50c06: f8d5 e00c    	ldr.w	lr, [r5, #0xc]
+   50c0a: f5be 3f80    	cmp.w	lr, #0x10000
+   50c0e: d816         	bhi	0x50c3e <ValidateDocument+0x78> @ imm = #0x2c
+   50c10: f8d5 b010    	ldr.w	r11, [r5, #0x10]
+   50c14: f248 0101    	movw	r1, #0x8001
+   50c18: ebab 0101    	sub.w	r1, r11, r1
+   50c1c: f511 4f00    	cmn.w	r1, #0x8000
+   50c20: d30d         	blo	0x50c3e <ValidateDocument+0x78> @ imm = #0x1a
+   50c22: f248 0100    	movw	r1, #0x8000
+   50c26: f8d5 c014    	ldr.w	r12, [r5, #0x14]
+   50c2a: f6cf 71ff    	movt	r1, #0xffff
+   50c2e: f641 1301    	movw	r3, #0x1901
+   50c32: ebac 0303    	sub.w	r3, r12, r3
+   50c36: f501 41ce    	add.w	r1, r1, #0x6700
+   50c3a: 428b         	cmp	r3, r1
+   50c3c: d205         	bhs	0x50c4a <ValidateDocument+0x84> @ imm = #0xa
+   50c3e: 2100         	movs	r1, #0x0
+   50c40: 4608         	mov	r0, r1
+   50c42: b005         	add	sp, #0x14
+   50c44: e8bd 0f00    	pop.w	{r8, r9, r10, r11}
+   50c48: bdf0         	pop	{r4, r5, r6, r7, pc}
+   50c4a: 69aa         	ldr	r2, [r5, #0x18]
+   50c4c: 2120         	movs	r1, #0x20
+   50c4e: eb01 01cb    	add.w	r1, r1, r11, lsl #3
+   50c52: 428a         	cmp	r2, r1
+   50c54: f04f 0100    	mov.w	r1, #0x0
+   50c58: d1f2         	bne	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x1c
+   50c5a: 4296         	cmp	r6, r2
+   50c5c: d3f0         	blo	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x20
+   50c5e: f012 0303    	ands	r3, r2, #0x3
+   50c62: 9203         	str	r2, [sp, #0xc]
+   50c64: d1ec         	bne	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x28
+   50c66: 69ea         	ldr	r2, [r5, #0x1c]
+   50c68: 42b2         	cmp	r2, r6
+   50c6a: 9204         	str	r2, [sp, #0x10]
+   50c6c: d8e8         	bhi	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x30
+   50c6e: 9a03         	ldr	r2, [sp, #0xc]
+   50c70: eb0c 034c    	add.w	r3, r12, r12, lsl #1
+   50c74: 0099         	lsls	r1, r3, #0x2
+   50c76: 1ab4         	subs	r4, r6, r2
+   50c78: 42a1         	cmp	r1, r4
+   50c7a: f04f 0100    	mov.w	r1, #0x0
+   50c7e: d8df         	bhi	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x42
+   50c80: eb02 0383    	add.w	r3, r2, r3, lsl #2
+   50c84: 9a04         	ldr	r2, [sp, #0x10]
+   50c86: 9302         	str	r3, [sp, #0x8]
+   50c88: 429a         	cmp	r2, r3
+   50c8a: d3d9         	blo	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x4e
+   50c8c: 9903         	ldr	r1, [sp, #0xc]
+   50c8e: 4663         	mov	r3, r12
+   50c90: 4429         	add	r1, r5
+   50c92: 9101         	str	r1, [sp, #0x4]
+   50c94: f101 0408    	add.w	r4, r1, #0x8
+   50c98: f834 8c02    	ldrh	r8, [r4, #-2]
+   50c9c: 2100         	movs	r1, #0x0
+   50c9e: f1b8 0ff0    	cmp.w	r8, #0xf0
+   50ca2: d8cd         	bhi	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x66
+   50ca4: f894 9000    	ldrb.w	r9, [r4]
+   50ca8: f1b9 0f3f    	cmp.w	r9, #0x3f
+   50cac: d8c8         	bhi	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x70
+   50cae: f854 ac08    	ldr	r10, [r4, #-8]
+   50cb2: 9904         	ldr	r1, [sp, #0x10]
+   50cb4: 458a         	cmp	r10, r1
+   50cb6: d3c2         	blo	0x50c3e <ValidateDocument+0x78> @ imm = #-0x7c
+   50cb8: 4556         	cmp	r6, r10
+   50cba: f04f 0100    	mov.w	r1, #0x0
+   50cbe: d3bf         	blo	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x82
+   50cc0: fb09 f208    	mul	r2, r9, r8
+   50cc4: 3207         	adds	r2, #0x7
+   50cc6: ea4f 08d2    	lsr.w	r8, r2, #0x3
+   50cca: eba6 020a    	sub.w	r2, r6, r10
+   50cce: 4590         	cmp	r8, r2
+   50cd0: d8b6         	bhi	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x94
+   50cd2: 3b01         	subs	r3, #0x1
+   50cd4: f104 040c    	add.w	r4, r4, #0xc
+   50cd8: d1de         	bne	0x50c98 <ValidateDocument+0xd2> @ imm = #-0x44
+   50cda: f1bb 0f00    	cmp.w	r11, #0x0
+   50cde: d041         	beq	0x50d64 <ValidateDocument+0x19e> @ imm = #0x82
+   50ce0: 1c69         	adds	r1, r5, #0x1
+   50ce2: f8dd 9004    	ldr.w	r9, [sp, #0x4]
+   50ce6: f105 0a20    	add.w	r10, r5, #0x20
+   50cea: 9100         	str	r1, [sp]
+   50cec: f04f 0800    	mov.w	r8, #0x0
+   50cf0: eb0a 01c8    	add.w	r1, r10, r8, lsl #3
+   50cf4: 798a         	ldrb	r2, [r1, #0x6]
+   50cf6: 0692         	lsls	r2, r2, #0x1a
+   50cf8: d0a1         	beq	0x50c3e <ValidateDocument+0x78> @ imm = #-0xbe
+   50cfa: 888e         	ldrh	r6, [r1, #0x4]
+   50cfc: f5b6 7f00    	cmp.w	r6, #0x200
+   50d00: d89d         	bhi	0x50c3e <ValidateDocument+0x78> @ imm = #-0xc6
+   50d02: 680b         	ldr	r3, [r1]
+   50d04: 9902         	ldr	r1, [sp, #0x8]
+   50d06: 428b         	cmp	r3, r1
+   50d08: f04f 0100    	mov.w	r1, #0x0
+   50d0c: d398         	blo	0x50c40 <ValidateDocument+0x7a> @ imm = #-0xd0
+   50d0e: 9a04         	ldr	r2, [sp, #0x10]
+   50d10: 429a         	cmp	r2, r3
+   50d12: d395         	blo	0x50c40 <ValidateDocument+0x7a> @ imm = #-0xd6
+   50d14: 9904         	ldr	r1, [sp, #0x10]
+   50d16: 1ac9         	subs	r1, r1, r3
+   50d18: ebb1 0f46    	cmp.w	r1, r6, lsl #1
+   50d1c: f4ff af8f    	blo.w	0x50c3e <ValidateDocument+0x78> @ imm = #-0xe2
+   50d20: b1e6         	cbz	r6, 0x50d5c <ValidateDocument+0x196> @ imm = #0x38
+   50d22: 9900         	ldr	r1, [sp]
+   50d24: 18cc         	adds	r4, r1, r3
+   50d26: 2100         	movs	r1, #0x0
+   50d28: f44f 3380    	mov.w	r3, #0x10000
+   50d2c: f834 5c01    	ldrh	r5, [r4, #-1]
+   50d30: 45ac         	cmp	r12, r5
+   50d32: f67f af84    	bls.w	0x50c3e <ValidateDocument+0x78> @ imm = #-0xf8
+   50d36: eb05 0245    	add.w	r2, r5, r5, lsl #1
+   50d3a: eb09 0282    	add.w	r2, r9, r2, lsl #2
+   50d3e: 8892         	ldrh	r2, [r2, #0x4]
+   50d40: 3402         	adds	r4, #0x2
+   50d42: 4293         	cmp	r3, r2
+   50d44: f04f 030c    	mov.w	r3, #0xc
+   50d48: bf08         	it	eq
+   50d4a: 2303         	moveq	r3, #0x3
+   50d4c: 4419         	add	r1, r3
+   50d4e: 3e01         	subs	r6, #0x1
+   50d50: 4613         	mov	r3, r2
+   50d52: d1eb         	bne	0x50d2c <ValidateDocument+0x166> @ imm = #-0x2a
+   50d54: f5b1 5f80    	cmp.w	r1, #0x1000
+   50d58: f4bf af71    	bhs.w	0x50c3e <ValidateDocument+0x78> @ imm = #-0x11e
+   50d5c: f108 0801    	add.w	r8, r8, #0x1
+   50d60: 45d8         	cmp	r8, r11
+   50d62: d1c5         	bne	0x50cf0 <ValidateDocument+0x12a> @ imm = #-0x76
+   50d64: 9903         	ldr	r1, [sp, #0xc]
+   50d66: e9c0 bc08    	strd	r11, r12, [r0, #32]
+   50d6a: 6281         	str	r1, [r0, #0x28]
+   50d6c: 2101         	movs	r1, #0x1
+   50d6e: f8c0 e018    	str.w	lr, [r0, #0x18]
+   50d72: e765         	b	0x50c40 <ValidateDocument+0x7a> @ imm = #-0x136
+
+00050d74 <RecordMarkdownControl>:
+   50d74: 2a05         	cmp	r2, #0x5
+   50d76: d358         	blo	0x50e2a <RecordMarkdownControl+0xb6> @ imm = #0xb0
+   50d78: 784b         	ldrb	r3, [r1, #0x1]
+   50d7a: 2b35         	cmp	r3, #0x35
+   50d7c: bf08         	it	eq
+   50d7e: 4770         	bxeq	lr
+   50d80: b5f0         	push	{r4, r5, r6, r7, lr}
+   50d82: af03         	add	r7, sp, #0xc
+   50d84: f84d 8d04    	str	r8, [sp, #-4]!
+   50d88: f241 33ac    	movw	r3, #0x13ac
+   50d8c: eb00 0c03    	add.w	r12, r0, r3
+   50d90: f8dc 3000    	ldr.w	r3, [r12]
+   50d94: 4690         	mov	r8, r2
+   50d96: f003 0e07    	and	lr, r3, #0x7
+   50d9a: eb00 140e    	add.w	r4, r0, lr, lsl #4
+   50d9e: f241 3524    	movw	r5, #0x1324
+   50da2: 2a10         	cmp	r2, #0x10
+   50da4: bf28         	it	hs
+   50da6: f04f 0810    	movhs.w	r8, #0x10
+   50daa: 442c         	add	r4, r5
+   50dac: 460d         	mov	r5, r1
+   50dae: 4646         	mov	r6, r8
+   50db0: f815 3b01    	ldrb	r3, [r5], #1
+   50db4: 3e01         	subs	r6, #0x1
+   50db6: f804 3b01    	strb	r3, [r4], #1
+   50dba: d1f9         	bne	0x50db0 <RecordMarkdownControl+0x3c> @ imm = #-0xe
+   50dbc: eb00 060e    	add.w	r6, r0, lr
+   50dc0: f241 35a4    	movw	r5, #0x13a4
+   50dc4: f806 8005    	strb.w	r8, [r6, r5]
+   50dc8: f8dc 3000    	ldr.w	r3, [r12]
+   50dcc: 2a07         	cmp	r2, #0x7
+   50dce: f103 0301    	add.w	r3, r3, #0x1
+   50dd2: f8cc 3000    	str.w	r3, [r12]
+   50dd6: d124         	bne	0x50e22 <RecordMarkdownControl+0xae> @ imm = #0x48
+   50dd8: 784a         	ldrb	r2, [r1, #0x1]
+   50dda: 2a39         	cmp	r2, #0x39
+   50ddc: d121         	bne	0x50e22 <RecordMarkdownControl+0xae> @ imm = #0x42
+   50dde: 788a         	ldrb	r2, [r1, #0x2]
+   50de0: b9fa         	cbnz	r2, 0x50e22 <RecordMarkdownControl+0xae> @ imm = #0x3e
+   50de2: 78ca         	ldrb	r2, [r1, #0x3]
+   50de4: 2a02         	cmp	r2, #0x2
+   50de6: d11c         	bne	0x50e22 <RecordMarkdownControl+0xae> @ imm = #0x38
+   50de8: 794a         	ldrb	r2, [r1, #0x5]
+   50dea: 1e53         	subs	r3, r2, #0x1
+   50dec: 2b01         	cmp	r3, #0x1
+   50dee: d818         	bhi	0x50e22 <RecordMarkdownControl+0xae> @ imm = #0x30
+   50df0: f8dc 300c    	ldr.w	r3, [r12, #0xc]
+   50df4: f8cc 2004    	str.w	r2, [r12, #0x4]
+   50df8: 1c5a         	adds	r2, r3, #0x1
+   50dfa: f8cc 200c    	str.w	r2, [r12, #0xc]
+   50dfe: f241 32bc    	movw	r2, #0x13bc
+   50e02: 7949         	ldrb	r1, [r1, #0x5]
+   50e04: 4410         	add	r0, r2
+   50e06: 2901         	cmp	r1, #0x1
+   50e08: bf18         	it	ne
+   50e0a: f04f 31ff    	movne.w	r1, #0xffffffff
+   50e0e: f3bf 8f5f    	dmb	sy
+   50e12: bf00         	nop
+   50e14: e850 2f00    	ldrex	r2, [r0]
+   50e18: 440a         	add	r2, r1
+   50e1a: e840 2300    	strex	r3, r2, [r0]
+   50e1e: 2b00         	cmp	r3, #0x0
+   50e20: d1f8         	bne	0x50e14 <RecordMarkdownControl+0xa0> @ imm = #-0x10
+   50e22: f85d 8b04    	ldr	r8, [sp], #4
+   50e26: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   50e2a: 4770         	bx	lr
+
+00050e2c <GetMarkdownControl>:
+   50e2c: b5b0         	push	{r4, r5, r7, lr}
+   50e2e: af02         	add	r7, sp, #0x8
+   50e30: f241 33ac    	movw	r3, #0x13ac
+   50e34: eb00 0c03    	add.w	r12, r0, r3
+   50e38: 2300         	movs	r3, #0x0
+   50e3a: 2400         	movs	r4, #0x0
+   50e3c: 5513         	strb	r3, [r2, r4]
+   50e3e: 3401         	adds	r4, #0x1
+   50e40: 2c18         	cmp	r4, #0x18
+   50e42: d1fb         	bne	0x50e3c <GetMarkdownControl+0x10> @ imm = #-0xa
+   50e44: f8dc e000    	ldr.w	lr, [r12]
+   50e48: 2300         	movs	r3, #0x0
+   50e4a: 4614         	mov	r4, r2
+   50e4c: fa2e f503    	lsr.w	r5, lr, r3
+   50e50: 3308         	adds	r3, #0x8
+   50e52: 2b20         	cmp	r3, #0x20
+   50e54: f804 5b01    	strb	r5, [r4], #1
+   50e58: d1f8         	bne	0x50e4c <GetMarkdownControl+0x20> @ imm = #-0x10
+   50e5a: f8dc 3004    	ldr.w	r3, [r12, #0x4]
+   50e5e: 2907         	cmp	r1, #0x7
+   50e60: 7153         	strb	r3, [r2, #0x5]
+   50e62: f8dc 300c    	ldr.w	r3, [r12, #0xc]
+   50e66: 7193         	strb	r3, [r2, #0x6]
+   50e68: d81e         	bhi	0x50ea8 <GetMarkdownControl+0x7c> @ imm = #0x3c
+   50e6a: f8dc 3000    	ldr.w	r3, [r12]
+   50e6e: 428b         	cmp	r3, r1
+   50e70: d91a         	bls	0x50ea8 <GetMarkdownControl+0x7c> @ imm = #0x34
+   50e72: f8dc 3000    	ldr.w	r3, [r12]
+   50e76: 43c9         	mvns	r1, r1
+   50e78: 4419         	add	r1, r3
+   50e7a: f001 0307    	and	r3, r1, #0x7
+   50e7e: 18c1         	adds	r1, r0, r3
+   50e80: f241 35a4    	movw	r5, #0x13a4
+   50e84: 5d49         	ldrb	r1, [r1, r5]
+   50e86: 2900         	cmp	r1, #0x0
+   50e88: 7111         	strb	r1, [r2, #0x4]
+   50e8a: bf08         	it	eq
+   50e8c: bdb0         	popeq	{r4, r5, r7, pc}
+   50e8e: eb00 1003    	add.w	r0, r0, r3, lsl #4
+   50e92: f241 3324    	movw	r3, #0x1324
+   50e96: 3208         	adds	r2, #0x8
+   50e98: 4418         	add	r0, r3
+   50e9a: bf00         	nop
+   50e9c: f810 3b01    	ldrb	r3, [r0], #1
+   50ea0: 3901         	subs	r1, #0x1
+   50ea2: f802 3b01    	strb	r3, [r2], #1
+   50ea6: d1f9         	bne	0x50e9c <GetMarkdownControl+0x70> @ imm = #-0xe
+   50ea8: bdb0         	pop	{r4, r5, r7, pc}
+   50eaa: d4d4         	bmi	0x50e56 <GetMarkdownControl+0x2a> @ imm = #-0x58
+
+00050eac <HandleScreenPacket>:
+   50eac: b5f0         	push	{r4, r5, r6, r7, lr}
+   50eae: af03         	add	r7, sp, #0xc
+   50eb0: f84d bd04    	str	r11, [sp, #-4]!
+   50eb4: b082         	sub	sp, #0x8
+   50eb6: b158         	cbz	r0, 0x50ed0 <HandleScreenPacket+0x24> @ imm = #0x16
+   50eb8: 2200         	movs	r2, #0x0
+   50eba: b131         	cbz	r1, 0x50eca <HandleScreenPacket+0x1e> @ imm = #0xc
+   50ebc: 5c83         	ldrb	r3, [r0, r2]
+   50ebe: 2ba5         	cmp	r3, #0xa5
+   50ec0: d003         	beq	0x50eca <HandleScreenPacket+0x1e> @ imm = #0x6
+   50ec2: 3201         	adds	r2, #0x1
+   50ec4: 4291         	cmp	r1, r2
+   50ec6: d1f9         	bne	0x50ebc <HandleScreenPacket+0x10> @ imm = #-0xe
+   50ec8: 460a         	mov	r2, r1
+   50eca: 1a8b         	subs	r3, r1, r2
+   50ecc: 2b06         	cmp	r3, #0x6
+   50ece: d205         	bhs	0x50edc <HandleScreenPacket+0x30> @ imm = #0xa
+   50ed0: 2201         	movs	r2, #0x1
+   50ed2: 4610         	mov	r0, r2
+   50ed4: b002         	add	sp, #0x8
+   50ed6: f85d bb04    	ldr	r11, [sp], #4
+   50eda: bdf0         	pop	{r4, r5, r6, r7, pc}
+   50edc: 1884         	adds	r4, r0, r2
+   50ede: 7862         	ldrb	r2, [r4, #0x1]
+   50ee0: 2a41         	cmp	r2, #0x41
+   50ee2: d114         	bne	0x50f0e <HandleScreenPacket+0x62> @ imm = #0x28
+   50ee4: 78a2         	ldrb	r2, [r4, #0x2]
+   50ee6: 2a00         	cmp	r2, #0x0
+   50ee8: f04f 0201    	mov.w	r2, #0x1
+   50eec: d1f1         	bne	0x50ed2 <HandleScreenPacket+0x26> @ imm = #-0x1e
+   50eee: 78e5         	ldrb	r5, [r4, #0x3]
+   50ef0: f1a5 043c    	sub.w	r4, r5, #0x3c
+   50ef4: f114 0f3b    	cmn.w	r4, #0x3b
+   50ef8: d3eb         	blo	0x50ed2 <HandleScreenPacket+0x26> @ imm = #-0x2a
+   50efa: 1d6a         	adds	r2, r5, #0x5
+   50efc: 4293         	cmp	r3, r2
+   50efe: d3e7         	blo	0x50ed0 <HandleScreenPacket+0x24> @ imm = #-0x32
+   50f00: b002         	add	sp, #0x8
+   50f02: f85d bb04    	ldr	r11, [sp], #4
+   50f06: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   50f0a: f000 bad3    	b.w	0x514b4 <ContinueNativeScreenPacket> @ imm = #0x5a6
+   50f0e: f04f 5000    	mov.w	r0, #0x20000000
+   50f12: 6800         	ldr	r0, [r0]
+   50f14: 0781         	lsls	r1, r0, #0x1e
+   50f16: d14f         	bne	0x50fb8 <HandleScreenPacket+0x10c> @ imm = #0x9e
+   50f18: f64f 71c1    	movw	r1, #0xffc1
+   50f1c: f2c8 011f    	movt	r1, #0x801f
+   50f20: 4288         	cmp	r0, r1
+   50f22: db06         	blt	0x50f32 <HandleScreenPacket+0x86> @ imm = #0xc
+   50f24: f1a0 5100    	sub.w	r1, r0, #0x20000000
+   50f28: 3908         	subs	r1, #0x8
+   50f2a: f64f 72b8    	movw	r2, #0xffb8
+   50f2e: 4291         	cmp	r1, r2
+   50f30: d842         	bhi	0x50fb8 <HandleScreenPacket+0x10c> @ imm = #0x84
+   50f32: 6801         	ldr	r1, [r0]
+   50f34: f245 324e    	movw	r2, #0x534e
+   50f38: f6c4 1255    	movt	r2, #0x4955
+   50f3c: 4291         	cmp	r1, r2
+   50f3e: d13b         	bne	0x50fb8 <HandleScreenPacket+0x10c> @ imm = #0x76
+   50f40: 6a81         	ldr	r1, [r0, #0x28]
+   50f42: 3b05         	subs	r3, #0x5
+   50f44: 3101         	adds	r1, #0x1
+   50f46: 6281         	str	r1, [r0, #0x28]
+   50f48: 8861         	ldrh	r1, [r4, #0x2]
+   50f4a: ba0a         	rev	r2, r1
+   50f4c: ebb3 4f12    	cmp.w	r3, r2, lsr #16
+   50f50: d332         	blo	0x50fb8 <HandleScreenPacket+0x10c> @ imm = #0x64
+   50f52: ba4e         	rev16	r6, r1
+   50f54: 1cf2         	adds	r2, r6, #0x3
+   50f56: 1c63         	adds	r3, r4, #0x1
+   50f58: 2100         	movs	r1, #0x0
+   50f5a: bf00         	nop
+   50f5c: f813 5b01    	ldrb	r5, [r3], #1
+   50f60: 3a01         	subs	r2, #0x1
+   50f62: 4429         	add	r1, r5
+   50f64: d1fa         	bne	0x50f5c <HandleScreenPacket+0xb0> @ imm = #-0xc
+   50f66: 19a2         	adds	r2, r4, r6
+   50f68: 7912         	ldrb	r2, [r2, #0x4]
+   50f6a: b2c9         	uxtb	r1, r1
+   50f6c: 4051         	eors	r1, r2
+   50f6e: 29ff         	cmp	r1, #0xff
+   50f70: d122         	bne	0x50fb8 <HandleScreenPacket+0x10c> @ imm = #0x44
+   50f72: 3048         	adds	r0, #0x48
+   50f74: 1d72         	adds	r2, r6, #0x5
+   50f76: 4621         	mov	r1, r4
+   50f78: f7ff fefc    	bl	0x50d74 <RecordMarkdownControl> @ imm = #-0x208
+   50f7c: 2e02         	cmp	r6, #0x2
+   50f7e: f04f 0200    	mov.w	r2, #0x0
+   50f82: d1a6         	bne	0x50ed2 <HandleScreenPacket+0x26> @ imm = #-0xb4
+   50f84: 7860         	ldrb	r0, [r4, #0x1]
+   50f86: 2839         	cmp	r0, #0x39
+   50f88: d1a3         	bne	0x50ed2 <HandleScreenPacket+0x26> @ imm = #-0xba
+   50f8a: 7960         	ldrb	r0, [r4, #0x5]
+   50f8c: 3801         	subs	r0, #0x1
+   50f8e: 2801         	cmp	r0, #0x1
+   50f90: d89f         	bhi	0x50ed2 <HandleScreenPacket+0x26> @ imm = #-0xc2
+   50f92: f64f 6002    	movw	r0, #0xfe02
+   50f96: f2cc 6000    	movt	r0, #0xc600
+   50f9a: f8cd 0003    	str.w	r0, [sp, #0x3]
+   50f9e: f643 10a5    	movw	r0, #0x39a5
+   50fa2: f2c0 2000    	movt	r0, #0x200
+   50fa6: 2689         	movs	r6, #0x89
+   50fa8: 9000         	str	r0, [sp]
+   50faa: 4669         	mov	r1, sp
+   50fac: f2c0 0601    	movt	r6, #0x1
+   50fb0: 2001         	movs	r0, #0x1
+   50fb2: 2207         	movs	r2, #0x7
+   50fb4: 2332         	movs	r3, #0x32
+   50fb6: 47b0         	blx	r6
+   50fb8: 2200         	movs	r2, #0x0
+   50fba: e78a         	b	0x50ed2 <HandleScreenPacket+0x26> @ imm = #-0xec
+
+00050fbc <HandleScreenInformation>:
+   50fbc: b5f0         	push	{r4, r5, r6, r7, lr}
+   50fbe: af03         	add	r7, sp, #0xc
+   50fc0: f84d bd04    	str	r11, [sp, #-4]!
+   50fc4: b08a         	sub	sp, #0x28
+   50fc6: f04f 5300    	mov.w	r3, #0x20000000
+   50fca: 4601         	mov	r1, r0
+   50fcc: 7882         	ldrb	r2, [r0, #0x2]
+   50fce: 78c0         	ldrb	r0, [r0, #0x3]
+   50fd0: 681c         	ldr	r4, [r3]
+   50fd2: 07a3         	lsls	r3, r4, #0x1e
+   50fd4: d132         	bne	0x5103c <HandleScreenInformation+0x80> @ imm = #0x64
+   50fd6: f64f 73c1    	movw	r3, #0xffc1
+   50fda: f2c8 031f    	movt	r3, #0x801f
+   50fde: 429c         	cmp	r4, r3
+   50fe0: db06         	blt	0x50ff0 <HandleScreenInformation+0x34> @ imm = #0xc
+   50fe2: f1a4 5300    	sub.w	r3, r4, #0x20000000
+   50fe6: 3b08         	subs	r3, #0x8
+   50fe8: f64f 76b8    	movw	r6, #0xffb8
+   50fec: 42b3         	cmp	r3, r6
+   50fee: d825         	bhi	0x5103c <HandleScreenInformation+0x80> @ imm = #0x4a
+   50ff0: 6823         	ldr	r3, [r4]
+   50ff2: f245 364e    	movw	r6, #0x534e
+   50ff6: f6c4 1655    	movt	r6, #0x4955
+   50ffa: 42b3         	cmp	r3, r6
+   50ffc: d11e         	bne	0x5103c <HandleScreenInformation+0x80> @ imm = #0x3c
+   50ffe: 780b         	ldrb	r3, [r1]
+   51000: 2ba5         	cmp	r3, #0xa5
+   51002: d125         	bne	0x51050 <HandleScreenInformation+0x94> @ imm = #0x4a
+   51004: 784b         	ldrb	r3, [r1, #0x1]
+   51006: 2500         	movs	r5, #0x0
+   51008: 2b41         	cmp	r3, #0x41
+   5100a: d119         	bne	0x51040 <HandleScreenInformation+0x84> @ imm = #0x32
+   5100c: ea40 2202    	orr.w	r2, r0, r2, lsl #8
+   51010: 1e93         	subs	r3, r2, #0x2
+   51012: 2b39         	cmp	r3, #0x39
+   51014: d814         	bhi	0x51040 <HandleScreenInformation+0x84> @ imm = #0x28
+   51016: 790b         	ldrb	r3, [r1, #0x4]
+   51018: 2b7c         	cmp	r3, #0x7c
+   5101a: f040 80a2    	bne.w	0x51162 <HandleScreenInformation+0x1a6> @ imm = #0x144
+   5101e: 2a1b         	cmp	r2, #0x1b
+   51020: f200 809f    	bhi.w	0x51162 <HandleScreenInformation+0x1a6> @ imm = #0x13e
+   51024: f811 0f05    	ldrb	r0, [r1, #5]!
+   51028: 2800         	cmp	r0, #0x0
+   5102a: f040 80c9    	bne.w	0x511c0 <HandleScreenInformation+0x204> @ imm = #0x192
+   5102e: 2a02         	cmp	r2, #0x2
+   51030: f040 80c6    	bne.w	0x511c0 <HandleScreenInformation+0x204> @ imm = #0x18c
+   51034: 4620         	mov	r0, r4
+   51036: f000 f8d1    	bl	0x511dc <SendWirelessMarkdownReply> @ imm = #0x1a2
+   5103a: e08d         	b	0x51158 <HandleScreenInformation+0x19c> @ imm = #0x11a
+   5103c: 2400         	movs	r4, #0x0
+   5103e: 2501         	movs	r5, #0x1
+   51040: 780a         	ldrb	r2, [r1]
+   51042: 2aa5         	cmp	r2, #0xa5
+   51044: d104         	bne	0x51050 <HandleScreenInformation+0x94> @ imm = #0x8
+   51046: 784a         	ldrb	r2, [r1, #0x1]
+   51048: 2a41         	cmp	r2, #0x41
+   5104a: bf08         	it	eq
+   5104c: 2801         	cmpeq	r0, #0x1
+   5104e: d00c         	beq	0x5106a <HandleScreenInformation+0xae> @ imm = #0x18
+   51050: f644 7031    	movw	r0, #0x4f31
+   51054: f2c0 0003    	movt	r0, #0x3
+   51058: f100 025c    	add.w	r2, r0, #0x5c
+   5105c: 4608         	mov	r0, r1
+   5105e: b00a         	add	sp, #0x28
+   51060: f85d bb04    	ldr	r11, [sp], #4
+   51064: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   51068: 4710         	bx	r2
+   5106a: 7908         	ldrb	r0, [r1, #0x4]
+   5106c: 287f         	cmp	r0, #0x7f
+   5106e: d1ef         	bne	0x51050 <HandleScreenInformation+0x94> @ imm = #-0x22
+   51070: 2000         	movs	r0, #0x0
+   51072: f1a7 0131    	sub.w	r1, r7, #0x31
+   51076: 2200         	movs	r2, #0x0
+   51078: 5488         	strb	r0, [r1, r2]
+   5107a: 3201         	adds	r2, #0x1
+   5107c: 2a21         	cmp	r2, #0x21
+   5107e: d1fb         	bne	0x51078 <HandleScreenInformation+0xbc> @ imm = #-0xa
+   51080: f245 304e    	movw	r0, #0x534e
+   51084: f6c4 1055    	movt	r0, #0x4955
+   51088: f847 0c31    	str	r0, [r7, #-49]
+   5108c: 2005         	movs	r0, #0x5
+   5108e: f241 5230    	movw	r2, #0x1530
+   51092: f243 4378    	movw	r3, #0x3478
+   51096: f807 0c2d    	strb	r0, [r7, #-45]
+   5109a: 2100         	movs	r1, #0x0
+   5109c: f2c0 0205    	movt	r2, #0x5
+   510a0: f2c2 0300    	movt	r3, #0x2000
+   510a4: 2000         	movs	r0, #0x0
+   510a6: bf00         	nop
+   510a8: f852 6021    	ldr.w	r6, [r2, r1, lsl #2]
+   510ac: 3101         	adds	r1, #0x1
+   510ae: 58f6         	ldr	r6, [r6, r3]
+   510b0: 2e00         	cmp	r6, #0x0
+   510b2: bf18         	it	ne
+   510b4: 3001         	addne	r0, #0x1
+   510b6: 2907         	cmp	r1, #0x7
+   510b8: d1f6         	bne	0x510a8 <HandleScreenInformation+0xec> @ imm = #-0x14
+   510ba: 2630         	movs	r6, #0x30
+   510bc: 2800         	cmp	r0, #0x0
+   510be: bf08         	it	eq
+   510c0: 2670         	moveq	r6, #0x70
+   510c2: f807 6c2c    	strb	r6, [r7, #-44]
+   510c6: f807 0c2b    	strb	r0, [r7, #-43]
+   510ca: f7ff f8ce    	bl	0x5026a <GetNativeActiveScreen> @ imm = #-0xe64
+   510ce: f847 0c19    	str	r0, [r7, #-25]
+   510d2: bbbd         	cbnz	r5, 0x51144 <HandleScreenInformation+0x188> @ imm = #0x6e
+   510d4: 6a61         	ldr	r1, [r4, #0x24]
+   510d6: 6a62         	ldr	r2, [r4, #0x24]
+   510d8: 2500         	movs	r5, #0x0
+   510da: b132         	cbz	r2, 0x510ea <HandleScreenInformation+0x12e> @ imm = #0xc
+   510dc: 68a2         	ldr	r2, [r4, #0x8]
+   510de: 1a80         	subs	r0, r0, r2
+   510e0: fab0 f080    	clz	r0, r0
+   510e4: 0940         	lsrs	r0, r0, #0x5
+   510e6: 0080         	lsls	r0, r0, #0x2
+   510e8: e000         	b	0x510ec <HandleScreenInformation+0x130> @ imm = #0x0
+   510ea: 2000         	movs	r0, #0x0
+   510ec: 220b         	movs	r2, #0xb
+   510ee: 2900         	cmp	r1, #0x0
+   510f0: bf08         	it	eq
+   510f2: 2209         	moveq	r2, #0x9
+   510f4: 4310         	orrs	r0, r2
+   510f6: 4330         	orrs	r0, r6
+   510f8: f807 0c2c    	strb	r0, [r7, #-44]
+   510fc: 6aa0         	ldr	r0, [r4, #0x28]
+   510fe: f807 0c2a    	strb	r0, [r7, #-42]
+   51102: f7ff f94e    	bl	0x503a2 <lv_tick_get>   @ imm = #-0xd64
+   51106: 69a1         	ldr	r1, [r4, #0x18]
+   51108: 1a40         	subs	r0, r0, r1
+   5110a: f644 51d3    	movw	r1, #0x4dd3
+   5110e: f2c1 0162    	movt	r1, #0x1062
+   51112: fba0 0101    	umull	r0, r1, r0, r1
+   51116: 69e0         	ldr	r0, [r4, #0x1c]
+   51118: 098a         	lsrs	r2, r1, #0x6
+   5111a: f807 2c29    	strb	r2, [r7, #-41]
+   5111e: 0b8a         	lsrs	r2, r1, #0xe
+   51120: 0d89         	lsrs	r1, r1, #0x16
+   51122: f807 2c28    	strb	r2, [r7, #-40]
+   51126: f807 1c27    	strb	r1, [r7, #-39]
+   5112a: f807 5c26    	strb	r5, [r7, #-38]
+   5112e: f847 0c25    	str	r0, [r7, #-37]
+   51132: 6a20         	ldr	r0, [r4, #0x20]
+   51134: f847 0c21    	str	r0, [r7, #-33]
+   51138: 68a0         	ldr	r0, [r4, #0x8]
+   5113a: f847 0c1d    	str	r0, [r7, #-29]
+   5113e: 6860         	ldr	r0, [r4, #0x4]
+   51140: f847 0c15    	str	r0, [r7, #-21]
+   51144: f644 7631    	movw	r6, #0x4f31
+   51148: f1a7 0231    	sub.w	r2, r7, #0x31
+   5114c: f2c0 0603    	movt	r6, #0x3
+   51150: 2041         	movs	r0, #0x41
+   51152: 217f         	movs	r1, #0x7f
+   51154: 2320         	movs	r3, #0x20
+   51156: 47b0         	blx	r6
+   51158: 2000         	movs	r0, #0x0
+   5115a: b00a         	add	sp, #0x28
+   5115c: f85d bb04    	ldr	r11, [sp], #4
+   51160: bdf0         	pop	{r4, r5, r6, r7, pc}
+   51162: 2b7e         	cmp	r3, #0x7e
+   51164: d116         	bne	0x51194 <HandleScreenInformation+0x1d8> @ imm = #0x2c
+   51166: f811 0f05    	ldrb	r0, [r1, #5]!
+   5116a: b120         	cbz	r0, 0x51176 <HandleScreenInformation+0x1ba> @ imm = #0x8
+   5116c: f104 0048    	add.w	r0, r4, #0x48
+   51170: 3a01         	subs	r2, #0x1
+   51172: f7ff f9d3    	bl	0x5051c <QueueMarkdown> @ imm = #-0xc5a
+   51176: f104 0048    	add.w	r0, r4, #0x48
+   5117a: f1a7 0431    	sub.w	r4, r7, #0x31
+   5117e: 4621         	mov	r1, r4
+   51180: f7ff f9f4    	bl	0x5056c <GetMarkdownStatus> @ imm = #-0xc18
+   51184: f644 7631    	movw	r6, #0x4f31
+   51188: f2c0 0603    	movt	r6, #0x3
+   5118c: 2041         	movs	r0, #0x41
+   5118e: 217e         	movs	r1, #0x7e
+   51190: 4622         	mov	r2, r4
+   51192: e7df         	b	0x51154 <HandleScreenInformation+0x198> @ imm = #-0x42
+   51194: 2b7d         	cmp	r3, #0x7d
+   51196: bf08         	it	eq
+   51198: 2a02         	cmpeq	r2, #0x2
+   5119a: f47f af51    	bne.w	0x51040 <HandleScreenInformation+0x84> @ imm = #-0x15e
+   5119e: 7949         	ldrb	r1, [r1, #0x5]
+   511a0: f104 0048    	add.w	r0, r4, #0x48
+   511a4: f1a7 0431    	sub.w	r4, r7, #0x31
+   511a8: 4622         	mov	r2, r4
+   511aa: f7ff fe3f    	bl	0x50e2c <GetMarkdownControl> @ imm = #-0x382
+   511ae: f644 7631    	movw	r6, #0x4f31
+   511b2: f2c0 0603    	movt	r6, #0x3
+   511b6: 2041         	movs	r0, #0x41
+   511b8: 217d         	movs	r1, #0x7d
+   511ba: 4622         	mov	r2, r4
+   511bc: 2318         	movs	r3, #0x18
+   511be: e7ca         	b	0x51156 <HandleScreenInformation+0x19a> @ imm = #-0x6c
+   511c0: f241 4008    	movw	r0, #0x1408
+   511c4: 5823         	ldr	r3, [r4, r0]
+   511c6: 2b00         	cmp	r3, #0x0
+   511c8: d1c6         	bne	0x51158 <HandleScreenInformation+0x19c> @ imm = #-0x74
+   511ca: 1825         	adds	r5, r4, r0
+   511cc: f104 0048    	add.w	r0, r4, #0x48
+   511d0: 3a01         	subs	r2, #0x1
+   511d2: f7ff f9a3    	bl	0x5051c <QueueMarkdown> @ imm = #-0xcba
+   511d6: 2001         	movs	r0, #0x1
+   511d8: 6028         	str	r0, [r5]
+   511da: e7bd         	b	0x51158 <HandleScreenInformation+0x19c> @ imm = #-0x86
+
+000511dc <SendWirelessMarkdownReply>:
+   511dc: b5d0         	push	{r4, r6, r7, lr}
+   511de: af02         	add	r7, sp, #0x8
+   511e0: b090         	sub	sp, #0x40
+   511e2: ac08         	add	r4, sp, #0x20
+   511e4: 3048         	adds	r0, #0x48
+   511e6: 4621         	mov	r1, r4
+   511e8: f7ff f9c0    	bl	0x5056c <GetMarkdownStatus> @ imm = #-0xc80
+   511ec: f244 10a5    	movw	r0, #0x41a5
+   511f0: f6c1 3000    	movt	r0, #0x1b00
+   511f4: 9000         	str	r0, [sp]
+   511f6: f644 507c    	movw	r0, #0x4d7c
+   511fa: f2c5 5044    	movt	r0, #0x5544
+   511fe: 9001         	str	r0, [sp, #0x4]
+   51200: 2057         	movs	r0, #0x57
+   51202: f88d 0008    	strb.w	r0, [sp, #0x8]
+   51206: 2100         	movs	r1, #0x0
+   51208: 4668         	mov	r0, sp
+   5120a: bf00         	nop
+   5120c: 1862         	adds	r2, r4, r1
+   5120e: 7912         	ldrb	r2, [r2, #0x4]
+   51210: 1843         	adds	r3, r0, r1
+   51212: 3101         	adds	r1, #0x1
+   51214: 2906         	cmp	r1, #0x6
+   51216: 725a         	strb	r2, [r3, #0x9]
+   51218: d1f8         	bne	0x5120c <SendWirelessMarkdownReply+0x30> @ imm = #-0x10
+   5121a: 2100         	movs	r1, #0x0
+   5121c: 1862         	adds	r2, r4, r1
+   5121e: 7b12         	ldrb	r2, [r2, #0xc]
+   51220: 1843         	adds	r3, r0, r1
+   51222: 3101         	adds	r1, #0x1
+   51224: 2908         	cmp	r1, #0x8
+   51226: 73da         	strb	r2, [r3, #0xf]
+   51228: d1f8         	bne	0x5121c <SendWirelessMarkdownReply+0x40> @ imm = #-0x10
+   5122a: f8bd 1034    	ldrh.w	r1, [sp, #0x34]
+   5122e: f8bd 2038    	ldrh.w	r2, [sp, #0x38]
+   51232: f8ad 1017    	strh.w	r1, [sp, #0x17]
+   51236: 2100         	movs	r1, #0x0
+   51238: f8ad 2019    	strh.w	r2, [sp, #0x19]
+   5123c: 1862         	adds	r2, r4, r1
+   5123e: 7f12         	ldrb	r2, [r2, #0x1c]
+   51240: 1843         	adds	r3, r0, r1
+   51242: 3101         	adds	r1, #0x1
+   51244: 2904         	cmp	r1, #0x4
+   51246: 76da         	strb	r2, [r3, #0x1b]
+   51248: d1f8         	bne	0x5123c <SendWirelessMarkdownReply+0x60> @ imm = #-0x10
+   5124a: 2100         	movs	r1, #0x0
+   5124c: 2201         	movs	r2, #0x1
+   5124e: bf00         	nop
+   51250: 5c83         	ldrb	r3, [r0, r2]
+   51252: 3201         	adds	r2, #0x1
+   51254: 2a1f         	cmp	r2, #0x1f
+   51256: 4419         	add	r1, r3
+   51258: d1fa         	bne	0x51250 <SendWirelessMarkdownReply+0x74> @ imm = #-0xc
+   5125a: 43c8         	mvns	r0, r1
+   5125c: 2489         	movs	r4, #0x89
+   5125e: f88d 001f    	strb.w	r0, [sp, #0x1f]
+   51262: 4669         	mov	r1, sp
+   51264: f2c0 0401    	movt	r4, #0x1
+   51268: 2001         	movs	r0, #0x1
+   5126a: 2220         	movs	r2, #0x20
+   5126c: 2332         	movs	r3, #0x32
+   5126e: 47a0         	blx	r4
+   51270: b010         	add	sp, #0x40
+   51272: bdd0         	pop	{r4, r6, r7, pc}
+
+00051274 <EnterDeviceScreenUi>:
+   51274: b5f0         	push	{r4, r5, r6, r7, lr}
+   51276: af03         	add	r7, sp, #0xc
+   51278: f84d 8d04    	str	r8, [sp, #-4]!
+   5127c: b086         	sub	sp, #0x18
+   5127e: f648 709d    	movw	r0, #0x8f9d
+   51282: f2c0 0001    	movt	r0, #0x1
+   51286: 4780         	blx	r0
+   51288: f241 400c    	movw	r0, #0x140c
+   5128c: f7ff f87f    	bl	0x5038e <lv_mem_alloc>  @ imm = #-0xf02
+   51290: 2800         	cmp	r0, #0x0
+   51292: d05c         	beq	0x5134e <EnterDeviceScreenUi+0xda> @ imm = #0xb8
+   51294: 4604         	mov	r4, r0
+   51296: f245 304e    	movw	r0, #0x534e
+   5129a: f6c4 1055    	movt	r0, #0x4955
+   5129e: 6020         	str	r0, [r4]
+   512a0: f242 7010    	movw	r0, #0x2710
+   512a4: 2600         	movs	r6, #0x0
+   512a6: 4625         	mov	r5, r4
+   512a8: 6060         	str	r0, [r4, #0x4]
+   512aa: f845 6f08    	str	r6, [r5, #8]!
+   512ae: e9c4 6603    	strd	r6, r6, [r4, #12]
+   512b2: 6166         	str	r6, [r4, #0x14]
+   512b4: f7ff f875    	bl	0x503a2 <lv_tick_get>   @ imm = #-0xf16
+   512b8: 61a0         	str	r0, [r4, #0x18]
+   512ba: f241 4008    	movw	r0, #0x1408
+   512be: f104 0848    	add.w	r8, r4, #0x48
+   512c2: 2148         	movs	r1, #0x48
+   512c4: 61e6         	str	r6, [r4, #0x1c]
+   512c6: 6226         	str	r6, [r4, #0x20]
+   512c8: 6266         	str	r6, [r4, #0x24]
+   512ca: 62a6         	str	r6, [r4, #0x28]
+   512cc: 5026         	str	r6, [r4, r0]
+   512ce: 6466         	str	r6, [r4, #0x44]
+   512d0: 5466         	strb	r6, [r4, r1]
+   512d2: 3101         	adds	r1, #0x1
+   512d4: 4281         	cmp	r1, r0
+   512d6: d1fb         	bne	0x512d0 <EnterDeviceScreenUi+0x5c> @ imm = #-0xa
+   512d8: f04f 5000    	mov.w	r0, #0x20000000
+   512dc: 6004         	str	r4, [r0]
+   512de: f7fe ffc4    	bl	0x5026a <GetNativeActiveScreen> @ imm = #-0x1078
+   512e2: 4601         	mov	r1, r0
+   512e4: 4628         	mov	r0, r5
+   512e6: 2200         	movs	r2, #0x0
+   512e8: f7fe fec6    	bl	0x50078 <CreateScreenUiOnScreen> @ imm = #-0x1274
+   512ec: f241 5116    	movw	r1, #0x1516
+   512f0: f2c0 0105    	movt	r1, #0x5
+   512f4: 4628         	mov	r0, r5
+   512f6: f7fe ff6f    	bl	0x501d8 <SetScreenUiTitle> @ imm = #-0x1122
+   512fa: f241 5120    	movw	r1, #0x1520
+   512fe: f2c0 0105    	movt	r1, #0x5
+   51302: 4628         	mov	r0, r5
+   51304: f7fe ff76    	bl	0x501f4 <SetScreenUiMessage> @ imm = #-0x1114
+   51308: f241 512d    	movw	r1, #0x152d
+   5130c: f2c0 0105    	movt	r1, #0x5
+   51310: 4628         	mov	r0, r5
+   51312: f7fe ff7d    	bl	0x50210 <SetScreenUiStatus> @ imm = #-0x1106
+   51316: 2601         	movs	r6, #0x1
+   51318: 4640         	mov	r0, r8
+   5131a: 4629         	mov	r1, r5
+   5131c: 6266         	str	r6, [r4, #0x24]
+   5131e: f7ff f84b    	bl	0x503b8 <InitializeMarkdown> @ imm = #-0xf6a
+   51322: 4628         	mov	r0, r5
+   51324: f7fe ff82    	bl	0x5022c <LoadScreenUi>  @ imm = #-0x10fc
+   51328: f245 610d    	movw	r1, #0x560d
+   5132c: f2c0 0103    	movt	r1, #0x3
+   51330: 2002         	movs	r0, #0x2
+   51332: 6226         	str	r6, [r4, #0x20]
+   51334: 4788         	blx	r1
+   51336: 4668         	mov	r0, sp
+   51338: 9403         	str	r4, [sp, #0xc]
+   5133a: f000 f80c    	bl	0x51356 <UpdateDeviceScreenUi> @ imm = #0x18
+   5133e: f241 3057    	movw	r0, #0x1357
+   51342: f2c0 0005    	movt	r0, #0x5
+   51346: 210a         	movs	r1, #0xa
+   51348: 4622         	mov	r2, r4
+   5134a: f7ff f82f    	bl	0x503ac <lv_timer_create> @ imm = #-0xfa2
+   5134e: b006         	add	sp, #0x18
+   51350: f85d 8b04    	ldr	r8, [sp], #4
+   51354: bdf0         	pop	{r4, r5, r6, r7, pc}
+
+00051356 <UpdateDeviceScreenUi>:
+   51356: b5f0         	push	{r4, r5, r6, r7, lr}
+   51358: af03         	add	r7, sp, #0xc
+   5135a: f84d bd04    	str	r11, [sp, #-4]!
+   5135e: 68c4         	ldr	r4, [r0, #0xc]
+   51360: f242 7010    	movw	r0, #0x2710
+   51364: 6060         	str	r0, [r4, #0x4]
+   51366: 69e0         	ldr	r0, [r4, #0x1c]
+   51368: 3001         	adds	r0, #0x1
+   5136a: 61e0         	str	r0, [r4, #0x1c]
+   5136c: f104 0048    	add.w	r0, r4, #0x48
+   51370: f7ff f956    	bl	0x50620 <UpdateMarkdown> @ imm = #-0xd54
+   51374: f241 4008    	movw	r0, #0x1408
+   51378: 5821         	ldr	r1, [r4, r0]
+   5137a: b151         	cbz	r1, 0x51392 <UpdateDeviceScreenUi+0x3c> @ imm = #0x14
+   5137c: f8d4 1088    	ldr.w	r1, [r4, #0x88]
+   51380: f3bf 8f5f    	dmb	sy
+   51384: b929         	cbnz	r1, 0x51392 <UpdateDeviceScreenUi+0x3c> @ imm = #0xa
+   51386: 4420         	add	r0, r4
+   51388: 2100         	movs	r1, #0x0
+   5138a: 6001         	str	r1, [r0]
+   5138c: 4620         	mov	r0, r4
+   5138e: f7ff ff25    	bl	0x511dc <SendWirelessMarkdownReply> @ imm = #-0x1b6
+   51392: f7fe ff6a    	bl	0x5026a <GetNativeActiveScreen> @ imm = #-0x112c
+   51396: 4625         	mov	r5, r4
+   51398: f855 1f08    	ldr	r1, [r5, #8]!
+   5139c: 4288         	cmp	r0, r1
+   5139e: d005         	beq	0x513ac <UpdateDeviceScreenUi+0x56> @ imm = #0xa
+   513a0: 4628         	mov	r0, r5
+   513a2: f7fe ff43    	bl	0x5022c <LoadScreenUi>  @ imm = #-0x117a
+   513a6: 6a20         	ldr	r0, [r4, #0x20]
+   513a8: 3001         	adds	r0, #0x1
+   513aa: 6220         	str	r0, [r4, #0x20]
+   513ac: 6d20         	ldr	r0, [r4, #0x50]
+   513ae: b110         	cbz	r0, 0x513b6 <UpdateDeviceScreenUi+0x60> @ imm = #0x4
+   513b0: f85d bb04    	ldr	r11, [sp], #4
+   513b4: bdf0         	pop	{r4, r5, r6, r7, pc}
+   513b6: f7fe fff4    	bl	0x503a2 <lv_tick_get>   @ imm = #-0x1018
+   513ba: 69a1         	ldr	r1, [r4, #0x18]
+   513bc: 6c63         	ldr	r3, [r4, #0x44]
+   513be: 1a41         	subs	r1, r0, r1
+   513c0: f644 50d3    	movw	r0, #0x4dd3
+   513c4: f2c1 0062    	movt	r0, #0x1062
+   513c8: fba1 0200    	umull	r0, r2, r1, r0
+   513cc: 0990         	lsrs	r0, r2, #0x6
+   513ce: 4283         	cmp	r3, r0
+   513d0: d102         	bne	0x513d8 <UpdateDeviceScreenUi+0x82> @ imm = #0x4
+   513d2: 69e2         	ldr	r2, [r4, #0x1c]
+   513d4: 2a01         	cmp	r2, #0x1
+   513d6: d1eb         	bne	0x513b0 <UpdateDeviceScreenUi+0x5a> @ imm = #-0x2a
+   513d8: f647 42b1    	movw	r2, #0x7cb1
+   513dc: f2c9 5221    	movt	r2, #0x9521
+   513e0: fba1 2302    	umull	r2, r3, r1, r2
+   513e4: f24b 2273    	movw	r2, #0xb273
+   513e8: f2c4 52e7    	movt	r2, #0x45e7
+   513ec: fba1 1202    	umull	r1, r2, r1, r2
+   513f0: f244 4c45    	movw	r12, #0x4445
+   513f4: 0b91         	lsrs	r1, r2, #0xe
+   513f6: f2c0 4c44    	movt	r12, #0x444
+   513fa: fba1 2e0c    	umull	r2, lr, r1, r12
+   513fe: fba0 2c0c    	umull	r2, r12, r0, r12
+   51402: f247 5252    	movw	r2, #0x7552
+   51406: f6c6 626e    	movt	r2, #0x6e6e
+   5140a: f844 2f2c    	str	r2, [r4, #44]!
+   5140e: 0d5a         	lsrs	r2, r3, #0x15
+   51410: f240 561f    	movw	r6, #0x51f
+   51414: 4372         	muls	r2, r6, r2
+   51416: 0c52         	lsrs	r2, r2, #0x11
+   51418: 2664         	movs	r6, #0x64
+   5141a: 4372         	muls	r2, r6, r2
+   5141c: ebc2 5253    	rsb	r2, r2, r3, lsr #21
+   51420: ebce 130e    	rsb	r3, lr, lr, lsl #4
+   51424: eba1 0183    	sub.w	r1, r1, r3, lsl #2
+   51428: ebcc 130c    	rsb	r3, r12, r12, lsl #4
+   5142c: 61a0         	str	r0, [r4, #0x18]
+   5142e: eba0 0083    	sub.w	r0, r0, r3, lsl #2
+   51432: f646 6369    	movw	r3, #0x6e69
+   51436: f2c2 0367    	movt	r3, #0x2067
+   5143a: 6063         	str	r3, [r4, #0x4]
+   5143c: b2d3         	uxtb	r3, r2
+   5143e: f04f 0ccd    	mov.w	r12, #0xcd
+   51442: fb03 f30c    	mul	r3, r3, r12
+   51446: f04f 0e30    	mov.w	lr, #0x30
+   5144a: 0ade         	lsrs	r6, r3, #0xb
+   5144c: ea4e 23d3    	orr.w	r3, lr, r3, lsr #11
+   51450: 7223         	strb	r3, [r4, #0x8]
+   51452: eb06 0386    	add.w	r3, r6, r6, lsl #2
+   51456: eba2 0243    	sub.w	r2, r2, r3, lsl #1
+   5145a: b2cb         	uxtb	r3, r1
+   5145c: fb03 f30c    	mul	r3, r3, r12
+   51460: 0ade         	lsrs	r6, r3, #0xb
+   51462: ea4e 23d3    	orr.w	r3, lr, r3, lsr #11
+   51466: 72e3         	strb	r3, [r4, #0xb]
+   51468: eb06 0386    	add.w	r3, r6, r6, lsl #2
+   5146c: eba1 0143    	sub.w	r1, r1, r3, lsl #1
+   51470: f041 0130    	orr	r1, r1, #0x30
+   51474: f042 0230    	orr	r2, r2, #0x30
+   51478: 7321         	strb	r1, [r4, #0xc]
+   5147a: b2c1         	uxtb	r1, r0
+   5147c: 7262         	strb	r2, [r4, #0x9]
+   5147e: 223a         	movs	r2, #0x3a
+   51480: fb01 f10c    	mul	r1, r1, r12
+   51484: 72a2         	strb	r2, [r4, #0xa]
+   51486: 7362         	strb	r2, [r4, #0xd]
+   51488: 0aca         	lsrs	r2, r1, #0xb
+   5148a: ea4e 21d1    	orr.w	r1, lr, r1, lsr #11
+   5148e: 73a1         	strb	r1, [r4, #0xe]
+   51490: eb02 0182    	add.w	r1, r2, r2, lsl #2
+   51494: eba0 0041    	sub.w	r0, r0, r1, lsl #1
+   51498: f040 0030    	orr	r0, r0, #0x30
+   5149c: 2200         	movs	r2, #0x0
+   5149e: 73e0         	strb	r0, [r4, #0xf]
+   514a0: 4628         	mov	r0, r5
+   514a2: 4621         	mov	r1, r4
+   514a4: 7422         	strb	r2, [r4, #0x10]
+   514a6: f85d bb04    	ldr	r11, [sp], #4
+   514aa: e8bd 40f0    	pop.w	{r4, r5, r6, r7, lr}
+   514ae: f7fe beaf    	b.w	0x50210 <SetScreenUiStatus> @ imm = #-0x12a2
+   514b2: d4d4         	bmi	0x5145e <UpdateDeviceScreenUi+0x108> @ imm = #-0x58
+
+000514b4 <ContinueNativeScreenPacket>:
+   514b4: e92d 4ff0    	push.w	{r4, r5, r6, r7, r8, r9, r10, r11, lr}
+   514b8: f8df c004    	ldr.w	r12, [pc, #0x4]         @ 0x514c0 <ContinueNativeScreenPacket+0xc>
+   514bc: 4760         	bx	r12
+   514be: 0000         	movs	r0, r0
+   514c0: 69 50 03 00  	.word	0x00035069
+   514c4: 30 31 32 33  	.word	0x33323130
+   514c8: 34 35 36 37  	.word	0x37363534
+   514cc: 38 39 41 42  	.word	0x42413938
+   514d0: 43 44 45 46  	.word	0x46454443
+   514d4: 00 00 68 65  	.word	0x65680000
+   514d8: 6c 6c 6f 77  	.word	0x776f6c6c
+   514dc: 20 77 6f 72  	.word	0x726f7720
+   514e0: 6c 64 00 55  	.word	0x5500646c
+   514e4: 53 42 20 74  	.word	0x74204253
+   514e8: 72 61 6e 73  	.word	0x736e6172
+   514ec: 66 65 72 00  	.word	0x00726566
+   514f0: 52 65 63 65  	.word	0x65636552
+   514f4: 69 76 69 6e  	.word	0x6e697669
+   514f8: 67 20 4d 61  	.word	0x614d2067
+   514fc: 72 6b 64 6f  	.word	0x6f646b72
+   51500: 77 6e 2e 2e  	.word	0x2e2e6e77
+   51504: 2e 00 4e 45  	.word	0x454e002e
+   51508: 4f 53 37 35  	.word	0x3537534f
+   5150c: 20 4d 61 72  	.word	0x72614d20
+   51510: 6b 64 6f 77  	.word	0x776f646b
+   51514: 6e 00        	.short	0x006e
+
+00051516 <ScreenUiTitle>:
+   51516: 4e 45 4f 53 37 35 20 55         NEOS75 U
+   5151e: 49 00                           I.
+
+00051520 <ScreenUiMessage>:
+   51520: 68 65 6c 6c 6f 77 20 77         hellow w
+   51528: 6f 72 6c 64 00                  orld.
+
+0005152d <ScreenUiStatus>:
+   5152d: 00 d4 d4                        ...
+
+00051530 <.L__const.GetLegacyPageRootCount.Offsets>:
+   51530: 00 00 00 00 10 00 00 00         ........
+   51538: 40 00 00 00 74 00 00 00         @...t...
+   51540: a8 00 00 00 cc 00 00 00         ........
+   51548: e4 00 00 00                     ....

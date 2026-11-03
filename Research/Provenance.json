@@ -709,12 +709,13 @@
     "OriginalRelativePath": "Research/Screen/InstalledUi.json",
     "RelativePath": "Research/Screen/InstalledUi.json",
     "OriginalName": "InstalledUi.json",
-    "Sha256": "d4dc169599dbbae494a2acca9f09716a7a9545fe12591066c2d250f455553464",
+    "Sha256": "4e6ad975558ad2234e4d351d4172a1bfb920d761853ca29a611ba11bd4d3d0d6",
     "Source": "Mutable V04 deployment metadata updated with 2026-11-03 user confirmation of clockwise/down and counterclockwise/up scrolling",
-    "PreviousSha256": "86b642f08695f9d5e9b2f9b7ea7a594b4e2e2d6b76fec0c0d8c2121fc2db56af",
+    "PreviousSha256": "d4dc169599dbbae494a2acca9f09716a7a9545fe12591066c2d250f455553464",
     "Sha256History": [
       "ae9c78958b2506bfb9bd74ba0c1f5f4d2c520fb42980460a9103b6c2bc11f952",
-      "86b642f08695f9d5e9b2f9b7ea7a594b4e2e2d6b76fec0c0d8c2121fc2db56af"
+      "86b642f08695f9d5e9b2f9b7ea7a594b4e2e2d6b76fec0c0d8c2121fc2db56af",
+      "d4dc169599dbbae494a2acca9f09716a7a9545fe12591066c2d250f455553464"
     ]
   },
   {
@@ -2499,5 +2500,2051 @@
     "OriginalName": "Transcript.json",
     "Sha256": "cd62da53ad18189e73297c3b7f55e8b999207094f988b2746ad782be54540e68",
     "Source": "Actual read-only NEOS75 screen control/runtime capture after user confirmed bidirectional Markdown knob scrolling"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardBackup20261103T073723Z/Summary.json",
+    "RelativePath": "Research/Device/KeyboardBackup20261103T073723Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "7b48cf3e0db3b7f781d4149fe1823ecbc2f195bd2bb1a9048276ec42c060d962",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardBackup20261103T073723Z/Transcript.json",
+    "RelativePath": "Research/Device/KeyboardBackup20261103T073723Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "83280904b3c852eaa1fbe81f0bf5ee6a5607531a48f4c2c547766cc665ecab80",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardBackup20261103T073805Z/KeyboardApplication.bin",
+    "RelativePath": "Research/Device/KeyboardBackup20261103T073805Z/KeyboardApplication.bin",
+    "OriginalName": "KeyboardApplication.bin",
+    "Sha256": "843d8df0bd118bedd40cd42dc52c37e30ea0b87cc47db9ce2135b1d422adcc62",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardBackup20261103T073805Z/Summary.json",
+    "RelativePath": "Research/Device/KeyboardBackup20261103T073805Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "35a94b8353a7eb5aff11df40ea5cde43f20139abe03dcf5cc427e7f60dc7e5d9",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardBackup20261103T073805Z/Transcript.json",
+    "RelativePath": "Research/Device/KeyboardBackup20261103T073805Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "441db1f7cafbe93fb8f1b3cb90689948a8b75a182fe341898a1a590fa0e16405",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardBackupRecovery20261103T074209Z/Transcript.json",
+    "RelativePath": "Research/Device/KeyboardBackupRecovery20261103T074209Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "489236b24fd76c9b50e50605e92b845c97aa2c0c47801de77d5d840ce70790a5",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WiredInfoInWireless20261103T073425Z/Transcript.json",
+    "RelativePath": "Research/Device/WiredInfoInWireless20261103T073425Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "52d954c82da763bb582a169a64d7afcff96b7cbea5554eaf33736d20499974b4",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessRouteTiming20261103T074319Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessRouteTiming20261103T074319Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "7a34675a74dc9173429f7788825bdd4e0d6a34bb65c96e5c4567653a48b951bc",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessScreenQuery20261103T073048Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessScreenQuery20261103T073048Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "e51fd1e44d9bc52126fdadb5c62b0aa8add8fadcf67e38313c16278c5d8c7ba3",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessStatus20261103T072847Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessStatus20261103T072847Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "0a20b568917a5313b05625d1de142a28f6bc8db85eb20b99bec708ae8548235f",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/Keyboard20261103T073705Z/Install.log",
+    "RelativePath": "Research/Driver/Keyboard20261103T073705Z/Install.log",
+    "OriginalName": "Install.log",
+    "Sha256": "2d065b8182d779c51967f04b201ce23975fef1b579c9289bd47b79d1f317a452",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/Keyboard20261103T073705Z/Result.json",
+    "RelativePath": "Research/Driver/Keyboard20261103T073705Z/Result.json",
+    "OriginalName": "Result.json",
+    "Sha256": "45d03b02eb78f5a417ff57e0ed64760bc925d5dce61e4c67aecaf69382dc8115",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Driver/KeyboardDrivers.txt",
+    "RelativePath": "Research/Driver/KeyboardDrivers.txt",
+    "OriginalName": "KeyboardDrivers.txt",
+    "Sha256": "2b914f91b9026103ae4cb9c3ed865a462e00a1fb32c2a94c5d4ce808d2e20407",
+    "Source": "Single main-DFU interface line from the verified official driver package; scoped installation approved by user"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "743390cd66023636e89bc0dde063759ecadde51fb2658e542a04db5fb7492fb1",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/PacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/PacketPage.bin",
+    "OriginalName": "PacketPage.bin",
+    "Sha256": "1b006fd1415d0af4cd5b3db86c9f71b598ae4ea8c9b490e65f9446afc44fcb02",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "ff22a4c7f33fc31ad2d92ce51cbe4339f1bac786c92422ab26b599d3b186a146",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/RestorePacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/RestorePacketPage.bin",
+    "OriginalName": "RestorePacketPage.bin",
+    "Sha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/RestoreUnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/RestoreUnknownPage.bin",
+    "OriginalName": "RestoreUnknownPage.bin",
+    "Sha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/UnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/UnknownPage.bin",
+    "OriginalName": "UnknownPage.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/WirelessBridge.elf",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/WirelessBridge.elf",
+    "OriginalName": "WirelessBridge.elf",
+    "Sha256": "59f68c05067a075b5593c6b4bd2794c5a41dd7797a51c230d567c568ed65b6e7",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/WirelessBridgeDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/WirelessBridgeDisassembly.txt",
+    "OriginalName": "WirelessBridgeDisassembly.txt",
+    "Sha256": "b1a3eae6b150bfe637c7a887d082a63ad2d14c7593261f9ebe7f62344be5710a",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/WirelessBridgePlan.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Keyboard/WirelessBridgePlan.json",
+    "OriginalName": "WirelessBridgePlan.json",
+    "Sha256": "bba58f2b6b343d0a386515e7bb61420e7629eccea0e845597da9baff17055bca",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/HookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "249ca1fba4c6fb63f227743f20b333baffe88512886340d559073dc7dd91b838",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/InformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/Payload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "e9aa2b23ed9714e0fa7a8a73ef2781b5f1a7da82d825e7c8e75925a1875ca655",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/Payload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/Payload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "6490e31d0c9503ed3c1b5053ca5fceb6db0b4174afd11a089d68550d96b98c4b",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestoreHookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestoreInformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestoreVectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/ScreenUi.elf",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/ScreenUi.elf",
+    "OriginalName": "ScreenUi.elf",
+    "Sha256": "32378fc50397293432b1fc951ab37ef7df1ada798a7eb1ca4378fc19fd7dcd92",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/ScreenUiDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/ScreenUiDisassembly.txt",
+    "OriginalName": "ScreenUiDisassembly.txt",
+    "Sha256": "17ceb6b63d455aef7b9db1e6ab5cde834f76cb4064d1ac711fdb1cb85c519a70",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "8cc8244657a905f45bf8af4bbc742215a28da1fed485d1b80afd43cc6ea21b16",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Screen/VectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Screen/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Source.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Source.json",
+    "OriginalName": "Source.json",
+    "Sha256": "fafee9d32aa55f65675f8cbb8ccd7319c8b634d6e355dc577d1a58bb18e73a9a",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals",
+    "PreviousSha256": "1616cbabeb99a538e7dccb13d723537198194a81b370a51ef39c6aaa8686ffd8"
+  },
+  {
+    "OriginalRelativePath": "Research/Vendor/FirmwareListing20261103T072915Z/DongleFirmwareList.json",
+    "RelativePath": "Research/Vendor/FirmwareListing20261103T072915Z/DongleFirmwareList.json",
+    "OriginalName": "DongleFirmwareList.json",
+    "Sha256": "ed09ad04edf2e2d50c8ded089d6ab501924cd4189c832d300349d351b6864a17",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals",
+    "SourceUrl": "https://hubapi.aulacn.com/user/BIN/binList?vid=28006&pid=34162"
+  },
+  {
+    "OriginalRelativePath": "Research/Vendor/FirmwareListing20261103T072915Z/KeyboardFirmwareList.json",
+    "RelativePath": "Research/Vendor/FirmwareListing20261103T072915Z/KeyboardFirmwareList.json",
+    "OriginalName": "KeyboardFirmwareList.json",
+    "Sha256": "31bab2c3fff0c8441231dc64a92dc6340a5f7e8e408662ae89b80d7c7756770a",
+    "Source": "Actual NEOS75 read-only wireless/main-ROM backup capture or derived bounded wireless firmware candidate with recovery originals",
+    "SourceUrl": "https://hubapi.aulacn.com/user/BIN/binList?vid=7847&pid=18564"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "OriginalName": "BackupKeyboardFirmware.py",
+    "Sha256": "9fc01b1007e81a41b89216abd94db2a5c30b773904350999eafa47635a786181",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "OriginalName": "BackupScreenFirmware.py",
+    "Sha256": "747f108099219e2695dccb6dc777ece363dd13edb2c629271534e2f0ac8af38e",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "OriginalName": "ExtractUiResources.py",
+    "Sha256": "4f011462a56627e18d2ab248bc71e7a2b9e623d2a88106463231104ecc76afbd",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "OriginalName": "InspectFirmware.py",
+    "Sha256": "72e9c699a896fdffd41fd4fe020f314f622f28e69e218bce13d1fa09e51960ce",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "OriginalName": "InstallArmCompiler.py",
+    "Sha256": "6c9c4c895d146f1d114321afa43083a15a00b8f17f6fc989245fd68fd290b2e0",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "OriginalName": "InstallKeyboardDriver.ps1",
+    "Sha256": "df2994da03b531a05bcf8790e4ad88bcb4db5d173258f5ee85fe910ecadef3ce",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "OriginalName": "InstallScreenDriver.ps1",
+    "Sha256": "aae5bbbfa9233c153df37c5b2c66325722490d155f3b0e68afd9b2d6eab8c2fb",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "OriginalName": "InstallScreenUiFirmware.py",
+    "Sha256": "799e70ffa7adb6628e7471cd29a7b977f42dc3d824a5a9a83d0d3228819f92af",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "OriginalName": "InstallWirelessBridgeFirmware.py",
+    "Sha256": "55cb9a38f6b6ec9194f20401bbc8887b2758d1cc7e942cdd9a0f3393982e7c93",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "OriginalName": "BuildWirelessBridgeFirmware.py",
+    "Sha256": "7a8f46c2206def557b5be36a8d87ae2ddb4430613b0cf56646d9393c172f7abd",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "OriginalName": "ConfigureScreenKnob.py",
+    "Sha256": "1d29b089b1182a9c32eeb077ed7c4b091edfbc9872933976c47f761ed40bdaf7",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "OriginalName": "ReadKeyboard.py",
+    "Sha256": "8d7d7f679424b365cb0bb780ef90d28dac89889274b92e7f2c15f8bde3398e64",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "OriginalName": "BridgeHooks.s",
+    "Sha256": "24ff8134001a9033987b95f5b56dc16bfb3d74930d0438ac4842e9d0f0f807e5",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "OriginalName": "BridgePatch.ld",
+    "Sha256": "aaa22d21611fa41f2164b56f412f2d12569a0a23b89fe72048d80714e2cc21c6",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "743390cd66023636e89bc0dde063759ecadde51fb2658e542a04db5fb7492fb1",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "OriginalName": "WirelessBridge.c",
+    "Sha256": "35b270dc115e0dba15cf43801cc3576069477a4cf076fc49112e31b2f0a6664f",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "OriginalName": "ApplicationHook.s",
+    "Sha256": "4947b6106e6f80d1a37da90be05723ada4107bbf119e390fe03f6ee2e12c12fd",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "OriginalName": "DeviceScreenUi.c",
+    "Sha256": "e59a689ae85aab6b43595f3130db7759dad9bf71459590b245107ddc7e1ac201",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "OriginalName": "InformationHook.s",
+    "Sha256": "44cd58655216e7a2d61816113291eb1e0b4faa9bf2bc3e48eb620d7ba587ee0a",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "OriginalName": "NativeLvgl.c",
+    "Sha256": "cef0ee000deaf0f2e8481ea27761ad5c9503176001149ceb1b04fa9fafd688be",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "OriginalName": "NativeLvgl.h",
+    "Sha256": "bbd23cdb2c7ed662474a3f07e1addf572b969a1f93f510b95d650b745c97e60e",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "OriginalName": "PacketHook.s",
+    "Sha256": "cc25b837a7f43e4579683d0432b2f5ca5be6912126760de781cd0ebf38d7f074",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "OriginalName": "ScreenRecovery.s",
+    "Sha256": "f67f9dc128e4ea1786db388b06f3092bb452d5e8bd5f16e85f2827be45a543d4",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "OriginalName": "ScreenUiConfiguration.json",
+    "Sha256": "99e99b2ca4681930aa92da9dc6d2fa08916c58832986c99506e0fb178e4aa69c",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "OriginalName": "ScreenUiPatch.ld",
+    "Sha256": "502898a798a46dbf8ab3a8d7636131893a827a6f2c23b9326a9d19331fc9a2c7",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "OriginalName": "MarkdownDocument.c",
+    "Sha256": "b9669f195b0cf9c0dbacfd67c5197d6edab15cc18803ad77da77aba94f5db944",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "OriginalName": "MarkdownDocument.h",
+    "Sha256": "4c1df41edaa57cfd49019521b893f68ea9e918092e59b9a52bfe22a2c6af51f9",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "OriginalName": "LvConf.h",
+    "Sha256": "68189b494ca1ff90831aa7100a95dac7697d03e2245d1b1386146d0208fe803f",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "OriginalName": "ScreenUiPreview.c",
+    "Sha256": "4ccc7cf5cf227dfd6ff728a85640168441b9ed6fb91eb9e39635b5c3469d0619",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/ScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/ScreenUi.c",
+    "OriginalName": "ScreenUi.c",
+    "Sha256": "f02d35ec6e02a46b978cae9e3c291fc4a65c03aa0e6453f7383b8cf13e7b185c",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/ScreenUi.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/ScreenUi.h",
+    "OriginalName": "ScreenUi.h",
+    "Sha256": "b62065b85075ecbfdbc517fbc44b9386f536e567931d614701114df4afc45ae0",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "OriginalName": "BuildScreenUiFirmware.py",
+    "Sha256": "6e50181ccecd493098d0ddd47f1111f61fd42b9415840d3c8ea3132667909f07",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "OriginalName": "BuildScreenUiPreview.py",
+    "Sha256": "916afd516193f1c1db1a613f6f19c5cfd44c9a3050c0e3e850c7dd2459de0783",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "OriginalName": "MarkdownUtilities.py",
+    "Sha256": "e36253a7701a501092aa1d0ba6c2c15d4067dd71f98bf6823346f8b728718290",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "OriginalName": "ReadScreen.py",
+    "Sha256": "a3c89831239350489eeb7a0d3a639df89c024e2db464497d6a5c389891ba293f",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "OriginalName": "ReadScreenControls.py",
+    "Sha256": "ebe8b50a853ea89ca59b3b430274655b0779bc1d5cf19fc0944adf2bb9f28229",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "OriginalName": "ReadScreenUiState.py",
+    "Sha256": "5ca50f4cb83885bc7a469de8737bfab889f63d1f476172c1e3d2b9e520554875",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "OriginalName": "WriteMarkdown.py",
+    "Sha256": "25a41bcf496835fad8a53dd5fbf7ca0babd65f1122abc12324b3c8a7f59b3b52",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "OriginalName": "DecodeVendorChunk.cjs",
+    "Sha256": "b98d04c866799c713a7a3c36e7d39f88332b5573465099067ea96717a1a9f41b",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "OriginalName": "DecodeVendorIndex.cjs",
+    "Sha256": "6e5b27eda5d139c755afe9dadc23455336ccb5efb4cb0f3779c355996ce32ca6",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "OriginalName": "VendorStringUtilities.cjs",
+    "Sha256": "55a74973997bd06eecd07e39e7bcdcce47218a113963f1c5537f8afbf84e24a0",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Tools/Environment.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/Tools/Environment.json",
+    "OriginalName": "Environment.json",
+    "Sha256": "0352b97ef2dedbf640c0ab80e52317445df5ce49b3e8773a0f22b5d606a217fa",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV01/Sources/WriteMarkdown.bat",
+    "RelativePath": "Research/Firmware/WirelessCandidateV01/Sources/WriteMarkdown.bat",
+    "OriginalName": "WriteMarkdown.bat",
+    "Sha256": "ceb4552c13cb0629985837e1b4c5267fd34097b38b8454cc32bff718889a1b5c",
+    "Source": "Exact source snapshot of the uncommitted reviewed WirelessCandidateV01; production code only, not executable from the archive path"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/InstalledWirelessBridge.json",
+    "RelativePath": "Research/Device/InstalledWirelessBridge.json",
+    "OriginalName": "InstalledWirelessBridge.json",
+    "Sha256": "f3aa2188ed70ec702c09d05a0679b22902531ec2dd92a394cb24813c3db459ec",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/AfterApplication.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "d403bcb6fdb9a18fc086398a3d323ae3ca9e8a35736d9faba5c2dffefa95c4a8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/BeforeApplication.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "843d8df0bd118bedd40cd42dc52c37e30ea0b87cc47db9ce2135b1d422adcc62",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/BeforeApplicationConfirm.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/BeforeApplicationConfirm.bin",
+    "OriginalName": "BeforeApplicationConfirm.bin",
+    "Sha256": "843d8df0bd118bedd40cd42dc52c37e30ea0b87cc47db9ce2135b1d422adcc62",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Entry.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Entry.bin",
+    "OriginalName": "Entry.bin",
+    "Sha256": "41409ed2102b00ecff06fa39e631db386b536a399c96f85d4a0d2f8842be5c64",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/InstallPacketReadback.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/InstallPacketReadback.bin",
+    "OriginalName": "InstallPacketReadback.bin",
+    "Sha256": "1b006fd1415d0af4cd5b3db86c9f71b598ae4ea8c9b490e65f9446afc44fcb02",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "ff22a4c7f33fc31ad2d92ce51cbe4339f1bac786c92422ab26b599d3b186a146",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/InstallUnknownReadback.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/InstallUnknownReadback.bin",
+    "OriginalName": "InstallUnknownReadback.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/PacketPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/PacketPage.bin",
+    "OriginalName": "PacketPage.bin",
+    "Sha256": "1b006fd1415d0af4cd5b3db86c9f71b598ae4ea8c9b490e65f9446afc44fcb02",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "ff22a4c7f33fc31ad2d92ce51cbe4339f1bac786c92422ab26b599d3b186a146",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/RestorePacketPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/RestorePacketPage.bin",
+    "OriginalName": "RestorePacketPage.bin",
+    "Sha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/RestoreUnknownPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/RestoreUnknownPage.bin",
+    "OriginalName": "RestoreUnknownPage.bin",
+    "Sha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/UnknownPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/UnknownPage.bin",
+    "OriginalName": "UnknownPage.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/WirelessBridgePlan.json",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Package/WirelessBridgePlan.json",
+    "OriginalName": "WirelessBridgePlan.json",
+    "Sha256": "bba58f2b6b343d0a386515e7bb61420e7629eccea0e845597da9baff17055bca",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Report.json",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "070cc547a263edbc28b468882081bb828a5463d4136daaf5ccb2051f207480bf",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Transcript.json",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T080705Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "7e8576e7f8958fec99af1df0a3d3a13c0b817f7e436518b2c112cab248509eab",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/AfterApplication.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "5f32265fd4ee65bb832d5c9d8f5247d7e6be568cffbec6df8ffa05ad0b0adeb9",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/BeforeApplication.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "d403bcb6fdb9a18fc086398a3d323ae3ca9e8a35736d9faba5c2dffefa95c4a8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/BeforeApplicationConfirm.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/BeforeApplicationConfirm.bin",
+    "OriginalName": "BeforeApplicationConfirm.bin",
+    "Sha256": "d403bcb6fdb9a18fc086398a3d323ae3ca9e8a35736d9faba5c2dffefa95c4a8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Entry.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Entry.bin",
+    "OriginalName": "Entry.bin",
+    "Sha256": "41409ed2102b00ecff06fa39e631db386b536a399c96f85d4a0d2f8842be5c64",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/InstallPacketReadback.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/InstallPacketReadback.bin",
+    "OriginalName": "InstallPacketReadback.bin",
+    "Sha256": "6d2d918c29f7fa491dc9395951061e2d3d27ce4cebff87cdaed04c3b2b190baf",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "f12c413f00b9d60f0fc68c68c2cd03cd650025ffe597a849966de9c31dcf9961",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/PacketPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/PacketPage.bin",
+    "OriginalName": "PacketPage.bin",
+    "Sha256": "6d2d918c29f7fa491dc9395951061e2d3d27ce4cebff87cdaed04c3b2b190baf",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "f12c413f00b9d60f0fc68c68c2cd03cd650025ffe597a849966de9c31dcf9961",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/RestorePacketPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/RestorePacketPage.bin",
+    "OriginalName": "RestorePacketPage.bin",
+    "Sha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/RestoreUnknownPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/RestoreUnknownPage.bin",
+    "OriginalName": "RestoreUnknownPage.bin",
+    "Sha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/UnknownPage.bin",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/UnknownPage.bin",
+    "OriginalName": "UnknownPage.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/WirelessBridgePlan.json",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Package/WirelessBridgePlan.json",
+    "OriginalName": "WirelessBridgePlan.json",
+    "Sha256": "19f4a15d8b92c280368138f339798a8ea9be11f43100d6d904ad017e8636af0d",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Report.json",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "709dc2d00eae41696eebcd50d8f2ebbcdfb9c6a5d54776c1e3c6f3b786bfc443",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Transcript.json",
+    "RelativePath": "Research/Device/KeyboardFlash20261103T081321Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "ecebd1faca0614fc7bfdf04407b9646369c4fd8bb7013f60a4689591f1c7217e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json",
+    "RelativePath": "Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json",
+    "OriginalName": "Commissioning.json",
+    "Sha256": "207081d9b8283646a94ce8aac49ba622bf86db90a5d80ba48fa7cb278b032af5",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts",
+    "PreviousSha256": [
+      "9de8333399424857723e019dc7ed043da74ab4d716aef1015021d3938371ad42"
+    ]
+  },
+  {
+    "OriginalRelativePath": "Research/Device/WirelessReturnIsolation20261103T081033Z/Transcript.json",
+    "RelativePath": "Research/Device/WirelessReturnIsolation20261103T081033Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "55e0b6fc61df25e31b1d1136b53b2592b810d43d3d6d5efcfcdfe63535fe1554",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "9c47330fed8c5ed36d5e092ae1fcfc79e670c57f6d7663d43c24877c539e1696",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/PacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/PacketPage.bin",
+    "OriginalName": "PacketPage.bin",
+    "Sha256": "6d2d918c29f7fa491dc9395951061e2d3d27ce4cebff87cdaed04c3b2b190baf",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "f12c413f00b9d60f0fc68c68c2cd03cd650025ffe597a849966de9c31dcf9961",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/RestorePacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/RestorePacketPage.bin",
+    "OriginalName": "RestorePacketPage.bin",
+    "Sha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/RestoreUnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/RestoreUnknownPage.bin",
+    "OriginalName": "RestoreUnknownPage.bin",
+    "Sha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/UnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/UnknownPage.bin",
+    "OriginalName": "UnknownPage.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/WirelessBridge.elf",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/WirelessBridge.elf",
+    "OriginalName": "WirelessBridge.elf",
+    "Sha256": "6921e119f193e85ae1c6c38fa41b73b67e115a1aa9859cf078985f87c11248de",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/WirelessBridgeDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/WirelessBridgeDisassembly.txt",
+    "OriginalName": "WirelessBridgeDisassembly.txt",
+    "Sha256": "0594969c39a734b61a55bc0e25a4966473ef8dcad67ad9137c357f32fb51dda7",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/WirelessBridgePlan.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Keyboard/WirelessBridgePlan.json",
+    "OriginalName": "WirelessBridgePlan.json",
+    "Sha256": "19f4a15d8b92c280368138f339798a8ea9be11f43100d6d904ad017e8636af0d",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/HookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "249ca1fba4c6fb63f227743f20b333baffe88512886340d559073dc7dd91b838",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/InformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/Payload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "e9aa2b23ed9714e0fa7a8a73ef2781b5f1a7da82d825e7c8e75925a1875ca655",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/Payload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/Payload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "6490e31d0c9503ed3c1b5053ca5fceb6db0b4174afd11a089d68550d96b98c4b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestoreHookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestoreInformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestoreVectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/ScreenUi.elf",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/ScreenUi.elf",
+    "OriginalName": "ScreenUi.elf",
+    "Sha256": "32378fc50397293432b1fc951ab37ef7df1ada798a7eb1ca4378fc19fd7dcd92",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/ScreenUiDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/ScreenUiDisassembly.txt",
+    "OriginalName": "ScreenUiDisassembly.txt",
+    "Sha256": "17ceb6b63d455aef7b9db1e6ab5cde834f76cb4064d1ac711fdb1cb85c519a70",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "8cc8244657a905f45bf8af4bbc742215a28da1fed485d1b80afd43cc6ea21b16",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Screen/VectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Screen/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Source.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Source.json",
+    "OriginalName": "Source.json",
+    "Sha256": "48662db9f18de6e35b0db56b00d7f5ec74caa1724ba999c8d1bc516e536672eb",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "OriginalName": "BackupKeyboardFirmware.py",
+    "Sha256": "9fc01b1007e81a41b89216abd94db2a5c30b773904350999eafa47635a786181",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "OriginalName": "BackupScreenFirmware.py",
+    "Sha256": "747f108099219e2695dccb6dc777ece363dd13edb2c629271534e2f0ac8af38e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "OriginalName": "ExtractUiResources.py",
+    "Sha256": "4f011462a56627e18d2ab248bc71e7a2b9e623d2a88106463231104ecc76afbd",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "OriginalName": "InspectFirmware.py",
+    "Sha256": "72e9c699a896fdffd41fd4fe020f314f622f28e69e218bce13d1fa09e51960ce",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "OriginalName": "InstallArmCompiler.py",
+    "Sha256": "6c9c4c895d146f1d114321afa43083a15a00b8f17f6fc989245fd68fd290b2e0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "OriginalName": "InstallKeyboardDriver.ps1",
+    "Sha256": "df2994da03b531a05bcf8790e4ad88bcb4db5d173258f5ee85fe910ecadef3ce",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "OriginalName": "InstallScreenDriver.ps1",
+    "Sha256": "aae5bbbfa9233c153df37c5b2c66325722490d155f3b0e68afd9b2d6eab8c2fb",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "OriginalName": "InstallScreenUiFirmware.py",
+    "Sha256": "799e70ffa7adb6628e7471cd29a7b977f42dc3d824a5a9a83d0d3228819f92af",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "OriginalName": "InstallWirelessBridgeFirmware.py",
+    "Sha256": "3a1add2c52d246d57689b770887a122c09411eaab17b8cbe2b5a2171a7f2865d",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "OriginalName": "BuildWirelessBridgeFirmware.py",
+    "Sha256": "7a8f46c2206def557b5be36a8d87ae2ddb4430613b0cf56646d9393c172f7abd",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "OriginalName": "ConfigureScreenKnob.py",
+    "Sha256": "1d29b089b1182a9c32eeb077ed7c4b091edfbc9872933976c47f761ed40bdaf7",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "OriginalName": "ReadKeyboard.py",
+    "Sha256": "8d7d7f679424b365cb0bb780ef90d28dac89889274b92e7f2c15f8bde3398e64",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "OriginalName": "BridgeHooks.s",
+    "Sha256": "24ff8134001a9033987b95f5b56dc16bfb3d74930d0438ac4842e9d0f0f807e5",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "OriginalName": "BridgePatch.ld",
+    "Sha256": "aaa22d21611fa41f2164b56f412f2d12569a0a23b89fe72048d80714e2cc21c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "9c47330fed8c5ed36d5e092ae1fcfc79e670c57f6d7663d43c24877c539e1696",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "OriginalName": "WirelessBridge.c",
+    "Sha256": "a96e2204cc68078760598c7a2f2cc1436c1bb6cc0417f643e21c4221b115c857",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "OriginalName": "ApplicationHook.s",
+    "Sha256": "4947b6106e6f80d1a37da90be05723ada4107bbf119e390fe03f6ee2e12c12fd",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "OriginalName": "DeviceScreenUi.c",
+    "Sha256": "e59a689ae85aab6b43595f3130db7759dad9bf71459590b245107ddc7e1ac201",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "OriginalName": "InformationHook.s",
+    "Sha256": "44cd58655216e7a2d61816113291eb1e0b4faa9bf2bc3e48eb620d7ba587ee0a",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "OriginalName": "NativeLvgl.c",
+    "Sha256": "cef0ee000deaf0f2e8481ea27761ad5c9503176001149ceb1b04fa9fafd688be",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "OriginalName": "NativeLvgl.h",
+    "Sha256": "bbd23cdb2c7ed662474a3f07e1addf572b969a1f93f510b95d650b745c97e60e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "OriginalName": "PacketHook.s",
+    "Sha256": "cc25b837a7f43e4579683d0432b2f5ca5be6912126760de781cd0ebf38d7f074",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "OriginalName": "ScreenRecovery.s",
+    "Sha256": "f67f9dc128e4ea1786db388b06f3092bb452d5e8bd5f16e85f2827be45a543d4",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "OriginalName": "ScreenUiConfiguration.json",
+    "Sha256": "99e99b2ca4681930aa92da9dc6d2fa08916c58832986c99506e0fb178e4aa69c",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "OriginalName": "ScreenUiPatch.ld",
+    "Sha256": "502898a798a46dbf8ab3a8d7636131893a827a6f2c23b9326a9d19331fc9a2c7",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "OriginalName": "MarkdownDocument.c",
+    "Sha256": "b9669f195b0cf9c0dbacfd67c5197d6edab15cc18803ad77da77aba94f5db944",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "OriginalName": "MarkdownDocument.h",
+    "Sha256": "4c1df41edaa57cfd49019521b893f68ea9e918092e59b9a52bfe22a2c6af51f9",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "OriginalName": "LvConf.h",
+    "Sha256": "68189b494ca1ff90831aa7100a95dac7697d03e2245d1b1386146d0208fe803f",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "OriginalName": "ScreenUiPreview.c",
+    "Sha256": "4ccc7cf5cf227dfd6ff728a85640168441b9ed6fb91eb9e39635b5c3469d0619",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/ScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/ScreenUi.c",
+    "OriginalName": "ScreenUi.c",
+    "Sha256": "f02d35ec6e02a46b978cae9e3c291fc4a65c03aa0e6453f7383b8cf13e7b185c",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/ScreenUi.h",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/ScreenUi.h",
+    "OriginalName": "ScreenUi.h",
+    "Sha256": "b62065b85075ecbfdbc517fbc44b9386f536e567931d614701114df4afc45ae0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "OriginalName": "BuildScreenUiFirmware.py",
+    "Sha256": "6e50181ccecd493098d0ddd47f1111f61fd42b9415840d3c8ea3132667909f07",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "OriginalName": "BuildScreenUiPreview.py",
+    "Sha256": "916afd516193f1c1db1a613f6f19c5cfd44c9a3050c0e3e850c7dd2459de0783",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "OriginalName": "MarkdownUtilities.py",
+    "Sha256": "e36253a7701a501092aa1d0ba6c2c15d4067dd71f98bf6823346f8b728718290",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "OriginalName": "ReadScreen.py",
+    "Sha256": "a3c89831239350489eeb7a0d3a639df89c024e2db464497d6a5c389891ba293f",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "OriginalName": "ReadScreenControls.py",
+    "Sha256": "ebe8b50a853ea89ca59b3b430274655b0779bc1d5cf19fc0944adf2bb9f28229",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "OriginalName": "ReadScreenUiState.py",
+    "Sha256": "5ca50f4cb83885bc7a469de8737bfab889f63d1f476172c1e3d2b9e520554875",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "OriginalName": "WriteMarkdown.py",
+    "Sha256": "25a41bcf496835fad8a53dd5fbf7ca0babd65f1122abc12324b3c8a7f59b3b52",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "OriginalName": "DecodeVendorChunk.cjs",
+    "Sha256": "b98d04c866799c713a7a3c36e7d39f88332b5573465099067ea96717a1a9f41b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "OriginalName": "DecodeVendorIndex.cjs",
+    "Sha256": "6e5b27eda5d139c755afe9dadc23455336ccb5efb4cb0f3779c355996ce32ca6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "OriginalName": "VendorStringUtilities.cjs",
+    "Sha256": "55a74973997bd06eecd07e39e7bcdcce47218a113963f1c5537f8afbf84e24a0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Tools/Environment.json",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/Tools/Environment.json",
+    "OriginalName": "Environment.json",
+    "Sha256": "0352b97ef2dedbf640c0ab80e52317445df5ce49b3e8773a0f22b5d606a217fa",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessCandidateV02/Sources/WriteMarkdown.bat",
+    "RelativePath": "Research/Firmware/WirelessCandidateV02/Sources/WriteMarkdown.bat",
+    "OriginalName": "WriteMarkdown.bat",
+    "Sha256": "ceb4552c13cb0629985837e1b4c5267fd34097b38b8454cc32bff718889a1b5c",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "9c47330fed8c5ed36d5e092ae1fcfc79e670c57f6d7663d43c24877c539e1696",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/PacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/PacketPage.bin",
+    "OriginalName": "PacketPage.bin",
+    "Sha256": "6d2d918c29f7fa491dc9395951061e2d3d27ce4cebff87cdaed04c3b2b190baf",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "f12c413f00b9d60f0fc68c68c2cd03cd650025ffe597a849966de9c31dcf9961",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/RestorePacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/RestorePacketPage.bin",
+    "OriginalName": "RestorePacketPage.bin",
+    "Sha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/RestoreUnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/RestoreUnknownPage.bin",
+    "OriginalName": "RestoreUnknownPage.bin",
+    "Sha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/UnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/UnknownPage.bin",
+    "OriginalName": "UnknownPage.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/WirelessBridge.elf",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/WirelessBridge.elf",
+    "OriginalName": "WirelessBridge.elf",
+    "Sha256": "6921e119f193e85ae1c6c38fa41b73b67e115a1aa9859cf078985f87c11248de",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/WirelessBridgeDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/WirelessBridgeDisassembly.txt",
+    "OriginalName": "WirelessBridgeDisassembly.txt",
+    "Sha256": "0594969c39a734b61a55bc0e25a4966473ef8dcad67ad9137c357f32fb51dda7",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Keyboard/WirelessBridgePlan.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Keyboard/WirelessBridgePlan.json",
+    "OriginalName": "WirelessBridgePlan.json",
+    "Sha256": "19f4a15d8b92c280368138f339798a8ea9be11f43100d6d904ad017e8636af0d",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/HookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "249ca1fba4c6fb63f227743f20b333baffe88512886340d559073dc7dd91b838",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/InformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/Payload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "e9aa2b23ed9714e0fa7a8a73ef2781b5f1a7da82d825e7c8e75925a1875ca655",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/Payload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/Payload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "6490e31d0c9503ed3c1b5053ca5fceb6db0b4174afd11a089d68550d96b98c4b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestoreHookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestoreInformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/RestoreVectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/ScreenUi.elf",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/ScreenUi.elf",
+    "OriginalName": "ScreenUi.elf",
+    "Sha256": "32378fc50397293432b1fc951ab37ef7df1ada798a7eb1ca4378fc19fd7dcd92",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/ScreenUiDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/ScreenUiDisassembly.txt",
+    "OriginalName": "ScreenUiDisassembly.txt",
+    "Sha256": "17ceb6b63d455aef7b9db1e6ab5cde834f76cb4064d1ac711fdb1cb85c519a70",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "8cc8244657a905f45bf8af4bbc742215a28da1fed485d1b80afd43cc6ea21b16",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Screen/VectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Screen/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Source.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Source.json",
+    "OriginalName": "Source.json",
+    "Sha256": "fc3878672a813b0b87845d8cc647eb9fea690664f569b8d265d05273cb5a2286",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts",
+    "PreviousSha256": [
+      "0689b22aeccf2e0f1c67a7d621f4651ff68f1f10a2efd31e8dd5b6ef65aee2de"
+    ]
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "OriginalName": "BackupKeyboardFirmware.py",
+    "Sha256": "9fc01b1007e81a41b89216abd94db2a5c30b773904350999eafa47635a786181",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "OriginalName": "BackupScreenFirmware.py",
+    "Sha256": "747f108099219e2695dccb6dc777ece363dd13edb2c629271534e2f0ac8af38e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "OriginalName": "ExtractUiResources.py",
+    "Sha256": "4f011462a56627e18d2ab248bc71e7a2b9e623d2a88106463231104ecc76afbd",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "OriginalName": "InspectFirmware.py",
+    "Sha256": "72e9c699a896fdffd41fd4fe020f314f622f28e69e218bce13d1fa09e51960ce",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "OriginalName": "InstallArmCompiler.py",
+    "Sha256": "6c9c4c895d146f1d114321afa43083a15a00b8f17f6fc989245fd68fd290b2e0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "OriginalName": "InstallKeyboardDriver.ps1",
+    "Sha256": "df2994da03b531a05bcf8790e4ad88bcb4db5d173258f5ee85fe910ecadef3ce",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "OriginalName": "InstallScreenDriver.ps1",
+    "Sha256": "aae5bbbfa9233c153df37c5b2c66325722490d155f3b0e68afd9b2d6eab8c2fb",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "OriginalName": "InstallScreenUiFirmware.py",
+    "Sha256": "799e70ffa7adb6628e7471cd29a7b977f42dc3d824a5a9a83d0d3228819f92af",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "OriginalName": "InstallWirelessBridgeFirmware.py",
+    "Sha256": "3a1add2c52d246d57689b770887a122c09411eaab17b8cbe2b5a2171a7f2865d",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "OriginalName": "BuildWirelessBridgeFirmware.py",
+    "Sha256": "7a8f46c2206def557b5be36a8d87ae2ddb4430613b0cf56646d9393c172f7abd",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "OriginalName": "ConfigureScreenKnob.py",
+    "Sha256": "1d29b089b1182a9c32eeb077ed7c4b091edfbc9872933976c47f761ed40bdaf7",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "OriginalName": "ReadKeyboard.py",
+    "Sha256": "8d7d7f679424b365cb0bb780ef90d28dac89889274b92e7f2c15f8bde3398e64",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "OriginalName": "BridgeHooks.s",
+    "Sha256": "24ff8134001a9033987b95f5b56dc16bfb3d74930d0438ac4842e9d0f0f807e5",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "OriginalName": "BridgePatch.ld",
+    "Sha256": "aaa22d21611fa41f2164b56f412f2d12569a0a23b89fe72048d80714e2cc21c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "9c47330fed8c5ed36d5e092ae1fcfc79e670c57f6d7663d43c24877c539e1696",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "OriginalName": "WirelessBridge.c",
+    "Sha256": "a96e2204cc68078760598c7a2f2cc1436c1bb6cc0417f643e21c4221b115c857",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "OriginalName": "ApplicationHook.s",
+    "Sha256": "4947b6106e6f80d1a37da90be05723ada4107bbf119e390fe03f6ee2e12c12fd",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "OriginalName": "DeviceScreenUi.c",
+    "Sha256": "e59a689ae85aab6b43595f3130db7759dad9bf71459590b245107ddc7e1ac201",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "OriginalName": "InformationHook.s",
+    "Sha256": "44cd58655216e7a2d61816113291eb1e0b4faa9bf2bc3e48eb620d7ba587ee0a",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "OriginalName": "NativeLvgl.c",
+    "Sha256": "cef0ee000deaf0f2e8481ea27761ad5c9503176001149ceb1b04fa9fafd688be",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "OriginalName": "NativeLvgl.h",
+    "Sha256": "bbd23cdb2c7ed662474a3f07e1addf572b969a1f93f510b95d650b745c97e60e",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "OriginalName": "PacketHook.s",
+    "Sha256": "cc25b837a7f43e4579683d0432b2f5ca5be6912126760de781cd0ebf38d7f074",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "OriginalName": "ScreenRecovery.s",
+    "Sha256": "f67f9dc128e4ea1786db388b06f3092bb452d5e8bd5f16e85f2827be45a543d4",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "OriginalName": "ScreenUiConfiguration.json",
+    "Sha256": "99e99b2ca4681930aa92da9dc6d2fa08916c58832986c99506e0fb178e4aa69c",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "OriginalName": "ScreenUiPatch.ld",
+    "Sha256": "502898a798a46dbf8ab3a8d7636131893a827a6f2c23b9326a9d19331fc9a2c7",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "OriginalName": "MarkdownDocument.c",
+    "Sha256": "b9669f195b0cf9c0dbacfd67c5197d6edab15cc18803ad77da77aba94f5db944",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "OriginalName": "MarkdownDocument.h",
+    "Sha256": "4c1df41edaa57cfd49019521b893f68ea9e918092e59b9a52bfe22a2c6af51f9",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "OriginalName": "LvConf.h",
+    "Sha256": "68189b494ca1ff90831aa7100a95dac7697d03e2245d1b1386146d0208fe803f",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "OriginalName": "ScreenUiPreview.c",
+    "Sha256": "4ccc7cf5cf227dfd6ff728a85640168441b9ed6fb91eb9e39635b5c3469d0619",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/ScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/ScreenUi.c",
+    "OriginalName": "ScreenUi.c",
+    "Sha256": "f02d35ec6e02a46b978cae9e3c291fc4a65c03aa0e6453f7383b8cf13e7b185c",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/ScreenUi.h",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/ScreenUi.h",
+    "OriginalName": "ScreenUi.h",
+    "Sha256": "b62065b85075ecbfdbc517fbc44b9386f536e567931d614701114df4afc45ae0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "OriginalName": "BuildScreenUiFirmware.py",
+    "Sha256": "6e50181ccecd493098d0ddd47f1111f61fd42b9415840d3c8ea3132667909f07",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "OriginalName": "BuildScreenUiPreview.py",
+    "Sha256": "916afd516193f1c1db1a613f6f19c5cfd44c9a3050c0e3e850c7dd2459de0783",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "OriginalName": "MarkdownUtilities.py",
+    "Sha256": "e36253a7701a501092aa1d0ba6c2c15d4067dd71f98bf6823346f8b728718290",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "OriginalName": "ReadScreen.py",
+    "Sha256": "a3c89831239350489eeb7a0d3a639df89c024e2db464497d6a5c389891ba293f",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "OriginalName": "ReadScreenControls.py",
+    "Sha256": "ebe8b50a853ea89ca59b3b430274655b0779bc1d5cf19fc0944adf2bb9f28229",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "OriginalName": "ReadScreenUiState.py",
+    "Sha256": "5ca50f4cb83885bc7a469de8737bfab889f63d1f476172c1e3d2b9e520554875",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "OriginalName": "WriteMarkdown.py",
+    "Sha256": "49952442c731be261d621435792aa1f63e7e8fca65dbd8efd90e1a4f6bdc3edf",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "OriginalName": "DecodeVendorChunk.cjs",
+    "Sha256": "b98d04c866799c713a7a3c36e7d39f88332b5573465099067ea96717a1a9f41b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "OriginalName": "DecodeVendorIndex.cjs",
+    "Sha256": "6e5b27eda5d139c755afe9dadc23455336ccb5efb4cb0f3779c355996ce32ca6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "OriginalName": "VendorStringUtilities.cjs",
+    "Sha256": "55a74973997bd06eecd07e39e7bcdcce47218a113963f1c5537f8afbf84e24a0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/Tools/Environment.json",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/Tools/Environment.json",
+    "OriginalName": "Environment.json",
+    "Sha256": "0352b97ef2dedbf640c0ab80e52317445df5ce49b3e8773a0f22b5d606a217fa",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV01/Sources/WriteMarkdown.bat",
+    "RelativePath": "Research/Firmware/WirelessUiV01/Sources/WriteMarkdown.bat",
+    "OriginalName": "WriteMarkdown.bat",
+    "Sha256": "ceb4552c13cb0629985837e1b4c5267fd34097b38b8454cc32bff718889a1b5c",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/AfterApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "ec5c681fb7c3154489372c15aa7135661c22f2a5f5294049f6c0cd5745ec728d",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/BeforeApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "2fc302de522843c98ee54c8a6b7dd7202f044f8912fdde95cc41ef9b2f9eb6b0",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/ExitEntry.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/ExitEntry.bin",
+    "OriginalName": "ExitEntry.bin",
+    "Sha256": "3765c752fecec70395028cdc8b4a737bf8e1d219a7ed5a9c32ba2f7cf365eca2",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/InstallHookReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/InstallHookReadback.bin",
+    "OriginalName": "InstallHookReadback.bin",
+    "Sha256": "249ca1fba4c6fb63f227743f20b333baffe88512886340d559073dc7dd91b838",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/InstallPayload01Readback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/InstallPayload01Readback.bin",
+    "OriginalName": "InstallPayload01Readback.bin",
+    "Sha256": "e9aa2b23ed9714e0fa7a8a73ef2781b5f1a7da82d825e7c8e75925a1875ca655",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "6490e31d0c9503ed3c1b5053ca5fceb6db0b4174afd11a089d68550d96b98c4b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/HookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "249ca1fba4c6fb63f227743f20b333baffe88512886340d559073dc7dd91b838",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/InformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "89367522187fda3ca2a77333a7e233bd1c91e0dbc46a41e8b974cb5e3ac83178",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/Payload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "e9aa2b23ed9714e0fa7a8a73ef2781b5f1a7da82d825e7c8e75925a1875ca655",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/Payload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/Payload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "6490e31d0c9503ed3c1b5053ca5fceb6db0b4174afd11a089d68550d96b98c4b",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestoreInformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "8cc8244657a905f45bf8af4bbc742215a28da1fed485d1b80afd43cc6ea21b16",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Package/VectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Package/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Report.json",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "db8108e5b2515c74181b5e62e9c06ab8082fe7609b3eae02d69ff498bb2cf461",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T080728Z/Transcript.json",
+    "RelativePath": "Research/Screen/Flash20261103T080728Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "5deeea6182db28fa8fd7ef4cd1711c5c328c28efb0a00388de7b09e025eecc37",
+    "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
   }
 ]

@@ -1,0 +1,13 @@
+{
+  "Mode": "Install",
+  "FirmwareWritten": true,
+  "ApplicationVerified": true,
+  "ConfigurationPreserved": true,
+  "VectorsPreserved": true,
+  "FactorySystemMemoryWritten": false,
+  "Plan": "D:\\Git\\Neos75\\Research\\Device\\KeyboardFlash20261103T080705Z\\Package\\WirelessBridgePlan.json",
+  "ConfigurationSha256": "ec043a846db79f9dc314b1cd8d79324c051c933b7458f51e5850520a22e967d8",
+  "ApplicationSha256": "d403bcb6fdb9a18fc086398a3d323ae3ca9e8a35736d9faba5c2dffefa95c4a8",
+  "ExitTransportMessage": "Main DFU operation failed: dfu-util 0.11\r\n\r\nCopyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.\r\nCopyright 2010-2021 Tormod Volden and Stefan Schmidt\r\nThis program is Free Software and has ABSOLUTELY NO WARRANTY\r\nPlease report bugs to http://sourceforge.net/p/dfu-util/tickets/\r\n\r\nOpening DFU capable USB device...\r\nDevice ID 2e3c:df11\r\nDevice DFU version 011a\r\nClaiming USB DFU Interface...\r\nSetting Alternate Interface #0 ...\r\nDetermining device status...\r\nDFU state(2) = dfuIDLE, status(0) = No error condition is present\r\nDFU mode device DFU version 011a\r\nDevice returned transfer size 2048\r\nDfuSe interface name: \"Internal Flash  \"\r\n\rUpload\t[                         ]   0%            0 bytes\rUpload\t[=========================] 100%            8 bytes\r\nUpload done.\r\nSubmitting leave request...\r\nError during download get_status\r\n",
+  "MainUsbAndWirelessIdentityReturned": true
+}

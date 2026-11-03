@@ -1,0 +1,11 @@
+{
+  "EraseSent": false,
+  "FirmwareDataWritten": false,
+  "BackupVerified": false,
+  "ApplicationAddress": "0x8000000",
+  "MaximumApplicationLength": 262144,
+  "DfuIdentity": "2E3C:DF11",
+  "ScreenDfuUsed": false,
+  "Error": "Expected one main-controller DFU alt 0",
+  "MainApplicationHidReturned": true
+}

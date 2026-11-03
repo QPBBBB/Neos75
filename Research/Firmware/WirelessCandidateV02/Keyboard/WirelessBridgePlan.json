@@ -1,0 +1,42 @@
+{
+  "Version": "WirelessBridgeV02",
+  "BaseBackup": "D:\\Git\\Neos75\\Research\\Device\\KeyboardBackup20261103T073805Z\\KeyboardApplication.bin",
+  "BaseSha256": "843d8df0bd118bedd40cd42dc52c37e30ea0b87cc47db9ce2135b1d422adcc62",
+  "FirmwareWritten": false,
+  "PayloadLength": 516,
+  "Pages": [
+    {
+      "Name": "Payload",
+      "Address": "0x801f000",
+      "Length": 2048,
+      "File": "PayloadPage.bin",
+      "Sha256": "f12c413f00b9d60f0fc68c68c2cd03cd650025ffe597a849966de9c31dcf9961",
+      "RestoreFile": "RestorePayloadPage.bin",
+      "RestoreSha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8"
+    },
+    {
+      "Name": "Packet",
+      "Address": "0x8014000",
+      "Length": 2048,
+      "File": "PacketPage.bin",
+      "Sha256": "6d2d918c29f7fa491dc9395951061e2d3d27ce4cebff87cdaed04c3b2b190baf",
+      "RestoreFile": "RestorePacketPage.bin",
+      "RestoreSha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e"
+    },
+    {
+      "Name": "Unknown",
+      "Address": "0x8012000",
+      "Length": 2048,
+      "File": "UnknownPage.bin",
+      "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+      "RestoreFile": "RestoreUnknownPage.bin",
+      "RestoreSha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b"
+    }
+  ],
+  "ConfigurationAddress": "0x0801F800",
+  "ConfigurationLength": 133120,
+  "VectorsChanged": false,
+  "KeyScanChanged": false,
+  "RadioSchedulerChanged": false,
+  "PatchedApplicationSha256": "5f32265fd4ee65bb832d5c9d8f5247d7e6be568cffbec6df8ffa05ad0b0adeb9"
+}

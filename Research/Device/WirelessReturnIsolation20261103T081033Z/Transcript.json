@@ -1,0 +1,23 @@
+[
+  {
+    "Action": "ScreenUsbReadOnlyStatusToRadioReturn",
+    "TxScreenUsb": "00a54100027c0040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "ReceiverReplies": [
+      {
+        "Rx": "a541001b7c4d44555701000000000000000000000000000000000000000000e9",
+        "Milliseconds": 16.0
+      }
+    ],
+    "IsWirelessDocumentUpload": false
+  },
+  {
+    "Action": "ReceiverReadOnlyStatusRoundTrip",
+    "TxReceiver": "00a54100027c004000000000000000000000000000000000000000000000000000",
+    "ReceiverReplies": [
+      {
+        "Rx": "ff4100027c004000000000000000000000000000000000000000000000000000",
+        "Milliseconds": 31.0
+      }
+    ]
+  }
+]

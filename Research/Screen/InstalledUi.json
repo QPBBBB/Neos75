@@ -1,23 +1,17 @@
 {
   "Mode": "Install",
   "BaseSha256": "6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b",
-  "ApplicationSha256": "2fc302de522843c98ee54c8a6b7dd7202f044f8912fdde95cc41ef9b2f9eb6b0",
-  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T144227Z\\Package\\ScreenUiPatchPlan.json",
-  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261102T144227Z\\Report.json",
+  "ApplicationSha256": "ec5c681fb7c3154489372c15aa7135661c22f2a5f5294049f6c0cd5745ec728d",
+  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261103T080728Z\\Package\\ScreenUiPatchPlan.json",
+  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261103T080728Z\\Report.json",
   "HardwareDisplayVerified": true,
-  "Version": "MarkdownUiV04",
-  "ProductionPackage": "Research/Screen/MarkdownUiV04",
-  "Commissioning": "Research/Screen/Flash20261102T144227Z/Commissioning.json",
+  "RadioDocumentHardwareVerified": true,
+  "UsbDisconnectedVerified": true,
+  "Commissioning": "Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json",
+  "ProductionPackage": "Research/Firmware/WirelessUiV01",
+  "Version": "MarkdownUiV05",
   "PhysicalKnobScrollingVerified": true,
-  "RuntimeState": "Research/Screen/UiState20261103T024538Z/Summary.json",
   "MarkdownSourceLimitBytes": 65536,
   "CompiledPackageLimitBytes": 262144,
-  "WirelessDocumentUploadImplemented": false,
-  "UserScrollConfirmation": {
-    "LocalDate": "2026-11-03",
-    "TimeZone": "Asia/Shanghai",
-    "Source": "User confirmed clockwise scrolls down and both clockwise/counterclockwise scroll normally",
-    "ClockwiseScrollsDown": true,
-    "CounterclockwiseScrollsUp": true
-  }
+  "WirelessDocumentUploadImplemented": true
 }

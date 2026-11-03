@@ -1,0 +1,83 @@
+{
+  "Transport": "ReceiverRadio",
+  "UsbDisconnectedConfirmed": true,
+  "InterfacesAfterUpload": {
+    "ScreenUsbInterfaces": 0,
+    "MainUsbRawInterfaces": 0,
+    "ReceiverRawInterfaces": 1
+  },
+  "Receipt": {
+    "SourceBytes": 156,
+    "SourceSha256": "e06350dfcdea29edf46e38e6c9000751d970b09c23a59f4dcd12ee7600933fe7",
+    "PackageBytes": 2120,
+    "PackageSha256": "e23ca35ad19bcc70e25084fb881372eb92f1e7be51d96c5fb2849c0f323ea495",
+    "Rows": 14,
+    "Glyphs": 26,
+    "Warnings": [],
+    "DeviceState": {
+      "Version": 1,
+      "Status": 0,
+      "Operation": 3,
+      "Active": true,
+      "Session": 26150,
+      "ReceivedBytes": 2120,
+      "TotalBytes": 2120,
+      "ScrollRow": 0,
+      "Rows": 14,
+      "SourceBytes": 156
+    },
+    "ElapsedSeconds": 66.156,
+    "Transport": "ReceiverRadio",
+    "WirelessPacketsPerSecond": 8,
+    "WirelessIdleMilliseconds": 500
+  },
+  "StatusQueryTx": "00a54100027c004000000000000000000000000000000000000000000000000000",
+  "StatusReplies": [],
+  "PhysicalDisplayAndTypingVerified": true,
+  "Source": "Actual complete radio upload after user selected 2.4 GHz and USB main/screen interfaces disappeared; input-idle pauses included in elapsed time",
+  "PhysicalKnobScrollingVerified": true,
+  "UserConfirmation": {
+    "LocalDate": "2026-11-03",
+    "Source": "User confirmed display, scrolling and typing all normal after USB removal"
+  },
+  "KeyboardInputLatencyInstrumented": false,
+  "AgentCli": {
+    "Utf8StdinVerified": true,
+    "SingleJsonStdoutVerified": true,
+    "ExitCode": 0,
+    "Transport": "ReceiverRadio",
+    "FirstCallSourceBytes": 17,
+    "FirstCallPackageBytes": 606,
+    "FirstCallUploadSeconds": 5.14,
+    "LatestReceipt": {
+      "SourceBytes": 90,
+      "SourceSha256": "cbb61da4e1e86929764a2f7106a3952f91855ea2cae7ea7303f44508d3da26e6",
+      "PackageBytes": 2514,
+      "PackageSha256": "4db1abf88155735334ad2230d34505d1e458a8a43ddd40d33c5c7833ed330a19",
+      "Rows": 6,
+      "Glyphs": 31,
+      "Warnings": [],
+      "DeviceState": {
+        "Version": 1,
+        "Status": 0,
+        "Operation": 3,
+        "Active": true,
+        "Session": 54697,
+        "ReceivedBytes": 2514,
+        "TotalBytes": 2514,
+        "ScrollRow": 0,
+        "Rows": 6,
+        "SourceBytes": 90
+      },
+      "ElapsedSeconds": 94.484,
+      "Transport": "ReceiverRadio",
+      "WirelessPacketsPerSecond": 8,
+      "WirelessIdleMilliseconds": 500
+    },
+    "LatestDisplayHardwareVerified": true,
+    "LatestDisplayUserConfirmation": {
+      "LocalDate": "2026-11-03",
+      "Source": "User confirmed the latest six-row Chinese Markdown display is normal before requesting modular commits and push"
+    }
+  }
+}

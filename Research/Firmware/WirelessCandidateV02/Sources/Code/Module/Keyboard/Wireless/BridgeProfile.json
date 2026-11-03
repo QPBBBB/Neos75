@@ -1,0 +1,30 @@
+{
+  "Version": "WirelessBridgeV02",
+  "Device": "AULA-Neos75 Main Keyboard",
+  "Evidence": "Research/Device/KeyboardBackup20261103T073805Z/KeyboardApplication.bin",
+  "ApplicationAddress": "0x08000000",
+  "ApplicationLength": 262144,
+  "ApplicationSha256": "843d8df0bd118bedd40cd42dc52c37e30ea0b87cc47db9ce2135b1d422adcc62",
+  "Build": "SV3.0.4 Oct 29 2026 04:42:28",
+  "PageSize": 2048,
+  "PayloadAddress": "0x0801F000",
+  "PayloadCapacity": 2048,
+  "UnknownHookAddress": "0x0801213C",
+  "UnknownHookExpectedHex": "ff210170",
+  "PacketHookAddress": "0x08014794",
+  "PacketHookExpectedHex": "2de9f05f",
+  "PacketContinuation": "0x08014798",
+  "ConfigurationAddress": "0x0801F800",
+  "ConfigurationLength": 133120,
+  "FactoryDfuIdentity": "2E3C:DF11",
+  "CompatiblePreviousCodeSha256": [
+    "8bbe784ae9a1ba99cd399457ff8f77722eaf16a1e57825058655b39d97ea974f"
+  ],
+  "NativeSymbols": {
+    "NativeRawSourceAddress": "0x20000BCA",
+    "NativeWritePort": "0x080090A9",
+    "NativeSendWirelessRaw": "0x080174D9"
+  },
+  "Preservation": "No vector, startup, key scan, radio scheduler or configuration-region changes; unknown-command and screen-packet entry hooks only",
+  "PayloadEvidence": "0x0801F000..0x0801F800 is one all-FF application page before the native configuration region. Native configuration initialization references 0x0801F800 and 0x08020000; the entire region from 0x0801F800 is preserved."
+}
