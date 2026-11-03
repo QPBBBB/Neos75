@@ -48,7 +48,8 @@ SHA256：6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b
 Flash 与恢复
 设备代码规划占用 0x50000..0x54000 的四个 4 KiB payload 页，构建前严格核验原内容。
 另有 Vector 0x8000、Information 0x35000、Hook 0x3C000 三页；安装时跳过已相同页面。
-0x7F000 配置页与 Bootloader 不写入。文档接收不写 Flash，设备断电后需重新上传。
+0x7F000 配置页与 Bootloader 不写入。用户文档接收不写 Flash，设备断电后恢复内置默认 Markdown；用户内容需要重新上传。
+V06 默认 Markdown 包为 984 字节，随屏幕程序存于 16 KiB 扩展区；启动时复制到同一文档堆，首次上传即释放，不与最大用户文档叠加保留。
 构建、安装与恢复说明见 ScreenUi.txt；使用方式见 ScreenMarkdown.md。
 
 格式边界

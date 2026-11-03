@@ -282,3 +282,21 @@ ScreenKnob20261102T090653Z 保留完整前后映射及写入记录，其他按�
    成套生产页、恢复页和源码快照为 Research/Firmware/WirelessUiV01，验收索引为
    Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json。
    文档只存 RAM；模式/供电切换若导致屏幕重启，需要重传。64 KiB 极限仅有线验收，无线本轮为短文档。
+
+十一、V06 内置默认 Markdown 与无标题布局（2026-11-03）
+1. 用户要求未上传时显示默认 Markdown“QPBBBB 的键盘”，并删除顶部 UI 小字。
+   Default.md 通过现有 MarkdownCompiler 编译为 984 字节、1 行、7 字形，随屏幕程序放入 Flash 扩展区。
+   启动时复制到正常文档堆，通过同一校验器、字形回调及原生 label 渲染，默认会话为 0。
+   首次上传沿正常生命周期释放默认副本，保持原有用户文档容量和后续滚动协议。
+2. 删除顶部标题对象、标题设置 API 和旧 hellow world/Running 启动逻辑，正文起点从 y=38 改为 y=16。
+   设备状态协议版本为 6，有线 MDUI 与无线 MDUW 文档协议保持原样；主控与接收器固件本次均未写入。
+3. ARM 固件及 Windows 预览均编译通过；临时使用真实 LVGL 验证默认包、无标题对象、正文位置、
+   默认包被上传替换、双向滚动和多次上传后空闲内存不减少。临时验证代码、数据与可执行文件已清理。
+4. Flash20261103T143022Z 仅写两页 payload、Information、Hook，Vector 和其余 payload 页相同而跳过。
+   完整应用回读 SHA256 为 8cb3cb6330f9a99514b3c23c01788c8550cbafe6d23cbd2f34e02a25ced8b3fa。
+   Bootloader 未写入，0x7F000 配置保留；HID 返回并稳定运行，状态查询为 V06、原厂页面对象 0、timer 递增。
+   未进行正文上传时，设备报告 Active=true、Session=0、Received/Total=984、Rows=1、SourceBytes=19。
+5. 用户明确确认默认文字正确、顶部无小字，彻底断电重启后也正常。
+   断电后 USB 接口已不在线，接收器在线但后续只读查询未获键盘身份回复；保留为未唤醒时的查询事实，
+   不将其计为 V06 新的无线传输验收，也不影响上述启动显示与断电验收。
+   成套页、恢复页和 45 份源码快照归档为 Research/Firmware/WirelessUiV02；主控页与 V05 成套包相同。

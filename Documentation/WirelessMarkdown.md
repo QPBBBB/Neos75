@@ -1,6 +1,8 @@
 # 2.4G Markdown 与 Agent CLI
 
-当前结果：2026-11-03 已部署屏幕 V05 和主控 WirelessBridgeV02。主键盘与屏幕 USB 均离线时，接收器完整传入中文和 14 行列表；用户确认显示、旋钮双向滚动及正常打字均正常。随后已用 stdin + JSON CLI 完成 agent 形式的真实无线调用。调用接口见 [AgentCli.md](AgentCli.md)。
+当前版本为屏幕 V06 + 主控 WirelessBridgeV02。V06 仅更新屏幕的启动默认 Markdown 和无顶部标题布局，协议与主控程序沿用 V05 无线基线；用户已确认“QPBBBB 的键盘”和断电重启显示正常。
+
+无线基线验收：2026-11-03 在主键盘与屏幕 USB 均离线时，接收器完整传入中文和 14 行列表；用户确认显示、旋钮双向滚动及正常打字均正常，随后完成 stdin + JSON CLI 的真实无线调用。调用接口见 [AgentCli.md](AgentCli.md)。
 
 ## 已确认的实机情况
 
@@ -41,7 +43,7 @@ WriteMarkdown.bat --Transport Wireless
 
 屏幕配套固件增加紧凑确认协议，仍使用现有七页安装布局、保留 Bootloader 和 `0x7F000` 配置页。主控和屏幕必须成套部署；接收器固件未修改。
 
-现用成套页面、恢复页及源码快照见 [WirelessUiV01](../Research/Firmware/WirelessUiV01)。初版只放行一种原生无线来源，实机回程隔离确认后，V02 改为接受原生的两种无线来源并提供 `NWB2` 状态回显诊断。主控两次整镜像回读通过，配置区逐字节保留。
+现用成套页面、恢复页及源码快照见 [WirelessUiV02](../Research/Firmware/WirelessUiV02)，其中主控页与先前 WirelessUiV01 完全相同。初版只放行一种原生无线来源，实机回程隔离确认后，主控 V02 改为接受原生的两种无线来源并提供 `NWB2` 状态回显诊断。主控两次整镜像回读通过，配置区逐字节保留。
 
 ## 打字优先与速度口径
 
@@ -56,17 +58,17 @@ CLI 使用：
 .\WriteMarkdown.bat --Status --Transport Wireless
 ```
 
-`--WirelessPacketsPerSecond` 范围 1–10，默认 8；`--WirelessIdleMilliseconds` 范围 300–5000，默认 500。输入会延长整篇上传时间，断电后仍需重新上传。
+`--WirelessPacketsPerSecond` 范围 1–10，默认 8；`--WirelessIdleMilliseconds` 范围 300–5000，默认 500。输入会延长整篇上传时间。V06 断电后自动恢复内置默认 Markdown，用户上传内容需要重传。
 
 ## 部署、恢复与验收
 
-主控部署记录：`Research/Device/KeyboardFlash20261103T081321Z`；屏幕部署记录：`Research/Screen/Flash20261103T080728Z`；完全无线及 CLI 验收：`Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json`。
+主控部署记录：`Research/Device/KeyboardFlash20261103T081321Z`；当前 V06 屏幕部署及断电验收：`Research/Screen/Flash20261103T143022Z`；V05 屏幕部署：`Research/Screen/Flash20261103T080728Z`；完全无线及 CLI 基线验收：`Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json`。
 
 主控安装/恢复会短暂停止键盘输入，应在明确的停键窗口进行。日常 agent 更新只调用文档 CLI，不执行下列固件命令：
 
 ```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallWirelessBridgeFirmware.py --Plan Research\Firmware\WirelessUiV01\Keyboard\WirelessBridgePlan.json --EnterDfu
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV01\Screen\ScreenUiPatchPlan.json --EnterDfu
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallWirelessBridgeFirmware.py --Plan Research\Firmware\WirelessUiV02\Keyboard\WirelessBridgePlan.json --EnterDfu
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV02\Screen\ScreenUiPatchPlan.json --EnterDfu
 ```
 
-为对应命令加 `--Restore` 可恢复各自基准备份中的应用页，保留当时配置区。接收器及主控原厂 ROM 均不写入。用户切换模式/拔线后曾回到 `hellow world`，无线状态回报缓存为空，重新上传即恢复；文档不在 Flash 持久化。
+为对应命令加 `--Restore` 可恢复各自基准备份中的应用页，保留当时配置区。接收器及主控原厂 ROM 均不写入。已安装 WirelessBridgeV02 的设备更新 V06 时只需刷屏幕。用户上传内容不在 Flash 持久化；V06 在启动时从 Flash 内置包加载“QPBBBB 的键盘”，并由正常 Markdown 控件显示。

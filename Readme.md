@@ -1,6 +1,8 @@
 # Neos75
 
-NEOS75 键盘屏幕的自定义固件、Markdown CLI 与设备研究归档。当前屏幕 V05 和主控 WirelessBridgeV02 支持有线 USB 及 2.4G 接收器写入，由键盘端原生控件显示和滚动；电脑程序结束后仍可阅读。底层显示、USB、RTX 与 LVGL 复用已核验的原厂二进制，尚未取得完整厂商 SDK。
+NEOS75 键盘屏幕的自定义固件、Markdown CLI 与设备研究归档。当前屏幕 V06 和主控 WirelessBridgeV02 支持有线 USB 及 2.4G 接收器写入，由键盘端原生控件显示和滚动；电脑程序结束后仍可阅读。底层显示、USB、RTX 与 LVGL 复用已核验的原厂二进制，尚未取得完整厂商 SDK。
+
+开机自动显示内置 Markdown“QPBBBB 的键盘”，正文从顶部 16 像素处开始，不再创建顶部 UI 标题控件。默认文档和中文字形随屏幕固件保存，已由用户确认断电重启后显示正常；后续 CLI 上传会替换默认文档。
 
 用户已确认中文、粗斜体、代码块和表格显示正常，正常打字未观察到卡顿；2026-11-03 确认下方旋钮顺时针下滚、逆时针上滚。原厂页面对象数为 0，保留自定义页面。有线格式验收见 [V04 实机验收](Research/Screen/Flash20261102T144227Z/Commissioning.json)，当前完全无线与 agent CLI 记录见 [无线验收](Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json)。
 
@@ -31,7 +33,7 @@ if Result.returncode != 0:
     raise RuntimeError(Response["Error"])
 ```
 
-上传完成后整篇新文档激活，上传器可以退出。文档只保存在设备 RAM，断电后需要重新上传；新上传会释放旧文档，上传失败时需重传。当前每次上传完整文档包及字形，尚未实现增量更新。
+上传完成后整篇新文档激活，上传器可以退出。用户上传的文档只保存在设备 RAM，断电后恢复内置默认 Markdown；需要继续阅读上传内容时重新发送。新上传会释放旧文档，上传失败时需重传。当前每次上传完整文档包及字形，尚未实现增量更新。
 
 | 操作 | 功能 |
 | --- | --- |
@@ -145,8 +147,8 @@ MD 在电脑端解析为结构化行、字形记录和掩码，设备端缓存�
 使用已归档的当前成套页面包无需编译器。主控安装会短暂停止键盘输入，部署条件和恢复顺序见 [无线适配说明](Documentation/WirelessMarkdown.md)：
 
 ```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallWirelessBridgeFirmware.py --Plan Research\Firmware\WirelessUiV01\Keyboard\WirelessBridgePlan.json --EnterDfu
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV01\Screen\ScreenUiPatchPlan.json --EnterDfu
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallWirelessBridgeFirmware.py --Plan Research\Firmware\WirelessUiV02\Keyboard\WirelessBridgePlan.json --EnterDfu
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV02\Screen\ScreenUiPatchPlan.json --EnterDfu
 ```
 
 主控 DFU `2E3C:DF11` 与屏幕 DFU `5542:1000` 均需要各自的 WinUSB 驱动，本设备已安装；安装入口分别为 [InstallKeyboardDriver.ps1](Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1) 和 [InstallScreenDriver.ps1](Code/Module/Firmware/Utilities/InstallScreenDriver.ps1)。安装器核验已有程序与页面指纹，逐页及完整应用区回读核对；屏幕不写 Bootloader，保留当前 `0x7F000` 配置页。设备已处于对应 DFU 时省略 `--EnterDfu`。
@@ -161,7 +163,9 @@ MD 在电脑端解析为结构化行、字形记录和掩码，设备端缓存�
 .\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --EnterDfu
 ```
 
-V05 屏幕计划沿用七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以及 Vector、Information、Hook。安装跳过已相同页，带有故障返回 DFU 和 UI 超时保护。开机尚未上传 MD 时的 `NEOS75 UI`、`hellow world` 和 `Running` 可通过 [ScreenUiConfiguration.json](Code/Module/Screen/Device/ScreenUiConfiguration.json) 调整并重建。
+V06 屏幕计划沿用七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000`，以及 Vector、Information、Hook。安装跳过已相同页，带有故障返回 DFU 和 UI 超时保护。本次只更新屏幕，已安装 WirelessBridgeV02 的主控无需重刷。
+
+启动默认内容来自 [Default.md](Code/Module/Screen/Markdown/Default.md)，路径由 [ScreenUiConfiguration.json](Code/Module/Screen/Device/ScreenUiConfiguration.json) 的 `DefaultMarkdownFile` 指定。构建时通过同一个 Markdown 编译器生成排版包及中文字形，并嵌入屏幕程序；更改默认内容需重新构建和安装屏幕固件。默认包与程序共用 16 KiB 扩展区，超限时构建报错。当前默认包 984 字节，首次上传时释放其 RAM 副本，用户文档容量规格保持不变。
 
 ## 旋钮配置、诊断与恢复
 
@@ -185,7 +189,7 @@ V05 屏幕计划沿用七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000
 配置工具固定本设备 UID 和已确认映射，过滤其他应用的无关响应，遇到未知映射会拒绝修改。恢复本次官方更新后的屏幕应用时，使用当前计划中的恢复页：
 
 ```powershell
-.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV01\Screen\ScreenUiPatchPlan.json --EnterDfu --Restore
+.\Tools\Python39\python.exe -B Code\Module\Firmware\Utilities\InstallScreenUiFirmware.py --Plan Research\Firmware\WirelessUiV02\Screen\ScreenUiPatchPlan.json --EnterDfu --Restore
 ```
 
 屏幕恢复保留当前配置页，不自动恢复主键盘的旋钮映射。完整协议、保护机制和恢复说明见 [ScreenUi.txt](Documentation/ScreenUi.txt)。
@@ -194,7 +198,8 @@ V05 屏幕计划沿用七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000
 
 | 内容 | 位置 |
 | --- | --- |
-| 当前成套主控/屏幕页面、恢复页与源码快照 | [WirelessUiV01](Research/Firmware/WirelessUiV01) |
+| 当前成套主控/屏幕页面、恢复页与源码快照 | [WirelessUiV02](Research/Firmware/WirelessUiV02) |
+| V06 默认 Markdown 与断电重启验收 | [Flash20261103T143022Z](Research/Screen/Flash20261103T143022Z) |
 | 当前主控指纹与无线验收索引 | [InstalledWirelessBridge.json](Research/Device/InstalledWirelessBridge.json) |
 | 当前安装指纹与验收索引 | [InstalledUi.json](Research/Screen/InstalledUi.json) |
 | V04 修改页、恢复页、ELF、反汇编、源文件指纹 | [MarkdownUiV04](Research/Screen/MarkdownUiV04) |
@@ -205,7 +210,7 @@ V05 屏幕计划沿用七个 4 KiB 页面：四个 payload 页 `0x50000..0x54000
 | 历史 V03 页面包与源文件指纹 | [CustomUiV03](Research/Screen/CustomUiV03) |
 | 归档来源、原名称与 SHA256 | [Provenance.json](Research/Provenance.json) |
 
-当前版本的源码快照、指纹及对应 Git 提交保存在 [WirelessUiV01/Source.json](Research/Firmware/WirelessUiV01/Source.json) 的 `SourceFilesSha256`、`SourceCommit` 及同目录 `Sources`；44 份文件已与该提交中的原始字节逐一核对。V04 的源文件指纹和对应 Git 提交记录在 [Source.json](Research/Screen/MarkdownUiV04/Source.json) 中；V03 指纹对应[提交 d40d595](https://github.com/QPBBBB/Neos75/commit/d40d59501f8be51bcd7348015b16d190c03f6f2d)。历史页面包保持独立，当前恢复应采用 WirelessUiV01 成套计划。
+当前版本的 45 份源码快照、指纹及对应 Git 提交保存在 [WirelessUiV02/Source.json](Research/Firmware/WirelessUiV02/Source.json) 的 `SourceFilesSha256`、`SourceCommit` 及同目录 `Sources`，已与提交中的原始字节逐一核对。V05 对应提交与原始源码保留在 [WirelessUiV01/Source.json](Research/Firmware/WirelessUiV01/Source.json)；V04 的记录在 [Source.json](Research/Screen/MarkdownUiV04/Source.json) 中。历史页面包保持独立，当前恢复采用 WirelessUiV02 成套计划。
 
 只读设备与离线分析入口：
 

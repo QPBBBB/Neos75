@@ -1,11 +1,16 @@
-NEOS75 当前自定义 UI（V05 Markdown，有线与 2.4G）
+NEOS75 当前自定义 UI（V06 默认 Markdown，有线与 2.4G）
+
+V06 已部署：启动时从固件加载“QPBBBB 的键盘”Markdown 及中文字形，包长 984 字节、1 行、会话 0。
+顶部标题控件已删除，正文起点改为 y=16；后续上传仍使用同一文档控件及滚动逻辑。
+用户已确认默认画面、顶部无小字及彻底断电重启后均正常。主控固件本次未改动。
+本次屏幕完整回读：Research/Screen/Flash20261103T143022Z；成套归档：Research/Firmware/WirelessUiV02。
 
 2026-11-03：屏幕 V05 + 主控 WirelessBridgeV02 已部署，完全拔线后的显示、滚动和正常打字由用户确认。
 主控只改三个固定 2 KiB 应用页，配置区与向量保留；屏幕仍保留 Bootloader 和 0x7F000 配置页。
 新增 A5 41 / 7C 紧凑 MDUW 状态，整帧 32 字节，UI timer 处理写操作后再回 UART；原有 7E / MDUI 有线协议保留。
 日常入口为 agent CLI，支持文件或 UTF-8 stdin、单份 JSON stdout、进度 stderr 与稳定退出码。
 当前安装索引：Research/Screen/InstalledUi.json、Research/Device/InstalledWirelessBridge.json。
-成套包：Research/Firmware/WirelessUiV01；使用/恢复见 WirelessMarkdown.md，agent 接口见 AgentCli.md。
+使用/恢复见 WirelessMarkdown.md，agent 接口见 AgentCli.md；V05 原始成套包保留为 Research/Firmware/WirelessUiV01。
 
 以下是 V04 有线基线的技术归档；V05 新增内容以以上索引与无线说明为准。
 
