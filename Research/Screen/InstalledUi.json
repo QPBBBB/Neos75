@@ -1,17 +1,27 @@
 {
   "Mode": "Install",
   "BaseSha256": "6dcaebdd012a6062d3d56c09a58d7bd3604d7564f9de08ca76d7162b5528291b",
-  "ApplicationSha256": "ec5c681fb7c3154489372c15aa7135661c22f2a5f5294049f6c0cd5745ec728d",
-  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261103T080728Z\\Package\\ScreenUiPatchPlan.json",
-  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261103T080728Z\\Report.json",
+  "ApplicationSha256": "8cb3cb6330f9a99514b3c23c01788c8550cbafe6d23cbd2f34e02a25ced8b3fa",
+  "Plan": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261103T143022Z\\Package\\ScreenUiPatchPlan.json",
+  "Report": "D:\\Git\\Neos75\\Research\\Screen\\Flash20261103T143022Z\\Report.json",
   "HardwareDisplayVerified": true,
-  "RadioDocumentHardwareVerified": true,
-  "UsbDisconnectedVerified": true,
-  "Commissioning": "Research/Device/WirelessMarkdown20261103T082057Z/Commissioning.json",
-  "ProductionPackage": "Research/Firmware/WirelessUiV01",
-  "Version": "MarkdownUiV05",
-  "PhysicalKnobScrollingVerified": true,
+  "Version": "MarkdownUiV06",
+  "ProductionPackage": "Research/Firmware/WirelessUiV02",
+  "DefaultDocumentActiveVerified": true,
+  "PowerCyclePhysicallyVerified": true,
+  "TitleLabelCreated": false,
+  "DefaultMarkdown": {
+    "SourceFile": "D:\\Git\\Neos75\\Code\\Module\\Screen\\Markdown\\Default.md",
+    "SourceBytes": 19,
+    "SourceSha256": "f9bde361ea487d4f72e38eac6aa5cf52ac7df64c55c087b2d0b8243b81c45499",
+    "PackageBytes": 984,
+    "PackageSha256": "bf13ced6508b674b503c71024a915c731bd37c961bb8c39dec63f139cc0fd9e5",
+    "Rows": 1,
+    "Glyphs": 7
+  },
+  "Commissioning": "Research/Screen/Flash20261103T143022Z/Commissioning.json",
   "MarkdownSourceLimitBytes": 65536,
   "CompiledPackageLimitBytes": 262144,
-  "WirelessDocumentUploadImplemented": true
+  "WirelessDocumentUploadImplemented": true,
+  "MainFirmwareUnchanged": true
 }

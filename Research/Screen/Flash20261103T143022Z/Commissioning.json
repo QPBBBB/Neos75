@@ -1,0 +1,48 @@
+{
+  "Version": "MarkdownUiV06",
+  "DefaultMarkdown": {
+    "SourceFile": "D:\\Git\\Neos75\\Code\\Module\\Screen\\Markdown\\Default.md",
+    "SourceBytes": 19,
+    "SourceSha256": "f9bde361ea487d4f72e38eac6aa5cf52ac7df64c55c087b2d0b8243b81c45499",
+    "PackageBytes": 984,
+    "PackageSha256": "bf13ced6508b674b503c71024a915c731bd37c961bb8c39dec63f139cc0fd9e5",
+    "Rows": 1,
+    "Glyphs": 7
+  },
+  "TitleLabelCreated": false,
+  "MainFirmwareChanged": false,
+  "ReceiverFirmwareChanged": false,
+  "BootDocumentActiveWithoutUploadVerified": true,
+  "WiredDocumentStatusBeforePowerCycle": {
+    "Version": 1,
+    "Status": 0,
+    "Operation": 0,
+    "Active": true,
+    "Session": 0,
+    "ReceivedBytes": 984,
+    "TotalBytes": 984,
+    "ScrollRow": 0,
+    "Rows": 1,
+    "SourceBytes": 19
+  },
+  "UiState": "Research/Screen/UiState20261103T143104Z/Summary.json",
+  "PhysicalDisplayVerified": true,
+  "PhysicalTitleAbsentVerified": true,
+  "PowerCyclePhysicallyVerified": true,
+  "UserConfirmation": {
+    "LocalDate": "2026-11-03",
+    "Source": "User confirmed the default text and title removal display correctly, including after complete power cycling"
+  },
+  "PostPowerCycleObservation": {
+    "ScreenUsbInterfaces": 0,
+    "MainUsbInterfaces": 0,
+    "TotalReceiverHidInterfaces": 20,
+    "RadioStatusQuery": {
+      "Ok": false,
+      "ExitCode": 3,
+      "ErrorCode": "KeyboardNotResponding",
+      "Retryable": true
+    },
+    "Source": "Actual read-only Auto status attempt after the physical power-cycle confirmation; receiver enumerated but keyboard identity did not reply. No new wireless transfer acceptance claimed."
+  }
+}

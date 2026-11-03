@@ -709,9 +709,12 @@
     "OriginalRelativePath": "Research/Screen/InstalledUi.json",
     "RelativePath": "Research/Screen/InstalledUi.json",
     "OriginalName": "InstalledUi.json",
-    "Sha256": "4e6ad975558ad2234e4d351d4172a1bfb920d761853ca29a611ba11bd4d3d0d6",
+    "Sha256": "6643def1c2f540a01b7dfcdc3ab1b71ca4f1aff9bee8e8c781f82b05ae5f20df",
     "Source": "Mutable V04 deployment metadata updated with 2026-11-03 user confirmation of clockwise/down and counterclockwise/up scrolling",
-    "PreviousSha256": "d4dc169599dbbae494a2acca9f09716a7a9545fe12591066c2d250f455553464",
+    "PreviousSha256": [
+      "d4dc169599dbbae494a2acca9f09716a7a9545fe12591066c2d250f455553464",
+      "4e6ad975558ad2234e4d351d4172a1bfb920d761853ca29a611ba11bd4d3d0d6"
+    ],
     "Sha256History": [
       "ae9c78958b2506bfb9bd74ba0c1f5f4d2c520fb42980460a9103b6c2bc11f952",
       "86b642f08695f9d5e9b2f9b7ea7a594b4e2e2d6b76fec0c0d8c2121fc2db56af",
@@ -4546,5 +4549,736 @@
     "OriginalName": "Transcript.json",
     "Sha256": "5deeea6182db28fa8fd7ef4cd1711c5c328c28efb0a00388de7b09e025eecc37",
     "Source": "Actual NEOS75 wireless deployment/commissioning evidence or exact firmware/recovery/source snapshot; no temporary verification artifacts"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "9c47330fed8c5ed36d5e092ae1fcfc79e670c57f6d7663d43c24877c539e1696",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/PacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/PacketPage.bin",
+    "OriginalName": "PacketPage.bin",
+    "Sha256": "6d2d918c29f7fa491dc9395951061e2d3d27ce4cebff87cdaed04c3b2b190baf",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "f12c413f00b9d60f0fc68c68c2cd03cd650025ffe597a849966de9c31dcf9961",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/RestorePacketPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/RestorePacketPage.bin",
+    "OriginalName": "RestorePacketPage.bin",
+    "Sha256": "ef5054a4410b82ccbb50273e2a500034a2acca138d75a345830689400ba3044e",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/RestoreUnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/RestoreUnknownPage.bin",
+    "OriginalName": "RestoreUnknownPage.bin",
+    "Sha256": "be2dac2bec24e40f8184dc742ce4746927c6f50a76955c11fdb5c08e06eecf3b",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/UnknownPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/UnknownPage.bin",
+    "OriginalName": "UnknownPage.bin",
+    "Sha256": "57fc7d3b4013a2f3c6184ff4d355efa3e2098afd73ab30f8cdf214d85c7080d3",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/WirelessBridge.elf",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/WirelessBridge.elf",
+    "OriginalName": "WirelessBridge.elf",
+    "Sha256": "6921e119f193e85ae1c6c38fa41b73b67e115a1aa9859cf078985f87c11248de",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/WirelessBridgeDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/WirelessBridgeDisassembly.txt",
+    "OriginalName": "WirelessBridgeDisassembly.txt",
+    "Sha256": "0594969c39a734b61a55bc0e25a4966473ef8dcad67ad9137c357f32fb51dda7",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Keyboard/WirelessBridgePlan.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Keyboard/WirelessBridgePlan.json",
+    "OriginalName": "WirelessBridgePlan.json",
+    "Sha256": "19f4a15d8b92c280368138f339798a8ea9be11f43100d6d904ad017e8636af0d",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/DefaultMarkdown.nsmd",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/DefaultMarkdown.nsmd",
+    "OriginalName": "DefaultMarkdown.nsmd",
+    "Sha256": "bf13ced6508b674b503c71024a915c731bd37c961bb8c39dec63f139cc0fd9e5",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/HookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "ce862870b007a9465af66be3194ede31391b7b547cba58102b174ee1c510d6b1",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/InformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "e73ec36d85f4625a9de26d1729ac7eb6c6608aee0b33428563c6bc20e7f78c8b",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/Payload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "45b7867897cd4f6004ba698e6c39e24fc5d8353e20ec7bc74fa61339d5194a70",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/Payload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/Payload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/PayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "f67e75f5c0b691bd5bd30cd70f7c7d1b4aeafd997a583940d195566b0fd10975",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestoreHookPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestoreInformationPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayload01Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayload02Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayload03Page.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayloadPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/RestoreVectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/ScreenUi.elf",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/ScreenUi.elf",
+    "OriginalName": "ScreenUi.elf",
+    "Sha256": "d84409bc335d6cf400e7159df66f55c2a1f04311205dbd43c484faf8a12f9c0c",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/ScreenUiDisassembly.txt",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/ScreenUiDisassembly.txt",
+    "OriginalName": "ScreenUiDisassembly.txt",
+    "Sha256": "5c75249df4e36abfe86563569755d3a96da7e4a1a6defac5993b3df553bdd512",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "6f553db0e4a269f55ee0ecd79dd2229c8a9b296b4a1568aff4ed878000dce191",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Screen/VectorPage.bin",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Screen/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Source.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Source.json",
+    "OriginalName": "Source.json",
+    "Sha256": "c21b8d45d591760c981b7964dd3576980cfa05ea47228c216f96a5be1d3d0b82",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance",
+    "PreviousSha256": [
+      "51583462a8b381de717cfa09fe9a81800dd64978a68f57736e9be567575ca0f4"
+    ]
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/BackupKeyboardFirmware.py",
+    "OriginalName": "BackupKeyboardFirmware.py",
+    "Sha256": "9fc01b1007e81a41b89216abd94db2a5c30b773904350999eafa47635a786181",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/BackupScreenFirmware.py",
+    "OriginalName": "BackupScreenFirmware.py",
+    "Sha256": "747f108099219e2695dccb6dc777ece363dd13edb2c629271534e2f0ac8af38e",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/ExtractUiResources.py",
+    "OriginalName": "ExtractUiResources.py",
+    "Sha256": "4f011462a56627e18d2ab248bc71e7a2b9e623d2a88106463231104ecc76afbd",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InspectFirmware.py",
+    "OriginalName": "InspectFirmware.py",
+    "Sha256": "72e9c699a896fdffd41fd4fe020f314f622f28e69e218bce13d1fa09e51960ce",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallArmCompiler.py",
+    "OriginalName": "InstallArmCompiler.py",
+    "Sha256": "6c9c4c895d146f1d114321afa43083a15a00b8f17f6fc989245fd68fd290b2e0",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallKeyboardDriver.ps1",
+    "OriginalName": "InstallKeyboardDriver.ps1",
+    "Sha256": "df2994da03b531a05bcf8790e4ad88bcb4db5d173258f5ee85fe910ecadef3ce",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallScreenDriver.ps1",
+    "OriginalName": "InstallScreenDriver.ps1",
+    "Sha256": "aae5bbbfa9233c153df37c5b2c66325722490d155f3b0e68afd9b2d6eab8c2fb",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallScreenUiFirmware.py",
+    "OriginalName": "InstallScreenUiFirmware.py",
+    "Sha256": "799e70ffa7adb6628e7471cd29a7b977f42dc3d824a5a9a83d0d3228819f92af",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Firmware/Utilities/InstallWirelessBridgeFirmware.py",
+    "OriginalName": "InstallWirelessBridgeFirmware.py",
+    "Sha256": "3a1add2c52d246d57689b770887a122c09411eaab17b8cbe2b5a2171a7f2865d",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Utilities/BuildWirelessBridgeFirmware.py",
+    "OriginalName": "BuildWirelessBridgeFirmware.py",
+    "Sha256": "7a8f46c2206def557b5be36a8d87ae2ddb4430613b0cf56646d9393c172f7abd",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Utilities/ConfigureScreenKnob.py",
+    "OriginalName": "ConfigureScreenKnob.py",
+    "Sha256": "1d29b089b1182a9c32eeb077ed7c4b091edfbc9872933976c47f761ed40bdaf7",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Utilities/ReadKeyboard.py",
+    "OriginalName": "ReadKeyboard.py",
+    "Sha256": "8d7d7f679424b365cb0bb780ef90d28dac89889274b92e7f2c15f8bde3398e64",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/BridgeHooks.s",
+    "OriginalName": "BridgeHooks.s",
+    "Sha256": "24ff8134001a9033987b95f5b56dc16bfb3d74930d0438ac4842e9d0f0f807e5",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/BridgePatch.ld",
+    "OriginalName": "BridgePatch.ld",
+    "Sha256": "aaa22d21611fa41f2164b56f412f2d12569a0a23b89fe72048d80714e2cc21c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/BridgeProfile.json",
+    "OriginalName": "BridgeProfile.json",
+    "Sha256": "9c47330fed8c5ed36d5e092ae1fcfc79e670c57f6d7663d43c24877c539e1696",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Keyboard/Wireless/WirelessBridge.c",
+    "OriginalName": "WirelessBridge.c",
+    "Sha256": "a96e2204cc68078760598c7a2f2cc1436c1bb6cc0417f643e21c4221b115c857",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ApplicationHook.s",
+    "OriginalName": "ApplicationHook.s",
+    "Sha256": "4947b6106e6f80d1a37da90be05723ada4107bbf119e390fe03f6ee2e12c12fd",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/DeviceScreenUi.c",
+    "OriginalName": "DeviceScreenUi.c",
+    "Sha256": "6dff8d844dfcd9277a184785a12e53b47f7ee0f4ce9a6f7d5aea6012f4a129b4",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/InformationHook.s",
+    "OriginalName": "InformationHook.s",
+    "Sha256": "44cd58655216e7a2d61816113291eb1e0b4faa9bf2bc3e48eb620d7ba587ee0a",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/NativeLvgl.c",
+    "OriginalName": "NativeLvgl.c",
+    "Sha256": "cef0ee000deaf0f2e8481ea27761ad5c9503176001149ceb1b04fa9fafd688be",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/NativeLvgl.h",
+    "OriginalName": "NativeLvgl.h",
+    "Sha256": "bbd23cdb2c7ed662474a3f07e1addf572b969a1f93f510b95d650b745c97e60e",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/NativeProfile.json",
+    "OriginalName": "NativeProfile.json",
+    "Sha256": "09db69de31cd87b2fe99f7bfcb24a140b4266e56d3725c8ea9c224a7a2172b98",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/PacketHook.s",
+    "OriginalName": "PacketHook.s",
+    "Sha256": "cc25b837a7f43e4579683d0432b2f5ca5be6912126760de781cd0ebf38d7f074",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ScreenRecovery.s",
+    "OriginalName": "ScreenRecovery.s",
+    "Sha256": "f67f9dc128e4ea1786db388b06f3092bb452d5e8bd5f16e85f2827be45a543d4",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ScreenUiConfiguration.json",
+    "OriginalName": "ScreenUiConfiguration.json",
+    "Sha256": "af2f220237acd95afad88a541fa7776dd7e3f5c2357714ec8a28d614f62053f1",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Device/ScreenUiPatch.ld",
+    "OriginalName": "ScreenUiPatch.ld",
+    "Sha256": "502898a798a46dbf8ab3a8d7636131893a827a6f2c23b9326a9d19331fc9a2c7",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Markdown/Default.md",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Markdown/Default.md",
+    "OriginalName": "Default.md",
+    "Sha256": "f9bde361ea487d4f72e38eac6aa5cf52ac7df64c55c087b2d0b8243b81c45499",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.c",
+    "OriginalName": "MarkdownDocument.c",
+    "Sha256": "a1e7eb23836a0ec077d4df9107b884604ba8eb7f6872a6547c68d00810e2fa81",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Markdown/MarkdownDocument.h",
+    "OriginalName": "MarkdownDocument.h",
+    "Sha256": "5399089ee7e640a9196a7dfa2549ef221e07ccfd6a648bbc9da952f36ba6a349",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Preview/LvConf.h",
+    "OriginalName": "LvConf.h",
+    "Sha256": "68189b494ca1ff90831aa7100a95dac7697d03e2245d1b1386146d0208fe803f",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Preview/ScreenUiPreview.c",
+    "OriginalName": "ScreenUiPreview.c",
+    "Sha256": "c2462334f7e2541f5de2adceef013c934cec29279f16dcfd301a705c77a21f45",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/ScreenUi.c",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/ScreenUi.c",
+    "OriginalName": "ScreenUi.c",
+    "Sha256": "4987fd58bdeec2cf685175a53c34bc26b3950c6674dd44f14922a765bfc8a2d2",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/ScreenUi.h",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/ScreenUi.h",
+    "OriginalName": "ScreenUi.h",
+    "Sha256": "5ac29e082e9536cca55f0ec2a76f9f7553a65eed2439dac750b80d817ae10568",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiFirmware.py",
+    "OriginalName": "BuildScreenUiFirmware.py",
+    "Sha256": "b6b7893627291c72bee95795196e7fe375b848bd7f7b1c2f5bd811c964302001",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/BuildScreenUiPreview.py",
+    "OriginalName": "BuildScreenUiPreview.py",
+    "Sha256": "916afd516193f1c1db1a613f6f19c5cfd44c9a3050c0e3e850c7dd2459de0783",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/MarkdownUtilities.py",
+    "OriginalName": "MarkdownUtilities.py",
+    "Sha256": "3af770c64d7b819d04c2bd26b5ad4f1e94d5b0c6c795dedb1e1d49e0eb207804",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/ReadScreen.py",
+    "OriginalName": "ReadScreen.py",
+    "Sha256": "a3c89831239350489eeb7a0d3a639df89c024e2db464497d6a5c389891ba293f",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/ReadScreenControls.py",
+    "OriginalName": "ReadScreenControls.py",
+    "Sha256": "ebe8b50a853ea89ca59b3b430274655b0779bc1d5cf19fc0944adf2bb9f28229",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/ReadScreenUiState.py",
+    "OriginalName": "ReadScreenUiState.py",
+    "Sha256": "f458a97825480afdbf132f7d03750c2fbfaf0fcae41def782cbd0ca4afd10988",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Screen/Utilities/WriteMarkdown.py",
+    "OriginalName": "WriteMarkdown.py",
+    "Sha256": "49952442c731be261d621435792aa1f63e7e8fca65dbd8efd90e1a4f6bdc3edf",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorChunk.cjs",
+    "OriginalName": "DecodeVendorChunk.cjs",
+    "Sha256": "b98d04c866799c713a7a3c36e7d39f88332b5573465099067ea96717a1a9f41b",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Vendor/Utilities/DecodeVendorIndex.cjs",
+    "OriginalName": "DecodeVendorIndex.cjs",
+    "Sha256": "6e5b27eda5d139c755afe9dadc23455336ccb5efb4cb0f3779c355996ce32ca6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Code/Module/Vendor/Utilities/VendorStringUtilities.cjs",
+    "OriginalName": "VendorStringUtilities.cjs",
+    "Sha256": "55a74973997bd06eecd07e39e7bcdcce47218a113963f1c5537f8afbf84e24a0",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/Tools/Environment.json",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/Tools/Environment.json",
+    "OriginalName": "Environment.json",
+    "Sha256": "0352b97ef2dedbf640c0ab80e52317445df5ce49b3e8773a0f22b5d606a217fa",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Firmware/WirelessUiV02/Sources/WriteMarkdown.bat",
+    "RelativePath": "Research/Firmware/WirelessUiV02/Sources/WriteMarkdown.bat",
+    "OriginalName": "WriteMarkdown.bat",
+    "Sha256": "ceb4552c13cb0629985837e1b4c5267fd34097b38b8454cc32bff718889a1b5c",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/AfterApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/AfterApplication.bin",
+    "OriginalName": "AfterApplication.bin",
+    "Sha256": "8cb3cb6330f9a99514b3c23c01788c8550cbafe6d23cbd2f34e02a25ced8b3fa",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/BeforeApplication.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/BeforeApplication.bin",
+    "OriginalName": "BeforeApplication.bin",
+    "Sha256": "ec5c681fb7c3154489372c15aa7135661c22f2a5f5294049f6c0cd5745ec728d",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Commissioning.json",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Commissioning.json",
+    "OriginalName": "Commissioning.json",
+    "Sha256": "b9782f61d88433bd5e85ba8baba4b08b8834812aba59295eeeadcbd4eb7c5a8a",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/ExitEntry.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/ExitEntry.bin",
+    "OriginalName": "ExitEntry.bin",
+    "Sha256": "3765c752fecec70395028cdc8b4a737bf8e1d219a7ed5a9c32ba2f7cf365eca2",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/InstallHookReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/InstallHookReadback.bin",
+    "OriginalName": "InstallHookReadback.bin",
+    "Sha256": "ce862870b007a9465af66be3194ede31391b7b547cba58102b174ee1c510d6b1",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/InstallInformationReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/InstallInformationReadback.bin",
+    "OriginalName": "InstallInformationReadback.bin",
+    "Sha256": "e73ec36d85f4625a9de26d1729ac7eb6c6608aee0b33428563c6bc20e7f78c8b",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/InstallPayload01Readback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/InstallPayload01Readback.bin",
+    "OriginalName": "InstallPayload01Readback.bin",
+    "Sha256": "45b7867897cd4f6004ba698e6c39e24fc5d8353e20ec7bc74fa61339d5194a70",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/InstallPayloadReadback.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/InstallPayloadReadback.bin",
+    "OriginalName": "InstallPayloadReadback.bin",
+    "Sha256": "f67e75f5c0b691bd5bd30cd70f7c7d1b4aeafd997a583940d195566b0fd10975",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/HookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/HookPage.bin",
+    "OriginalName": "HookPage.bin",
+    "Sha256": "ce862870b007a9465af66be3194ede31391b7b547cba58102b174ee1c510d6b1",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/InformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/InformationPage.bin",
+    "OriginalName": "InformationPage.bin",
+    "Sha256": "e73ec36d85f4625a9de26d1729ac7eb6c6608aee0b33428563c6bc20e7f78c8b",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/Payload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/Payload01Page.bin",
+    "OriginalName": "Payload01Page.bin",
+    "Sha256": "45b7867897cd4f6004ba698e6c39e24fc5d8353e20ec7bc74fa61339d5194a70",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/Payload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/Payload02Page.bin",
+    "OriginalName": "Payload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/Payload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/Payload03Page.bin",
+    "OriginalName": "Payload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/PayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/PayloadPage.bin",
+    "OriginalName": "PayloadPage.bin",
+    "Sha256": "f67e75f5c0b691bd5bd30cd70f7c7d1b4aeafd997a583940d195566b0fd10975",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestoreHookPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestoreHookPage.bin",
+    "OriginalName": "RestoreHookPage.bin",
+    "Sha256": "73bce84b9c96b392493e3d38d8383e59419c28cf99379cc3aa911a48a53d5874",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestoreInformationPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestoreInformationPage.bin",
+    "OriginalName": "RestoreInformationPage.bin",
+    "Sha256": "aef268e9d5994b70ab7e4642d70fd63a132c18b886539dd8ff7da74cbf92a058",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayload01Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayload01Page.bin",
+    "OriginalName": "RestorePayload01Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayload02Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayload02Page.bin",
+    "OriginalName": "RestorePayload02Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayload03Page.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayload03Page.bin",
+    "OriginalName": "RestorePayload03Page.bin",
+    "Sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayloadPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestorePayloadPage.bin",
+    "OriginalName": "RestorePayloadPage.bin",
+    "Sha256": "616738b791190ba3eb78be433c12f16a7969d8fef26c93d5d8553290d84f2c09",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestoreVectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/RestoreVectorPage.bin",
+    "OriginalName": "RestoreVectorPage.bin",
+    "Sha256": "af8dafbec609db83d3fda6b87028acb82b0cbd71fc8c4c8c25d29ac4b69bf430",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/ScreenUiPatchPlan.json",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/ScreenUiPatchPlan.json",
+    "OriginalName": "ScreenUiPatchPlan.json",
+    "Sha256": "6f553db0e4a269f55ee0ecd79dd2229c8a9b296b4a1568aff4ed878000dce191",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Package/VectorPage.bin",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Package/VectorPage.bin",
+    "OriginalName": "VectorPage.bin",
+    "Sha256": "e2db091bbd34985eef9db43f0b2881409c01f1ee39d4b1ca290fda5f3ce637b1",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Report.json",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Report.json",
+    "OriginalName": "Report.json",
+    "Sha256": "2d985e43575961b4263e1fcd2687903de5f310db46ab4363ba63e8efd6dadab7",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/Flash20261103T143022Z/Transcript.json",
+    "RelativePath": "Research/Screen/Flash20261103T143022Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "dfaa878ad567a84bb460fecdf02065cbe33d8374140b5e296488095057d67a00",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261103T142806Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261103T142806Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "ed56ae971321968ff39fef1b3adeda1978478c486cc28a83ad7db8d08db095ee",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261103T142806Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261103T142806Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "b6ae6a35081f7a1b40fa7a4676df55e325e7f663ba757aa458e771e80b68be05",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261103T143104Z/Summary.json",
+    "RelativePath": "Research/Screen/UiState20261103T143104Z/Summary.json",
+    "OriginalName": "Summary.json",
+    "Sha256": "ec8001b1ba30efeef609d8391003772875c8a8eeaf965f467f1cb3b7582079be",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
+  },
+  {
+    "OriginalRelativePath": "Research/Screen/UiState20261103T143104Z/Transcript.json",
+    "RelativePath": "Research/Screen/UiState20261103T143104Z/Transcript.json",
+    "OriginalName": "Transcript.json",
+    "Sha256": "b27f47f580ba3be97bc0c7b747c0ac11eba5dd7cfee743272f4d1f3b3f4bf70d",
+    "Source": "V06 production firmware/default Markdown/source snapshot or actual screen deployment and physical power-cycle acceptance"
   }
 ]
